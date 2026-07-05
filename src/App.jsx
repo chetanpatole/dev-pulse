@@ -82,8 +82,15 @@ export default function App() {
     } catch { /* ignore */ }
   };
   const enableNotifications = async () => { finishOnboarding(); await registerPush(); };
-  const toggleNotif = async () => { if (notif !== "granted") await registerPush(); };
+  const toggleNotif = async () => { await registerPush(); };
   function finishOnboarding() { setOnboarded(true); localStorage.setItem("dp-onboarded", "1"); }
+
+  // Self-heal: if permission is already granted, (re)save the token on load so a
+  // previously-failed write (e.g. before Firestore rules were published) recovers.
+  useEffect(() => {
+    if (typeof Notification !== "undefined" && Notification.permission === "granted") registerPush();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const rootStyle = { ...vars, minHeight: "100%", display: "flex", flexDirection: "column", background: "var(--bg)", color: "var(--fg)", fontFamily: "Figtree, sans-serif" };
 
