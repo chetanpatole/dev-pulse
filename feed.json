@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "lastSynced": "3m ago",
+    "generatedAt": "2026-07-05T13:30:00Z",
+    "repo": "https://github.com/chetanpatole/dev-pulse"
+  },
+  "insight": {
+    "action_needed": true,
+    "deadline": "API 2025-10",
+    "headline": "Functions gain network access — action needed",
+    "what_changed": "Shopify Functions can now make outbound HTTP requests during execution via a new fetch target. Requests run against a strict domain allowlist within a 500 ms budget, and the capability ships behind the 2025-10 API version.",
+    "developer_impact": "You can call pricing, tax or inventory services directly from a Function instead of pre-computing values in the Admin. Register allowed domains in shopify.extension.toml and handle timeouts defensively — a slow endpoint fails the whole Function, and cold-start latency counts against your 500 ms budget, so cache aggressively.",
+    "merchant_impact": "Merchants get accurate, real-time discounts and shipping rates without third-party apps injecting scripts at checkout.",
+    "why_it_matters": "This closes the biggest gap between Functions and legacy Scripts, making Functions viable for dynamic, data-driven checkout logic.",
+    "code_lang": "shopify.extension.toml",
+    "code_example": "[[extensions.network_access.allowed_domains]]\nurl = \"https://rates.myapp.com\"\n\n# in your function\nconst res = await fetch(\n  \"https://rates.myapp.com/quote\",\n  { method: \"POST\", body: input }\n);",
+    "hashtags": ["functions", "checkout", "api-2025-10"],
+    "source": "Changelog",
+    "link": "https://shopify.dev/changelog",
+    "also_worth_knowing": [
+      { "text": "Hydrogen 2025.7 adds first-class React Router 7 support", "link": "https://shopify.dev/changelog" },
+      { "text": "Admin API 2024-10 reaches end of life on Oct 1", "link": "https://shopify.dev/changelog" },
+      { "text": "Checkout UI Extensions 2025-10 is now generally available", "link": "https://shopify.dev/changelog" }
+    ]
+  },
+  "updates": [
+    { "type": "New", "source": "Hydrogen", "date": "2h", "relevance": "High", "title": "Hydrogen 2025.7 ships React Router 7 support", "summary": "The starter and core hooks now target React Router 7, replacing the Remix-based routing layer.", "impact": "Mainly affects developers", "action_needed": false, "hashtags": ["hydrogen", "react-router"] },
+    { "type": "Breaking", "source": "Changelog", "date": "5h", "relevance": "For you", "title": "GraphQL Admin API 2024-10 reaches end of life", "summary": "Queries against version 2024-10 will start returning errors after October 1. Move to 2025-01 or later.", "impact": "Affects both developers and merchants", "action_needed": true, "deadline": "Oct 1", "hashtags": ["graphql", "api-versioning"] },
+    { "type": "Improvement", "source": "CLI", "date": "8h", "relevance": "High", "title": "Shopify CLI 3.70 cuts dev cold-starts by ~40%", "summary": "App preview boots faster thanks to a rebuilt bundler pipeline and smarter caching of extension builds.", "impact": "Mainly affects developers", "action_needed": false, "hashtags": ["cli", "dx"] },
+    { "type": "Release", "source": "UI Extensions", "date": "1d", "relevance": "For you", "title": "Checkout UI Extensions API 2025-10 is stable", "summary": "The 2025-10 target graduates from release-candidate. New buyer-journey APIs and settings are locked in.", "impact": "Mainly affects developers", "action_needed": false, "hashtags": ["checkout", "ui-extensions"] },
+    { "type": "Deprecation", "source": "Polaris", "date": "1d", "relevance": "Medium", "title": "Polaris deprecates legacy Card subcomponents", "summary": "Card.Section and Card.Header are deprecated in favour of the composable Card + Box/BlockStack pattern.", "impact": "Mainly affects developers", "action_needed": false, "hashtags": ["polaris", "react"] },
+    { "type": "Fix", "source": "Changelog", "date": "2d", "relevance": "Low", "title": "Metafield definitions no longer drop on bulk import", "summary": "A regression that removed metafield definitions during large bulk operations has been resolved.", "impact": "Mainly affects merchants", "action_needed": false, "hashtags": ["metafields"] },
+    { "type": "New", "source": "Changelog", "date": "3d", "relevance": "Medium", "title": "Customer Account API adds B2B company context", "summary": "Storefronts can now read the buyer's company and location directly from the Customer Account API.", "impact": "Affects both developers and merchants", "action_needed": false, "hashtags": ["customer-accounts", "b2b"] }
+  ],
+  "recap": {
+    "dateRange": "Jun 29 – Jul 5",
+    "basis": "Based on 14 updates this week",
+    "headline": "Checkout got programmable — and the 2024-10 API is sunsetting.",
+    "themes": [
+      { "n": "1", "title": "Functions grow up", "detail": "Network access lands behind API 2025-10, letting Functions call external services at checkout. This is the week's biggest capability jump for app developers." },
+      { "n": "2", "title": "The 2024-10 clock is ticking", "detail": "GraphQL Admin API 2024-10 hits end of life on Oct 1. Any queries still pinned to it will start erroring — plan the bump to 2025-01+." },
+      { "n": "3", "title": "Tooling and framework refresh", "detail": "Hydrogen 2025.7 adopts React Router 7 and CLI 3.70 cuts cold-starts ~40%, so local dev gets faster this week." }
+    ],
+    "actions": [
+      { "text": "Migrate Admin API calls off version 2024-10", "deadline": "by Oct 1" },
+      { "text": "Register allowed domains before adopting Function network access", "deadline": "API 2025-10" },
+      { "text": "Test your app against Hydrogen 2025.7 / React Router 7" }
+    ],
+    "hashtags": ["functions", "api-versioning", "hydrogen", "cli"]
+  }
+}
