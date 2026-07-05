@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { cssVars } from "./lib/theme.js";
-import { Bolt, List, Calendar, Gear, Sun, Moon, WifiOff } from "./lib/icons.jsx";
+import { Bolt, List, Calendar, Gear, Sun, Moon, WifiOff, X } from "./lib/icons.jsx";
 import Insight from "./views/Insight.jsx";
 import Updates from "./views/Updates.jsx";
 import Recap from "./views/Recap.jsx";
@@ -19,6 +19,7 @@ export default function App() {
   const [notif, setNotif] = useState(() => (typeof Notification !== "undefined" ? Notification.permission : "default"));
 
   const [view, setView] = useState("insight");
+  const [settingsOpen, setSettingsOpen] = useState(false);
   const [filters, setFilters] = useState({ typeFilter: null, forYou: false, activeHashtag: null });
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -45,7 +46,7 @@ export default function App() {
   const vars = useMemo(() => cssVars(theme, ACCENT), [theme]);
   const dateLabel = useMemo(() => new Date().toLocaleDateString("en-US", { month: "short", day: "numeric" }), []);
 
-  const goHashtag = (tag) => { setFilters({ typeFilter: null, forYou: false, activeHashtag: tag }); setView("updates"); };
+  const goHashtag = (tag) => { setFilters({ typeFilter: null, forYou: false, activeHashtag: tag }); setView("updates"); setSettingsOpen(false); };
 
   const enableNotifications = async () => {
     finishOnboarding();
@@ -83,7 +84,7 @@ export default function App() {
         <IconBtn onClick={() => setTheme(theme === "dark" ? "light" : "dark")} label="Toggle theme">
           {theme === "dark" ? <Sun /> : <Moon />}
         </IconBtn>
-        <IconBtn onClick={() => setView("settings")} label="Settings" color={view === "settings" ? "var(--accent)" : "var(--fg2)"}>
+        <IconBtn onClick={() => setSettingsOpen((o) => !o)} label={settingsOpen ? "Close settings" : "Settings"} color={settingsOpen ? "var(--accent)" : "var(--fg2)"}>
           <Gear />
         </IconBtn>
       </header>
@@ -98,7 +99,6 @@ export default function App() {
         {view === "insight" && <Insight insight={data?.insight} dateLabel={dateLabel} onHashtag={goHashtag} />}
         {view === "updates" && <Updates updates={data?.updates} loading={loading} filters={filters} setFilters={setFilters} />}
         {view === "recap" && <Recap recap={data?.recap} onHashtag={goHashtag} />}
-        {view === "settings" && <Settings meta={data?.meta} notif={notif} onToggleNotif={toggleNotif} stack={stack} setStack={setStack} />}
       </main>
 
       <nav style={{ position: "sticky", bottom: 0, display: "flex", background: "var(--nav-bg)", borderTop: "1px solid var(--border)", paddingBottom: "env(safe-area-inset-bottom)" }}>
@@ -106,6 +106,35 @@ export default function App() {
         <Tab active={view === "updates"} onClick={() => setView("updates")} icon={<List />} label="Updates" />
         <Tab active={view === "recap"} onClick={() => setView("recap")} icon={<Calendar />} label="Recap" />
       </nav>
+
+      {/* Settings drawer (slides in from the right) */}
+      <div
+        onClick={() => setSettingsOpen(false)}
+        aria-hidden={!settingsOpen}
+        style={{
+          position: "fixed", inset: 0, background: "rgba(0,0,0,0.45)",
+          opacity: settingsOpen ? 1 : 0, pointerEvents: settingsOpen ? "auto" : "none",
+          transition: "opacity 0.25s ease", zIndex: 20,
+        }}
+      />
+      <aside
+        role="dialog"
+        aria-label="Settings"
+        aria-hidden={!settingsOpen}
+        style={{
+          position: "fixed", top: 0, right: 0, bottom: 0, width: "min(420px, 90vw)",
+          background: "var(--bg)", zIndex: 21, overflowY: "auto",
+          transform: settingsOpen ? "translateX(0)" : "translateX(100%)",
+          transition: "transform 0.28s cubic-bezier(0.22,0.61,0.36,1)",
+          boxShadow: settingsOpen ? "-14px 0 44px rgba(0,0,0,0.28)" : "none",
+          paddingBottom: "env(safe-area-inset-bottom)",
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "flex-end", padding: "12px 10px 0", position: "sticky", top: 0, background: "var(--bg)", zIndex: 1 }}>
+          <IconBtn onClick={() => setSettingsOpen(false)} label="Close settings"><X size={20} /></IconBtn>
+        </div>
+        <Settings meta={data?.meta} notif={notif} onToggleNotif={toggleNotif} stack={stack} setStack={setStack} />
+      </aside>
     </div>
   );
 }
