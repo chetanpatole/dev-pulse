@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-05T18:20:08Z",
+    "generatedAt": "2026-07-05T19:06:04Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -11,9 +11,9 @@
     "what_changed": "The GraphQL Admin API now supports market-driven shipping configuration, allowing apps to configure shipping directly on a market. This change is part of the 2026-07 API version. Market-driven shipping moves merchant-owned shipping configuration out of delivery profiles and into Markets.",
     "developer_impact": "Developers should update their apps to use the new market-driven shipping configuration. This may involve migrating existing shipping configurations to the new market-driven model. Apps can use the GraphQL Admin API to configure shipping directly on a market, which helps support different shipping scenarios. Developers should review the API documentation for the 2026-07 version to understand the changes and updates.",
     "merchant_impact": "Merchants will be able to configure shipping directly on a market, which provides more flexibility and control over their shipping options. This change may require merchants to update their shipping configurations to take advantage of the new market-driven shipping model.",
-    "why_it_matters": "Market-driven shipping provides more flexibility and control over shipping configurations, which is important for merchants who need to support different shipping scenarios. This change is a key part of Shopify's efforts to improve the shipping experience for merchants and their customers.",
+    "why_it_matters": "Market-driven shipping provides more flexibility and control over shipping configurations, which is essential for merchants with complex shipping scenarios. This change enables developers to build more robust and scalable shipping solutions for their merchants.",
     "code_lang": "GraphQL",
-    "code_example": "mutation {\n  marketCreate(\n    input: {\n      name: \"US Market\"\n      currencyCode: USD\n      shippingZones: [\n        {\n          zone: {\n            name: \"Contiguous US\"\n            countries: [US]\n            provinces: []\n          }\n          shippingRates: [\n            {\n              price: \"10.00\"\n              weightRange: {\n                max: 10\n                min: 0\n              }\n            }\n          ]\n        }\n      ]\n    }\n  ) {\n    market {\n      id\n    }\n    userErrors {\n      field\n      message\n    }\n  }\n}",
+    "code_example": "mutation {\n  marketCreate(\n    input: {\n      name: \"US Market\"\n      currencyCode: USD\n      shippingZones: [\n        {\n          zone: {\n            name: \"Contiguous US\"\n            countries: [US]\n            provinces: []\n            postalCodeRanges: [\n              { start: \"10001\", end: \"99999\" }\n            ]\n          }\n          shippingRates: [\n            {\n              price: \"10.00\"\n              weightRange: {\n                greaterThanOrEqualTo: 0\n                lessThan: 10\n              }\n            }\n          ]\n        }\n      ]\n    }\n  ) {\n    market {\n      id\n    }\n    userErrors {\n      field\n      message\n    }\n  }\n}",
     "hashtags": [
       "market-driven-shipping",
       "graphql-admin-api",
@@ -43,13 +43,13 @@
       "date": "2d",
       "relevance": "For you",
       "title": "[DRAFT] Markets APIs now support MarketRegionSubdivision",
-      "summary": "Markets APIs now support MarketRegionSubdivision, allowing sub-region markets to be configured with country-subdivision regions. This feature is available in the Admin GraphQL API 2026-07 release candidate.",
+      "summary": "The Markets APIs now support MarketRegionSubdivision, allowing for sub-region markets in the Admin GraphQL API. This change is available in the 2026-07 release candidate.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "2026-07",
       "hashtags": [
         "markets-api",
-        "graphql-admin",
+        "admin-graphql",
         "sub-region-markets"
       ],
       "link": "https://shopify.dev/changelog/markets-apis-now-support-marketregionsubdivision"
@@ -67,7 +67,7 @@
       "hashtags": [
         "order-fulfillment",
         "graphql-api",
-        "fulfillment-status"
+        "enum-update"
       ],
       "link": "https://shopify.dev/changelog/orderdisplayfulfillmentstatus-now-returns-fulfillmentnotrequired"
     },
@@ -77,30 +77,30 @@
       "date": "3d",
       "relevance": "For you",
       "title": "Shop Minis May June 2026 update",
-      "summary": "The React SDK for Shop Minis has added typed product variant intent hooks for selecting variants, adding variants to cart, and sending buyers to express checkout.",
+      "summary": "The Shop Minis May June 2026 update introduces new features, including product variant intents with typed hooks for selecting variants and adding them to cart.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "shop-minis",
-        "react-sdk",
-        "product-variants"
+        "product-variants",
+        "react-sdk"
       ],
       "link": "https://shopify.dev/changelog/shop-minis-may-june-2026-update"
     },
     {
       "type": "New",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "High",
       "title": "Market-driven shipping now available in feature preview",
-      "summary": "Market-driven shipping is now available in feature preview, allowing merchants to attach shipping options directly to each market and vary rates by product or location.",
+      "summary": "Market-driven shipping is now available in feature preview, allowing merchants to attach shipping options directly to each market and vary rates by profile.",
       "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "market-driven-shipping",
-        "shipping-options",
+        "market-driven",
+        "shipping-configuration",
         "feature-preview"
       ],
       "link": "https://shopify.dev/changelog/market-driven-shipping-now-available-in-feature-preview"
@@ -116,9 +116,9 @@
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "hydrogen",
-        "oxygen-vite",
-        "plugin-update"
+        "mini-oxygen",
+        "hydrogen-package",
+        "vite-plugin"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fmini-oxygen%404.2.0"
     },
@@ -133,9 +133,9 @@
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "hydrogen",
-        "cli-update",
-        "oxygen-configuration"
+        "cli-hydrogen",
+        "oxygen-configuration",
+        "deploy-flags"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.0"
     },
@@ -145,7 +145,7 @@
       "date": "4d",
       "relevance": "For you",
       "title": "Draft order deposit fields are now available in the GraphQL Admin API and Customer Account API",
-      "summary": "Draft order deposit fields are now available in the GraphQL Admin API and Customer Account API, starting from API version 2026-07.",
+      "summary": "Draft order deposit fields are now available in the GraphQL Admin API and Customer Account API, starting from the 2026-07 API version.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "2026-07",
@@ -167,9 +167,9 @@
       "action_needed": true,
       "deadline": "",
       "hashtags": [
-        "marketing-engagements",
+        "marketing-engagement",
         "deprecation",
-        "graphql-api"
+        "cumulative-engagement"
       ],
       "link": "https://shopify.dev/changelog/deprecation-of-cumulative-marketing-engagements"
     },
@@ -184,9 +184,9 @@
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "gift-cards",
-        "graphql-api",
-        "line-item-field"
+        "gift-card",
+        "line-item",
+        "graphql-admin-api"
       ],
       "link": "https://shopify.dev/changelog/new-lineitem-field-on-the-giftcard-graphql-object"
     },
@@ -196,7 +196,7 @@
       "date": "4d",
       "relevance": "For you",
       "title": "Discount application information now available for draft orders on the Customer Account API",
-      "summary": "Discount application information is now available for draft orders on the Customer Account API, starting from GraphQL Customer Account API version 2026-07.",
+      "summary": "Discount application information is now available for draft orders on the Customer Account API, starting from the 2026-07 API version.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "2026-07",
@@ -219,8 +219,8 @@
       "deadline": "",
       "hashtags": [
         "deprecation",
-        "draft-order-line-item",
-        "customer-account-api"
+        "discounted-unit-price",
+        "draft-order-line-item"
       ],
       "link": "https://shopify.dev/changelog/discountedunitprice-on-draftorderlineitem-customer-account-api-deprecation"
     },
@@ -230,7 +230,7 @@
       "date": "4d",
       "relevance": "For you",
       "title": "`BusinessEntity` now exposes `legalEntityId` in the GraphQL Admin API",
-      "summary": "The BusinessEntity type in the GraphQL Admin API now includes a new legalEntityId field, starting from API version 2026-07, which returns the stable Central Legal Entity ID from Shopify's Organizations Platform.",
+      "summary": "The BusinessEntity type in the GraphQL Admin API now includes a new legalEntityId field, starting from the 2026-07 API version, which returns the stable Central Legal Entity ID from Shopify's Organizations Platform.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "2026-07",
@@ -245,43 +245,42 @@
   "recap": {
     "dateRange": "Jun 28 – Jul 05",
     "basis": "Based on 16 updates this week",
-    "headline": "Market-driven shipping, GraphQL Admin API updates, and Hydrogen deployments",
+    "headline": "Shopify updates GraphQL Admin API, Hydrogen, and more",
     "themes": [
       {
         "n": "1",
-        "title": "Market-driven shipping",
-        "detail": "Market-driven shipping is now available in feature preview, allowing merchants to attach shipping options directly to each market and vary rates by product. The GraphQL Admin API supports market-driven shipping configuration as of API version 2026-07. Merchant-owned delivery profile APIs are deprecated for market-driven shipping."
+        "title": "GraphQL Admin API updates",
+        "detail": "The GraphQL Admin API now supports MarketRegionSubdivision, OrderDisplayFulfillmentStatus returns FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill, and draft order deposit fields are available. Additionally, the BusinessEntity type includes a new legalEntityId field, and the GiftCard object includes a lineItem field. The discountedUnitPrice field on the DraftOrderLineItem object is dep…"
       },
       {
         "n": "2",
-        "title": "GraphQL Admin API updates",
-        "detail": "The GraphQL Admin API has been updated with new features, including support for MarketRegionSubdivision, OrderDisplayFulfillmentStatus, draft order deposit fields, and discount application information for draft orders. The BusinessEntity type now exposes a legalEntityId field, and the GiftCard object includes a lineItem field."
+        "title": "Hydrogen updates",
+        "detail": "Hydrogen now deploys to Vercel, and the @shopify/mini-oxygen package has been updated to version 4.2.0. The @shopify/cli-hydrogen package has been updated to version 13.0.0, adding deploy flags and environment variables for configuring Oxygen's client assets directory and worker directory."
       },
       {
         "n": "3",
-        "title": "Hydrogen and deployment updates",
-        "detail": "Hydrogen now deploys to Vercel, and the @shopify/mini-oxygen and @shopify/cli-hydrogen packages have been updated with new features and bug fixes. The React SDK has been updated with typed product variant intent hooks."
+        "title": "Market-driven shipping and deprecations",
+        "detail": "Market-driven shipping is now available in feature preview, and merchant-owned delivery profile APIs are deprecated. The isCumulative argument to the marketingEngagementCreate mutation is being deprecated, defaulting to false. The Shop Minis May June 2026 update includes new features such as product variant intents."
       }
     ],
     "actions": [
       {
         "text": "Update integrations to use non-cumulative marketing engagements",
-        "deadline": "2026-07"
+        "deadline": "2026-10"
       },
       {
         "text": "Migrate to market-driven shipping configuration",
         "deadline": ""
       },
       {
-        "text": "Update code to use approximateDiscountedUnitPrice instead of deprecated discountedUnitPrice",
-        "deadline": "2026-07"
+        "text": "Update code to use approximateDiscountedUnitPrice instead of discountedUnitPrice",
+        "deadline": ""
       }
     ],
     "hashtags": [
-      "market-driven-shipping",
-      "graphql-admin-api",
-      "hydrogen-deployments",
-      "shopify-developer"
+      "shopify-graphql",
+      "hydrogen-updates",
+      "market-driven-shipping"
     ]
   }
 }
