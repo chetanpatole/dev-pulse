@@ -6,6 +6,7 @@ import Updates from "./views/Updates.jsx";
 import Recap from "./views/Recap.jsx";
 import Settings from "./views/Settings.jsx";
 import Onboarding from "./views/Onboarding.jsx";
+import { enablePush, listenForeground } from "./firebase.js";
 
 const ACCENT = "#0e9aa7";
 const DEFAULT_STACK = ["Hydrogen", "React Router", "GraphQL Admin API", "Functions", "Polaris", "Checkout UI Extensions"];
@@ -33,6 +34,7 @@ export default function App() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [offline, setOffline] = useState(!navigator.onLine);
+  const [toast, setToast] = useState(null);
 
   useEffect(() => { localStorage.setItem("dp-theme", theme); }, [theme]);
   useEffect(() => { localStorage.setItem("dp-stack", JSON.stringify(stack)); }, [stack]);
@@ -52,24 +54,35 @@ export default function App() {
       .finally(() => setLoading(false));
   }, []);
 
+  // Foreground push: refresh content and show a tappable toast.
+  useEffect(() => {
+    listenForeground((payload) => {
+      const d = payload.data || payload.notification || {};
+      setToast(d.title || "New Shopify insight");
+      fetch(`${import.meta.env.BASE_URL}feed.json`).then((r) => r.json()).then(setData).catch(() => {});
+    });
+  }, []);
+
+  useEffect(() => {
+    if (!toast) return;
+    const t = setTimeout(() => setToast(null), 6000);
+    return () => clearTimeout(t);
+  }, [toast]);
+
   const vars = useMemo(() => cssVars(theme, ACCENT), [theme]);
   const dateLabel = useMemo(() => new Date().toLocaleDateString("en-US", { month: "short", day: "numeric" }), []);
 
   const goHashtag = (tag) => { setFilters({ typeFilter: null, forYou: false, activeHashtag: tag }); setView("updates"); setSettingsOpen(false); };
   const goHome = () => { setView("insight"); setSettingsOpen(false); };
 
-  const enableNotifications = async () => {
-    finishOnboarding();
+  const registerPush = async () => {
     try {
-      if (typeof Notification !== "undefined") setNotif(await Notification.requestPermission());
+      const res = await enablePush(); // "granted" | "denied" | "default" | "unsupported"
+      setNotif(res === "granted" ? "granted" : res === "unsupported" ? "default" : res);
     } catch { /* ignore */ }
   };
-  const toggleNotif = async () => {
-    if (notif === "granted") return; // browsers don't allow revoking from JS
-    try {
-      if (typeof Notification !== "undefined") setNotif(await Notification.requestPermission());
-    } catch { /* ignore */ }
-  };
+  const enableNotifications = async () => { finishOnboarding(); await registerPush(); };
+  const toggleNotif = async () => { if (notif !== "granted") await registerPush(); };
   function finishOnboarding() { setOnboarded(true); localStorage.setItem("dp-onboarded", "1"); }
 
   const rootStyle = { ...vars, minHeight: "100%", display: "flex", flexDirection: "column", background: "var(--bg)", color: "var(--fg)", fontFamily: "Figtree, sans-serif" };
@@ -118,6 +131,24 @@ export default function App() {
         <Tab active={view === "updates"} onClick={() => setView("updates")} icon={<List />} label="Updates" />
         <Tab active={view === "recap"} onClick={() => setView("recap")} icon={<Calendar />} label="Recap" />
       </nav>
+
+      {/* Foreground push toast */}
+      {toast && (
+        <button onClick={() => { setToast(null); goHome(); }} style={{
+          position: "fixed", left: "12px", right: "12px", bottom: "70px", zIndex: 25,
+          display: "flex", alignItems: "center", gap: "10px", padding: "12px 14px",
+          borderRadius: "14px", background: "var(--fg)", color: "var(--bg)", border: "none",
+          boxShadow: "0 8px 30px rgba(0,0,0,0.3)", cursor: "pointer", textAlign: "left",
+        }}>
+          <span style={{ width: "26px", height: "26px", flex: "none", borderRadius: "7px", background: "var(--accent)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <Bolt size={15} fill="currentColor" />
+          </span>
+          <span style={{ flex: 1, minWidth: 0 }}>
+            <span style={{ display: "block", fontSize: "11px", opacity: 0.7 }}>New insight · tap to view</span>
+            <span style={{ display: "block", fontSize: "14px", fontWeight: 600, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{toast}</span>
+          </span>
+        </button>
+      )}
 
       {/* Settings drawer (slides in from the right) */}
       <div

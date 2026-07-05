@@ -4,7 +4,12 @@ on:
   schedule:
     # Every 6 hours (UTC). Regenerates content from live Shopify feeds.
     - cron: "0 0,6,12,18 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      force_push:
+        description: "Send a test push even if the insight is unchanged"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -45,3 +50,10 @@ jobs:
           else
             echo "No content changes."
           fi
+
+      - name: Push notification for new insight
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          APP_URL: https://chetanpatole.github.io/dev-pulse/
+          FORCE_PUSH: ${{ github.event.inputs.force_push }}
+        run: python generator/push.py
