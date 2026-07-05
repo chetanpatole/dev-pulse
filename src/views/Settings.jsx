@@ -1,5 +1,6 @@
 import { X, Plus } from "../lib/icons.jsx";
 import { Eyebrow } from "../components/bits.jsx";
+import { pushStatus } from "../firebase.js";
 
 export default function Settings({ meta, notif, onToggleNotif, stack, setStack }) {
   return (
@@ -27,6 +28,11 @@ export default function Settings({ meta, notif, onToggleNotif, stack, setStack }
         {notif === "denied" && (
           <div style={{ padding: "12px 16px", borderTop: "1px solid var(--border)", background: "var(--warn-soft)", fontSize: "12.5px", lineHeight: 1.5, color: "var(--warn)" }}>
             Notifications are blocked. Enable them for this site in your browser settings, then reopen the app.
+          </div>
+        )}
+        {notif === "granted" && pushStatus() && (
+          <div style={{ padding: "10px 16px", borderTop: "1px solid var(--border)", fontSize: "12px", lineHeight: 1.5, color: pushStatus() === "registered" ? "var(--fg3)" : "var(--warn)" }}>
+            {pushStatus() === "registered" ? "Device registered for push ✓" : `Registration: ${pushStatus()}`}
           </div>
         )}
       </div>

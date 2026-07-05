@@ -26,37 +26,44 @@ async function messagingIfSupported() {
   }
 }
 
+function setStatus(s) { try { localStorage.setItem("dp-push-status", s); } catch { /* */ } }
+export function pushStatus() { try { return localStorage.getItem("dp-push-status") || ""; } catch { return ""; } }
+
 /**
- * Ask for permission, register the FCM service worker, get a token, and save it
- * to Firestore so the sender can reach this device. Returns the permission.
+ * Ask for permission (returns it), then BEST-EFFORT register the FCM token and
+ * save it to Firestore. Token failures never change the returned permission, so
+ * the UI toggle always reflects the real browser permission. Status for the
+ * token step is stored for on-screen display.
  */
 export async function enablePush() {
   if (typeof Notification === "undefined") return "unsupported";
   const permission = await Notification.requestPermission();
-  if (permission !== "granted") return permission;
+  if (permission !== "granted") { setStatus(`permission: ${permission}`); return permission; }
 
-  const messaging = await messagingIfSupported();
-  if (!messaging) return "unsupported";
+  try {
+    const messaging = await messagingIfSupported();
+    if (!messaging) { setStatus("messaging not supported on this browser"); return permission; }
 
-  // Dedicated scope so this SW doesn't clash with the app's PWA service worker.
-  const reg = await navigator.serviceWorker.register(
-    `${import.meta.env.BASE_URL}firebase-messaging-sw.js`,
-    { scope: `${import.meta.env.BASE_URL}fcm/` }
-  );
+    const reg = await navigator.serviceWorker.register(
+      `${import.meta.env.BASE_URL}firebase-messaging-sw.js`,
+      { scope: `${import.meta.env.BASE_URL}fcm/` }
+    );
+    await navigator.serviceWorker.ready;
 
-  const token = await getToken(messaging, {
-    vapidKey: VAPID_KEY,
-    serviceWorkerRegistration: reg,
-  });
+    const token = await getToken(messaging, { vapidKey: VAPID_KEY, serviceWorkerRegistration: reg });
+    if (!token) { setStatus("no token returned"); return permission; }
 
-  if (token) {
     await setDoc(
       doc(db, "tokens", token),
       { token, updated: Date.now(), ua: navigator.userAgent },
       { merge: true }
     );
+    setStatus("registered");
+  } catch (e) {
+    setStatus("error: " + (e && e.message ? e.message : String(e)).slice(0, 120));
+    console.error("FCM registration failed", e);
   }
-  return "granted";
+  return permission;
 }
 
 /** Fire `cb(payload)` when a message arrives while the app is open. */
