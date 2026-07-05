@@ -1,0 +1,42 @@
+name: Refresh feed.json
+
+on:
+  schedule:
+    # Every 6 hours (UTC). Regenerates content from live Shopify feeds.
+    - cron: "0 0,6,12,18 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: feed-refresh
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r generator/requirements.txt
+      - name: Generate feed.json
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MY_STACK: ${{ vars.MY_STACK }}
+          REPO_URL: https://github.com/${{ github.repository }}
+        run: python generator/generate.py
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain public/feed.json)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add public/feed.json
+            git commit -m "chore: refresh feed.json"
+            git push
+          else
+            echo "No content changes."
+          fi

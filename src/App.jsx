@@ -12,6 +12,15 @@ const DEFAULT_STACK = ["Hydrogen", "React Router", "GraphQL Admin API", "Functio
 
 const prefersDark = () => window.matchMedia?.("(prefers-color-scheme: dark)").matches;
 
+function syncedLabel(iso) {
+  if (!iso) return null;
+  const secs = (Date.now() - new Date(iso).getTime()) / 1000;
+  if (secs < 90) return "just now";
+  if (secs < 3600) return `${Math.round(secs / 60)}m ago`;
+  if (secs < 86400) return `${Math.round(secs / 3600)}h ago`;
+  return `${Math.round(secs / 86400)}d ago`;
+}
+
 export default function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("dp-theme") || (prefersDark() ? "dark" : "light"));
   const [onboarded, setOnboarded] = useState(() => localStorage.getItem("dp-onboarded") === "1");
@@ -80,7 +89,7 @@ export default function App() {
             <span style={{ display: "block", fontSize: "16px", fontWeight: 800, color: "var(--fg)", lineHeight: 1.1 }}>Dev Pulse</span>
             <span style={{ display: "flex", alignItems: "center", gap: "5px", fontSize: "11.5px", color: "var(--fg3)" }}>
               <span style={{ width: "5px", height: "5px", borderRadius: "50%", background: "var(--accent)" }} />
-              Synced {data?.meta?.lastSynced || "—"}
+              Synced {syncedLabel(data?.meta?.generatedAt) || data?.meta?.lastSynced || "—"}
             </span>
           </span>
         </button>
