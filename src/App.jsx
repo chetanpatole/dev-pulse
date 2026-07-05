@@ -47,6 +47,7 @@ export default function App() {
   const dateLabel = useMemo(() => new Date().toLocaleDateString("en-US", { month: "short", day: "numeric" }), []);
 
   const goHashtag = (tag) => { setFilters({ typeFilter: null, forYou: false, activeHashtag: tag }); setView("updates"); setSettingsOpen(false); };
+  const goHome = () => { setView("insight"); setSettingsOpen(false); };
 
   const enableNotifications = async () => {
     finishOnboarding();
@@ -71,16 +72,18 @@ export default function App() {
   return (
     <div style={rootStyle}>
       <header style={{ display: "flex", alignItems: "center", padding: "14px 16px 10px", position: "sticky", top: 0, background: "var(--bg)", zIndex: 3 }}>
-        <span style={{ width: "30px", height: "30px", borderRadius: "8px", background: "var(--accent)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Bolt size={17} fill="currentColor" />
-        </span>
-        <div style={{ marginLeft: "10px", flex: 1 }}>
-          <div style={{ fontSize: "16px", fontWeight: 800, color: "var(--fg)", lineHeight: 1.1 }}>Dev Pulse</div>
-          <div style={{ display: "flex", alignItems: "center", gap: "5px", fontSize: "11.5px", color: "var(--fg3)" }}>
-            <span style={{ width: "5px", height: "5px", borderRadius: "50%", background: "var(--accent)" }} />
-            Synced {data?.meta?.lastSynced || "—"}
-          </div>
-        </div>
+        <button onClick={goHome} aria-label="Dev Pulse — go to home" style={{ display: "flex", alignItems: "center", gap: "10px", flex: 1, padding: 0, margin: 0, background: "none", border: "none", textAlign: "left", cursor: "pointer", WebkitTapHighlightColor: "transparent" }}>
+          <span style={{ width: "30px", height: "30px", flex: "none", borderRadius: "8px", background: "var(--accent)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <Bolt size={17} fill="currentColor" />
+          </span>
+          <span>
+            <span style={{ display: "block", fontSize: "16px", fontWeight: 800, color: "var(--fg)", lineHeight: 1.1 }}>Dev Pulse</span>
+            <span style={{ display: "flex", alignItems: "center", gap: "5px", fontSize: "11.5px", color: "var(--fg3)" }}>
+              <span style={{ width: "5px", height: "5px", borderRadius: "50%", background: "var(--accent)" }} />
+              Synced {data?.meta?.lastSynced || "—"}
+            </span>
+          </span>
+        </button>
         <IconBtn onClick={() => setTheme(theme === "dark" ? "light" : "dark")} label="Toggle theme">
           {theme === "dark" ? <Sun /> : <Moon />}
         </IconBtn>
