@@ -49,9 +49,11 @@ def main():
         print("Insight unchanged — nothing to push.")
         return
 
-    tokens = [d.id for d in db.collection("tokens").stream()]
+    # Only active tokens (a device that toggled push off sets enabled=false).
+    tokens = [d.id for d in db.collection("tokens").stream()
+              if (d.to_dict() or {}).get("enabled", True) is not False]
     if not tokens:
-        print("No subscribers yet.")
+        print("No active subscribers yet.")
         state_ref.set({"key": key})
         return
 

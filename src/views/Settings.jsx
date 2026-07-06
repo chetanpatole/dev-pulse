@@ -2,7 +2,7 @@ import { X, Plus } from "../lib/icons.jsx";
 import { Eyebrow } from "../components/bits.jsx";
 import { pushStatus } from "../firebase.js";
 
-export default function Settings({ meta, notif, onToggleNotif, stack, setStack }) {
+export default function Settings({ meta, notif, on, onToggle, stack, setStack }) {
   return (
     <div style={{ padding: "6px 16px 20px" }}>
       <h1 style={{ margin: "0 0 20px", fontSize: "26px", fontWeight: 800, color: "var(--fg)", letterSpacing: "-0.025em" }}>Settings</h1>
@@ -14,13 +14,13 @@ export default function Settings({ meta, notif, onToggleNotif, stack, setStack }
             <div style={{ fontSize: "15px", fontWeight: 600, color: "var(--fg)" }}>Push notifications</div>
             <div style={{ fontSize: "12.5px", color: "var(--fg3)", marginTop: "2px" }}>Ping me when something matters</div>
           </div>
-          <button onClick={onToggleNotif} aria-label="Toggle notifications" style={{
+          <button onClick={onToggle} role="switch" aria-checked={on} aria-label="Toggle notifications" style={{
             width: "50px", height: "30px", flex: "none", borderRadius: "100px", border: "none", cursor: "pointer",
-            background: notif === "granted" ? "var(--accent)" : "var(--surface2)", position: "relative", transition: "0.2s",
+            background: on ? "var(--accent)" : "var(--surface2)", position: "relative", transition: "0.2s",
           }}>
             <span style={{
-              position: "absolute", top: "3px", left: notif === "granted" ? "23px" : "3px",
-              width: "24px", height: "24px", borderRadius: "50%", background: "#fff", transition: "0.2s",
+              position: "absolute", top: "3px", left: on ? "23px" : "3px",
+              width: "24px", height: "24px", borderRadius: "50%", background: "#fff", transition: "left 0.2s",
               boxShadow: "0 1px 3px rgba(0,0,0,0.3)",
             }} />
           </button>
@@ -30,7 +30,7 @@ export default function Settings({ meta, notif, onToggleNotif, stack, setStack }
             Notifications are blocked. Enable them for this site in your browser settings, then reopen the app.
           </div>
         )}
-        {notif === "granted" && pushStatus() && (
+        {on && pushStatus() && pushStatus() !== "disabled" && (
           <div style={{ padding: "10px 16px", borderTop: "1px solid var(--border)", fontSize: "12px", lineHeight: 1.5, color: pushStatus() === "registered" ? "var(--fg3)" : "var(--warn)" }}>
             {pushStatus() === "registered" ? "Device registered for push ✓" : `Registration: ${pushStatus()}`}
           </div>

@@ -55,7 +55,7 @@ export async function enablePush() {
 
     await setDoc(
       doc(db, "tokens", token),
-      { token, updated: Date.now(), ua: navigator.userAgent },
+      { token, updated: Date.now(), ua: navigator.userAgent, enabled: true },
       { merge: true }
     );
     setStatus("registered");
@@ -64,6 +64,28 @@ export async function enablePush() {
     console.error("FCM registration failed", e);
   }
   return permission;
+}
+
+/**
+ * Turn push OFF for this device by marking its token inactive (rules allow the
+ * client to update its own token; the sender skips disabled tokens). Browsers
+ * can't revoke the permission itself, so this is how "off" actually works.
+ */
+export async function disablePush() {
+  try {
+    const messaging = await messagingIfSupported();
+    if (!messaging) return;
+    const reg =
+      (await navigator.serviceWorker.getRegistration(`${import.meta.env.BASE_URL}fcm/`)) ||
+      (await navigator.serviceWorker.register(`${import.meta.env.BASE_URL}firebase-messaging-sw.js`, { scope: `${import.meta.env.BASE_URL}fcm/` }));
+    const token = await getToken(messaging, { vapidKey: VAPID_KEY, serviceWorkerRegistration: reg });
+    if (token) {
+      await setDoc(doc(db, "tokens", token), { enabled: false, updated: Date.now() }, { merge: true });
+    }
+    setStatus("disabled");
+  } catch (e) {
+    console.error("FCM disable failed", e);
+  }
 }
 
 /** Fire `cb(payload)` when a message arrives while the app is open. */

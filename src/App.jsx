@@ -6,7 +6,7 @@ import Updates from "./views/Updates.jsx";
 import Recap from "./views/Recap.jsx";
 import Settings from "./views/Settings.jsx";
 import Onboarding from "./views/Onboarding.jsx";
-import { enablePush, listenForeground } from "./firebase.js";
+import { enablePush, disablePush, listenForeground } from "./firebase.js";
 
 const ACCENT = "#0e9aa7";
 const DEFAULT_STACK = ["Hydrogen", "React Router", "GraphQL Admin API", "Functions", "Polaris", "Checkout UI Extensions"];
@@ -27,6 +27,12 @@ export default function App() {
   const [onboarded, setOnboarded] = useState(() => localStorage.getItem("dp-onboarded") === "1");
   const [stack, setStack] = useState(() => JSON.parse(localStorage.getItem("dp-stack") || "null") || DEFAULT_STACK);
   const [notif, setNotif] = useState(() => (typeof Notification !== "undefined" ? Notification.permission : "default"));
+  const [pushEnabled, setPushEnabled] = useState(() => {
+    const v = localStorage.getItem("dp-push-enabled");
+    if (v === "1") return true;
+    if (v === "0") return false;
+    return typeof Notification !== "undefined" && Notification.permission === "granted";
+  });
 
   const [view, setView] = useState("insight");
   const [settingsOpen, setSettingsOpen] = useState(false);
@@ -81,14 +87,30 @@ export default function App() {
       setNotif(res === "granted" ? "granted" : res === "unsupported" ? "default" : res);
     } catch { /* ignore */ }
   };
-  const enableNotifications = async () => { finishOnboarding(); await registerPush(); };
-  const toggleNotif = async () => { await registerPush(); };
+  const enableNotifications = async () => {
+    finishOnboarding();
+    await registerPush();
+    setPushEnabled(true); localStorage.setItem("dp-push-enabled", "1");
+  };
+
+  // The Settings toggle: real on/off. ON = register + activate token;
+  // OFF = mark token inactive so the sender skips this device.
+  const togglePush = async () => {
+    if (pushEnabled) {
+      setPushEnabled(false); localStorage.setItem("dp-push-enabled", "0");
+      await disablePush();
+    } else {
+      await registerPush();
+      const ok = typeof Notification === "undefined" || Notification.permission === "granted";
+      setPushEnabled(ok); localStorage.setItem("dp-push-enabled", ok ? "1" : "0");
+    }
+  };
   function finishOnboarding() { setOnboarded(true); localStorage.setItem("dp-onboarded", "1"); }
 
-  // Self-heal: if permission is already granted, (re)save the token on load so a
-  // previously-failed write (e.g. before Firestore rules were published) recovers.
+  // Self-heal: if permission is granted AND push is enabled, (re)save the token
+  // on load so a previously-failed write recovers and the token stays fresh.
   useEffect(() => {
-    if (typeof Notification !== "undefined" && Notification.permission === "granted") registerPush();
+    if (pushEnabled && typeof Notification !== "undefined" && Notification.permission === "granted") registerPush();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -183,7 +205,7 @@ export default function App() {
         <div style={{ display: "flex", justifyContent: "flex-end", padding: "12px 10px 0", position: "sticky", top: 0, background: "var(--bg)", zIndex: 1 }}>
           <IconBtn onClick={() => setSettingsOpen(false)} label="Close settings"><X size={20} /></IconBtn>
         </div>
-        <Settings meta={data?.meta} notif={notif} onToggleNotif={toggleNotif} stack={stack} setStack={setStack} />
+        <Settings meta={data?.meta} notif={notif} on={pushEnabled} onToggle={togglePush} stack={stack} setStack={setStack} />
       </aside>
     </div>
   );
