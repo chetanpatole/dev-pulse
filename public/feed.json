@@ -1,26 +1,26 @@
 {
   "meta": {
-    "generatedAt": "2026-07-07T03:22:09Z",
+    "generatedAt": "2026-07-07T09:40:49Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": true,
-    "deadline": "2026-07",
-    "headline": "Merchant-owned delivery deprecated",
-    "what_changed": "Merchant-owned delivery profile APIs are deprecated for market-driven shipping. Shipping configuration is moving from legacy delivery profiles to Markets. The GraphQL Admin API will support market-driven shipping configuration starting in API version 2026-07.",
-    "developer_impact": "Developers should update their integrations to use market-driven shipping configuration. They should use the new Market-driven shipping Admin API to configure shipping directly on a market. This change affects apps that use the GraphQL Admin API and merchant-owned shipping configuration. Developers should review their code and update it to use the new API. They should also test their integrations to ensure they work correctly with market-driven shipping.",
-    "merchant_impact": "Merchants will be able to configure shipping directly on a market, which will help apps support different shipping scenarios. This change will provide more flexibility and control over shipping configuration.",
-    "why_it_matters": "This change is important because it provides more flexibility and control over shipping configuration. It also aligns with Shopify's move towards market-driven shipping, which will provide more accurate and efficient shipping options.",
+    "deadline": "2026-10",
+    "headline": "Customer API Update",
+    "what_changed": "The Customer Account API version 2026-10 removes the deprecated Customer.lastIncompleteCheckout field and the associated Checkout type subtree. This change affects apps using the Customer Account API to manage customer checkouts. The removal of this field is part of Shopify's efforts to simplify and streamline its APIs.",
+    "developer_impact": "Developers should review their code to ensure they are not relying on the removed field or subtree. They should update their apps to use alternative fields or APIs to manage customer checkouts. For example, they can use the Checkout API to retrieve checkout information. Additionally, developers should test their apps to ensure they are compatible with the updated API version. This change may require updates to existing code, so developers should plan accordingly to avoid disruptions to their apps.",
+    "merchant_impact": "Merchants may notice changes in how customer checkouts are managed, but the overall impact should be minimal. Merchants should ensure their apps are updated to the latest version to take advantage of the simplified API.",
+    "why_it_matters": "This change is important because it simplifies the Customer Account API and reduces the complexity of managing customer checkouts. It also ensures that developers are using the most up-to-date and efficient APIs to build their apps.",
     "code_lang": "GraphQL",
-    "code_example": "mutation {\n  marketCreate(\n    input: {\n      name: \"My Market\"\n      shippingAddress: {\n        address1: \"123 Main St\"\n        city: \"Anytown\"\n        country: \"US\"\n        zip: \"12345\"\n      }\n    }\n  ) {\n    market {\n      id\n    }\n  }\n}",
+    "code_example": "query {\n         customer {\n           lastIncompleteCheckout {\n             # This field is removed in API version 2026-10\n           }\n         }\n       }",
     "hashtags": [
-      "market-driven-shipping",
+      "customer-api",
       "graphql-admin-api",
-      "shipping-configuration"
+      "api-update"
     ],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/merchant-owned-delivery-profile-apis-are-deprecated-for-market-driven-shipping",
+    "link": "https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed",
     "also_worth_knowing": [
       {
         "text": "4.4.0",
@@ -31,8 +31,8 @@
         "link": "https://shopify.dev/changelog/updated-app-store-requirements-13-always-use-honest-and-transparent-review-practices"
       },
       {
-        "text": "Customer Account API Customer.lastIncompleteCheckout and Checkout types removed in 2026-10",
-        "link": "https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed"
+        "text": "Markets APIs now support MarketRegionSubdivision",
+        "link": "https://shopify.dev/changelog/markets-apis-now-support-marketregionsubdivision"
       }
     ]
   },
@@ -40,44 +40,44 @@
     {
       "type": "Improvement",
       "source": "CLI",
-      "date": "10h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "4.4.0",
-      "summary": "The CLI has been updated to version 4.4.0, which includes fixes and improvements such as validating GCS bundle upload status and fixing long URL wrapping in banner/alert footnotes.",
+      "summary": "The CLI has been updated to version 4.4.0 with improvements to app updates and bug fixes.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "cli-update",
         "bug-fixes",
-        "developer-tools"
+        "app-improvements"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.4.0"
     },
     {
       "type": "New",
       "source": "Changelog",
-      "date": "10h",
-      "relevance": "High",
+      "date": "17h",
+      "relevance": "Low",
       "title": "Updated App Store Requirements: 1.3 Always Use Honest and Transparent Review Practices",
-      "summary": "Shopify has updated its App Store requirements to include honest and transparent review practices, which applies to all apps published on the Shopify App Store.",
+      "summary": "The Shopify App Store requirements policy 1.3 has been updated to clarify honest and transparent review practices.",
       "impact": "Affects both developers and merchants",
-      "action_needed": true,
+      "action_needed": false,
       "deadline": "",
       "hashtags": [
         "app-store",
         "review-practices",
-        "shopify-policy"
+        "policy-update"
       ],
       "link": "https://shopify.dev/changelog/updated-app-store-requirements-13-always-use-honest-and-transparent-review-practices"
     },
     {
       "type": "Deprecation",
       "source": "Changelog",
-      "date": "11h",
+      "date": "17h",
       "relevance": "For you",
       "title": "Customer Account API Customer.lastIncompleteCheckout and Checkout types removed in 2026-10",
-      "summary": "The Customer.lastIncompleteCheckout field and Checkout types have been removed from the Customer Account API as of version 2026-10.",
+      "summary": "The Customer.lastIncompleteCheckout field has been removed from the Customer Account API as of version 2026-10.",
       "impact": "Mainly affects developers",
       "action_needed": true,
       "deadline": "2026-10",
@@ -94,24 +94,24 @@
       "date": "3d",
       "relevance": "For you",
       "title": "Markets APIs now support MarketRegionSubdivision",
-      "summary": "The Markets APIs now support MarketRegionSubdivision, allowing for more granular market configurations.",
+      "summary": "The Markets APIs now support MarketRegionSubdivision, allowing for sub-region markets in the Admin GraphQL API 2026-07.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "markets-api",
-        "market-region",
-        "subdivision"
+        "sub-region-markets",
+        "graphql-admin-api"
       ],
       "link": "https://shopify.dev/changelog/markets-apis-now-support-marketregionsubdivision"
     },
     {
-      "type": "Improvement",
+      "type": "New",
       "source": "Changelog",
       "date": "3d",
       "relevance": "For you",
       "title": "OrderDisplayFulfillmentStatus now returns FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill",
-      "summary": "The OrderDisplayFulfillmentStatus enum now returns FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill, as of API version 2026-10.",
+      "summary": "The OrderDisplayFulfillmentStatus enum now returns FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill as of API version 2026-10.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -128,7 +128,7 @@
       "date": "5d",
       "relevance": "Medium",
       "title": "Shop Minis May June 2026 update",
-      "summary": "The Shop Minis update includes new features such as product variant intents and typed hooks for selecting variants and adding to cart.",
+      "summary": "The Shop Minis May June 2026 update includes new features such as product variant intents and typed hooks for selecting variants.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -143,16 +143,16 @@
       "type": "New",
       "source": "Changelog",
       "date": "5d",
-      "relevance": "High",
+      "relevance": "Low",
       "title": "Market-driven shipping now available in feature preview",
-      "summary": "Market-driven shipping is now available in feature preview, allowing merchants to configure shipping options directly in Markets.",
+      "summary": "Market-driven shipping is now available in feature preview, allowing merchants to attach shipping options directly to each market.",
       "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "market-driven",
-        "shipping",
-        "feature-preview"
+        "market-driven-shipping",
+        "feature-preview",
+        "shipping-options"
       ],
       "link": "https://shopify.dev/changelog/market-driven-shipping-now-available-in-feature-preview"
     },
@@ -162,13 +162,13 @@
       "date": "5d",
       "relevance": "For you",
       "title": "@shopify/mini-oxygen@4.2.0",
-      "summary": "The @shopify/mini-oxygen package has been updated to version 4.2.0, making the Oxygen Vite plugin self-sufficient and inferring compatibility dates.",
+      "summary": "The @shopify/mini-oxygen package has been updated to version 4.2.0 with minor changes to make the Oxygen Vite plugin self-sufficient.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "hydrogen",
-        "oxygen",
+        "mini-oxygen",
         "vite-plugin"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fmini-oxygen%404.2.0"
@@ -179,14 +179,14 @@
       "date": "5d",
       "relevance": "For you",
       "title": "@shopify/cli-hydrogen@13.0.0",
-      "summary": "The @shopify/cli-hydrogen package has been updated to version 13.0.0, adding deploy flags and environment variables for configuring Oxygen's client assets directory and worker directory.",
+      "summary": "The @shopify/cli-hydrogen package has been updated to version 13.0.0 with patch changes to add deploy flags and environment variables.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "hydrogen",
-        "cli",
-        "oxygen-config"
+        "cli-hydrogen",
+        "deploy-flags"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.0"
     },
@@ -196,7 +196,7 @@
       "date": "5d",
       "relevance": "For you",
       "title": "Draft order deposit fields are now available in the GraphQL Admin API and Customer Account API",
-      "summary": "Draft order deposit fields are now available in the GraphQL Admin API and Customer Account API, as of API version 2026-07.",
+      "summary": "Draft order deposit fields are now available in the GraphQL Admin API and Customer Account API as of the 2026-07 API version.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -213,7 +213,7 @@
       "date": "5d",
       "relevance": "For you",
       "title": "Deprecation of cumulative marketing engagements",
-      "summary": "The isCumulative argument to the marketingEngagementCreate mutation is being deprecated, defaulting to false, and should be updated to send non-cumulative engagements.",
+      "summary": "The isCumulative argument to the marketingEngagementCreate mutation is being deprecated, defaulting to false.",
       "impact": "Mainly affects developers",
       "action_needed": true,
       "deadline": "",
@@ -230,13 +230,13 @@
       "date": "5d",
       "relevance": "For you",
       "title": "New `lineItem` field on the `GiftCard` object",
-      "summary": "A new lineItem field has been added to the GiftCard object in the GraphQL Admin API, representing the LineItem from the order that initiated the gift card's creation.",
+      "summary": "The GiftCard object in the GraphQL Admin API now includes a lineItem field, representing the LineItem from the order that initiated the gift card's creation.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "giftcard",
-        "lineitem",
+        "gift-card",
+        "line-item",
         "graphql-admin-api"
       ],
       "link": "https://shopify.dev/changelog/new-lineitem-field-on-the-giftcard-graphql-object"
@@ -250,30 +250,30 @@
       {
         "n": "1",
         "title": "Market-driven shipping",
-        "detail": "Market-driven shipping is now available in feature preview, allowing merchants to configure shipping options directly on each market. The GraphQL Admin API supports market-driven shipping configuration as of API version 2026-07. Merchant-owned delivery profile APIs are deprecated for market-driven shipping."
+        "detail": "Market-driven shipping is now available in feature preview, allowing merchants to configure shipping directly on a market. The GraphQL Admin API supports market-driven shipping configuration as of API version 2026-07. Merchant-owned delivery profile APIs are deprecated for market-driven shipping."
       },
       {
         "n": "2",
         "title": "GraphQL Admin API updates",
-        "detail": "The GraphQL Admin API has several updates, including the removal of the deprecated Customer.lastIncompleteCheckout field, the addition of draft order deposit fields, and the introduction of a new lineItem field on the GiftCard object. The API also exposes a new legalEntityId field on the BusinessEntity type."
+        "detail": "The GraphQL Admin API has several updates, including the removal of the deprecated Customer.lastIncompleteCheckout field, the addition of draft order deposit fields, and the introduction of a new lineItem field on the GiftCard object. The API also now returns FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill."
       },
       {
         "n": "3",
         "title": "Hydrogen and deployment updates",
-        "detail": "Hydrogen now deploys to Vercel, and the @shopify/mini-oxygen package has been updated to version 4.2.0. The @shopify/cli-hydrogen package has been updated to version 13.0.0, adding deploy flags and environment variables for configuring Oxygen's client assets directory and worker directory."
+        "detail": "Hydrogen now deploys to Vercel, and the @shopify/mini-oxygen and @shopify/cli-hydrogen packages have been updated. The Oxygen Vite plugin is now self-sufficient, and deploy flags and environment variables have been added for configuring Oxygen's client assets directory and worker directory."
       }
     ],
     "actions": [
       {
-        "text": "Update apps to use non-cumulative marketing engagements",
+        "text": "Update apps to use market-driven shipping configuration",
         "deadline": "2026-10"
       },
       {
-        "text": "Migrate to market-driven shipping configuration",
-        "deadline": ""
+        "text": "Migrate to GraphQL Admin API version 2026-07",
+        "deadline": "2026-10"
       },
       {
-        "text": "Update integrations to use the new discountApplications field on DraftOrder",
+        "text": "Test Hydrogen deployment to Vercel",
         "deadline": ""
       }
     ],
