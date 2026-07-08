@@ -1,27 +1,31 @@
 {
   "meta": {
-    "generatedAt": "2026-07-08T14:05:57Z",
+    "generatedAt": "2026-07-08T19:24:54Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": true,
-    "deadline": "2026-07",
-    "headline": "Deprecating useBuyerJourneyIntercept",
-    "what_changed": "The useBuyerJourneyIntercept hook on checkout UI extensions is deprecated as of version 2026-07. Existing extensions will continue to work, but new ones should not use this hook. The block_progress capability it depends on is also deprecated.",
-    "developer_impact": "Developers should stop using the useBuyerJourneyIntercept hook in new checkout UI extensions and update existing ones to avoid future breaking changes. They should explore alternative solutions for intercepting the buyer journey. The deprecation does not immediately break existing extensions, but it's essential to plan for the transition to ensure compatibility with future API versions.",
-    "merchant_impact": "Merchants may notice changes in how checkout UI extensions interact with the buyer journey, potentially affecting their shopping experience. However, the deprecation is designed to be gradual, allowing merchants to adapt without immediate disruption.",
-    "why_it_matters": "This deprecation matters because it reflects Shopify's evolving approach to checkout customization and the need for developers to adapt their extensions to ensure long-term compatibility and merchant satisfaction.",
-    "code_lang": "JavaScript",
-    "code_example": "mutation {\n  checkoutCreate(\n    input: {\n      lineItems: [{ variantId: \"abc\", quantity: 1 }]\n    }\n  ) {\n    checkout {\n      id\n    }\n  }\n}",
+    "deadline": "2026-10",
+    "headline": "Customer API Changes",
+    "what_changed": "The Customer Account API version 2026-10 removes the deprecated Customer.lastIncompleteCheckout field and the associated Checkout type subtree. This change affects apps using the Customer Account API to manage customer checkouts.",
+    "developer_impact": "Developers should update their apps to no longer rely on the removed fields. They can use alternative APIs, such as the Storefront API or the GraphQL Admin API, to manage customer checkouts. Additionally, developers should review their app's error handling to ensure it can handle the removal of these fields. The GraphQL Admin API and Customer Account API will return errors if these fields are queried after the deprecation.",
+    "merchant_impact": "Merchants may experience changes in how customer checkouts are managed, but this should not significantly impact their daily operations. Merchants should ensure their apps are updated to handle the removal of these fields.",
+    "why_it_matters": "This change is part of Shopify's effort to simplify and improve the Customer Account API, making it more efficient for developers to manage customer data. It also ensures that apps are using the most up-to-date and secure APIs.",
+    "code_lang": "GraphQL",
+    "code_example": "query { customer { lastIncompleteCheckout @deprecated } }",
     "hashtags": [
-      "shopify-deprecations",
-      "checkout-ui-extensions",
-      "graphql-admin-api"
+      "customer-api",
+      "graphql-admin-api",
+      "deprecation"
     ],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/deprecating-the-usebuyerjourneyintercept-api-on-checkout-ui-extensions",
+    "link": "https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed",
     "also_worth_knowing": [
+      {
+        "text": "POS UI extensions 2026-07 uses per-unit fixed-amount line item discounts",
+        "link": "https://shopify.dev/changelog/pos-ui-extensions-2026-07-uses-per-unit-fixed-amount-line-item-discounts"
+      },
       {
         "text": "Shopify Flow: Changes to Action extensions result in fewer breaking changes",
         "link": "https://shopify.dev/changelog/shopify-flow-changes-to-action-extensions-result-in-fewer-breaking-changes"
@@ -29,147 +33,160 @@
       {
         "text": "Shopify Flow: Action runtime URLs now update automatically",
         "link": "https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically"
-      },
-      {
-        "text": "4.4.0",
-        "link": "https://github.com/Shopify/cli/releases/tag/4.4.0"
       }
     ]
   },
   "updates": [
     {
+      "type": "New",
+      "source": "Changelog",
+      "date": "3h",
+      "relevance": "Low",
+      "title": "POS UI extensions 2026-07 uses per-unit fixed-amount line item discounts",
+      "summary": "POS UI extensions now use per-unit fixed-amount line item discounts. This change affects the Cart API and how discounts are passed to setLineItemDiscount and bulkSetLineItemDiscounts.",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "2026-07",
+      "hashtags": [
+        "pos-ui",
+        "discounts",
+        "cart-api"
+      ],
+      "link": "https://shopify.dev/changelog/pos-ui-extensions-2026-07-uses-per-unit-fixed-amount-line-item-discounts"
+    },
+    {
       "type": "Improvement",
       "source": "Changelog",
-      "date": "22h",
-      "relevance": "High",
+      "date": "1d",
+      "relevance": "Medium",
       "title": "Shopify Flow: Changes to Action extensions result in fewer breaking changes",
-      "summary": "Shopify Flow now allows server-side code to handle breaking changes to action configurations, reducing validation failures. This change gives developers more control over workflow execution.",
+      "summary": "Shopify Flow now allows for more control over breaking changes to action extensions, reducing the likelihood of validation failures due to field mismatches.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "shopify-flow",
         "action-extensions",
-        "server-side-code"
+        "validation"
       ],
       "link": "https://shopify.dev/changelog/shopify-flow-changes-to-action-extensions-result-in-fewer-breaking-changes"
     },
     {
       "type": "Improvement",
       "source": "Changelog",
-      "date": "22h",
-      "relevance": "High",
+      "date": "1d",
+      "relevance": "Medium",
       "title": "Shopify Flow: Action runtime URLs now update automatically",
-      "summary": "Shopify Flow now automatically updates action runtime URLs, ensuring that workflows use the latest URL after app redeployment. This change streamlines workflow execution and reduces potential errors.",
+      "summary": "Shopify Flow now automatically updates action runtime URLs on every execution, ensuring that existing workflows use the latest URL after an app is redeployed.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "shopify-flow",
-        "action-runtime-urls",
-        "automatic-updates"
+        "action-runtime",
+        "url-update"
       ],
       "link": "https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically"
     },
     {
       "type": "Release",
       "source": "CLI",
-      "date": "1d",
-      "relevance": "Medium",
+      "date": "2d",
+      "relevance": "Low",
       "title": "4.4.0",
-      "summary": "The Shopify CLI has been updated to version 4.4.0, which includes changes to app updates, GCS bundle upload validation, and fixes for long URL wrapping in banners and alerts.",
+      "summary": "CLI version 4.4.0 has been released with updates to Javy related dependencies, GCS bundle upload status validation, and a fix for long URL wrapping in banner/alert footnotes.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "shopify-cli",
-        "app-updates",
-        "gcs-bundle-upload"
+        "cli",
+        "release",
+        "update"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.4.0"
     },
     {
       "type": "New",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Low",
       "title": "Updated App Store Requirements: 1.3 Always Use Honest and Transparent Review Practices",
-      "summary": "The Shopify App Store requirements policy 1.3 has been updated to clarify the use of honest and transparent review practices for all published apps. This change aims to promote fair and trustworthy reviews.",
+      "summary": "The Shopify App Store requirements policy 1.3 has been updated to clarify the use of honest and transparent review practices for all apps published to the App Store.",
       "impact": "Affects both developers and merchants",
-      "action_needed": true,
+      "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "app-store-requirements",
-        "honest-reviews",
-        "transparent-practices"
+        "app-store",
+        "review-practices",
+        "policy"
       ],
       "link": "https://shopify.dev/changelog/updated-app-store-requirements-13-always-use-honest-and-transparent-review-practices"
     },
     {
       "type": "Deprecation",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "For you",
       "title": "Customer Account API Customer.lastIncompleteCheckout and Checkout types removed in 2026-10",
-      "summary": "The Customer.lastIncompleteCheckout field and related Checkout types have been removed from the Customer Account API as of version 2026-10. Developers should update their code to reflect this change.",
+      "summary": "The Customer.lastIncompleteCheckout field and the Customer Account API Checkout type subtree have been removed in Customer Account API version 2026-10.",
       "impact": "Mainly affects developers",
       "action_needed": true,
       "deadline": "2026-10",
       "hashtags": [
-        "customer-account-api",
-        "deprecated-fields",
-        "checkout-types"
+        "customer-account",
+        "deprecation",
+        "graphql-api"
       ],
       "link": "https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed"
     },
     {
       "type": "New",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "For you",
       "title": "Markets APIs now support MarketRegionSubdivision",
-      "summary": "The Markets APIs now support MarketRegionSubdivision, allowing for more precise region configuration. This change is available in Admin GraphQL API version 2026-07.",
+      "summary": "The Markets APIs now support MarketRegionSubdivision, allowing for sub-region markets to be configured with country-subdivision regions.",
       "impact": "Mainly affects developers",
       "action_needed": false,
-      "deadline": "",
+      "deadline": "2026-07",
       "hashtags": [
-        "markets-apis",
-        "market-region-subdivision",
-        "admin-graphql-api"
+        "markets-api",
+        "sub-region",
+        "graphql-api"
       ],
       "link": "https://shopify.dev/changelog/markets-apis-now-support-marketregionsubdivision"
     },
     {
       "type": "New",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "For you",
       "title": "OrderDisplayFulfillmentStatus now returns FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill",
-      "summary": "The OrderDisplayFulfillmentStatus enum now returns FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill, starting from API version 2026-10. This change provides more accurate fulfillment status information.",
+      "summary": "The OrderDisplayFulfillmentStatus enum now returns a new value, FULFILLMENT_NOT_REQUIRED, for orders with no items to fulfill.",
       "impact": "Mainly affects developers",
       "action_needed": false,
-      "deadline": "",
+      "deadline": "2026-10",
       "hashtags": [
-        "order-display-fulfillment-status",
-        "fulfillment-not-required",
-        "api-version-2026-10"
+        "order-fulfillment",
+        "graphql-api",
+        "enum-update"
       ],
       "link": "https://shopify.dev/changelog/orderdisplayfulfillmentstatus-now-returns-fulfillmentnotrequired"
     },
     {
       "type": "Deprecation",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "For you",
       "title": "Deprecating the useBuyerJourneyIntercept API on checkout UI extensions",
-      "summary": "The useBuyerJourneyIntercept API on checkout UI extensions is being deprecated, starting from version 2026-07. Existing extensions will continue to work, but developers should plan to update their code.",
+      "summary": "The useBuyerJourneyIntercept API on checkout UI extensions is deprecated, starting in version 2026-07, and will be removed in a future version.",
       "impact": "Mainly affects developers",
       "action_needed": true,
       "deadline": "2026-07",
       "hashtags": [
-        "checkout-ui-extensions",
-        "usebuyerjourneyintercept",
-        "deprecation"
+        "checkout-ui",
+        "deprecation",
+        "api-update"
       ],
       "link": "https://shopify.dev/changelog/deprecating-the-usebuyerjourneyintercept-api-on-checkout-ui-extensions"
     },
@@ -179,109 +196,92 @@
       "date": "6d",
       "relevance": "Medium",
       "title": "Shop Minis May June 2026 update",
-      "summary": "The Shop Minis May June 2026 update introduces new features, including typed product variant intent hooks for selecting variants and adding them to cart. This change is available in the React SDK.",
+      "summary": "The Shop Minis update includes new features such as product variant intents, which provide typed hooks for selecting variants and adding them to cart.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "shop-minis",
-        "react-sdk",
-        "product-variant-intents"
+        "product-variants",
+        "react-sdk"
       ],
       "link": "https://shopify.dev/changelog/shop-minis-may-june-2026-update"
     },
     {
       "type": "New",
       "source": "Changelog",
-      "date": "6d",
-      "relevance": "Low",
+      "date": "7d",
+      "relevance": "Medium",
       "title": "Market-driven shipping now available in feature preview",
       "summary": "Market-driven shipping is now available in feature preview, allowing merchants to attach shipping options directly to each market and vary rates by product and location.",
       "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "market-driven-shipping",
-        "feature-preview",
-        "shipping-configuration"
+        "market-driven",
+        "shipping",
+        "feature-preview"
       ],
       "link": "https://shopify.dev/changelog/market-driven-shipping-now-available-in-feature-preview"
     },
     {
       "type": "Release",
       "source": "Hydrogen",
-      "date": "6d",
+      "date": "7d",
       "relevance": "For you",
       "title": "@shopify/mini-oxygen@4.2.0",
-      "summary": "The @shopify/mini-oxygen package has been updated to version 4.2.0, making the Oxygen Vite plugin self-sufficient and inferring compatibility dates from the resolved Hydrogen package.",
+      "summary": "@shopify/mini-oxygen version 4.2.0 has been released with minor changes, including making the Oxygen Vite plugin self-sufficient and improving worker-specific resolve configuration.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
+        "hydrogen",
         "mini-oxygen",
-        "oxygen-vite-plugin",
-        "hydrogen-package"
+        "release"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fmini-oxygen%404.2.0"
-    },
-    {
-      "type": "Release",
-      "source": "Hydrogen",
-      "date": "6d",
-      "relevance": "For you",
-      "title": "@shopify/cli-hydrogen@13.0.0",
-      "summary": "The @shopify/cli-hydrogen package has been updated to version 13.0.0, adding deploy flags and environment variables for configuring Oxygen's client assets directory and worker directory.",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [
-        "cli-hydrogen",
-        "oxygen-configuration",
-        "deploy-flags"
-      ],
-      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.0"
     }
   ],
   "recap": {
     "dateRange": "Jul 01 – Jul 08",
-    "basis": "Based on 18 updates this week",
-    "headline": "Shopify updates GraphQL Admin API, deprecates APIs, and improves Shopify Flow",
+    "basis": "Based on 10 updates this week",
+    "headline": "Shopify updates impact GraphQL Admin API, Hydrogen, and Checkout UI extensions",
     "themes": [
       {
         "n": "1",
         "title": "API Updates",
-        "detail": "The GraphQL Admin API has been updated with new fields, such as lineItem on the GiftCard object, and legalEntityId on the BusinessEntity type. Additionally, the Customer Account API has been updated with draft order deposit fields and discount application information. The useBuyerJourneyIntercept API on checkout UI extensions has been deprecated."
+        "detail": "The GraphQL Admin API 2026-07 now supports MarketRegionSubdivision and OrderDisplayFulfillmentStatus returns FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill. Additionally, the Customer Account API removes the deprecated Customer.lastIncompleteCheckout field in version 2026-10."
       },
       {
         "n": "2",
-        "title": "Shopify Flow Improvements",
-        "detail": "Shopify Flow now resolves an action's runtime_url on every execution, and changes to Action extensions result in fewer breaking changes. This gives server-side code more control over how breaking changes to an action's configuration fields are handled."
+        "title": "Checkout and UI Extensions",
+        "detail": "The useBuyerJourneyIntercept API on checkout UI extensions is deprecated starting in version 2026-07. POS UI extensions API version 2026-07 uses per-unit fixed-amount line item discounts. The Shop Minis update includes new features like product variant intents."
       },
       {
         "n": "3",
-        "title": "Deprecations and Removals",
-        "detail": "The Customer.lastIncompleteCheckout field and Checkout types have been removed in the Customer Account API version 2026-10. The discountedUnitPrice field on the DraftOrderLineItem object has been deprecated in favor of approximateDiscountedUnitPrice. The isCumulative argument to the marketingEngagementCreate mutation has been deprecated."
+        "title": "Shopify Flow and App Updates",
+        "detail": "Shopify Flow now resolves an action’s runtime_url on every execution and handles breaking changes to an action’s configuration fields more gracefully. The CLI version 4.4.0 includes updates to Javy related dependencies and GCS bundle upload validation."
       }
     ],
     "actions": [
       {
-        "text": "Update server-side code to handle breaking changes to Action extensions",
-        "deadline": ""
-      },
-      {
-        "text": "Migrate to approximateDiscountedUnitPrice field",
-        "deadline": ""
-      },
-      {
-        "text": "Remove use of deprecated useBuyerJourneyIntercept API",
+        "text": "Update GraphQL Admin API to version 2026-07 to support MarketRegionSubdivision",
         "deadline": "2026-07"
+      },
+      {
+        "text": "Migrate checkout UI extensions to use the new product variant intent hooks",
+        "deadline": "2026-07"
+      },
+      {
+        "text": "Review and update app to comply with the updated App Store Requirements policy 1.3",
+        "deadline": ""
       }
     ],
     "hashtags": [
-      "shopify-api-updates",
+      "shopify-developer",
       "graphql-admin-api",
-      "shopify-flow",
-      "deprecations"
+      "hydrogen",
+      "checkout-ui-extensions"
     ]
   }
 }
