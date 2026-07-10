@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-10T03:18:04Z",
+    "generatedAt": "2026-07-10T09:34:45Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -8,16 +8,16 @@
     "action_needed": true,
     "deadline": "2026-07",
     "headline": "Deprecating useBuyerJourneyIntercept",
-    "what_changed": "The useBuyerJourneyIntercept hook on checkout UI extensions is deprecated starting in version 2026-07. The block_progress capability it depends on is also deprecated. Existing extensions will continue to work on older versions but should be updated to ensure future compatibility.",
-    "developer_impact": "Developers should review their checkout UI extensions and update them to remove the useBuyerJourneyIntercept hook and block_progress capability. They should explore alternative approaches to achieve the desired functionality, such as using other hooks or capabilities provided by the Checkout UI extensions API. This change affects the development of new extensions and the maintenance of existing ones, ensuring they remain compatible with future versions of the API.",
-    "merchant_impact": "Merchants may experience issues with checkout UI extensions that have not been updated to remove the deprecated hook and capability, potentially affecting their sales and customer experience.",
-    "why_it_matters": "This deprecation is important because it ensures that developers are using the most up-to-date and supported APIs, which helps maintain the security, stability, and performance of Shopify's ecosystem.",
+    "what_changed": "The useBuyerJourneyIntercept hook on checkout UI extensions is deprecated starting in version 2026-07. The block_progress capability it depends on is also deprecated. Existing extensions will continue to work, but new ones should not use this hook.",
+    "developer_impact": "Developers should stop using the useBuyerJourneyIntercept hook in new checkout UI extensions and update existing ones to avoid using the deprecated hook. They should also be aware that the block_progress capability is deprecated. The deprecation does not affect the functionality of existing extensions immediately, but it's essential to update them to ensure future compatibility. Developers can use alternative approaches to achieve similar functionality, such as using other hooks or capabilities provided by the Checkout UI extensions API.",
+    "merchant_impact": "Merchants will not be directly affected by this deprecation, as it primarily concerns the development of checkout UI extensions. However, they may benefit from updated extensions that use newer, more efficient, and better-supported APIs.",
+    "why_it_matters": "This deprecation is crucial because it encourages developers to adopt more modern and supported APIs, ensuring their extensions remain compatible with future versions of the Shopify platform. It also reflects Shopify's efforts to refine and improve its APIs, making development more efficient and effective.",
     "code_lang": "JavaScript",
-    "code_example": "Remove useBuyerJourneyIntercept from your extension:\nconst { Extend } = require('@shopify/checkout-ui-extensions');\n\nconst extension = {\n  // Remove this line\n  // useBuyerJourneyIntercept: true,\n}",
+    "code_example": "import { useCheckout } from '@shopify/checkout-ui-extensions-react';\nconst MyExtension = () => {\n  const { checkout } = useCheckout();\n  // Avoid using useBuyerJourneyIntercept hook here\n};",
     "hashtags": [
-      "shopify-checkout-ui",
-      "deprecation-notice",
-      "api-update"
+      "shopify-deprecations",
+      "checkout-ui-extensions",
+      "graphql-admin-api"
     ],
     "source": "Changelog",
     "link": "https://shopify.dev/changelog/deprecating-the-usebuyerjourneyintercept-api-on-checkout-ui-extensions",
@@ -40,10 +40,10 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "8h",
-      "relevance": "Medium",
+      "date": "14h",
+      "relevance": "High",
       "title": "POS Extensions now supports a background extension target",
-      "summary": "POS Extensions now supports a background extension target, allowing extensions to observe POS events and run background logic without rendering any UI surface.",
+      "summary": "POS Extensions now support a background extension target, allowing extensions to observe POS events and run background logic without rendering any UI surface.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -57,16 +57,16 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "10h",
-      "relevance": "Low",
+      "date": "16h",
+      "relevance": "Medium",
       "title": "Identity verification for Shopify Partners starts today",
       "summary": "Identity verification for Shopify Partners has started, aiming to increase trust in the Shopify Partner ecosystem.",
       "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "identity-verification",
         "shopify-partners",
+        "identity-verification",
         "trust"
       ],
       "link": "https://shopify.dev/changelog/identity-verification-for-partners"
@@ -74,10 +74,10 @@
     {
       "type": "Improvement",
       "source": "Changelog",
-      "date": "11h",
-      "relevance": "Medium",
+      "date": "17h",
+      "relevance": "High",
       "title": "App Pricing: more plans, no-charge plan testing, and negative and fractional App Events",
-      "summary": "App Pricing has been updated with increased plan limits, no-charge plan testing, and support for negative and fractional App Events.",
+      "summary": "App Pricing has been updated with more plans, no-charge plan testing, and support for negative and fractional App Events.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -111,7 +111,7 @@
       "date": "2d",
       "relevance": "Medium",
       "title": "Shopify Flow: Changes to Action extensions result in fewer breaking changes",
-      "summary": "Shopify Flow now allows for more control over breaking changes to Action extensions, reducing the likelihood of validation failures.",
+      "summary": "Shopify Flow now handles breaking changes to Action extensions more gracefully, reducing the likelihood of validation failures.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -135,7 +135,7 @@
       "hashtags": [
         "shopify-flow",
         "action-runtime",
-        "automation"
+        "automatic-updates"
       ],
       "link": "https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically"
     },
@@ -160,7 +160,7 @@
       "type": "New",
       "source": "Changelog",
       "date": "3d",
-      "relevance": "Low",
+      "relevance": "Medium",
       "title": "Updated App Store Requirements: 1.3 Always Use Honest and Transparent Review Practices",
       "summary": "The Shopify App Store requirements policy 1.3 has been updated to clarify honest and transparent review practices.",
       "impact": "Affects both developers and merchants",
@@ -168,8 +168,8 @@
       "deadline": "",
       "hashtags": [
         "app-store-requirements",
-        "review-practices",
-        "policy-update"
+        "honest-reviews",
+        "transparency"
       ],
       "link": "https://shopify.dev/changelog/updated-app-store-requirements-13-always-use-honest-and-transparent-review-practices"
     },
@@ -177,9 +177,9 @@
       "type": "Deprecation",
       "source": "Changelog",
       "date": "3d",
-      "relevance": "For you",
+      "relevance": "High",
       "title": "Customer Account API Customer.lastIncompleteCheckout and Checkout types removed in 2026-10",
-      "summary": "The Customer.lastIncompleteCheckout field and related Checkout types will be removed in Customer Account API version 2026-10.",
+      "summary": "The Customer.lastIncompleteCheckout field and Checkout type subtree have been removed in Customer Account API version 2026-10.",
       "impact": "Mainly affects developers",
       "action_needed": true,
       "deadline": "2026-10",
@@ -194,16 +194,16 @@
       "type": "New",
       "source": "Changelog",
       "date": "6d",
-      "relevance": "Medium",
+      "relevance": "High",
       "title": "Markets APIs now support MarketRegionSubdivision",
-      "summary": "Markets APIs now support MarketRegionSubdivision, allowing for more precise region targeting.",
+      "summary": "Markets APIs now support MarketRegionSubdivision, allowing for more granular market configurations.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "markets-apis",
-        "region-subdivision",
-        "targeting"
+        "market-region",
+        "subdivision"
       ],
       "link": "https://shopify.dev/changelog/markets-apis-now-support-marketregionsubdivision"
     },
@@ -211,7 +211,7 @@
       "type": "New",
       "source": "Changelog",
       "date": "6d",
-      "relevance": "For you",
+      "relevance": "High",
       "title": "OrderDisplayFulfillmentStatus now returns FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill",
       "summary": "The OrderDisplayFulfillmentStatus enum now returns FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill.",
       "impact": "Mainly affects developers",
@@ -219,8 +219,8 @@
       "deadline": "",
       "hashtags": [
         "order-fulfillment",
-        "enum-update",
-        "fulfillment-status"
+        "fulfillment-status",
+        "new-value"
       ],
       "link": "https://shopify.dev/changelog/orderdisplayfulfillmentstatus-now-returns-fulfillmentnotrequired"
     },
@@ -230,7 +230,7 @@
       "date": "7d",
       "relevance": "For you",
       "title": "Deprecating the useBuyerJourneyIntercept API on checkout UI extensions",
-      "summary": "The useBuyerJourneyIntercept API on checkout UI extensions is deprecated as of version 2026-07.",
+      "summary": "The useBuyerJourneyIntercept API on checkout UI extensions is deprecated, starting in version 2026-07.",
       "impact": "Mainly affects developers",
       "action_needed": true,
       "deadline": "2026-07",
@@ -254,26 +254,30 @@
       },
       {
         "n": "2",
-        "title": "App Pricing and Development",
-        "detail": "App Pricing has been updated with increased plan limits, no-charge plan testing, and support for negative and fractional App Events. Additionally, Shopify Flow has been improved with fewer breaking changes and automatic updates to Action runtime URLs."
+        "title": "App Pricing and Shopify Flow",
+        "detail": "App Pricing has been updated with increased plan limits, no-charge plan testing, and support for negative and fractional App Events. Shopify Flow has also been updated with changes to Action extensions, resulting in fewer breaking changes, and automatic updates to Action runtime URLs."
       },
       {
         "n": "3",
         "title": "API Updates and Deprecations",
-        "detail": "The Customer Account API has removed the deprecated Customer.lastIncompleteCheckout field and Checkout types, and the Markets APIs now support MarketRegionSubdivision. The OrderDisplayFulfillmentStatus enum also returns a new value: FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill."
+        "detail": "The Customer Account API has removed the deprecated Customer.lastIncompleteCheckout field and Checkout type subtree as of version 2026-10. The Markets APIs now support MarketRegionSubdivision, and the OrderDisplayFulfillmentStatus enum returns a new value, FULFILLMENT_NOT_REQUIRED, for orders with no items to fulfill."
       }
     ],
     "actions": [
       {
-        "text": "Update POS UI extensions to use per-unit fixed-amount line item discounts",
+        "text": "Update POS Extensions to use the new background extension target",
         "deadline": "2026-07"
       },
       {
-        "text": "Review and update apps to comply with updated App Store Requirements",
+        "text": "Review and update App Pricing plans to take advantage of new features",
         "deadline": ""
       },
       {
-        "text": "Migrate to Admin GraphQL API 2026-07 to support MarketRegionSubdivision",
+        "text": "Update code to handle changes to Action extensions in Shopify Flow",
+        "deadline": ""
+      },
+      {
+        "text": "Migrate to Admin GraphQL API version 2026-07 to use MarketRegionSubdivision",
         "deadline": "2026-07"
       }
     ],
