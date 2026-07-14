@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-13T19:22:57Z",
+    "generatedAt": "2026-07-14T02:28:11Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -8,16 +8,16 @@
     "action_needed": true,
     "deadline": "2026-07",
     "headline": "Deprecating useBuyerJourneyIntercept",
-    "what_changed": "The useBuyerJourneyIntercept API on checkout UI extensions is deprecated starting in version 2026-07. The block_progress capability it depends on is also deprecated. Existing extensions will continue to work on older versions but should be updated to ensure compatibility with future versions.",
-    "developer_impact": "Developers should review their checkout UI extensions and update them to remove the useBuyerJourneyIntercept hook and block_progress capability. They should also test their extensions with the latest API version to ensure compatibility. The deprecation of this API may require significant changes to the extension's logic and functionality. Developers can use the Checkout UI extensions API documentation to find alternative solutions.",
-    "merchant_impact": "Merchants may experience issues with checkout UI extensions that have not been updated to remove the deprecated API. They should encourage their developers to update the extensions as soon as possible to avoid any disruptions to their store's functionality.",
-    "why_it_matters": "The deprecation of the useBuyerJourneyIntercept API is important because it affects the functionality of checkout UI extensions, which are critical to the user experience and conversion rates of Shopify stores. Developers must update their extensions to ensure compatibility with future API versions.",
+    "what_changed": "The useBuyerJourneyIntercept hook on checkout UI extensions and the block_progress capability are deprecated starting in version 2026-07. Existing extensions will continue to work, but new extensions should not use this hook. The deprecation is part of the checkout UI extensions API version 2026-07.",
+    "developer_impact": "Developers should stop using the useBuyerJourneyIntercept hook in new checkout UI extensions and update existing extensions to use alternative methods. The block_progress capability will also be removed, so developers should review their code for any dependencies on this capability. The Checkout UI extensions API provides alternative methods for customizing the checkout experience, such as using the Checkout Extensibility API.",
+    "merchant_impact": "Merchants will not be directly affected by this deprecation, but they may notice changes in the behavior of checkout UI extensions as developers update their code to use alternative methods.",
+    "why_it_matters": "This deprecation is important because it affects the way developers customize the checkout experience for merchants, and it may require updates to existing extensions to ensure they continue to work as expected.",
     "code_lang": "JavaScript",
-    "code_example": "query { checkout { id } } mutation { checkoutComplete { checkout { id } } }",
+    "code_example": "import { CheckoutUIExtension } from '@shopify/checkout-ui-extensions';\nconst MyExtension = () => {\n  // Alternative method to useBuyerJourneyIntercept\n  const [checkout, setCheckout] = useState();\n  // ...",
     "hashtags": [
-      "shopify-api",
       "checkout-ui-extensions",
-      "deprecation"
+      "deprecation",
+      "shopify-api"
     ],
     "source": "Changelog",
     "link": "https://shopify.dev/changelog/deprecating-the-usebuyerjourneyintercept-api-on-checkout-ui-extensions",
@@ -40,7 +40,7 @@
     {
       "type": "Improvement",
       "source": "Hydrogen",
-      "date": "1h",
+      "date": "8h",
       "relevance": "For you",
       "title": "@shopify/cli-hydrogen@13.0.1",
       "summary": "Hydrogen CLI has been updated to read disabled command metadata and preserve actionable build errors during deployment.",
@@ -50,14 +50,14 @@
       "hashtags": [
         "hydrogen-update",
         "cli-improvement",
-        "developer-tools"
+        "error-handling"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.1"
     },
     {
       "type": "Improvement",
       "source": "Hydrogen",
-      "date": "1h",
+      "date": "8h",
       "relevance": "For you",
       "title": "@shopify/create-hydrogen@5.0.38",
       "summary": "Create Hydrogen now adds an explicit app alias to new projects, improving JavaScript project configuration.",
@@ -66,15 +66,15 @@
       "deadline": "",
       "hashtags": [
         "hydrogen-create",
-        "javascript-projects",
-        "vite-configuration"
+        "javascript-config",
+        "app-alias"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcreate-hydrogen%405.0.38"
     },
     {
       "type": "Improvement",
       "source": "Hydrogen",
-      "date": "1h",
+      "date": "8h",
       "relevance": "For you",
       "title": "skeleton@2026.4.5",
       "summary": "Hydrogen skeleton has been updated to include an explicit app alias in new projects, similar to create Hydrogen.",
@@ -84,24 +84,24 @@
       "hashtags": [
         "hydrogen-skeleton",
         "app-alias",
-        "javascript-configuration"
+        "javascript-config"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/skeleton%402026.4.5"
     },
     {
       "type": "Release",
       "source": "CLI",
-      "date": "7h",
-      "relevance": "For you",
+      "date": "14h",
+      "relevance": "High",
       "title": "4.5.0",
-      "summary": "Shopify CLI version 4.5.0 has been released, including changes to store commands and other improvements.",
+      "summary": "Shopify CLI version 4.5.0 has been released, unhiding store commands for public release.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "shopify-cli",
-        "release-notes",
-        "developer-tools"
+        "cli-release",
+        "store-commands",
+        "public-release"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.5.0"
     },
@@ -109,9 +109,9 @@
       "type": "New",
       "source": "Changelog",
       "date": "4d",
-      "relevance": "Low",
+      "relevance": "Medium",
       "title": "POS Extensions now supports a background extension target",
-      "summary": "POS Extensions now support a background extension target, allowing for event observation and background logic without rendering UI.",
+      "summary": "POS Extensions now support a background extension target, allowing extensions to observe POS events without rendering UI.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -126,16 +126,16 @@
       "type": "New",
       "source": "Changelog",
       "date": "4d",
-      "relevance": "Medium",
+      "relevance": "Low",
       "title": "Identity verification for Shopify Partners starts today",
-      "summary": "Identity verification for Shopify Partners has been introduced, aiming to increase trust within the ecosystem.",
+      "summary": "Identity verification for Shopify Partners has started, aiming to increase trust in the partner ecosystem.",
       "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "shopify-partners",
-        "identity-verification",
-        "trust-foundational"
+        "partner-verification",
+        "trust-foundational",
+        "shopify-partners"
       ],
       "link": "https://shopify.dev/changelog/identity-verification-for-partners"
     },
@@ -143,7 +143,7 @@
       "type": "Improvement",
       "source": "Changelog",
       "date": "4d",
-      "relevance": "High",
+      "relevance": "Medium",
       "title": "App Pricing: more plans, no-charge plan testing, and negative and fractional App Events",
       "summary": "App Pricing has been updated with more plans, no-charge plan testing, and support for negative and fractional App Events.",
       "impact": "Affects both developers and merchants",
@@ -152,7 +152,7 @@
       "hashtags": [
         "app-pricing",
         "plan-limits",
-        "app-events"
+        "no-charge-testing"
       ],
       "link": "https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events"
     },
@@ -160,7 +160,7 @@
       "type": "Breaking",
       "source": "Changelog",
       "date": "5d",
-      "relevance": "Low",
+      "relevance": "Medium",
       "title": "POS UI extensions 2026-07 uses per-unit fixed-amount line item discounts",
       "summary": "POS UI extensions API version 2026-07 now requires per-unit fixed-amount line item discounts.",
       "impact": "Mainly affects developers",
@@ -169,7 +169,7 @@
       "hashtags": [
         "pos-ui-extensions",
         "line-item-discounts",
-        "api-version"
+        "per-unit-discounts"
       ],
       "link": "https://shopify.dev/changelog/pos-ui-extensions-2026-07-uses-per-unit-fixed-amount-line-item-discounts"
     },
@@ -186,7 +186,7 @@
       "hashtags": [
         "shopify-flow",
         "action-extensions",
-        "validation-failures"
+        "breaking-changes"
       ],
       "link": "https://shopify.dev/changelog/shopify-flow-changes-to-action-extensions-result-in-fewer-breaking-changes"
     },
@@ -196,7 +196,7 @@
       "date": "6d",
       "relevance": "Medium",
       "title": "Shopify Flow: Action runtime URLs now update automatically",
-      "summary": "Shopify Flow now automatically updates Action runtime URLs on every execution, simplifying app redeployment.",
+      "summary": "Shopify Flow now automatically updates Action runtime URLs on every execution, reducing manual updates.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -211,16 +211,16 @@
       "type": "Release",
       "source": "CLI",
       "date": "7d",
-      "relevance": "For you",
+      "relevance": "High",
       "title": "4.4.0",
-      "summary": "Shopify CLI version 4.4.0 has been released, including updates to Javy dependencies and GCS bundle upload validation.",
+      "summary": "Shopify CLI version 4.4.0 has been released, updating Javy related dependencies and fixing long URL wrapping issues.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "shopify-cli",
-        "release-notes",
-        "developer-tools"
+        "cli-release",
+        "javy-update",
+        "url-wrapping-fix"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.4.0"
     },
@@ -228,9 +228,9 @@
       "type": "New",
       "source": "Changelog",
       "date": "7d",
-      "relevance": "High",
+      "relevance": "Low",
       "title": "Updated App Store Requirements: 1.3 Always Use Honest and Transparent Review Practices",
-      "summary": "Updated App Store Requirements emphasize honest and transparent review practices for all published apps.",
+      "summary": "App Store Requirements have been updated to emphasize honest and transparent review practices.",
       "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "",
@@ -243,7 +243,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Jul 06 – Jul 13",
+    "dateRange": "Jul 07 – Jul 14",
     "basis": "Based on 10 updates this week",
     "headline": "Hydrogen and Shopify ecosystem updates with new features and bug fixes",
     "themes": [
@@ -255,7 +255,7 @@
       {
         "n": "2",
         "title": "Shopify Ecosystem Updates",
-        "detail": "The Shopify ecosystem saw several updates, including the release of CLI 4.5.0, POS Extensions supporting background extension targets, and changes to App Pricing, POS UI extensions, and Shopify Flow, which aim to improve the overall developer experience and provide more flexibility and control."
+        "detail": "The Shopify ecosystem saw several updates, including the release of CLI 4.5.0, POS Extensions supporting background extension targets, and changes to App Pricing, POS UI extensions, and Shopify Flow, which aim to improve the developer experience and provide more flexibility."
       }
     ],
     "actions": [
@@ -266,18 +266,12 @@
       {
         "text": "Review and adapt to the changes in App Pricing, POS UI extensions, and Shopify Flow",
         "deadline": "Before July 2026"
-      },
-      {
-        "text": "Test and implement the new background extension target for POS Extensions",
-        "deadline": "Empty string"
       }
     ],
     "hashtags": [
       "shopify-developer",
       "hydrogen-updates",
-      "shopify-ecosystem",
-      "app-pricing-changes",
-      "pos-extensions"
+      "shopify-ecosystem"
     ]
   }
 }
