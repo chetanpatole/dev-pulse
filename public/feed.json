@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-15T19:10:20Z",
+    "generatedAt": "2026-07-16T02:34:17Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -8,16 +8,16 @@
     "action_needed": true,
     "deadline": "2026-10",
     "headline": "Customer API Changes",
-    "what_changed": "The Customer Account API has removed the deprecated Customer.lastIncompleteCheckout field and the related Checkout type subtree in version 2026-10. This change affects apps using the Customer Account API to retrieve customer checkout information.",
-    "developer_impact": "Developers should update their apps to no longer rely on the removed fields. Instead, use alternative fields or APIs to retrieve the necessary customer checkout information. This change may require updates to GraphQL queries, especially those using the Customer Account API. Developers should review their code and test their apps to ensure compatibility with the updated API.",
-    "merchant_impact": "Merchants may notice changes in how customer checkout information is displayed or used within their Shopify stores, depending on the apps they have installed.",
-    "why_it_matters": "This change helps maintain a clean and efficient API, removing deprecated fields that may cause issues or confusion for developers and merchants.",
+    "what_changed": "The Customer Account API has removed the deprecated Customer.lastIncompleteCheckout field and the related Checkout type subtree in version 2026-10. This change affects apps using the Customer Account API to manage customer checkouts.",
+    "developer_impact": "Developers should review their app's code to ensure it does not rely on the removed fields. They should update their API version to 2026-10 and modify their code to handle the removal of the Customer.lastIncompleteCheckout field. Additionally, developers should test their app to ensure it works as expected with the updated API. The GraphQL Admin API and Storefront API may be affected, so developers should review their API calls and update them accordingly.",
+    "merchant_impact": "Merchants may experience issues with apps that have not been updated to handle the removal of the Customer.lastIncompleteCheckout field. Merchants should contact the app developer if they experience any issues.",
+    "why_it_matters": "This change is important because it affects how apps manage customer checkouts and interact with the Customer Account API. Developers must update their apps to ensure they work correctly with the updated API.",
     "code_lang": "GraphQL",
-    "code_example": "query {\n         customer(id: \"customer-id\") {\n           lastIncompleteCheckout {\n             # This field is removed in 2026-10\n           }\n         }\n       }",
+    "code_example": "query {\n  customer(id: \"customer-id\") {\n    lastIncompleteCheckout @deprecated\n  }\n}",
     "hashtags": [
-      "shopify-api",
-      "customer-account",
-      "graphql-changes"
+      "customer-api",
+      "graphql-admin-api",
+      "storefront-api"
     ],
     "source": "Changelog",
     "link": "https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed",
@@ -40,10 +40,10 @@
     {
       "type": "Improvement",
       "source": "Hydrogen",
-      "date": "2h",
+      "date": "9h",
       "relevance": "For you",
       "title": "@shopify/cli-hydrogen@13.0.2",
-      "summary": "Hydrogen CLI now supports non-interactive shop and storefront creation flags and allows bypassing confirmation prompts during upgrades.",
+      "summary": "Hydrogen CLI now supports non-interactive shop and storefront creation flags and allows bypassing confirmation prompts in hydrogen upgrade.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -57,27 +57,27 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "3h",
+      "date": "10h",
       "relevance": "High",
       "title": "Updated App Store requirements: 4.1.2 Use a unique name for your app",
-      "summary": "App Store requirements have been updated to include using a unique name for apps to reduce merchant confusion.",
+      "summary": "Updated App Store requirements now mandate unique app names to reduce merchant confusion.",
       "impact": "Affects both developers and merchants",
       "action_needed": true,
       "deadline": "",
       "hashtags": [
         "app-store",
         "merchant-experience",
-        "app-requirements"
+        "shopify-requirements"
       ],
       "link": "https://shopify.dev/changelog/updated-app-store-requirements-4-1-2-use-a-unique-name-for-your-app"
     },
     {
       "type": "New",
       "source": "Changelog",
-      "date": "3h",
+      "date": "10h",
       "relevance": "For you",
       "title": "`productId`, `title`,`variantSku`, and `variantTitle` fields added to `ExchangeLineItem`",
-      "summary": "New fields have been added to the ExchangeLineItem type, including productId, title, variantSku, and variantTitle.",
+      "summary": "New fields added to ExchangeLineItem: productId, title, variantSku, and variantTitle.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -91,7 +91,7 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "15h",
+      "date": "22h",
       "relevance": "Medium",
       "title": "POS UI Extensions 2026-07 adds discount allocations to bundle components",
       "summary": "POS UI Extensions now include discount allocations to bundle components, starting with API version 2026-07.",
@@ -111,14 +111,14 @@
       "date": "1d",
       "relevance": "For you",
       "title": "4.5.1",
-      "summary": "CLI version 4.5.1 has been released with updates to cli-hydrogen.",
+      "summary": "CLI hydrogen updated to version 13.0.1.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "cli-updates",
         "hydrogen-cli",
-        "version-4-5-1"
+        "version-update"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.5.1"
     },
@@ -128,14 +128,14 @@
       "date": "1d",
       "relevance": "For you",
       "title": "4.5.0",
-      "summary": "CLI version 4.5.0 introduces new store commands, including listing and store creation.",
+      "summary": "New store commands introduced in CLI version 4.5.0, including listing and store creation.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "cli-updates",
         "store-commands",
-        "version-4-5-0"
+        "new-features"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.5.0"
     },
@@ -162,14 +162,14 @@
       "date": "2d",
       "relevance": "For you",
       "title": "@shopify/create-hydrogen@5.0.38",
-      "summary": "Create Hydrogen now adds an explicit ~ app alias to new projects.",
+      "summary": "New Hydrogen projects now include an explicit ~ app alias.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "create-hydrogen",
+        "hydrogen-projects",
         "app-alias",
-        "new-projects"
+        "new-features"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcreate-hydrogen%405.0.38"
     },
@@ -179,14 +179,14 @@
       "date": "2d",
       "relevance": "For you",
       "title": "skeleton@2026.4.5",
-      "summary": "Hydrogen skeleton now adds an explicit ~ app alias to new projects.",
+      "summary": "Hydrogen skeleton updated to version 2026.4.5 with an explicit ~ app alias.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "hydrogen-skeleton",
         "app-alias",
-        "new-projects"
+        "version-update"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/skeleton%402026.4.5"
     },
@@ -196,14 +196,14 @@
       "date": "6d",
       "relevance": "Medium",
       "title": "POS Extensions now supports a background extension target",
-      "summary": "POS Extensions now support a background extension target, allowing for event observation and background logic.",
+      "summary": "POS Extensions now support a background extension target, allowing event observation and background logic without rendering UI.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "pos-extensions",
         "background-target",
-        "event-observation"
+        "new-features"
       ],
       "link": "https://shopify.dev/changelog/pos-extensions-now-supports-a-background-extension-target"
     },
@@ -213,14 +213,14 @@
       "date": "6d",
       "relevance": "High",
       "title": "Identity verification for Shopify Partners starts today",
-      "summary": "Identity verification for Shopify Partners is now available, enhancing trust in the partner ecosystem.",
+      "summary": "Identity verification for Shopify Partners is now required, enhancing trust and security in the ecosystem.",
       "impact": "Affects both developers and merchants",
       "action_needed": true,
       "deadline": "",
       "hashtags": [
         "shopify-partners",
         "identity-verification",
-        "trust-and-security"
+        "security-updates"
       ],
       "link": "https://shopify.dev/changelog/identity-verification-for-partners"
     },
@@ -230,57 +230,52 @@
       "date": "6d",
       "relevance": "High",
       "title": "App Pricing: more plans, no-charge plan testing, and negative and fractional App Events",
-      "summary": "App Pricing has been updated with increased plan limits, no-charge plan testing, and support for negative and fractional App Events.",
+      "summary": "App Pricing updates include increased plan limits, no-charge plan testing, and support for negative and fractional App Events.",
       "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "app-pricing",
         "plan-limits",
-        "app-events"
+        "new-features"
       ],
       "link": "https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events"
     }
   ],
   "recap": {
-    "dateRange": "Jul 08 – Jul 15",
+    "dateRange": "Jul 09 – Jul 16",
     "basis": "Based on 12 updates this week",
-    "headline": "Hydrogen updates and Shopify API enhancements dominate the week",
+    "headline": "Hydrogen and Shopify API updates with new features and requirements",
     "themes": [
       {
         "n": "1",
         "title": "Hydrogen Updates",
-        "detail": "Multiple Hydrogen updates were released, including @shopify/cli-hydrogen@13.0.2, which adds non-interactive shop and storefront creation flags, and @shopify/create-hydrogen@5.0.38, which adds an explicit ~ app alias to new Hydrogen projects. These updates aim to improve the development experience and fix existing issues."
+        "detail": "Hydrogen received several updates, including the addition of non-interactive shop and storefront creation flags, the ability to bypass confirmation prompts in hydrogen upgrade, and patch changes to @shopify/cli-hydrogen and @shopify/create-hydrogen. These updates aim to improve the development experience and provide more flexibility in Hydrogen projects."
       },
       {
         "n": "2",
-        "title": "Shopify API Enhancements",
-        "detail": "New fields were added to the ExchangeLineItem type, including productId, title, variantSku, and variantTitle. Additionally, POS UI Extensions now support discount allocations to bundle components and a background extension target, allowing for more flexible and powerful app development."
-      },
-      {
-        "n": "3",
-        "title": "Ecosystem and Policy Updates",
-        "detail": "Shopify introduced new App Store requirements, including the use of unique app names, and updated App Pricing to include more plans, no-charge plan testing, and support for negative and fractional App Events. Identity verification for Shopify Partners also began, emphasizing trust and security within the ecosystem."
+        "title": "Shopify API and Changelog Updates",
+        "detail": "The Shopify API and Changelog have been updated with new features, including the addition of fields to ExchangeLineItem, discount allocations to bundle components in POS UI Extensions, and support for background extension targets in POS Extensions. Additionally, there are new requirements for app names and identity verification for Shopify Partners."
       }
     ],
     "actions": [
       {
-        "text": "Review and update apps to comply with new App Store requirements",
+        "text": "Review and update apps to meet new App Store requirements, including unique app names",
         "deadline": "ASAP"
       },
       {
-        "text": "Test and implement new Hydrogen features and updates",
+        "text": "Test and implement new features from Hydrogen and Shopify API updates",
         "deadline": ""
       },
       {
-        "text": "Explore new possibilities with POS UI Extensions and background extension targets",
-        "deadline": ""
+        "text": "Complete identity verification for Shopify Partners",
+        "deadline": "today"
       }
     ],
     "hashtags": [
       "shopify-developer",
       "hydrogen-updates",
-      "api-enhancements",
+      "api-changes",
       "app-store-requirements"
     ]
   }
