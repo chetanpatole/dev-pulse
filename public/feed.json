@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generatedAt": "2026-07-20T02:54:46Z",
+    "generatedAt": "2026-07-20T08:57:16Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": true,
     "deadline": "2026-10",
-    "headline": "Storefront API Update",
+    "headline": "Storefront API update",
     "what_changed": "The Storefront API now supports the @inContext directive with an optional channelId argument, allowing developers to apply a specific sales channel's context to an entire query. This change is available in Storefront API version 2026-10. The @inContext directive can be used to fetch data specific to a particular sales channel.",
-    "developer_impact": "Developers can use this new feature to build more customized and channel-specific experiences for merchants. They will need to update their Storefront API queries to include the channelId argument when necessary. This change does not introduce any breaking changes, but rather provides an additional feature for developers to utilize. Developers should review their existing Storefront API queries and consider where the @inContext directive with channelId can be applied to improve their app's functionality.",
-    "merchant_impact": "Merchants will benefit from more customized and channel-specific experiences, potentially leading to increased sales and customer satisfaction. This update enables developers to build more tailored solutions for merchants, which can enhance the overall merchant experience.",
-    "why_it_matters": "This update matters because it provides developers with more flexibility and control over the data they fetch from the Storefront API, allowing them to build more customized and effective solutions for merchants. By leveraging the @inContext directive with channelId, developers can create more targeted and relevant experiences for merchants and their customers.",
+    "developer_impact": "Developers using the Storefront API should update their queries to include the channelId argument when necessary. This change provides more flexibility in querying data and can help improve the performance of storefronts. Developers should review their existing queries and update them to take advantage of this new feature. The GraphQL Admin API and Storefront API should be used in conjunction to manage sales channels and their associated data.",
+    "merchant_impact": "Merchants will benefit from more accurate and sales-channel-specific data being displayed on their storefronts, leading to a better customer experience. This change can also help merchants manage their sales channels more effectively.",
+    "why_it_matters": "This update matters because it provides more flexibility and control over sales channel data, allowing developers to build more customized and effective storefronts. It also aligns with Shopify's goal of providing a more unified and streamlined commerce experience.",
     "code_lang": "GraphQL",
-    "code_example": "query {\n         products(channelId: \"channel-id\") {\n            edges {\n               node {\n                  id\n                  title\n               }\n            }\n         }\n      }",
+    "code_example": "query {\n         products(channelId: \"sales-channel-id\") {\n            edges {\n               node {\n                  id\n                  title\n               }\n            }\n         }\n      }",
     "hashtags": [
       "storefront-api",
       "graphql",
-      "channel-id"
+      "sales-channels"
     ],
     "source": "Changelog",
     "link": "https://shopify.dev/changelog/new-channelid-argument-for-incontext-directive-in-storefront-api-2026-10",
@@ -50,24 +50,24 @@
       "hashtags": [
         "graphql-admin-api",
         "inventory-management",
-        "new-feature"
+        "preview-features"
       ],
       "link": "https://shopify.dev/changelog/physical-inventory-feature-preview"
     },
     {
-      "type": "Fix",
+      "type": "Improvement",
       "source": "CLI",
       "date": "2d",
       "relevance": "High",
       "title": "4.5.2",
-      "summary": "The Shopify CLI version 4.5.2 fixes a warning when running theme commands in valid theme directories and bumps Shopify/theme-tools packages.",
+      "summary": "The Shopify CLI has been updated to version 4.5.2, which includes fixes for theme commands and updates to the theme-tools packages.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "shopify-cli",
         "theme-development",
-        "bug-fix"
+        "bug-fixes"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.5.2"
     },
@@ -82,9 +82,9 @@
       "action_needed": true,
       "deadline": "",
       "hashtags": [
-        "security-update",
-        "mtls-certificate",
-        "card-deposit"
+        "security-updates",
+        "mtls-certificates",
+        "payment-processing"
       ],
       "link": "https://shopify.dev/changelog/card-deposit-endpoint-now-requires-mtls-certificate"
     },
@@ -94,14 +94,14 @@
       "date": "4d",
       "relevance": "For you",
       "title": "@shopify/cli-hydrogen@13.0.2",
-      "summary": "The @shopify/cli-hydrogen version 13.0.2 adds non-interactive shop and storefront creation flags and allows bypassing confirmation prompts in hydrogen upgrade.",
+      "summary": "The @shopify/cli-hydrogen package has been updated to version 13.0.2, adding non-interactive shop and storefront creation flags and a force flag to bypass confirmation prompts.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "hydrogen-cli",
-        "shop-creation",
-        "upgrade-process"
+        "hydrogen-updates",
+        "cli-improvements",
+        "development-tools"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.2"
     },
@@ -109,16 +109,16 @@
       "type": "New",
       "source": "Changelog",
       "date": "4d",
-      "relevance": "High",
+      "relevance": "Low",
       "title": "Updated App Store requirements: 4.1.2 Use a unique name for your app",
       "summary": "The App Store requirements have been updated to include a unique name for each app, reducing merchant confusion over identical and similar app names.",
-      "impact": "Affects both developers and merchants",
-      "action_needed": true,
+      "impact": "Mainly affects merchants",
+      "action_needed": false,
       "deadline": "",
       "hashtags": [
         "app-store",
-        "unique-name",
-        "merchant-experience"
+        "merchant-experience",
+        "app-naming"
       ],
       "link": "https://shopify.dev/changelog/updated-app-store-requirements-4-1-2-use-a-unique-name-for-your-app"
     },
@@ -128,14 +128,14 @@
       "date": "4d",
       "relevance": "For you",
       "title": "Storefront API `@inContext` supports `channelId`",
-      "summary": "The Storefront API @inContext directive now supports the channelId argument, allowing developers to apply a specific sales channel's context to an entire query.",
+      "summary": "The Storefront API now supports the channelId argument in the @inContext directive, allowing developers to apply a specific sales channel's context to an entire query.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "2026-10",
       "hashtags": [
         "storefront-api",
-        "channel-id",
-        "context-directive"
+        "sales-channels",
+        "contextual-queries"
       ],
       "link": "https://shopify.dev/changelog/new-channelid-argument-for-incontext-directive-in-storefront-api-2026-10"
     },
@@ -145,48 +145,48 @@
       "date": "4d",
       "relevance": "For you",
       "title": "`productId`, `title`,`variantSku`, and `variantTitle` fields added to `ExchangeLineItem`",
-      "summary": "The ExchangeLineItem type now includes productId, title, variantSku, and variantTitle fields, providing more information about exchange line items.",
+      "summary": "The ExchangeLineItem type now includes productId, title, variantSku, and variantTitle fields, providing more detailed information about exchange line items.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "exchange-line-item",
-        "new-fields",
-        "graphql-schema"
+        "graphql-admin-api",
+        "exchange-line-items",
+        "new-fields"
       ],
       "link": "https://shopify.dev/changelog/new-fields-on-exchangelineitem"
     },
     {
       "type": "New",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "For you",
       "title": "POS UI Extensions 2026-07 adds discount allocations to bundle components",
-      "summary": "The POS UI Extensions API version 2026-07 adds discount allocations to bundle components, allowing apps to access component-level discount allocations.",
+      "summary": "The POS UI Extensions API now includes discount allocation details for product bundle components in cart line item data, allowing apps to access component-level discount allocations.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "2026-07",
       "hashtags": [
         "pos-ui-extensions",
-        "discount-allocations",
-        "bundle-components"
+        "discount-allocation",
+        "product-bundles"
       ],
       "link": "https://shopify.dev/changelog/pos-ui-extensions-2026-07-adds-discount-allocations-to-bundle-components"
     },
     {
-      "type": "Fix",
+      "type": "Improvement",
       "source": "CLI",
       "date": "5d",
       "relevance": "High",
       "title": "4.5.1",
-      "summary": "The Shopify CLI version 4.5.1 bumps cli-hydrogen to 13.0.1, fixing issues and improving the overall development experience.",
+      "summary": "The Shopify CLI has been updated to version 4.5.1, which includes a bump to cli-hydrogen version 13.0.1.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "shopify-cli",
-        "hydrogen-cli",
-        "bug-fix"
+        "hydrogen-updates",
+        "bug-fixes"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.5.1"
     },
@@ -196,31 +196,31 @@
       "date": "5d",
       "relevance": "High",
       "title": "4.5.0",
-      "summary": "The Shopify CLI version 4.5.0 introduces new store commands, including listing and store creation, making it easier to manage stores.",
+      "summary": "The Shopify CLI has been updated to version 4.5.0, introducing new store commands, including listing and store creation.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "shopify-cli",
         "store-commands",
-        "new-feature"
+        "new-features"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.5.0"
     },
     {
-      "type": "Fix",
+      "type": "Improvement",
       "source": "Hydrogen",
       "date": "6d",
       "relevance": "For you",
       "title": "@shopify/cli-hydrogen@13.0.1",
-      "summary": "The @shopify/cli-hydrogen version 13.0.1 fixes issues with command metadata and preserves actionable build errors during deployment.",
+      "summary": "The @shopify/cli-hydrogen package has been updated to version 13.0.1, which includes improvements to command metadata and build error handling.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "hydrogen-cli",
-        "command-metadata",
-        "bug-fix"
+        "hydrogen-updates",
+        "cli-improvements",
+        "build-errors"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.1"
     },
@@ -230,14 +230,14 @@
       "date": "6d",
       "relevance": "For you",
       "title": "@shopify/create-hydrogen@5.0.38",
-      "summary": "The @shopify/create-hydrogen version 5.0.38 adds an explicit app alias to new Hydrogen projects and improves JavaScript project configuration.",
+      "summary": "The @shopify/create-hydrogen package has been updated to version 5.0.38, which includes an explicit app alias and improvements to JavaScript project configuration.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
+        "hydrogen-updates",
         "create-hydrogen",
-        "app-alias",
-        "javascript-projects"
+        "project-configuration"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcreate-hydrogen%405.0.38"
     }
@@ -245,43 +245,44 @@
   "recap": {
     "dateRange": "Jul 13 – Jul 20",
     "basis": "Based on 13 updates this week",
-    "headline": "Shopify updates for GraphQL Admin API, Hydrogen, and Storefront API",
+    "headline": "Shopify updates: new inventory APIs, mTLS certificate requirements, and Hydrogen improvements",
     "themes": [
       {
         "n": "1",
-        "title": "New Features and Updates",
-        "detail": "The physical inventory feature preview is available in the unstable version of the GraphQL Admin API, and the Storefront API `@inContext` directive now supports `channelId`. Additionally, POS UI Extensions 2026-07 adds discount allocations to bundle components, and new fields have been added to `ExchangeLineItem`."
+        "title": "New Features and APIs",
+        "detail": "The physical inventory feature preview is available in the unstable version of the GraphQL Admin API, and the Storefront API `@inContext` directive now supports `channelId`. Additionally, new fields have been added to the `ExchangeLineItem` type, and POS UI Extensions now include discount allocations to bundle components."
       },
       {
         "n": "2",
-        "title": "Hydrogen Updates",
-        "detail": "New versions of `@shopify/cli-hydrogen` and `@shopify/create-hydrogen` have been released, with features such as non-interactive shop and storefront creation flags, and explicit `~ app` alias to new Hydrogen projects. The `skeleton` package has also been updated to version 2026.4.5."
+        "title": "Security and Authentication",
+        "detail": "The card deposit endpoint now requires a Shopify-issued mTLS client certificate, and apps that store cardholder data must be updated to use this certificate. The `@shopify/cli-hydrogen` package has also been updated to preserve actionable build errors during deployment."
       },
       {
         "n": "3",
-        "title": "Security and App Requirements",
-        "detail": "The card deposit endpoint now requires a Shopify-issued mTLS client certificate, and apps must use a unique name to reduce merchant confusion. The updated App Store requirements include using a unique name for the app."
+        "title": "Tooling and Development",
+        "detail": "The Shopify CLI has been updated to version 4.5.2, with improvements to theme commands and the addition of new store commands. The `@shopify/cli-hydrogen` package has also been updated to version 13.0.2, with new flags for non-interactive shop and storefront creation."
       }
     ],
     "actions": [
       {
-        "text": "Enable physical inventory feature preview on a development store",
+        "text": "Enable the physical inventory feature preview on a development store",
         "deadline": ""
       },
       {
-        "text": "Update apps to use a unique name",
+        "text": "Update apps to use the new mTLS client certificate for the card deposit endpoint",
         "deadline": ""
       },
       {
-        "text": "Implement mTLS certificate for card deposit endpoint",
+        "text": "Test and deploy updates to use the new `@inContext` directive with `channelId`",
         "deadline": ""
       }
     ],
     "hashtags": [
       "shopify-developer",
       "graphql-admin-api",
-      "hydrogen-updates",
-      "storefront-api"
+      "hydrogen",
+      "storefront-api",
+      "security-updates"
     ]
   }
 }
