@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-22T02:36:41Z",
+    "generatedAt": "2026-07-22T08:28:49Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -8,12 +8,12 @@
     "action_needed": true,
     "deadline": "2026-10",
     "headline": "Storefront API Update",
-    "what_changed": "The Storefront API now supports the @inContext directive with an optional channelId argument. This allows developers to apply a specific sales channel's context to an entire query. The change is available in Storefront API version 2026-10.",
-    "developer_impact": "Developers using the Storefront API should update their queries to utilize the new @inContext directive with the channelId argument. This will enable them to provide more accurate and channel-specific data to merchants. The change is backward compatible, so existing queries will still work, but developers should test their applications with the new API version to ensure proper functionality. The GraphQL Admin API and other APIs remain unaffected.",
-    "merchant_impact": "Merchants will benefit from more accurate and channel-specific data, which can lead to improved sales and customer experiences. The change does not require any action from merchants, as it is handled by developers and the Storefront API.",
-    "why_it_matters": "This update provides more flexibility and accuracy in querying sales channel data, which is essential for merchants to manage their sales channels effectively. It also demonstrates Shopify's commitment to improving the Storefront API and supporting developer needs.",
+    "what_changed": "The Storefront API now supports the @inContext directive with an optional channelId argument, allowing developers to apply a specific sales channel's context to an entire query. This change is available in Storefront API version 2026-10. The @inContext directive enables developers to fetch data specific to a particular sales channel, such as online store or point of sale.",
+    "developer_impact": "Developers should update their Storefront API queries to utilize the new @inContext directive with the channelId argument. This will enable them to fetch data specific to a particular sales channel, providing a more accurate and relevant experience for merchants and customers. When using the @inContext directive, developers should ensure they are handling errors and exceptions properly, as the API may return different data or error messages based on the sales channel context. Additionally, developers should review the Storefront API documentation to understand the available channels and their corresponding IDs.",
+    "merchant_impact": "Merchants will benefit from more accurate and relevant data being displayed in their sales channels, such as online store or point of sale, resulting in a better overall customer experience.",
+    "why_it_matters": "This update provides developers with more flexibility and control over the data they fetch from the Storefront API, enabling them to build more tailored and effective sales channel experiences for merchants and customers.",
     "code_lang": "GraphQL",
-    "code_example": "query { products @inContext(channelId: \"sales-channel-id\") { edges { node { title } } } }",
+    "code_example": "query { \n        products(channelId: \"online-store\") @inContext {\n          edges {\n            node {\n              id\n              title\n            }\n          }\n        }\n      }",
     "hashtags": [
       "storefront-api",
       "graphql",
@@ -40,7 +40,7 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "For you",
       "title": "Metafield triggers and additional topics are now available for Events",
       "summary": "Metafield triggers and additional topics are now available for Events, allowing apps to subscribe to events for various objects and metafield changes.",
@@ -57,7 +57,7 @@
     {
       "type": "Improvement",
       "source": "Changelog",
-      "date": "9h",
+      "date": "15h",
       "relevance": "For you",
       "title": "Liquid templates can now compose pages with blocks and partials",
       "summary": "Liquid templates can now compose pages with blocks and partials, simplifying theme page building.",
@@ -74,10 +74,10 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "13h",
+      "date": "19h",
       "relevance": "For you",
       "title": "Full-stack capabilities to power app analytics",
-      "summary": "Full-stack capabilities are now available to power app analytics, simplifying the process of building merchant-facing analytics.",
+      "summary": "Full-stack capabilities are now available to power app analytics, making it easier for app developers to build merchant-facing analytics.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -109,7 +109,7 @@
       "type": "Fix",
       "source": "CLI",
       "date": "4d",
-      "relevance": "For you",
+      "relevance": "High",
       "title": "4.5.2",
       "summary": "CLI version 4.5.2 fixes a warning when running theme commands in valid theme directories and bumps Shopify/theme-tools packages.",
       "impact": "Mainly affects developers",
@@ -152,7 +152,7 @@
       "hashtags": [
         "hydrogen-cli",
         "non-interactive",
-        "upgrade-improvements"
+        "upgrade-flag"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.2"
     },
@@ -160,7 +160,7 @@
       "type": "New",
       "source": "Changelog",
       "date": "6d",
-      "relevance": "For you",
+      "relevance": "High",
       "title": "Updated App Store requirements: 4.1.2 Use a unique name for your app",
       "summary": "Updated App Store requirements include using a unique name for your app to reduce merchant confusion.",
       "impact": "Affects both developers and merchants",
@@ -210,10 +210,10 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "For you",
       "title": "POS UI Extensions 2026-07 adds discount allocations to bundle components",
-      "summary": "POS UI Extensions API version 2026-07 adds discount allocations to bundle components, providing more detailed cart line item data.",
+      "summary": "POS UI Extensions API version 2026-07 adds discount allocations to bundle components, allowing apps to access component-level discount allocations.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -228,9 +228,9 @@
       "type": "Fix",
       "source": "CLI",
       "date": "7d",
-      "relevance": "For you",
+      "relevance": "High",
       "title": "4.5.1",
-      "summary": "CLI version 4.5.1 bumps cli-hydrogen to 13.0.1, fixing issues and improving stability.",
+      "summary": "CLI version 4.5.1 bumps cli-hydrogen to 13.0.1.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -244,47 +244,47 @@
   ],
   "recap": {
     "dateRange": "Jul 15 – Jul 22",
-    "basis": "Based on 11 updates this week",
-    "headline": "Shopify updates: new events, Liquid templates, and API enhancements",
+    "basis": "Based on 10 updates this week",
+    "headline": "Enhanced Events, Liquid Templates, and App Analytics Capabilities",
     "themes": [
       {
         "n": "1",
-        "title": "Events and Webhooks",
-        "detail": "Metafield triggers and additional topics are now available for Events, allowing apps to subscribe to events for Order, Collection, InventoryItem, and more. The Storefront API `@inContext` directive now supports `channelId` for applying sales channel context to queries."
+        "title": "Event Triggers and Metafields",
+        "detail": "Metafield triggers and additional topics are now available for Events, allowing apps to subscribe to events for various resources such as Order, Collection, and InventoryItem. Additionally, metafield changes can be subscribed to on Product, Order, Customer, Collection, and Location."
       },
       {
         "n": "2",
-        "title": "Theme and App Development",
-        "detail": "Liquid templates can now compose pages with blocks and partials, simplifying theme page building. The physical inventory feature preview introduces new inventory APIs in the unstable GraphQL Admin API. POS UI Extensions 2026-07 adds discount allocations to bundle components."
+        "title": "Theme Development and App Analytics",
+        "detail": "Liquid templates can now compose pages with blocks and partials, simplifying theme page building. Furthermore, full-stack capabilities are now available to power app analytics, eliminating the need for a separate stack."
       },
       {
         "n": "3",
-        "title": "Security and Compliance",
-        "detail": "The card deposit endpoint now requires a Shopify-issued mTLS client certificate, enhancing security for apps storing cardholder data. App Store requirements have been updated to include using a unique name for apps, reducing merchant confusion."
+        "title": "Security and API Updates",
+        "detail": "The card deposit endpoint now requires a Shopify-issued mTLS client certificate, enhancing security. The Storefront API's @inContext directive now supports channelId, and new fields have been added to the ExchangeLineItem type."
       }
     ],
     "actions": [
       {
-        "text": "Update apps to use new events and metafield triggers",
+        "text": "Update apps to use new event triggers and metafields",
         "deadline": ""
       },
       {
-        "text": "Test physical inventory feature preview on a development store",
-        "deadline": ""
-      },
-      {
-        "text": "Ensure app names are unique to comply with App Store requirements 4.1.2",
+        "text": "Explore the new Liquid template features",
         "deadline": ""
       },
       {
         "text": "Implement mTLS client certificate for card deposit endpoint",
+        "deadline": ""
+      },
+      {
+        "text": "Review and comply with updated App Store requirements",
         "deadline": ""
       }
     ],
     "hashtags": [
       "shopify-developer",
       "graphql-admin-api",
-      "liquid-templates",
+      "hydrogen",
       "storefront-api"
     ]
   }
