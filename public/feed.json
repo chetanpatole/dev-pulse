@@ -1,17 +1,17 @@
 {
   "meta": {
-    "generatedAt": "2026-07-23T08:29:40Z",
+    "generatedAt": "2026-07-23T13:58:09Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": true,
     "deadline": "2026-10",
-    "headline": "Storefront API Update",
+    "headline": "Storefront API update",
     "what_changed": "The Storefront API now supports the @inContext directive with an optional channelId argument, allowing developers to apply a specific sales channel's context to an entire query. This change is available in Storefront API version 2026-10. The @inContext directive can be used to fetch data specific to a particular sales channel.",
-    "developer_impact": "Developers using the Storefront API should update their queries to include the channelId argument when necessary. This change enables more flexibility in querying data specific to different sales channels. Developers should review their existing queries and update them to take advantage of this new feature. The GraphQL Admin API and other APIs remain unchanged.",
-    "merchant_impact": "Merchants will benefit from more accurate and sales channel-specific data in their storefronts, potentially leading to improved customer experiences.",
-    "why_it_matters": "This update provides more flexibility and accuracy in querying sales channel-specific data, which is crucial for merchants with multiple sales channels. It enables developers to build more tailored and effective storefronts.",
+    "developer_impact": "Developers should update their Storefront API queries to include the channelId argument when necessary. This change enables more flexibility in querying sales channel-specific data. Developers using the Storefront API should review their code and update it to take advantage of this new feature. The GraphQL Admin API and Hydrogen can be used in conjunction with the Storefront API to build more robust and sales channel-aware applications.",
+    "merchant_impact": "Merchants will benefit from more accurate and sales channel-specific data in their Storefront API-powered applications. This change enables developers to build more tailored and sales channel-aware experiences for merchants.",
+    "why_it_matters": "This update matters because it provides more flexibility and control over sales channel-specific data, enabling developers to build more robust and tailored applications for merchants. It also highlights Shopify's commitment to improving the Storefront API and providing more features for developers.",
     "code_lang": "GraphQL",
     "code_example": "query {\n         products(channelId: \"sales-channel-id\") {\n            edges {\n               node {\n                  id\n                  title\n               }\n            }\n         }\n      }",
     "hashtags": [
@@ -43,7 +43,7 @@
       "date": "1d",
       "relevance": "For you",
       "title": "Metafield triggers and additional topics are now available for Events",
-      "summary": "Metafield triggers and additional topics are now available for Events, allowing apps to subscribe to events for various objects and metafield changes.",
+      "summary": "Metafield triggers and additional topics are now available for Events, allowing apps to subscribe to events for various resources and metafield changes.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -74,7 +74,7 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "For you",
       "title": "Full-stack capabilities to power app analytics",
       "summary": "Full-stack capabilities are now available to power app analytics, simplifying the process of building merchant-facing analytics.",
@@ -108,8 +108,8 @@
     {
       "type": "Fix",
       "source": "CLI",
-      "date": "5d",
-      "relevance": "High",
+      "date": "6d",
+      "relevance": "For you",
       "title": "4.5.2",
       "summary": "CLI version 4.5.2 fixes a warning when running theme commands in valid theme directories and bumps Shopify/theme-tools packages.",
       "impact": "Mainly affects developers",
@@ -160,10 +160,10 @@
       "type": "New",
       "source": "Changelog",
       "date": "7d",
-      "relevance": "High",
+      "relevance": "For you",
       "title": "Updated App Store requirements: 4.1.2 Use a unique name for your app",
       "summary": "Updated App Store requirements include using a unique name for your app to reduce merchant confusion.",
-      "impact": "Affects both developers and merchants",
+      "impact": "Mainly affects developers",
       "action_needed": true,
       "deadline": "",
       "hashtags": [
@@ -179,10 +179,10 @@
       "date": "7d",
       "relevance": "For you",
       "title": "Storefront API `@inContext` supports `channelId`",
-      "summary": "The Storefront API @inContext directive now supports channelId, allowing for applying a specific sales channel's context to an entire query.",
+      "summary": "The Storefront API @inContext directive now supports channelId, allowing for channel-specific context in queries.",
       "impact": "Mainly affects developers",
       "action_needed": false,
-      "deadline": "2026-10",
+      "deadline": "",
       "hashtags": [
         "storefront-api",
         "incontext",
@@ -213,10 +213,10 @@
       "date": "8d",
       "relevance": "For you",
       "title": "POS UI Extensions 2026-07 adds discount allocations to bundle components",
-      "summary": "POS UI Extensions API version 2026-07 adds discount allocations to bundle components, allowing apps to access component-level discount allocations.",
+      "summary": "POS UI Extensions API version 2026-07 adds discount allocations to bundle components, providing more detailed discount information.",
       "impact": "Mainly affects developers",
       "action_needed": false,
-      "deadline": "2026-07",
+      "deadline": "",
       "hashtags": [
         "pos-ui-extensions",
         "discount-allocations",
@@ -228,9 +228,9 @@
       "type": "Fix",
       "source": "CLI",
       "date": "8d",
-      "relevance": "High",
+      "relevance": "For you",
       "title": "4.5.1",
-      "summary": "CLI version 4.5.1 bumps cli-hydrogen to 13.0.1.",
+      "summary": "CLI version 4.5.1 bumps cli-hydrogen to 13.0.1, providing updates and improvements.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -245,35 +245,35 @@
   "recap": {
     "dateRange": "Jul 16 – Jul 23",
     "basis": "Based on 6 updates this week",
-    "headline": "Shopify updates bring new events, Liquid templates, and full-stack analytics capabilities",
+    "headline": "Shopify updates include new event triggers, Liquid template improvements, and physical inventory feature preview",
     "themes": [
       {
         "n": "1",
-        "title": "New Events and Triggers",
-        "detail": "Metafield triggers and additional topics are now available for Events, allowing apps to subscribe to events for Order, Collection, InventoryItem, and more. This update also includes metafield changes on Product, Order, Customer, Collection, and Location."
+        "title": "Event Triggers and Webhooks",
+        "detail": "New event triggers and topics are available for subscription, including metafield changes on Product, Order, Customer, Collection, and Location. This update enables more flexible and automated workflows for apps using the GraphQL Admin API and Webhooks."
       },
       {
         "n": "2",
-        "title": "Liquid Templates and Theme Updates",
-        "detail": "The Liquid July ’26 developer preview introduces a simpler way to build theme pages with blocks and partials, and the CLI has been updated to version 4.5.2 with fixes and package bumps."
+        "title": "Theme Development and Liquid",
+        "detail": "The Liquid July ’26 developer preview introduces a simpler way to build theme pages with blocks and partials, making it easier to compose and edit page structures directly in Liquid templates. Additionally, the CLI version 4.5.2 includes fixes and improvements for theme development."
       },
       {
         "n": "3",
-        "title": "New Features and Security Updates",
-        "detail": "The physical inventory feature preview is now available, and the card deposit endpoint now requires a Shopify-issued mTLS client certificate for added security."
+        "title": "App Development and Security",
+        "detail": "The physical inventory feature preview is now available in the unstable version of the GraphQL Admin API, allowing developers to build and test against new inventory APIs. Furthermore, the card deposit endpoint now requires a Shopify-issued mTLS client certificate, enhancing security for apps handling customer payment methods."
       }
     ],
     "actions": [
       {
-        "text": "Update apps to use new events and metafield triggers",
+        "text": "Update apps to use new event triggers and metafield subscriptions",
         "deadline": ""
       },
       {
-        "text": "Test physical inventory feature preview on a development store",
+        "text": "Test physical inventory feature preview in development stores",
         "deadline": ""
       },
       {
-        "text": "Obtain a Shopify-issued mTLS client certificate for card deposit endpoint",
+        "text": "Implement mTLS client certificate for card deposit endpoint",
         "deadline": ""
       }
     ],
@@ -281,7 +281,7 @@
       "shopify-developer",
       "graphql-admin-api",
       "liquid-templates",
-      "full-stack-analytics"
+      "webhooks"
     ]
   }
 }
