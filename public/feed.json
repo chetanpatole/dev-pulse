@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-24T02:38:29Z",
+    "generatedAt": "2026-07-24T08:27:09Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -8,12 +8,12 @@
     "action_needed": true,
     "deadline": "2026-10",
     "headline": "Storefront API Update",
-    "what_changed": "The Storefront API now supports the @inContext directive with an optional channelId argument, allowing developers to apply a specific sales channel's context to an entire query. This change is available in Storefront API version 2026-10. The @inContext directive can be used to fetch data specific to a particular sales channel.",
-    "developer_impact": "Developers using the Storefront API should update their queries to include the channelId argument when necessary. This change enables more flexibility in querying data specific to different sales channels. Developers should review their existing queries and update them to take advantage of this new feature. The GraphQL query should include the @inContext directive with the channelId argument, like @inContext(channelId: 'channel-id')",
-    "merchant_impact": "Merchants will benefit from more accurate and sales channel-specific data in their storefronts, enhancing their overall shopping experience.",
-    "why_it_matters": "This update provides more flexibility and accuracy in querying sales channel-specific data, which is crucial for merchants with multiple sales channels.",
+    "what_changed": "The Storefront API now supports the @inContext directive with an optional channelId argument, allowing developers to apply a specific sales channel's context to an entire query. This change is available in Storefront API version 2026-10. The @inContext directive enables developers to fetch data specific to a particular sales channel, such as online store or point of sale.",
+    "developer_impact": "Developers using the Storefront API should update their queries to utilize the @inContext directive with the channelId argument to fetch sales channel-specific data. This change enables more flexibility in querying data and provides a more accurate representation of sales channel-specific information. Developers should review their existing queries and update them to take advantage of this new feature. The Storefront API documentation should be consulted for more information on the @inContext directive and its usage.",
+    "merchant_impact": "Merchants will benefit from more accurate and sales channel-specific data being displayed in their storefronts, enhancing their overall shopping experience.",
+    "why_it_matters": "This update provides more flexibility and accuracy in querying sales channel-specific data, enabling developers to build more robust and sales channel-aware applications.",
     "code_lang": "GraphQL",
-    "code_example": "query {\n         products @inContext(channelId: 'channel-id') {\n            edges {\n               node {\n                  id\n                  title\n               }\n            }\n         }\n      }",
+    "code_example": "query { product(id: \"123\") @inContext(channelId: \"online-store\") { title } }",
     "hashtags": [
       "storefront-api",
       "graphql",
@@ -43,7 +43,7 @@
       "date": "2d",
       "relevance": "For you",
       "title": "Metafield triggers and additional topics are now available for Events",
-      "summary": "Metafield triggers and additional topics are now available for Events, allowing apps to subscribe to events for various resources and metafield changes.",
+      "summary": "Metafield triggers and additional topics are now available for Events, allowing apps to subscribe to events for various objects and metafield changes.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -77,7 +77,7 @@
       "date": "2d",
       "relevance": "For you",
       "title": "Full-stack capabilities to power app analytics",
-      "summary": "Full-stack capabilities are now available to power app analytics, making it easier for app developers to build merchant-facing analytics.",
+      "summary": "Full-stack capabilities are now available to power app analytics, simplifying the process of building merchant-facing analytics.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -162,7 +162,7 @@
       "date": "8d",
       "relevance": "High",
       "title": "Updated App Store requirements: 4.1.2 Use a unique name for your app",
-      "summary": "App Store requirements have been updated to include using a unique name for apps, reducing merchant confusion over identical names.",
+      "summary": "Updated App Store requirements include using a unique name for apps to reduce merchant confusion.",
       "impact": "Affects both developers and merchants",
       "action_needed": true,
       "deadline": "",
@@ -179,10 +179,10 @@
       "date": "8d",
       "relevance": "For you",
       "title": "Storefront API `@inContext` supports `channelId`",
-      "summary": "The Storefront API @inContext directive now supports channelId, allowing apps to apply a specific sales channel's context to an entire query.",
+      "summary": "The Storefront API @inContext directive now supports channelId, allowing for channel-specific context in queries.",
       "impact": "Mainly affects developers",
       "action_needed": false,
-      "deadline": "",
+      "deadline": "2026-10",
       "hashtags": [
         "storefront-api",
         "incontext",
@@ -196,7 +196,7 @@
       "date": "8d",
       "relevance": "For you",
       "title": "`productId`, `title`,`variantSku`, and `variantTitle` fields added to `ExchangeLineItem`",
-      "summary": "The ExchangeLineItem type now includes productId, title, variantSku, and variantTitle fields, providing more information about exchange line items.",
+      "summary": "The ExchangeLineItem type now includes productId, title, variantSku, and variantTitle fields.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -210,13 +210,13 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "8d",
+      "date": "9d",
       "relevance": "For you",
       "title": "POS UI Extensions 2026-07 adds discount allocations to bundle components",
-      "summary": "POS UI Extensions API version 2026-07 adds discount allocations to bundle components, allowing apps to access component-level discount allocations.",
+      "summary": "POS UI Extensions API version 2026-07 adds discount allocations to bundle components, providing more detailed cart line item data.",
       "impact": "Mainly affects developers",
       "action_needed": false,
-      "deadline": "",
+      "deadline": "2026-07",
       "hashtags": [
         "pos-ui-extensions",
         "discount-allocations",
@@ -230,7 +230,7 @@
       "date": "9d",
       "relevance": "For you",
       "title": "4.5.1",
-      "summary": "CLI version 4.5.1 bumps cli-hydrogen to 13.0.1, fixing issues and improving stability.",
+      "summary": "CLI version 4.5.1 bumps cli-hydrogen to 13.0.1.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -245,35 +245,35 @@
   "recap": {
     "dateRange": "Jul 17 – Jul 24",
     "basis": "Based on 5 updates this week",
-    "headline": "Enhanced Events, Liquid Templates, and Inventory APIs",
+    "headline": "New features and updates for Shopify developers, including metafield triggers and physical inventory APIs",
     "themes": [
       {
         "n": "1",
-        "title": "Event Subscriptions",
-        "detail": "Metafield triggers and additional topics are now available for Events, allowing apps to subscribe to events for various resources such as Order, Collection, and InventoryItem. This update also includes metafield changes on Product, Order, Customer, Collection, and Location."
+        "title": "Event-driven development",
+        "detail": "Metafield triggers and additional topics are now available for Events, allowing apps to subscribe to events for various resources such as Order, Collection, and InventoryItem. This enables more flexible and reactive app development using Webhooks and GraphQL Admin API."
       },
       {
         "n": "2",
-        "title": "Theme Development",
-        "detail": "Liquid templates can now compose pages with blocks and partials, introducing a simpler way to build theme pages. Additionally, the CLI has been updated to version 4.5.2, fixing warnings and bumping Shopify/theme-tools packages."
+        "title": "Theme development and analytics",
+        "detail": "Liquid templates can now compose pages with blocks and partials, simplifying theme page building. Additionally, full-stack capabilities are available to power app analytics, reducing the need for external libraries and data warehouses. This is particularly useful for developers using Liquid themes and Polaris."
       },
       {
         "n": "3",
-        "title": "Inventory and Analytics",
-        "detail": "The physical inventory feature preview provides early access to new inventory APIs in the unstable version of the GraphQL Admin API. Furthermore, full-stack capabilities are now available to power app analytics, simplifying the process of building merchant-facing analytics."
+        "title": "Inventory management and APIs",
+        "detail": "The physical inventory feature preview introduces a new set of inventory APIs in the unstable version of the GraphQL Admin API, allowing developers to build and test inventory management apps. This is a key feature for developers using the GraphQL Admin API and Hydrogen."
       }
     ],
     "actions": [
       {
-        "text": "Update apps to utilize new event subscriptions",
+        "text": "Update apps to use new metafield triggers and event topics",
         "deadline": ""
       },
       {
-        "text": "Explore the physical inventory feature preview",
+        "text": "Test physical inventory feature preview on a development store",
         "deadline": ""
       },
       {
-        "text": "Integrate full-stack analytics capabilities",
+        "text": "Upgrade to CLI version 4.5.2",
         "deadline": ""
       }
     ],
