@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-24T19:24:43Z",
+    "generatedAt": "2026-07-25T02:36:29Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -8,16 +8,16 @@
     "action_needed": true,
     "deadline": "2026-10",
     "headline": "Invalid Metafield Queries",
-    "what_changed": "The GraphQL Admin API now returns an error when a query filters by a metafield that isn't set up for filtering, instead of silently returning incorrect results. This change starts in API version 2026-10. The API will explicitly indicate when a metafield is not configured for filtering.",
-    "developer_impact": "Developers should update their GraphQL queries to handle the new error response. They should ensure that metafields are properly configured for filtering before querying them. This change affects any app using the GraphQL Admin API to query metafields, so developers should review their code and adjust as necessary to avoid errors. The change is backwards compatible for API versions prior to 2026-10, but it's crucial to adapt to the new behavior for future compatibility.",
-    "merchant_impact": "Merchants will experience more accurate and reliable data from apps that use the GraphQL Admin API, as apps will no longer receive silently incorrect results due to misconfigured metafields.",
-    "why_it_matters": "This change improves the reliability and accuracy of data retrieved through the GraphQL Admin API, reducing the likelihood of apps providing incorrect information to merchants due to misconfigured metafields.",
+    "what_changed": "The GraphQL Admin API now returns an error when a query filters by a metafield that isn't set up for filtering. This change starts in API version 2026-10. Previously, such queries would silently return incorrect results.",
+    "developer_impact": "Developers should update their GraphQL queries to ensure they only filter by metafields that are properly set up. This change helps prevent incorrect results and makes it easier to debug queries. Developers can test their queries in the GraphQL Admin API to identify any issues before the change takes effect. They should review their code for any queries that might be affected by this change and update them accordingly.",
+    "merchant_impact": "Merchants will benefit from more accurate results in their Shopify apps, reducing potential errors caused by incorrect metafield queries.",
+    "why_it_matters": "This change improves the reliability and accuracy of the GraphQL Admin API, making it easier for developers to build robust and trustworthy Shopify apps.",
     "code_lang": "GraphQL",
-    "code_example": "query { products(metafield: { namespace: \"my_namespace\", key: \"my_key\" }) { edges { node { title } } } }",
+    "code_example": "query { products(first: 10, query: \"metafield_key = 'value'\") { edges { node { title } } } }",
     "hashtags": [
       "graphql-admin-api",
       "metafield-queries",
-      "error-handling"
+      "shopify-developer"
     ],
     "source": "Changelog",
     "link": "https://shopify.dev/changelog/invalid-metafield-queries-now-return-errors-in-the-graphql-admin-api",
@@ -40,10 +40,10 @@
     {
       "type": "Improvement",
       "source": "Changelog",
-      "date": "3h",
+      "date": "10h",
       "relevance": "For you",
       "title": "Invalid metafield queries now return errors in the GraphQL Admin API",
-      "summary": "The GraphQL Admin API now returns errors for invalid metafield queries, instead of silently returning incorrect results, starting in API version 2026-10.",
+      "summary": "The GraphQL Admin API now returns an error when a query filters by a metafield that isn't set up for filtering, instead of silently returning incorrect results, starting in API version 2026-10.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "2026-10",
@@ -57,15 +57,15 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "For you",
       "title": "Metafield triggers and additional topics are now available for Events",
-      "summary": "Apps can now subscribe to events for various topics, including Order, Collection, and metafield changes, using the Events API.",
+      "summary": "Apps can now subscribe to events for various topics, including Order, Collection, InventoryItem, and metafield changes on Product, Order, Customer, Collection, and Location.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "events-api",
+        "events",
         "metafield-triggers",
         "app-subscriptions"
       ],
@@ -77,7 +77,7 @@
       "date": "3d",
       "relevance": "For you",
       "title": "Liquid templates can now compose pages with blocks and partials",
-      "summary": "Liquid templates can now compose pages with blocks and partials, making it easier to build theme pages, as part of the Liquid July ’26 developer preview.",
+      "summary": "Liquid templates can now compose pages with blocks and partials, making it simpler to build theme pages.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -111,7 +111,7 @@
       "date": "7d",
       "relevance": "For you",
       "title": "Physical inventory feature preview",
-      "summary": "The physical inventory feature preview is now available, providing early access to a new set of inventory APIs in the unstable version of the GraphQL Admin API.",
+      "summary": "The physical inventory feature preview is now available, giving early access to a new set of inventory APIs in the unstable version of the GraphQL Admin API.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -126,16 +126,16 @@
       "type": "Fix",
       "source": "CLI",
       "date": "7d",
-      "relevance": "High",
+      "relevance": "For you",
       "title": "4.5.2",
-      "summary": "The Shopify CLI has been updated to version 4.5.2, which includes fixes for theme commands and bumps the Shopify/theme-tools packages.",
+      "summary": "The CLI version 4.5.2 fixes a warning when running theme commands in valid theme directories and bumps Shopify/theme-tools packages.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "shopify-cli",
+        "cli-update",
         "theme-commands",
-        "bug-fixes"
+        "bug-fix"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.5.2"
     },
@@ -145,13 +145,13 @@
       "date": "8d",
       "relevance": "For you",
       "title": "Card deposit endpoint now requires mTLS certificate",
-      "summary": "The card deposit endpoint now requires a Shopify-issued mTLS client certificate, which may affect apps that store cardholder data.",
+      "summary": "The card deposit endpoint now requires a Shopify-issued mTLS client certificate, affecting apps that store cardholder data.",
       "impact": "Mainly affects developers",
       "action_needed": true,
       "deadline": "",
       "hashtags": [
-        "card-deposit",
         "mtls-certificate",
+        "card-deposit",
         "security-update"
       ],
       "link": "https://shopify.dev/changelog/card-deposit-endpoint-now-requires-mtls-certificate"
@@ -162,14 +162,14 @@
       "date": "9d",
       "relevance": "For you",
       "title": "@shopify/cli-hydrogen@13.0.2",
-      "summary": "The @shopify/cli-hydrogen package has been updated to version 13.0.2, which includes non-interactive shop and storefront creation flags and the ability to bypass confirmation prompts in hydrogen upgrade.",
+      "summary": "Hydrogen version 13.0.2 adds non-interactive shop and storefront creation flags and allows bypassing confirmation prompts in hydrogen upgrade.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "hydrogen-cli",
-        "non-interactive-mode",
-        "upgrade-improvements"
+        "hydrogen-update",
+        "non-interactive",
+        "upgrade-flag"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.2"
     },
@@ -179,13 +179,13 @@
       "date": "9d",
       "relevance": "High",
       "title": "Updated App Store requirements: 4.1.2 Use a unique name for your app",
-      "summary": "The App Store requirements have been updated to include a new requirement for unique app names, to reduce merchant confusion over identical app names.",
+      "summary": "The App Store requirements have been updated to include the use of a unique name for apps to reduce merchant confusion.",
       "impact": "Affects both developers and merchants",
       "action_needed": true,
       "deadline": "",
       "hashtags": [
         "app-store",
-        "unique-app-names",
+        "unique-name",
         "merchant-experience"
       ],
       "link": "https://shopify.dev/changelog/updated-app-store-requirements-4-1-2-use-a-unique-name-for-your-app"
@@ -196,14 +196,14 @@
       "date": "9d",
       "relevance": "For you",
       "title": "Storefront API `@inContext` supports `channelId`",
-      "summary": "The Storefront API now supports the @inContext directive with an optional channelId argument, allowing for more flexible querying.",
+      "summary": "The Storefront API @inContext directive now supports the channelId argument, allowing for specific sales channel context to be applied to an entire query.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "2026-10",
       "hashtags": [
         "storefront-api",
         "incontext-directive",
-        "channelid-support"
+        "channelid-argument"
       ],
       "link": "https://shopify.dev/changelog/new-channelid-argument-for-incontext-directive-in-storefront-api-2026-10"
     },
@@ -213,14 +213,14 @@
       "date": "9d",
       "relevance": "For you",
       "title": "`productId`, `title`,`variantSku`, and `variantTitle` fields added to `ExchangeLineItem`",
-      "summary": "The ExchangeLineItem type now includes fields for productId, title, variantSku, and variantTitle, providing more detailed information.",
+      "summary": "The ExchangeLineItem type now includes productId, title, variantSku, and variantTitle fields.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "exchangelineitem",
         "new-fields",
-        "detailed-information"
+        "graphql-schema"
       ],
       "link": "https://shopify.dev/changelog/new-fields-on-exchangelineitem"
     },
@@ -230,7 +230,7 @@
       "date": "9d",
       "relevance": "For you",
       "title": "POS UI Extensions 2026-07 adds discount allocations to bundle components",
-      "summary": "The POS UI Extensions API now includes discount allocations for bundle components, allowing for more accurate calculations.",
+      "summary": "POS UI Extensions API version 2026-07 adds discount allocations to bundle components, allowing apps to access component-level discount allocations.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "2026-07",
@@ -243,40 +243,45 @@
     }
   ],
   "recap": {
-    "dateRange": "Jul 17 – Jul 24",
+    "dateRange": "Jul 18 – Jul 25",
     "basis": "Based on 4 updates this week",
-    "headline": "Enhanced GraphQL Admin API, Webhooks, and Liquid templates",
+    "headline": "Enhanced GraphQL Admin API, Expanded Webhooks, and Improved Liquid Templates",
     "themes": [
       {
         "n": "1",
         "title": "GraphQL Admin API Updates",
-        "detail": "The GraphQL Admin API now returns errors for invalid metafield queries in API version 2026-10, ensuring accurate results. Additionally, new metafield triggers and topics are available for Events, allowing apps to subscribe to changes on various objects like Product, Order, and Customer."
+        "detail": "The GraphQL Admin API now returns errors for invalid metafield queries in API version 2026-10, ensuring more accurate results. This change affects queries that filter by metafields not set up for filtering."
       },
       {
         "n": "2",
-        "title": "Improved Development Tools",
-        "detail": "Liquid templates have been updated to support composing pages with blocks and partials, simplifying theme page development. Furthermore, full-stack capabilities are now available to power app analytics, reducing the need for external libraries and data warehouses."
+        "title": "Webhooks and Events Expansion",
+        "detail": "New metafield triggers and topics are available for Events, allowing apps to subscribe to events for various resources like Order, Collection, and Location, as well as metafield changes on key objects."
+      },
+      {
+        "n": "3",
+        "title": "Liquid Templates and App Development",
+        "detail": "Liquid templates can now compose pages with blocks and partials, simplifying theme page building. Additionally, full-stack capabilities are introduced to power app analytics, reducing the need for external libraries and data warehouses."
       }
     ],
     "actions": [
       {
-        "text": "Update API version to 2026-10 to utilize new GraphQL Admin API features",
+        "text": "Update GraphQL Admin API queries to handle new error responses",
         "deadline": "2026-10"
       },
       {
-        "text": "Explore new metafield triggers and topics for Events",
+        "text": "Explore new webhooks and events for app integration",
         "deadline": ""
       },
       {
-        "text": "Migrate to new Liquid template structure for theme development",
+        "text": "Migrate to new Liquid template features for theme development",
         "deadline": ""
       }
     ],
     "hashtags": [
       "graphql-admin-api",
+      "webhooks-and-events",
       "liquid-templates",
-      "webhooks-updates",
-      "app-analytics"
+      "app-development"
     ]
   }
 }
