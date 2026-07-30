@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-29T19:15:12Z",
+    "generatedAt": "2026-07-30T02:22:49Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -9,15 +9,15 @@
     "deadline": "2026-10",
     "headline": "GraphQL Admin API Error",
     "what_changed": "The GraphQL Admin API now returns an error when a query filters by a metafield that isn't set up for filtering. This change starts in API version 2026-10. Previously, the API would silently return incorrect results.",
-    "developer_impact": "Developers need to update their GraphQL queries to handle the new error response. They should check the metafield setup before querying and handle the error accordingly. This change affects all GraphQL Admin API queries that filter by metafields, so developers should review their code and update it to comply with the new behavior. The `metafield` object and its `key` and `value` fields are affected by this change.",
-    "merchant_impact": "Merchants will see more accurate results from apps that use the GraphQL Admin API, as apps will no longer return incorrect results due to misconfigured metafields.",
-    "why_it_matters": "This change improves the accuracy and reliability of the GraphQL Admin API, which is essential for building robust and trustworthy apps. It also helps developers catch and fix errors earlier, reducing the risk of bugs and errors in their apps.",
+    "developer_impact": "Developers should update their GraphQL queries to handle the new error response. They should also review their metafield configurations to ensure they are set up correctly for filtering. The `metafield` object and its `key` and `value` fields are affected by this change. Developers can use the `metafield` object to retrieve metafield definitions and check if a metafield is set up for filtering.",
+    "merchant_impact": "Merchants may notice more accurate results from GraphQL queries that filter by metafields. They may also receive more informative error messages if a query is invalid.",
+    "why_it_matters": "This change improves the accuracy and reliability of the GraphQL Admin API. It also helps developers catch and fix errors in their queries more easily.",
     "code_lang": "GraphQL",
-    "code_example": "query { metafield(namespace: \"namespace\", key: \"key\") { value } }",
+    "code_example": "query { metafield(namespace: \"namespace\", key: \"key\") { key value } }",
     "hashtags": [
       "graphql-admin-api",
-      "metafield-error",
-      "api-version-2026-10"
+      "metafield-filtering",
+      "error-handling"
     ],
     "source": "Changelog",
     "link": "https://shopify.dev/changelog/invalid-metafield-queries-now-return-errors-in-the-graphql-admin-api",
@@ -62,7 +62,7 @@
       "title": "Invalid metafield queries now return errors in the GraphQL Admin API",
       "summary": "The GraphQL Admin API now returns errors for invalid metafield queries, starting in API version 2026-10, instead of silently returning incorrect results.",
       "impact": "Mainly affects developers",
-      "action_needed": false,
+      "action_needed": true,
       "deadline": "2026-10",
       "hashtags": [
         "graphql-admin-api",
@@ -74,7 +74,7 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "7d",
+      "date": "8d",
       "relevance": "For you",
       "title": "Metafield triggers and additional topics are now available for Events",
       "summary": "Metafield triggers and additional topics are now available for Events, allowing apps to subscribe to events for various resources and metafield changes.",
@@ -82,8 +82,8 @@
       "action_needed": false,
       "deadline": "",
       "hashtags": [
+        "events",
         "metafield-triggers",
-        "events-api",
         "webhooks"
       ],
       "link": "https://shopify.dev/changelog/metafield-triggers-and-additional-topics-are-now-available-for-events"
@@ -111,7 +111,7 @@
       "date": "8d",
       "relevance": "Medium",
       "title": "Full-stack capabilities to power app analytics",
-      "summary": "Full-stack capabilities are now available to power app analytics, making it easier for app developers to build merchant-facing analytics.",
+      "summary": "Full-stack capabilities are now available to power app analytics, simplifying the process of building merchant-facing analytics.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -135,7 +135,7 @@
       "hashtags": [
         "physical-inventory",
         "graphql-admin-api",
-        "inventory-apis"
+        "feature-preview"
       ],
       "link": "https://shopify.dev/changelog/physical-inventory-feature-preview"
     },
@@ -145,7 +145,7 @@
       "date": "12d",
       "relevance": "For you",
       "title": "4.5.2",
-      "summary": "The CLI version 4.5.2 fixes a warning when running theme commands in valid theme directories and bumps Shopify/theme-tools packages.",
+      "summary": "CLI version 4.5.2 fixes a warning when running theme commands in valid theme directories and bumps Shopify/theme-tools packages.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -167,37 +167,37 @@
       "action_needed": true,
       "deadline": "",
       "hashtags": [
-        "mtls-certificate",
         "card-deposit",
+        "mtls-certificate",
         "security-update"
       ],
       "link": "https://shopify.dev/changelog/card-deposit-endpoint-now-requires-mtls-certificate"
     }
   ],
   "recap": {
-    "dateRange": "Jul 22 – Jul 29",
+    "dateRange": "Jul 23 – Jul 30",
     "basis": "Based on 2 updates this week",
-    "headline": "Enhanced printing and error handling for Shopify developers",
+    "headline": "Shopify updates enhance POS UI extensions and GraphQL Admin API",
     "themes": [
       {
         "n": "1",
         "title": "POS UI Extensions",
-        "detail": "The Printing API (shopify.printing) is now available, enabling POS UI extensions to discover and print directly to hardware receipt printers using getPrinters(). This update is part of POS UI Extensions 2026-07. Developers can leverage this feature to create more seamless in-store experiences."
+        "detail": "The Printing API (shopify.printing) is introduced in POS UI Extensions 2026-07, allowing extensions to discover and print directly to hardware receipt printers using getPrinters(). This update streamlines the printing process for merchants."
       },
       {
         "n": "2",
         "title": "GraphQL Admin API Improvements",
-        "detail": "The GraphQL Admin API now returns errors for invalid metafield queries, starting in API version 2026-10. This change ensures that developers receive accurate feedback when querying metafields that aren't set up for filtering, rather than receiving incorrect results. Developers should review their metafield queries to ensure compatibility with this update."
+        "detail": "Starting in API version 2026-10, the GraphQL Admin API will return errors when a query filters by a metafield that isn't set up for filtering, preventing silent incorrect results. This change enhances the accuracy and reliability of metafield queries."
       }
     ],
     "actions": [
       {
-        "text": "Review and update metafield queries to ensure compatibility with GraphQL Admin API changes",
-        "deadline": "2026-10"
+        "text": "Review and update POS UI extensions to utilize the new Printing API",
+        "deadline": "2026-07"
       },
       {
-        "text": "Explore the Printing API for POS UI extensions",
-        "deadline": ""
+        "text": "Test GraphQL Admin API queries for metafield filtering errors in preparation for API version 2026-10",
+        "deadline": "2026-10"
       }
     ],
     "hashtags": [
