@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-30T19:25:35Z",
+    "generatedAt": "2026-07-31T02:47:12Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -8,12 +8,12 @@
     "action_needed": true,
     "deadline": "API version 2026-10",
     "headline": "Invalid Metafield Queries",
-    "what_changed": "The GraphQL Admin API now returns an error when a query filters by a metafield that isn't set up for filtering. This change is available in API version 2026-10. Previously, the API would silently return incorrect results.",
-    "developer_impact": "Developers should update their code to handle the new error response. They can do this by checking the error message and adjusting their query filters accordingly. This change affects all GraphQL Admin API queries that use metafield filters. Developers should review their code and test their queries to ensure they are handling the new error response correctly.",
-    "merchant_impact": "Merchants will see more accurate results from apps that use the GraphQL Admin API, as apps will no longer receive incorrect results due to invalid metafield queries.",
-    "why_it_matters": "This change improves the accuracy and reliability of the GraphQL Admin API, which is essential for building robust and reliable Shopify apps.",
+    "what_changed": "The GraphQL Admin API now returns an error when a query filters by a metafield that isn't set up for filtering. This change is part of API version 2026-10. Previously, such queries would silently return incorrect results.",
+    "developer_impact": "Developers should update their GraphQL queries to handle the new error response. This change affects all GraphQL Admin API queries that filter by metafields. Developers should review their code to ensure they are handling potential errors correctly. They should also test their queries with the new API version to catch any potential issues.",
+    "merchant_impact": "Merchants will see more accurate results from GraphQL queries, as invalid metafield queries will now return errors instead of incorrect results.",
+    "why_it_matters": "This change improves the accuracy and reliability of the GraphQL Admin API, which is essential for building robust and trustworthy Shopify apps.",
     "code_lang": "GraphQL",
-    "code_example": "query { products(metafield: { key: \"invalid_key\" }) { edges { node { title } } } }",
+    "code_example": "query { products(filter: { metafield: { key: \"my_metafield\", value: \"my_value\" } }) { edges { node { id } } } }",
     "hashtags": [
       "graphql-admin-api",
       "metafield-queries",
@@ -23,16 +23,16 @@
     "link": "https://shopify.dev/changelog/invalid-metafield-queries-now-return-errors-in-the-graphql-admin-api",
     "also_worth_knowing": [
       {
+        "text": "Merchants now see partner details on collaborator requests",
+        "link": "https://shopify.dev/changelog/partner-details-on-collaborator-requests"
+      },
+      {
         "text": "The shopify-account component for customer accounts is now a Theme Store requirement",
         "link": "https://shopify.dev/changelog/the-shopify-account-component-for-customer-accounts-is-now-a-theme-store-requirement"
       },
       {
         "text": "createdAt is now available on the Customer object in Shopify Functions",
         "link": "https://shopify.dev/changelog/createdat-is-now-available-on-the-customer-object-in-shopify-functions"
-      },
-      {
-        "text": "Updating an order's shipping address now recalculates taxes",
-        "link": "https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data"
       }
     ]
   },
@@ -40,27 +40,44 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "1h",
-      "relevance": "Medium",
-      "title": "The shopify-account component for customer accounts is now a Theme Store requirement",
-      "summary": "The shopify-account component is now a Theme Store requirement, allowing customers to sign in and manage their account directly on the storefront.",
+      "date": "6h",
+      "relevance": "Low",
+      "title": "Merchants now see partner details on collaborator requests",
+      "summary": "Merchants can now see partner details on collaborator requests, enhancing trust and decision-making. This change aims to provide merchants with more context when approving collaborator requests.",
       "impact": "Mainly affects merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
+        "collaborator-requests",
+        "merchant-trust",
+        "partner-details"
+      ],
+      "link": "https://shopify.dev/changelog/partner-details-on-collaborator-requests"
+    },
+    {
+      "type": "New",
+      "source": "Changelog",
+      "date": "8h",
+      "relevance": "For you",
+      "title": "The shopify-account component for customer accounts is now a Theme Store requirement",
+      "summary": "The shopify-account component is now a Theme Store requirement, enabling customers to sign in and manage their accounts directly on the storefront. This component supports passwordless sign-in and automatic sign-in with other Shopify stores.",
+      "impact": "Mainly affects developers",
+      "action_needed": true,
+      "deadline": "",
+      "hashtags": [
+        "shopify-account",
         "theme-store",
-        "customer-accounts",
-        "shopify-account"
+        "customer-accounts"
       ],
       "link": "https://shopify.dev/changelog/the-shopify-account-component-for-customer-accounts-is-now-a-theme-store-requirement"
     },
     {
       "type": "New",
       "source": "Changelog",
-      "date": "3h",
-      "relevance": "High",
+      "date": "10h",
+      "relevance": "For you",
       "title": "createdAt is now available on the Customer object in Shopify Functions",
-      "summary": "The Customer object in Shopify Functions now includes a createdAt field, allowing for more precise function logic.",
+      "summary": "The Customer object in Shopify Functions now includes a createdAt field, allowing developers to use the customer account creation date and time in Function logic. This is an additive change with no breaking effects.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "2026-10",
@@ -74,15 +91,15 @@
     {
       "type": "Improvement",
       "source": "Changelog",
-      "date": "3h",
-      "relevance": "High",
+      "date": "10h",
+      "relevance": "For you",
       "title": "Updating an order's shipping address now recalculates taxes",
-      "summary": "Updating an order's shipping address now recalculates taxes, ensuring accurate tax calculations.",
+      "summary": "Updating an order's shipping address now recalculates taxes, ensuring accurate tax calculations for unfulfilled orders. This change affects the orderUpdate GraphQL mutation.",
       "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "August 31, 2026",
       "hashtags": [
-        "tax-calculation",
+        "tax-recalculation",
         "order-update",
         "shipping-address"
       ],
@@ -91,34 +108,34 @@
     {
       "type": "Fix",
       "source": "Hydrogen",
-      "date": "4h",
+      "date": "11h",
       "relevance": "For you",
       "title": "@shopify/cli-hydrogen@13.0.3",
-      "summary": "@shopify/cli-hydrogen@13.0.3 patch update uses the IPv4 loopback address in local debugger instructions.",
+      "summary": "The @shopify/cli-hydrogen package has been updated to version 13.0.3, which uses the IPv4 loopback address in local debugger instructions and updates dependencies.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "hydrogen",
-        "cli-update",
-        "local-debugger"
+        "hydrogen-update",
+        "cli-hydrogen",
+        "debugger-fix"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.3"
     },
     {
-      "type": "Improvement",
+      "type": "Fix",
       "source": "Hydrogen",
-      "date": "4h",
+      "date": "11h",
       "relevance": "For you",
       "title": "@shopify/mini-oxygen@4.2.1",
-      "summary": "@shopify/mini-oxygen@4.2.1 patch update improves the reliability of local debugger connections.",
+      "summary": "The @shopify/mini-oxygen package has been updated to version 4.2.1, improving the reliability of local debugger connections.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "mini-oxygen",
-        "local-debugger",
-        "reliability"
+        "debugger-reliability",
+        "hydrogen-fix"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fmini-oxygen%404.2.1"
     },
@@ -126,16 +143,16 @@
       "type": "New",
       "source": "Changelog",
       "date": "3d",
-      "relevance": "Medium",
+      "relevance": "Low",
       "title": "POS UI extensions can now print directly to hardware receipt printers",
-      "summary": "POS UI extensions can now print directly to hardware receipt printers using the Printing API.",
+      "summary": "POS UI extensions can now print directly to hardware receipt printers using the Printing API, enabling extensions to discover and send documents to connected receipt printers.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "2026-07",
       "hashtags": [
-        "pos-ui",
+        "pos-ui-extensions",
         "printing-api",
-        "hardware-printers"
+        "receipt-printers"
       ],
       "link": "https://shopify.dev/changelog/pos-ui-extensions-can-now-print-directly-to-hardware-receipt-printers"
     },
@@ -143,9 +160,9 @@
       "type": "Improvement",
       "source": "Changelog",
       "date": "6d",
-      "relevance": "High",
+      "relevance": "For you",
       "title": "Invalid metafield queries now return errors in the GraphQL Admin API",
-      "summary": "Invalid metafield queries now return errors in the GraphQL Admin API, ensuring accurate query results.",
+      "summary": "The GraphQL Admin API now returns errors for invalid metafield queries, providing more accurate results and preventing silent failures.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "2026-10",
@@ -159,17 +176,17 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "8d",
-      "relevance": "High",
+      "date": "9d",
+      "relevance": "For you",
       "title": "Metafield triggers and additional topics are now available for Events",
-      "summary": "Metafield triggers and additional topics are now available for Events, enabling more flexible event handling.",
+      "summary": "Metafield triggers and additional topics are now available for Events, enabling apps to subscribe to events for various objects and metafield changes.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "events",
         "metafield-triggers",
-        "event-handling"
+        "app-subscriptions"
       ],
       "link": "https://shopify.dev/changelog/metafield-triggers-and-additional-topics-are-now-available-for-events"
     },
@@ -179,14 +196,14 @@
       "date": "9d",
       "relevance": "For you",
       "title": "Liquid templates can now compose pages with blocks and partials",
-      "summary": "Liquid templates can now compose pages with blocks and partials, simplifying theme page building.",
+      "summary": "Liquid templates can now compose pages with blocks and partials, simplifying theme page building and editing.",
       "impact": "Mainly affects developers",
       "action_needed": false,
-      "deadline": "July 2026",
+      "deadline": "",
       "hashtags": [
         "liquid-templates",
-        "theme-building",
-        "page-composition"
+        "page-composition",
+        "theme-building"
       ],
       "link": "https://shopify.dev/changelog/developer-preview-liquid-block-and-partial-tags"
     },
@@ -194,9 +211,9 @@
       "type": "New",
       "source": "Changelog",
       "date": "9d",
-      "relevance": "Medium",
+      "relevance": "For you",
       "title": "Full-stack capabilities to power app analytics",
-      "summary": "Full-stack capabilities are now available to power app analytics, simplifying the development of merchant-facing analytics.",
+      "summary": "Full-stack capabilities are now available to power app analytics, enabling app developers to build merchant-facing analytics without standing up their own stack.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -213,7 +230,7 @@
       "date": "13d",
       "relevance": "For you",
       "title": "Physical inventory feature preview",
-      "summary": "The physical inventory feature preview provides early access to new inventory APIs in the unstable version of the GraphQL Admin API.",
+      "summary": "The physical inventory feature preview provides early access to new inventory APIs in the unstable version of the GraphQL Admin API, allowing developers to build and test against these APIs.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -223,65 +240,49 @@
         "feature-preview"
       ],
       "link": "https://shopify.dev/changelog/physical-inventory-feature-preview"
-    },
-    {
-      "type": "Fix",
-      "source": "CLI",
-      "date": "13d",
-      "relevance": "For you",
-      "title": "4.5.2",
-      "summary": "CLI version 4.5.2 fixes a warning when running theme commands in valid theme directories and bumps Shopify/theme-tools packages.",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [
-        "cli-update",
-        "theme-tools",
-        "bug-fix"
-      ],
-      "link": "https://github.com/Shopify/cli/releases/tag/4.5.2"
     }
   ],
   "recap": {
-    "dateRange": "Jul 23 – Jul 30",
-    "basis": "Based on 7 updates this week",
-    "headline": "Shopify updates enhance customer account management, order tax calculations, and POS printing",
+    "dateRange": "Jul 24 – Jul 31",
+    "basis": "Based on 8 updates this week",
+    "headline": "Shopify updates enhance collaborator trust, customer account management, and order tax calculations",
     "themes": [
       {
         "n": "1",
-        "title": "Customer Account Management",
-        "detail": "The shopify-account component is now a Theme Store requirement, and Shopify Functions API version 2026-10 adds a createdAt field to the Customer object. This enables more efficient customer account management and automation."
+        "title": "Trust and Security",
+        "detail": "Merchants can now view partner details on collaborator requests, and invalid metafield queries return errors in the GraphQL Admin API, improving the overall security and reliability of the platform. Additionally, the shopify-account component is now a Theme Store requirement, supporting passwordless sign-in and automatic sign-in with trusted devices."
       },
       {
         "n": "2",
-        "title": "Order Management and Tax Calculations",
-        "detail": "Updating an order's shipping address now recalculates taxes, and the GraphQL Admin API returns errors for invalid metafield queries, improving the accuracy of order processing and data querying."
+        "title": "Customer Account Management and Order Updates",
+        "detail": "The shopify-account component supports customer account management, and updating an order's shipping address now recalculates taxes. The Customer object in Shopify Functions also now includes a createdAt field, allowing for more precise customer account management."
       },
       {
         "n": "3",
-        "title": "Development Tools and POS Enhancements",
-        "detail": "Hydrogen and mini-oxygen updates improve local debugger connections, and POS UI extensions can now print directly to hardware receipt printers using the Printing API, enhancing developer experience and POS functionality."
+        "title": "Development Tools and APIs",
+        "detail": "Hydrogen and mini-oxygen have received updates, including patch changes to improve local debugger connections and instructions. POS UI extensions can now print directly to hardware receipt printers using the Printing API."
       }
     ],
     "actions": [
       {
-        "text": "Review and implement the shopify-account component in your theme",
-        "deadline": "ASAP"
+        "text": "Update themes to include the shopify-account component",
+        "deadline": "February 2026"
       },
       {
-        "text": "Update your Shopify Functions to utilize the new createdAt field",
-        "deadline": ""
-      },
-      {
-        "text": "Test and adapt to the new tax recalculation behavior for order updates",
+        "text": "Test order updates with new tax calculation",
         "deadline": "August 31, 2026"
+      },
+      {
+        "text": "Explore Shopify Functions API version 2026-10",
+        "deadline": ""
       }
     ],
     "hashtags": [
       "shopify-developer",
       "graphql-admin-api",
-      "hydrogen-framework",
-      "pos-ui-extensions"
+      "hydrogen-updates",
+      "customer-account-management",
+      "order-management"
     ]
   }
 }
