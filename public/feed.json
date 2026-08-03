@@ -1,27 +1,31 @@
 {
   "meta": {
-    "generatedAt": "2026-08-03T09:43:18Z",
+    "generatedAt": "2026-08-03T14:37:43Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": true,
     "deadline": "August 31, 2026",
-    "headline": "Order Tax Recalculation",
-    "what_changed": "The orderUpdate GraphQL mutation now recalculates taxes when the shipping address is updated on an unfulfilled order. This change affects the Shopify GraphQL Admin API and is effective as of August 31, 2026. The recalculation is done against the new destination.",
-    "developer_impact": "Developers should be aware of this change when updating orders through the GraphQL Admin API, as it may impact the order's total cost. They should also ensure their apps handle the updated tax calculations correctly. This change may require updates to existing code that handles order updates, especially when the shipping address is changed. The orderUpdate mutation should be used with caution, and developers should verify the new tax calculations are correct.",
-    "merchant_impact": "Merchants will see accurate tax calculations when the shipping address is updated on an unfulfilled order, ensuring they charge their customers the correct amount. This change improves the overall accuracy of order totals.",
-    "why_it_matters": "This change is important because it ensures accurate tax calculations for orders, which is crucial for merchants to comply with tax regulations and avoid potential financial losses. It also improves the overall reliability of the Shopify platform.",
+    "headline": "Order Update Taxes",
+    "what_changed": "The orderUpdate GraphQL mutation now recalculates taxes when the shipping address is updated for unfulfilled orders. This change affects the GraphQL Admin API and applies to API version 2026-10 and later. The order's taxes are recalculated against the new destination.",
+    "developer_impact": "Developers should update their code to handle the new tax calculation behavior when updating shipping addresses. This change may impact apps that use the orderUpdate mutation, such as those that handle order fulfillment or shipping. Developers should review their code and test it with the updated API to ensure compatibility. They can use the GraphQL Admin API to test the new behavior and verify that taxes are calculated correctly.",
+    "merchant_impact": "Merchants will see accurate tax calculations when updating shipping addresses for unfulfilled orders, which can help prevent errors and ensure compliance with tax regulations.",
+    "why_it_matters": "This change improves the accuracy of tax calculations and ensures that merchants comply with tax regulations. It also provides a better experience for customers by ensuring that they are charged the correct amount of tax.",
     "code_lang": "GraphQL",
-    "code_example": "mutation orderUpdate(\n  id: \"gid://shopify/Order/1234567890\",\n  shippingAddress: {\n    address1: \"123 Main St\",\n    city: \"Anytown\",\n    country: \"US\",\n    zip: \"12345\"\n  }\n) {\n  order {\n    id\n    totalPrice\n    totalTax\n  }\n  userErrors {\n    field\n    message\n  }\n}",
+    "code_example": "mutation {\n  orderUpdate(input: {\n    id: \"gid://shopify/Order/123456\",\n    shippingAddress: {\n      address1: \"123 Main St\"\n      city: \"Anytown\"\n      country: \"US\"\n      zip: \"12345\"\n    }\n  }) {\n    order {\n      id\n      totalTax\n    }\n    userErrors {\n      field\n      message\n    }\n  }\n}",
     "hashtags": [
       "shopify-graphql",
-      "order-update",
-      "tax-calculation"
+      "tax-calculation",
+      "order-update"
     ],
     "source": "Changelog",
     "link": "https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data",
     "also_worth_knowing": [
+      {
+        "text": "The `orderCreate` mutation now supports multiple tracking numbers for each fulfillment",
+        "link": "https://shopify.dev/changelog/order-create-fulfillment-tracking-numbers"
+      },
       {
         "text": "Updated Built for Shopify requirements for Fulfillment services apps",
         "link": "https://shopify.dev/changelog/updated-built-for-shopify-requirements-for-fulfillment-services-apps"
@@ -29,27 +33,40 @@
       {
         "text": "Hydrogen developer preview update: July 30, 2026",
         "link": "https://shopify.dev/changelog/hydrogen-developer-preview-update-july-30"
-      },
-      {
-        "text": "New fields for cash management activities and drawers in POS",
-        "link": "https://shopify.dev/changelog/new-fields-for-cash-management-activities-and-drawers"
       }
     ]
   },
   "updates": [
     {
-      "type": "Improvement",
+      "type": "New",
       "source": "Changelog",
-      "date": "1d",
-      "relevance": "Low",
-      "title": "Updated Built for Shopify requirements for Fulfillment services apps",
-      "summary": "Updated Built for Shopify requirements for Fulfillment services apps to better reflect fulfillment operations. The updated thresholds make Built for Shopify achievable.",
+      "date": "1h",
+      "relevance": "For you",
+      "title": "The `orderCreate` mutation now supports multiple tracking numbers for each fulfillment",
+      "summary": "The orderCreate mutation now supports multiple tracking numbers for each fulfillment, allowing developers to attach multiple tracking numbers to a fulfillment when importing orders.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "fulfillment-services",
+        "graphql-admin-api",
+        "order-create",
+        "fulfillment"
+      ],
+      "link": "https://shopify.dev/changelog/order-create-fulfillment-tracking-numbers"
+    },
+    {
+      "type": "Improvement",
+      "source": "Changelog",
+      "date": "1d",
+      "relevance": "Medium",
+      "title": "Updated Built for Shopify requirements for Fulfillment services apps",
+      "summary": "Updated Built for Shopify requirements for Fulfillment services apps to better reflect how fulfillment operations run in practice.",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [
         "built-for-shopify",
+        "fulfillment-services",
         "apps"
       ],
       "link": "https://shopify.dev/changelog/updated-built-for-shopify-requirements-for-fulfillment-services-apps"
@@ -58,7 +75,7 @@
       "type": "New",
       "source": "Changelog",
       "date": "2d",
-      "relevance": "High",
+      "relevance": "For you",
       "title": "Hydrogen developer preview update: July 30, 2026",
       "summary": "Hydrogen developer preview update adds new capabilities, including Vue bindings, to build Shopify storefronts.",
       "impact": "Mainly affects developers",
@@ -91,7 +108,7 @@
     {
       "type": "Improvement",
       "source": "CLI",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "4.6.0",
       "summary": "CLI version 4.6.0 removes deprecated draftable extension process and dev session support branching, and adds flags to avoid prompts in app config link.",
@@ -112,7 +129,7 @@
       "relevance": "Low",
       "title": "Merchants now see partner details on collaborator requests",
       "summary": "Merchants now see partner details on collaborator requests, providing more context to make informed decisions.",
-      "impact": "Affects both developers and merchants",
+      "impact": "Mainly affects merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
@@ -126,10 +143,10 @@
       "type": "New",
       "source": "Changelog",
       "date": "3d",
-      "relevance": "Medium",
+      "relevance": "Low",
       "title": "The shopify-account component for customer accounts is now a Theme Store requirement",
       "summary": "The shopify-account component is now a Theme Store requirement, enabling customers to sign in and manage their account directly on the storefront.",
-      "impact": "Affects both developers and merchants",
+      "impact": "Mainly affects merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
@@ -145,7 +162,7 @@
       "date": "3d",
       "relevance": "For you",
       "title": "createdAt is now available on the Customer object in Shopify Functions",
-      "summary": "Shopify Functions API version 2026-10 adds a createdAt field to the Customer object, allowing for more precise Function logic.",
+      "summary": "The createdAt field is now available on the Customer object in Shopify Functions, allowing developers to use the date and time a customer account was created in Function logic.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -160,16 +177,16 @@
       "type": "Improvement",
       "source": "Changelog",
       "date": "3d",
-      "relevance": "Medium",
+      "relevance": "For you",
       "title": "Updating an order's shipping address now recalculates taxes",
-      "summary": "Updating an order's shipping address now recalculates taxes, ensuring accurate tax calculations.",
+      "summary": "Updating an order's shipping address now recalculates taxes, ensuring accurate tax calculations for orders with changed shipping addresses.",
       "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "August 31, 2026",
       "hashtags": [
+        "order-update",
         "tax-calculation",
-        "shipping-address",
-        "orders"
+        "shipping-address"
       ],
       "link": "https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data"
     },
@@ -177,16 +194,16 @@
       "type": "Fix",
       "source": "Hydrogen",
       "date": "3d",
-      "relevance": "High",
+      "relevance": "For you",
       "title": "@shopify/cli-hydrogen@13.0.3",
-      "summary": "Hydrogen CLI version 13.0.3 patch changes use the IPv4 loopback address in local debugger instructions.",
+      "summary": "@shopify/cli-hydrogen version 13.0.3 patch changes use the IPv4 loopback address in local debugger instructions and updates dependencies.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "hydrogen-cli",
-        "debugger",
-        "local-development"
+        "hydrogen",
+        "cli",
+        "debugger"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.3"
     },
@@ -194,16 +211,16 @@
       "type": "Fix",
       "source": "Hydrogen",
       "date": "3d",
-      "relevance": "High",
+      "relevance": "For you",
       "title": "@shopify/mini-oxygen@4.2.1",
-      "summary": "Mini Oxygen version 4.2.1 patch changes improve the reliability of local debugger connections.",
+      "summary": "@shopify/mini-oxygen version 4.2.1 patch changes improve the reliability of local debugger connections.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "mini-oxygen",
         "debugger",
-        "local-development"
+        "reliability"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fmini-oxygen%404.2.1"
     },
@@ -223,63 +240,46 @@
         "hardware-printers"
       ],
       "link": "https://shopify.dev/changelog/pos-ui-extensions-can-now-print-directly-to-hardware-receipt-printers"
-    },
-    {
-      "type": "Improvement",
-      "source": "Changelog",
-      "date": "9d",
-      "relevance": "For you",
-      "title": "Invalid metafield queries now return errors in the GraphQL Admin API",
-      "summary": "Invalid metafield queries now return errors in the GraphQL Admin API, instead of silently returning incorrect results.",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "API version 2026-10",
-      "hashtags": [
-        "graphql-admin-api",
-        "metafield-queries",
-        "error-handling"
-      ],
-      "link": "https://shopify.dev/changelog/invalid-metafield-queries-now-return-errors-in-the-graphql-admin-api"
     }
   ],
   "recap": {
     "dateRange": "Jul 27 – Aug 03",
-    "basis": "Based on 11 updates this week",
+    "basis": "Based on 12 updates this week",
     "headline": "Shopify updates Hydrogen, GraphQL Admin API, and POS UI extensions",
     "themes": [
       {
         "n": "1",
         "title": "Hydrogen Updates",
-        "detail": "Hydrogen developer preview update adds new capabilities, including Vue bindings, and @shopify/cli-hydrogen@13.0.3 and @shopify/mini-oxygen@4.2.1 patches improve local debugger connections and reliability."
+        "detail": "Hydrogen developer preview update adds new capabilities, including Vue bindings, and extends the ways developers can build Shopify storefronts. Additionally, @shopify/cli-hydrogen@13.0.3 and @shopify/mini-oxygen@4.2.1 patches improve local debugger connections and reliability."
       },
       {
         "n": "2",
-        "title": "GraphQL Admin API and Shopify Functions",
-        "detail": "New fields are available for cash management activities and drawers in POS, and the Customer object in Shopify Functions now includes a createdAt field. Additionally, updating an order's shipping address now recalculates taxes as of August 31, 2026."
+        "title": "GraphQL Admin API Enhancements",
+        "detail": "The `orderCreate` mutation now supports multiple tracking numbers for each fulfillment, and new fields are available for cash management activities and drawers in POS. The `createdAt` field is also now available on the Customer object in Shopify Functions."
       },
       {
         "n": "3",
-        "title": "POS and Checkout UI Extensions",
-        "detail": "POS UI extensions can now print directly to hardware receipt printers using the Printing API, and the shopify-account component is now a Theme Store requirement for customer accounts."
+        "title": "Ecosystem and App Updates",
+        "detail": "Updated Built for Shopify requirements for Fulfillment services apps better reflect how fulfillment operations run in practice. Merchants now see partner details on collaborator requests, and the shopify-account component is now a Theme Store requirement. The Shopify CLI version 4.6.0 removes deprecated draftable extension process and dev session support branching."
       }
     ],
     "actions": [
       {
-        "text": "Review and implement updated Built for Shopify requirements for Fulfillment services apps",
+        "text": "Update fulfillment services apps to meet new Built for Shopify requirements",
         "deadline": ""
       },
       {
-        "text": "Update apps to use new fields for cash management activities and drawers in POS",
+        "text": "Implement the shopify-account component in themes",
         "deadline": ""
       },
       {
-        "text": "Test and adapt to tax recalculation changes when updating order shipping addresses",
+        "text": "Test orderUpdate GraphQL mutation with new tax recalculation",
         "deadline": "August 31, 2026"
       }
     ],
     "hashtags": [
       "shopify-developer",
-      "hydrogen-updates",
+      "hydrogen-update",
       "graphql-admin-api",
       "pos-ui-extensions"
     ]
