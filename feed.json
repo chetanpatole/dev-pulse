@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-05T02:28:48Z",
+    "generatedAt": "2026-08-05T08:35:13Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -8,15 +8,15 @@
     "action_needed": true,
     "deadline": "",
     "headline": "Multiple Tracking Numbers",
-    "what_changed": "The orderCreate mutation in the GraphQL Admin API now supports multiple tracking numbers for each fulfillment. This is achieved through the addition of a trackingNumbers field to OrderCreateFulfillmentInput. The change allows for more accurate and detailed order tracking.",
-    "developer_impact": "Developers using the orderCreate mutation to import orders should update their code to utilize the new trackingNumbers field for more precise tracking. This change does not break existing functionality but enhances it. Developers should review their order creation processes to ensure they are taking advantage of this new feature. The GraphQL Admin API will continue to support previous versions, but it is recommended to update to the latest version to access new features.",
+    "what_changed": "The `orderCreate` mutation in the GraphQL Admin API now supports multiple tracking numbers for each fulfillment. This is achieved by adding a `trackingNumbers` field to the `OrderCreateFulfillmentInput` type. The change allows for more accurate and detailed tracking information when importing orders.",
+    "developer_impact": "Developers using the `orderCreate` mutation should update their code to utilize the new `trackingNumbers` field for fulfillments. This may involve modifying existing order import logic to handle multiple tracking numbers per fulfillment. The update provides more flexibility and accuracy in tracking orders, but requires adjustments to existing implementations. Ensure that your app handles the new field correctly to avoid errors or data inconsistencies.",
     "merchant_impact": "Merchants will benefit from more accurate and detailed tracking information for their orders, potentially improving customer satisfaction and reducing support queries related to order tracking.",
-    "why_it_matters": "This update matters because it enhances the functionality of the orderCreate mutation, allowing for more detailed tracking information. This can lead to improved customer experiences and more efficient order management for merchants.",
+    "why_it_matters": "This change matters because it enhances the functionality of the `orderCreate` mutation, allowing for more precise tracking and potentially improving the overall customer experience. It's an example of how Shopify's GraphQL Admin API is evolving to meet the needs of merchants and developers.",
     "code_lang": "GraphQL",
-    "code_example": "mutation {\n        orderCreate(\n          input: {\n            lineItems: [{ variantId: \"gid://graphql-variant/123\", quantity: 1 }],\n            shippingAddress: { address1: \"123 Main St\", city: \"Anytown\", country: \"US\", zip: \"12345\" },\n            fulfillments: {\n              trackingNumbers: [\"TRK123456789\", \"TRK987654321\"]\n            }\n          }\n        ) {\n          order {\n            id\n          }\n          userErrors {\n            field\n            message\n          }\n        }\n      }",
+    "code_example": "mutation {\n         orderCreate(\n           input: {\n             fulfillment: {\n               trackingNumbers: [\n                 { number: \"TRK001\" },\n                 { number: \"TRK002\" }\n               ]\n             }\n           }\n         ) {\n           order {\n             id\n           }\n         }\n       }",
     "hashtags": [
-      "graphql-admin-api",
-      "order-create-mutation",
+      "shopify-graphql",
+      "order-create",
       "tracking-numbers"
     ],
     "source": "Changelog",
@@ -43,14 +43,14 @@
       "date": "1d",
       "relevance": "For you",
       "title": "Oxygen is now available on development stores",
-      "summary": "Oxygen is now available on development stores, allowing Hydrogen storefronts to be deployed from dev stores. Development stores don't include public environments, so deployment URLs are limited.",
+      "summary": "Oxygen is now available on development stores, allowing deployment of Hydrogen storefronts without a paid plan. Note that development stores don't include public environments.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "hydrogen",
         "oxygen",
-        "dev-stores"
+        "development-stores"
       ],
       "link": "https://shopify.dev/changelog/oxygen-is-now-available-on-development-stores"
     },
@@ -65,9 +65,9 @@
       "action_needed": false,
       "deadline": "",
       "hashtags": [
+        "graphql",
         "order-create",
-        "fulfillment",
-        "tracking-numbers"
+        "fulfillment"
       ],
       "link": "https://shopify.dev/changelog/order-create-fulfillment-tracking-numbers"
     },
@@ -77,7 +77,7 @@
       "date": "3d",
       "relevance": "Medium",
       "title": "Updated Built for Shopify requirements for Fulfillment services apps",
-      "summary": "Updated Built for Shopify requirements for Fulfillment services apps better reflect how fulfillment operations run in practice.",
+      "summary": "Updated Built for Shopify requirements for Fulfillment services apps better reflect fulfillment operations, making Built for Shopify achievable for more apps.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -94,7 +94,7 @@
       "date": "4d",
       "relevance": "For you",
       "title": "Hydrogen developer preview update: July 30, 2026",
-      "summary": "The Hydrogen developer preview update adds new capabilities, including Vue bindings, to build Shopify storefronts.",
+      "summary": "Hydrogen developer preview update adds new capabilities, including Vue bindings, to build Shopify storefronts.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -116,9 +116,9 @@
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "cash-management",
         "graphql",
-        "admin-api"
+        "cash-management",
+        "pos"
       ],
       "link": "https://shopify.dev/changelog/new-fields-for-cash-management-activities-and-drawers"
     },
@@ -126,7 +126,7 @@
       "type": "Improvement",
       "source": "CLI",
       "date": "4d",
-      "relevance": "For you",
+      "relevance": "Medium",
       "title": "4.6.0",
       "summary": "CLI version 4.6.0 removes deprecated draftable extension process and dev session support branching, and adds flags to avoid prompts in app config link.",
       "impact": "Mainly affects developers",
@@ -134,8 +134,8 @@
       "deadline": "",
       "hashtags": [
         "cli",
-        "app-config",
-        "extensions"
+        "updates",
+        "development"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.6.0"
     },
@@ -146,12 +146,12 @@
       "relevance": "Low",
       "title": "Merchants now see partner details on collaborator requests",
       "summary": "Merchants now see partner details on collaborator requests, providing more context for decision-making.",
-      "impact": "Mainly affects merchants",
+      "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "collaborator",
-        "partner",
+        "requests",
         "merchants"
       ],
       "link": "https://shopify.dev/changelog/partner-details-on-collaborator-requests"
@@ -163,7 +163,7 @@
       "relevance": "Low",
       "title": "The shopify-account component for customer accounts is now a Theme Store requirement",
       "summary": "The shopify-account component is now a Theme Store requirement, enabling customers to sign in and manage their account directly on the storefront.",
-      "impact": "Mainly affects merchants",
+      "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
@@ -196,13 +196,13 @@
       "date": "5d",
       "relevance": "For you",
       "title": "Updating an order's shipping address now recalculates taxes",
-      "summary": "Updating an order's shipping address now recalculates taxes, ensuring accurate tax calculations.",
+      "summary": "Updating an order's shipping address now recalculates taxes, ensuring accurate tax calculations for orders.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "August 31, 2026",
       "hashtags": [
-        "order-update",
         "taxes",
+        "orders",
         "shipping"
       ],
       "link": "https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data"
@@ -213,7 +213,7 @@
       "date": "5d",
       "relevance": "For you",
       "title": "@shopify/cli-hydrogen@13.0.3",
-      "summary": "Hydrogen CLI version 13.0.3 patch changes use the IPv4 loopback address in local debugger instructions and updates dependencies.",
+      "summary": "Hydrogen @shopify/cli-hydrogen@13.0.3 patch update uses the IPv4 loopback address in local debugger instructions and updates dependencies.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -230,7 +230,7 @@
       "date": "5d",
       "relevance": "For you",
       "title": "@shopify/mini-oxygen@4.2.1",
-      "summary": "Mini-oxygen version 4.2.1 patch changes improve the reliability of local debugger connections.",
+      "summary": "@shopify/mini-oxygen@4.2.1 patch update improves the reliability of local debugger connections.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -250,7 +250,7 @@
       {
         "n": "1",
         "title": "Hydrogen Updates",
-        "detail": "Hydrogen developer preview update adds new capabilities, including Vue bindings, and Oxygen is now available on development stores. The @shopify/cli-hydrogen and @shopify/mini-oxygen packages have also been updated with patch changes."
+        "detail": "Hydrogen developer preview update adds new capabilities, including Vue bindings, and Oxygen is now available on development stores. The @shopify/cli-hydrogen and @shopify/mini-oxygen packages have been updated with patch changes."
       },
       {
         "n": "2",
@@ -259,25 +259,21 @@
       },
       {
         "n": "3",
-        "title": "Upcoming Changes and Requirements",
-        "detail": "The shopify-account component is now a Theme Store requirement, and updating an order's shipping address will recalculate taxes as of August 31, 2026. Built for Shopify requirements for Fulfillment services apps have also been updated."
+        "title": "Ecosystem and App Updates",
+        "detail": "The shopify-account component is now a Theme Store requirement, and merchants can see partner details on collaborator requests. The Shopify CLI has been updated to version 4.6.0, removing deprecated draftable extension processes and adding flags to avoid prompts."
       }
     ],
     "actions": [
       {
-        "text": "Test Hydrogen developer preview update and Oxygen on development stores",
+        "text": "Update Hydrogen projects to use the latest developer preview",
         "deadline": ""
       },
       {
-        "text": "Update fulfillment services apps to meet new Built for Shopify requirements",
+        "text": "Review and implement the updated Built for Shopify requirements for Fulfillment services apps",
         "deadline": ""
       },
       {
-        "text": "Ensure themes include the shopify-account component",
-        "deadline": ""
-      },
-      {
-        "text": "Review and adapt to tax recalculation changes for order shipping address updates",
+        "text": "Test the orderUpdate GraphQL mutation with the new tax recalculation feature",
         "deadline": "August 31, 2026"
       }
     ],
@@ -285,7 +281,7 @@
       "shopify-developer",
       "hydrogen-updates",
       "graphql-admin-api",
-      "fulfillment-services"
+      "shopify-ecosystem"
     ]
   }
 }
