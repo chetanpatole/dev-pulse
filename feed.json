@@ -1,23 +1,23 @@
 {
   "meta": {
-    "generatedAt": "2026-08-06T23:57:59Z",
+    "generatedAt": "2026-08-07T03:08:00Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": true,
     "deadline": "August 31, 2026",
-    "headline": "Order Tax Recalculation",
-    "what_changed": "The orderUpdate GraphQL mutation now recalculates taxes when the shipping address is updated for an unfulfilled order. This change ensures accurate tax calculations based on the new destination. The update is effective as of August 31, 2026.",
-    "developer_impact": "Developers should review their order update logic to ensure it accounts for the new tax recalculation behavior. This change may impact custom checkout flows or order management apps. The orderUpdate mutation now returns the updated tax amounts, which should be handled accordingly in the application. Additionally, developers should test their apps to ensure compatibility with this change.",
-    "merchant_impact": "Merchants will see more accurate tax calculations when updating shipping addresses for unfulfilled orders, which can help reduce errors and improve the overall customer experience.",
-    "why_it_matters": "This change improves the accuracy of tax calculations and ensures compliance with tax regulations. It also provides a better experience for merchants and customers by reducing errors and inconsistencies.",
+    "headline": "Taxes Recalculated",
+    "what_changed": "Updating an order's shipping address now recalculates taxes through the orderUpdate GraphQL mutation. This change affects unfulfilled orders and applies as of August 31, 2026. The order's taxes are recalculated against the new destination.",
+    "developer_impact": "Developers should be aware of this change when updating orders, especially if their apps handle shipping address changes. They should test their apps to ensure compatibility with the new tax calculation behavior. The orderUpdate mutation in the GraphQL Admin API is affected. No migration is required, but testing is recommended to handle potential tax calculation changes.",
+    "merchant_impact": "Merchants will see accurate tax calculations when shipping addresses are updated, ensuring compliance with tax regulations. This change improves the accuracy of tax calculations for their orders.",
+    "why_it_matters": "This change ensures accurate tax calculations and compliance with tax regulations, which is crucial for merchants. It also reflects Shopify's commitment to providing a robust and reliable platform for commerce.",
     "code_lang": "GraphQL",
-    "code_example": "mutation orderUpdate($orderId: ID!, $shippingAddress: MailingAddressInput!) {\n         orderUpdate(id: $orderId, shippingAddress: $shippingAddress) {\n           order {\n             id\n             totalTax\n           }\n         }\n       }",
+    "code_example": "mutation {\n         orderUpdate(input: {\n           id: \"gid://shopify/Order/123456\",\n           shippingAddress: {\n             address1: \"123 Main St\"\n             city: \"Anytown\"\n             country: \"US\"\n             zip: \"12345\"\n           }\n         }) {\n           order {\n             id\n             totalTax\n           }\n           userErrors {\n             field\n             message\n           }\n         }\n       }",
     "hashtags": [
-      "graphql-admin-api",
-      "order-management",
-      "tax-calculation"
+      "shopify-graphql",
+      "tax-calculation",
+      "order-update"
     ],
     "source": "Changelog",
     "link": "https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data",
@@ -40,10 +40,10 @@
     {
       "type": "New",
       "source": "Changelog",
-      "date": "1h",
+      "date": "5h",
       "relevance": "For you",
       "title": "Standard storefront events and actions now support cart attributes",
-      "summary": "Standard storefront events and actions now support cart attributes, allowing for more flexibility in cart management. The updateCart standard action now updates cart attributes.",
+      "summary": "Standard storefront events and actions now support cart attributes, and the updateCart standard action updates cart attributes. A new shopify:cart:attributes-update event fires whenever an attributes update is initiated.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -60,14 +60,14 @@
       "date": "1d",
       "relevance": "For you",
       "title": "WebMCP support for Liquid and Hydrogen storefronts",
-      "summary": "WebMCP support is now available for Liquid and Hydrogen storefronts, enabling AI agents to interact with online stores. Agents can search catalogs, manage carts, and initiate checkout.",
-      "impact": "Mainly affects developers",
+      "summary": "WebMCP support for Liquid and Hydrogen storefronts is now available, allowing AI agents to search catalogs, manage carts, and go to checkout on behalf of shoppers.",
+      "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "webmcp",
-        "liquid",
-        "hydrogen"
+        "liquid-storefronts",
+        "hydrogen-storefronts"
       ],
       "link": "https://shopify.dev/changelog/webmcp-liquid-hydrogen"
     },
@@ -77,14 +77,14 @@
       "date": "3d",
       "relevance": "For you",
       "title": "Oxygen is now available on development stores",
-      "summary": "Oxygen is now available on development stores, allowing developers to deploy Hydrogen storefronts from dev stores. Note that development stores don't include public environments.",
+      "summary": "Oxygen is now available on development stores, allowing deployment of Hydrogen storefronts without a paid plan.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "oxygen",
         "hydrogen",
-        "dev-stores"
+        "development-stores"
       ],
       "link": "https://shopify.dev/changelog/oxygen-is-now-available-on-development-stores"
     },
@@ -94,7 +94,7 @@
       "date": "3d",
       "relevance": "For you",
       "title": "The `orderCreate` mutation now supports multiple tracking numbers for each fulfillment",
-      "summary": "The orderCreate mutation now supports multiple tracking numbers for each fulfillment, providing more flexibility in order management. Developers can attach multiple tracking numbers to a fulfillment when importing orders.",
+      "summary": "The orderCreate mutation now supports multiple tracking numbers for each fulfillment, allowing for more accurate order tracking.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -109,15 +109,15 @@
       "type": "Improvement",
       "source": "Changelog",
       "date": "5d",
-      "relevance": "Medium",
+      "relevance": "Low",
       "title": "Updated Built for Shopify requirements for Fulfillment services apps",
-      "summary": "Updated Built for Shopify requirements for Fulfillment services apps aim to better reflect real-world fulfillment operations, making it easier for apps to achieve Built for Shopify status.",
+      "summary": "Updated Built for Shopify requirements for Fulfillment services apps better reflect real-world fulfillment operations.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "built-for-shopify",
-        "fulfillment",
+        "fulfillment-services",
         "apps"
       ],
       "link": "https://shopify.dev/changelog/updated-built-for-shopify-requirements-for-fulfillment-services-apps"
@@ -128,14 +128,14 @@
       "date": "6d",
       "relevance": "For you",
       "title": "Hydrogen developer preview update: July 30, 2026",
-      "summary": "The Hydrogen developer preview update adds new capabilities, including Vue bindings, to the toolkit, extending the ways developers can build Shopify storefronts.",
+      "summary": "The Hydrogen developer preview update adds new capabilities, including Vue bindings, to build Shopify storefronts.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "hydrogen",
-        "vue",
-        "developer-preview"
+        "vue-bindings",
+        "storefronts"
       ],
       "link": "https://shopify.dev/changelog/hydrogen-developer-preview-update-july-30"
     },
@@ -157,19 +157,19 @@
       "link": "https://shopify.dev/changelog/new-fields-for-cash-management-activities-and-drawers"
     },
     {
-      "type": "Release",
+      "type": "Improvement",
       "source": "CLI",
       "date": "6d",
-      "relevance": "Medium",
+      "relevance": "For you",
       "title": "4.6.0",
-      "summary": "CLI version 4.6.0 removes deprecated draftable extension process and dev session support branching, and adds flags to avoid prompts in app config linking.",
+      "summary": "CLI version 4.6.0 removes deprecated draftable extension process and dev session support branching, and adds flags to avoid prompts in app config link.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "cli",
-        "release",
-        "updates"
+        "app-config",
+        "development"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.6.0"
     },
@@ -179,14 +179,14 @@
       "date": "7d",
       "relevance": "Low",
       "title": "Merchants now see partner details on collaborator requests",
-      "summary": "Merchants now see partner details on collaborator requests, providing more context for decision-making when approving collaborator access to live stores.",
+      "summary": "Merchants now see partner details on collaborator requests, providing more context for decision-making.",
       "impact": "Mainly affects merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "collaborator",
-        "partner",
-        "merchant"
+        "collaborator-requests",
+        "partner-details",
+        "merchants"
       ],
       "link": "https://shopify.dev/changelog/partner-details-on-collaborator-requests"
     },
@@ -194,16 +194,16 @@
       "type": "New",
       "source": "Changelog",
       "date": "7d",
-      "relevance": "Low",
+      "relevance": "For you",
       "title": "The shopify-account component for customer accounts is now a Theme Store requirement",
-      "summary": "The shopify-account component is now a Theme Store requirement, enabling customers to sign in and manage their accounts directly on the storefront with passwordless sign-in and automatic sign-in with shopify.",
-      "impact": "Mainly affects merchants",
+      "summary": "The shopify-account component for customer accounts is now a Theme Store requirement, supporting passwordless sign-in and automatic sign-in with Shop Pay.",
+      "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "shopify-account",
         "theme-store",
-        "customer"
+        "customer-accounts"
       ],
       "link": "https://shopify.dev/changelog/the-shopify-account-component-for-customer-accounts-is-now-a-theme-store-requirement"
     },
@@ -213,13 +213,13 @@
       "date": "7d",
       "relevance": "For you",
       "title": "createdAt is now available on the Customer object in Shopify Functions",
-      "summary": "The createdAt field is now available on the Customer object in Shopify Functions, allowing developers to use the date and time a customer account was created in Function logic.",
+      "summary": "The createdAt field is now available on the Customer object in Shopify Functions, allowing for more accurate customer account creation tracking.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "shopify-functions",
-        "customer",
+        "customer-object",
         "created-at"
       ],
       "link": "https://shopify.dev/changelog/createdat-is-now-available-on-the-customer-object-in-shopify-functions"
@@ -230,27 +230,27 @@
       "date": "7d",
       "relevance": "For you",
       "title": "Updating an order's shipping address now recalculates taxes",
-      "summary": "Updating an order's shipping address now recalculates taxes, ensuring accurate tax calculations for unfulfilled orders. This change applies to orders updated through the orderUpdate GraphQL mutation.",
+      "summary": "Updating an order's shipping address now recalculates taxes, ensuring accurate tax calculations for unfulfilled orders.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "August 31, 2026",
       "hashtags": [
-        "tax-calculation",
         "order-update",
+        "tax-calculation",
         "graphql-admin-api"
       ],
       "link": "https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data"
     }
   ],
   "recap": {
-    "dateRange": "Jul 30 – Aug 06",
+    "dateRange": "Jul 31 – Aug 07",
     "basis": "Based on 8 updates this week",
-    "headline": "Shopify updates enhance storefront functionality, Hydrogen development, and fulfillment services",
+    "headline": "Shopify updates enhance storefronts, fulfillment, and Hydrogen capabilities",
     "themes": [
       {
         "n": "1",
         "title": "Storefront Enhancements",
-        "detail": "Standard storefront events and actions now support cart attributes, and WebMCP support is available for Liquid and Hydrogen storefronts, enabling AI agents to interact with stores. Oxygen is also now available on development stores for Hydrogen storefront deployment."
+        "detail": "Standard storefront events and actions now support cart attributes, and WebMCP support is added for Liquid and Hydrogen storefronts. Additionally, Oxygen is now available on development stores for Hydrogen storefront deployment."
       },
       {
         "n": "2",
@@ -259,13 +259,13 @@
       },
       {
         "n": "3",
-        "title": "Hydrogen and Development Updates",
-        "detail": "The Hydrogen developer preview has been updated with new capabilities, including Vue bindings, and the CLI has been updated to version 4.6.0 with changes to app configuration and dev session support."
+        "title": "Hydrogen and Development Tools",
+        "detail": "The Hydrogen developer preview has been updated with new capabilities, including Vue bindings, and the CLI has been updated to version 4.6.0 with removed deprecated features and added flags for app configuration."
       }
     ],
     "actions": [
       {
-        "text": "Update storefront code to utilize new cart attribute support",
+        "text": "Update storefront code to utilize cart attributes and WebMCP support",
         "deadline": ""
       },
       {
@@ -273,7 +273,7 @@
         "deadline": ""
       },
       {
-        "text": "Explore new Hydrogen developer preview features and update projects accordingly",
+        "text": "Explore Hydrogen developer preview updates and Vue bindings",
         "deadline": "July 30, 2026"
       }
     ],
@@ -281,7 +281,7 @@
       "shopify-developer",
       "hydrogen-update",
       "storefront-enhancements",
-      "fulfillment-services"
+      "fulfillment-management"
     ]
   }
 }
