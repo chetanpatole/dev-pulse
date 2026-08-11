@@ -1,27 +1,31 @@
 {
   "meta": {
-    "generatedAt": "2026-08-10T18:56:31Z",
+    "generatedAt": "2026-08-11T01:42:09Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": true,
-    "deadline": "API version 2026-10",
-    "headline": "Invalid Metafield Queries",
-    "what_changed": "The GraphQL Admin API now returns an error when a query filters by a metafield that isn't set up for filtering, instead of silently returning incorrect results. This change is available in API version 2026-10. The API will provide more accurate and reliable results for metafield queries.",
-    "developer_impact": "Developers should update their code to handle the new error response from the GraphQL Admin API. They should ensure that their metafield queries are correctly set up for filtering to avoid errors. Additionally, developers can use this change to improve the reliability and accuracy of their app's data. They should review their existing code and update it to comply with the new API behavior. The `metafield` query should be used with caution, and developers should verify that the metafield is set up for filtering before querying it.",
-    "merchant_impact": "Merchants will benefit from more accurate and reliable data in their apps, as the new API behavior will prevent incorrect results from being returned. This change will improve the overall quality of the merchant's experience with the app.",
-    "why_it_matters": "This change matters because it improves the reliability and accuracy of the GraphQL Admin API, which is a critical component of many Shopify apps. By returning an error for invalid metafield queries, the API helps developers identify and fix issues with their code, resulting in better apps for merchants.",
+    "deadline": "September 9, 2026",
+    "headline": "Taxes Recalculated",
+    "what_changed": "The orderUpdate GraphQL mutation now recalculates taxes when the shipping address of an unfulfilled order is updated. This change ensures accurate tax calculations based on the new shipping destination. The update applies to orders modified through the GraphQL Admin API.",
+    "developer_impact": "Developers should update their order management logic to account for the tax recalculation when changing the shipping address. This change may affect the total cost of orders and should be reflected in the storefront and order confirmations. Ensure that your application handles the updated tax calculations correctly, especially when using the orderUpdate mutation. Review your code for any tax calculation assumptions that may no longer be valid.",
+    "merchant_impact": "Merchants will see more accurate tax calculations for their orders, which can impact their revenue and customer pricing. This change ensures compliance with tax regulations and reduces potential errors in order totals.",
+    "why_it_matters": "Accurate tax calculations are crucial for merchants to comply with regulations and avoid revenue discrepancies. This update ensures that Shopify's GraphQL Admin API provides the most up-to-date tax information, reflecting changes in shipping addresses.",
     "code_lang": "GraphQL",
-    "code_example": "query { metafield(namespace: \"namespace\", key: \"key\") { value } }",
+    "code_example": "mutation {\n         orderUpdate(input: {\n           id: \"gid://shopify/Order/123456\",\n           shippingAddress: {\n             address1: \"123 Main St\"\n             city: \"Anytown\"\n             country: \"US\"\n             zip: \"12345\"\n           }\n         }) {\n           order {\n             id\n             totalPrice\n             shippingAddress {\n               address1\n               city\n               country\n               zip\n             }\n           }\n           userErrors {\n             field\n             message\n           }\n         }\n       }",
     "hashtags": [
-      "graphql-admin-api",
-      "metafield-queries",
-      "error-handling"
+      "shopify-graphql",
+      "tax-calculation",
+      "order-management"
     ],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/invalid-metafield-queries-now-return-errors-in-the-graphql-admin-api",
+    "link": "https://shopify.dev/changelog/updating-an-orders-shipping-address-returns-accurate-financial-data",
     "also_worth_knowing": [
+      {
+        "text": "Shop Campaigns performance data now available via ShopifyQL",
+        "link": "https://shopify.dev/changelog/shop-campaigns-shopifyql"
+      },
       {
         "text": "4.6.1",
         "link": "https://github.com/Shopify/cli/releases/tag/4.6.1"
@@ -29,47 +33,77 @@
       {
         "text": "Standard storefront events and actions now support cart attributes",
         "link": "https://shopify.dev/changelog/events-and-actions-cart-attributes-support"
-      },
-      {
-        "text": "WebMCP support for Liquid and Hydrogen storefronts",
-        "link": "https://shopify.dev/changelog/webmcp-liquid-hydrogen"
       }
     ]
   },
   "updates": [
+    {
+      "type": "New",
+      "source": "Changelog",
+      "date": "5h",
+      "relevance": "Medium",
+      "title": "Shop Campaigns performance data now available via ShopifyQL",
+      "summary": "Shop Campaigns performance data is now available via ShopifyQL, allowing analytics and reporting apps to query performance data on behalf of authorized merchants.",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [
+        "shopify-ql",
+        "performance-data",
+        "analytics"
+      ],
+      "link": "https://shopify.dev/changelog/shop-campaigns-shopifyql"
+    },
     {
       "type": "Improvement",
       "source": "CLI",
       "date": "3d",
       "relevance": "For you",
       "title": "4.6.1",
-      "summary": "The CLI now serves UI extension source maps during app development, enhancing the debugging experience.",
+      "summary": "CLI version 4.6.1 now serves UI extension source maps during app development, enhancing the development experience.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "cli-update",
         "ui-extensions",
-        "debugging"
+        "app-dev"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.6.1"
     },
     {
-      "type": "New",
+      "type": "Improvement",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "For you",
       "title": "Standard storefront events and actions now support cart attributes",
-      "summary": "Standard storefront events and actions now support cart attributes, allowing for more dynamic cart management.",
+      "summary": "Standard storefront events and actions now support cart attributes, enhancing the shopping experience.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "storefront-api",
+        "storefront-events",
         "cart-attributes",
-        "events"
+        "actions"
       ],
       "link": "https://shopify.dev/changelog/events-and-actions-cart-attributes-support"
+    },
+    {
+      "type": "Improvement",
+      "source": "Changelog",
+      "date": "5d",
+      "relevance": "Low",
+      "title": "Draft order and transfer/shipment inventory is moving from reserved to committed",
+      "summary": "Draft order and transfer/shipment inventory is being consolidated from reserved to committed, changing how in-progress inventory holds are represented.",
+      "impact": "Mainly affects merchants",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [
+        "inventory-management",
+        "order-fulfillment",
+        "shipping"
+      ],
+      "link": "https://shopify.dev/changelog/draft-order-and-transfer-shipment-inventory-is-moving-from-reserved-to-committed"
     },
     {
       "type": "New",
@@ -77,8 +111,8 @@
       "date": "5d",
       "relevance": "For you",
       "title": "WebMCP support for Liquid and Hydrogen storefronts",
-      "summary": "WebMCP support is now available for Liquid and Hydrogen storefronts, enabling AI agents to interact with stores.",
-      "impact": "Affects both developers and merchants",
+      "summary": "WebMCP support is now available for Liquid and Hydrogen storefronts, enabling AI agents to interact with online stores.",
+      "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
@@ -89,19 +123,19 @@
       "link": "https://shopify.dev/changelog/webmcp-liquid-hydrogen"
     },
     {
-      "type": "New",
+      "type": "Improvement",
       "source": "Changelog",
       "date": "7d",
       "relevance": "For you",
       "title": "Oxygen is now available on development stores",
-      "summary": "Oxygen is now available on development stores, allowing for easier deployment of Hydrogen storefronts.",
+      "summary": "Oxygen is now available on development stores, allowing for deployment of Hydrogen storefronts from dev stores.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "oxygen",
         "hydrogen",
-        "development-stores"
+        "dev-stores"
       ],
       "link": "https://shopify.dev/changelog/oxygen-is-now-available-on-development-stores"
     },
@@ -116,9 +150,9 @@
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "graphql-admin-api",
         "order-create",
-        "fulfillment"
+        "fulfillment",
+        "tracking-numbers"
       ],
       "link": "https://shopify.dev/changelog/order-create-fulfillment-tracking-numbers"
     },
@@ -126,33 +160,33 @@
       "type": "Improvement",
       "source": "Changelog",
       "date": "9d",
-      "relevance": "Medium",
+      "relevance": "Low",
       "title": "Updated Built for Shopify requirements for Fulfillment services apps",
-      "summary": "Built for Shopify requirements for Fulfillment services apps have been updated to better reflect real-world operations.",
+      "summary": "Built for Shopify requirements for Fulfillment services apps have been updated, making it easier for apps to achieve the Built for Shopify badge.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "built-for-shopify",
-        "fulfillment",
-        "requirements"
+        "fulfillment-services",
+        "app-requirements"
       ],
       "link": "https://shopify.dev/changelog/updated-built-for-shopify-requirements-for-fulfillment-services-apps"
     },
     {
-      "type": "New",
+      "type": "Improvement",
       "source": "Changelog",
       "date": "10d",
       "relevance": "For you",
       "title": "Hydrogen developer preview update: July 30, 2026",
-      "summary": "The Hydrogen developer preview has been updated with new capabilities, including Vue bindings.",
+      "summary": "The Hydrogen developer preview has been updated with new capabilities, including Vue bindings, to enhance storefront development.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "hydrogen",
-        "vue",
-        "developer-preview"
+        "vue-bindings",
+        "storefront-dev"
       ],
       "link": "https://shopify.dev/changelog/hydrogen-developer-preview-update-july-30"
     },
@@ -160,16 +194,16 @@
       "type": "New",
       "source": "Changelog",
       "date": "10d",
-      "relevance": "Medium",
+      "relevance": "Low",
       "title": "New fields for cash management activities and drawers in POS",
-      "summary": "New fields are available for cash management activities and drawers in POS, providing more detailed information.",
-      "impact": "Mainly affects developers",
+      "summary": "New fields are available for cash management activities and drawers in POS, providing more detail about cash drawer balances and cash count activities.",
+      "impact": "Mainly affects merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "graphql-admin-api",
         "cash-management",
-        "pos"
+        "pos",
+        "cash-drawer"
       ],
       "link": "https://shopify.dev/changelog/new-fields-for-cash-management-activities-and-drawers"
     },
@@ -179,105 +213,70 @@
       "date": "10d",
       "relevance": "For you",
       "title": "4.6.0",
-      "summary": "The CLI has been updated to remove deprecated draftable extension process and add flags to avoid prompts in app config linking.",
+      "summary": "CLI version 4.6.0 removes deprecated draftable extension process and dev session support branching, and adds flags to avoid prompts in app config linking.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "cli-update",
         "app-config",
-        "extensions"
+        "dev-session"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.6.0"
     },
     {
-      "type": "New",
+      "type": "Improvement",
       "source": "Changelog",
-      "date": "10d",
+      "date": "11d",
       "relevance": "Low",
       "title": "Merchants now see partner details on collaborator requests",
-      "summary": "Merchants can now see partner details on collaborator requests, enhancing trust and decision-making.",
+      "summary": "Merchants can now see partner details on collaborator requests, enhancing trust and decision-making when approving collaborator access.",
       "impact": "Mainly affects merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "collaborator-requests",
+        "collaborator-access",
         "partner-details",
-        "merchants"
+        "merchant-trust"
       ],
       "link": "https://shopify.dev/changelog/partner-details-on-collaborator-requests"
-    },
-    {
-      "type": "New",
-      "source": "Changelog",
-      "date": "11d",
-      "relevance": "Low",
-      "title": "The shopify-account component for customer accounts is now a Theme Store requirement",
-      "summary": "The shopify-account component is now a Theme Store requirement, enabling customers to sign in and manage their accounts directly on the storefront.",
-      "impact": "Mainly affects merchants",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [
-        "theme-store",
-        "shopify-account",
-        "customer-accounts"
-      ],
-      "link": "https://shopify.dev/changelog/the-shopify-account-component-for-customer-accounts-is-now-a-theme-store-requirement"
-    },
-    {
-      "type": "New",
-      "source": "Changelog",
-      "date": "11d",
-      "relevance": "For you",
-      "title": "createdAt is now available on the Customer object in Shopify Functions",
-      "summary": "The createdAt field is now available on the Customer object in Shopify Functions, enabling more precise customer account management.",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [
-        "shopify-functions",
-        "customer-object",
-        "created-at"
-      ],
-      "link": "https://shopify.dev/changelog/createdat-is-now-available-on-the-customer-object-in-shopify-functions"
     }
   ],
   "recap": {
-    "dateRange": "Aug 03 – Aug 10",
-    "basis": "Based on 3 updates this week",
-    "headline": "Enhanced Storefront and App Development Capabilities",
+    "dateRange": "Aug 04 – Aug 11",
+    "basis": "Based on 5 updates this week",
+    "headline": "Shopify updates enhance performance data, storefront events, and inventory management",
     "themes": [
       {
         "n": "1",
-        "title": "Storefront Updates",
-        "detail": "Standard storefront events and actions now support cart attributes, and WebMCP support has been added for Liquid and Hydrogen storefronts, enabling AI agents to interact with online stores more seamlessly. This update also includes the ability to serve UI extension source maps during app development."
+        "title": "Performance Data and Analytics",
+        "detail": "Shop Campaigns performance data is now available via ShopifyQL, allowing analytics and reporting apps to query data on behalf of authorized merchants. This update enables more informed decision-making for merchants."
       },
       {
         "n": "2",
-        "title": "App Development Improvements",
-        "detail": "The latest CLI update (4.6.1) includes serving UI extension source maps during app development, enhancing the development experience for Shopify apps built with frameworks like Remix/React Router and utilizing Polaris for UI components."
+        "title": "Storefront and Inventory Updates",
+        "detail": "Standard storefront events and actions now support cart attributes, and draft order and transfer/shipment inventory is being consolidated from reserved to committed. Additionally, WebMCP support is now available for Liquid and Hydrogen storefronts, enabling AI agents to interact with online stores."
       }
     ],
     "actions": [
       {
-        "text": "Review and implement cart attribute updates in your Storefront API and Hydrogen applications",
+        "text": "Update analytics apps to utilize Shop Campaigns performance data via ShopifyQL",
         "deadline": ""
       },
       {
-        "text": "Explore WebMCP integration for AI-powered shopping experiences in your Liquid and Hydrogen storefronts",
+        "text": "Review and adapt to changes in inventory management for draft orders and transfers",
         "deadline": ""
       },
       {
-        "text": "Update to the latest CLI version (4.6.1) for improved app development",
+        "text": "Explore WebMCP integration for Liquid and Hydrogen storefronts",
         "deadline": ""
       }
     ],
     "hashtags": [
-      "shopify-developer",
+      "shopify-graphql",
+      "hydrogen-dev",
       "storefront-api",
-      "hydrogen-framework",
-      "webmcp-support",
-      "graphql-admin-api"
+      "inventory-management"
     ]
   }
 }
