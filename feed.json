@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-15T06:36:29Z",
+    "generatedAt": "2026-08-15T12:35:18Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -8,16 +8,16 @@
     "action_needed": true,
     "deadline": "September 9, 2026",
     "headline": "OrderCreate Mutation",
-    "what_changed": "The orderCreate mutation now supports multiple tracking numbers for each fulfillment. A trackingNumbers field has been added to OrderCreateFulfillmentInput, allowing multiple tracking numbers to be attached to a fulfillment when importing orders. This change is available in the GraphQL Admin API.",
-    "developer_impact": "Developers using the orderCreate mutation to import orders should update their code to utilize the new trackingNumbers field. This field allows for multiple tracking numbers to be attached to a fulfillment, providing more flexibility and accuracy in order tracking. When using this field, ensure that the tracking numbers are correctly formatted and associated with the correct fulfillment. Additionally, be aware that this change may require updates to existing fulfillment workflows and order management systems.",
-    "merchant_impact": "Merchants will benefit from more accurate and detailed order tracking, as multiple tracking numbers can now be associated with a single fulfillment. This change can help improve the overall shipping and fulfillment experience for merchants and their customers.",
-    "why_it_matters": "This change matters because it provides more flexibility and accuracy in order tracking, which is essential for merchants and their customers. By supporting multiple tracking numbers, Shopify is improving the overall fulfillment experience and helping merchants to better manage their orders.",
+    "what_changed": "The orderCreate mutation now supports multiple tracking numbers for each fulfillment. A trackingNumbers field has been added to OrderCreateFulfillmentInput. This allows attaching multiple tracking numbers to a fulfillment when importing orders.",
+    "developer_impact": "Developers using the orderCreate mutation to import orders should update their code to utilize the new trackingNumbers field. This change provides more flexibility in tracking shipments. The GraphQL Admin API has been updated to reflect this change, so developers should review their API calls to ensure compatibility. No migration is required, but developers should test their code to ensure it works as expected with the updated API.",
+    "merchant_impact": "Merchants will have more accurate and detailed tracking information for their orders, improving the overall shipping experience for their customers.",
+    "why_it_matters": "This change improves the functionality of the orderCreate mutation, allowing for more accurate tracking and better customer experience. It also reflects Shopify's commitment to enhancing its APIs and improving developer experience.",
     "code_lang": "GraphQL",
-    "code_example": "mutation {\n  orderCreate(\n    input: {\n      fulfillment: {\n        trackingNumbers: [\n          { number: \"TrackingNumber1\" },\n          { number: \"TrackingNumber2\" }\n        ]\n      }\n    }\n  ) {\n    order {\n      id\n    }\n  }\n}",
+    "code_example": "mutation {\n         orderCreate(\n           input: {\n             fulfillment: {\n               trackingNumbers: [\n                 { number: \"tracking-number-1\" },\n                 { number: \"tracking-number-2\" }\n               ]\n             }\n           }\n         ) {\n           order {\n             id\n           }\n         }\n       }",
     "hashtags": [
       "shopify-graphql",
-      "order-create",
-      "fulfillment"
+      "order-create-mutation",
+      "tracking-numbers"
     ],
     "source": "Changelog",
     "link": "https://shopify.dev/changelog/order-create-fulfillment-tracking-numbers",
@@ -40,27 +40,27 @@
     {
       "type": "Improvement",
       "source": "Hydrogen",
-      "date": "15h",
+      "date": "21h",
       "relevance": "For you",
       "title": "@shopify/cli-hydrogen@13.0.4",
-      "summary": "Hydrogen CLI now supports a new flag --javascript-origin to override the default --dev-origin for customer account push. Local Hydrogen CLI discovery has also been fixed.",
+      "summary": "A new flag --javascript-origin has been added to override the hydrogen customer-account-push default origin. Local Hydrogen CLI discovery has also been fixed.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "hydrogen-cli",
-        "customer-account",
-        "local-discovery"
+        "hydrogen-update",
+        "cli-improvement",
+        "local-development"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.4"
     },
     {
       "type": "Improvement",
       "source": "Hydrogen",
-      "date": "15h",
+      "date": "21h",
       "relevance": "For you",
       "title": "@shopify/mini-oxygen@4.2.2",
-      "summary": "MiniOxygen now supports HTTP/2 requests in Vite request conversion, enhancing performance.",
+      "summary": "MiniOxygen now supports HTTP/2 requests in its Vite request conversion.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
@@ -74,41 +74,41 @@
     {
       "type": "Fix",
       "source": "Hydrogen",
-      "date": "15h",
+      "date": "21h",
       "relevance": "For you",
       "title": "@shopify/hydrogen@2026.4.5",
-      "summary": "Hydrogen customer account login recovery has been improved when switching browser contexts or opening multiple login tabs, with OAuth state values now using cryptographically secure randomness.",
+      "summary": "Customer account login recovery has been improved when switching browser contexts or opening multiple login tabs. OAuth state values now use cryptographically secure randomness.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "hydrogen-login",
-        "oauth-security",
-        "browser-context"
+        "hydrogen-fix",
+        "customer-account",
+        "oauth-security"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.4.5"
     },
     {
-      "type": "New",
+      "type": "Improvement",
       "source": "Hydrogen",
-      "date": "15h",
+      "date": "21h",
       "relevance": "For you",
       "title": "skeleton@2026.4.6",
-      "summary": "Newly scaffolded storefronts now recommend the Shopify AI Toolkit, and dependencies have been updated.",
+      "summary": "Newly scaffolded storefronts now recommend the Shopify AI Toolkit. Dependencies have also been updated.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "shopify-ai",
-        "storefront-toolkit",
-        "dependencies-update"
+        "skeleton-update",
+        "ai-toolkit",
+        "dependency-update"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/skeleton%402026.4.6"
     },
     {
-      "type": "New",
+      "type": "Improvement",
       "source": "Hydrogen",
-      "date": "15h",
+      "date": "21h",
       "relevance": "For you",
       "title": "@shopify/create-hydrogen@5.0.39",
       "summary": "The create-hydrogen package now recommends the Shopify AI Toolkit in newly scaffolded storefronts.",
@@ -117,8 +117,8 @@
       "deadline": "",
       "hashtags": [
         "create-hydrogen",
-        "shopify-ai",
-        "toolkit-recommendation"
+        "ai-toolkit",
+        "storefront-scaffolding"
       ],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcreate-hydrogen%405.0.39"
     },
@@ -145,19 +145,19 @@
       "date": "7d",
       "relevance": "For you",
       "title": "4.6.1",
-      "summary": "The CLI now serves UI extension source maps during app development, enhancing debugging capabilities.",
+      "summary": "The CLI now serves UI extension source maps during app development.",
       "impact": "Mainly affects developers",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "cli-improvement",
+        "cli-update",
         "ui-extensions",
         "source-maps"
       ],
       "link": "https://github.com/Shopify/cli/releases/tag/4.6.1"
     },
     {
-      "type": "New",
+      "type": "Improvement",
       "source": "Changelog",
       "date": "8d",
       "relevance": "For you",
@@ -177,16 +177,16 @@
       "type": "Improvement",
       "source": "Changelog",
       "date": "9d",
-      "relevance": "High",
+      "relevance": "Medium",
       "title": "Draft order and transfer/shipment inventory is moving from reserved to committed",
-      "summary": "Inventory holds for draft orders, transfers, and shipments are being consolidated from reserved to committed, enhancing inventory management.",
-      "impact": "Affects both developers and merchants",
+      "summary": "Inventory that was previously tracked under the reserved quantity state for draft orders, transfers, and shipments is being moved to the committed state.",
+      "impact": "Mainly affects merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
         "inventory-management",
         "draft-orders",
-        "reserved-inventory"
+        "committed-state"
       ],
       "link": "https://shopify.dev/changelog/draft-order-and-transfer-shipment-inventory-is-moving-from-reserved-to-committed"
     },
@@ -194,21 +194,21 @@
       "type": "New",
       "source": "Changelog",
       "date": "9d",
-      "relevance": "For you",
+      "relevance": "High",
       "title": "WebMCP support for Liquid and Hydrogen storefronts",
-      "summary": "WebMCP tools are now exposed in online stores, allowing AI agents to search catalogs, manage carts, and go to checkout on behalf of shoppers.",
+      "summary": "Online stores now expose WebMCP tools that AI agents can call, allowing agents to search the catalog, manage the shopper's cart, and go to checkout on the shopper's behalf.",
       "impact": "Affects both developers and merchants",
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "webmcp-tools",
+        "webmcp",
         "ai-agents",
         "online-stores"
       ],
       "link": "https://shopify.dev/changelog/webmcp-liquid-hydrogen"
     },
     {
-      "type": "New",
+      "type": "Improvement",
       "source": "Changelog",
       "date": "11d",
       "relevance": "For you",
@@ -218,14 +218,14 @@
       "action_needed": false,
       "deadline": "",
       "hashtags": [
-        "oxygen-hosting",
+        "oxygen-update",
         "development-stores",
-        "hydrogen-storefronts"
+        "hydrogen-deployment"
       ],
       "link": "https://shopify.dev/changelog/oxygen-is-now-available-on-development-stores"
     },
     {
-      "type": "New",
+      "type": "Improvement",
       "source": "Changelog",
       "date": "11d",
       "relevance": "For you",
@@ -236,7 +236,7 @@
       "deadline": "",
       "hashtags": [
         "order-create",
-        "multiple-tracking",
+        "tracking-numbers",
         "fulfillment-import"
       ],
       "link": "https://shopify.dev/changelog/order-create-fulfillment-tracking-numbers"
@@ -245,26 +245,26 @@
   "recap": {
     "dateRange": "Aug 08 – Aug 15",
     "basis": "Based on 6 updates this week",
-    "headline": "Hydrogen updates and ShopifyQL expansion highlight the week",
+    "headline": "Hydrogen updates and ShopifyQL expansion dominate the week",
     "themes": [
       {
         "n": "1",
         "title": "Hydrogen Updates",
-        "detail": "Multiple Hydrogen-related packages received updates, including @shopify/cli-hydrogen, @shopify/mini-oxygen, @shopify/hydrogen, and @shopify/create-hydrogen, with improvements such as new flags, HTTP/2 support, and enhanced security. The skeleton package also saw updates, including a recommendation for the Shopify AI Toolkit in new storefronts."
+        "detail": "Multiple Hydrogen-related packages received updates, including @shopify/cli-hydrogen, @shopify/mini-oxygen, @shopify/hydrogen, and @shopify/create-hydrogen, with improvements such as HTTP/2 request support, customer account login recovery, and recommendations for the Shopify AI Toolkit. These updates aim to enhance the development experience and storefront performance."
       },
       {
         "n": "2",
         "title": "ShopifyQL Expansion",
-        "detail": "Shop Campaigns performance data is now available via ShopifyQL, allowing analytics and reporting apps to query this data on behalf of authorized merchants using the existing ShopifyQL infrastructure."
+        "detail": "ShopifyQL now includes the shop_campaign_insights schema, allowing analytics and reporting apps to query Shop Campaigns performance data on behalf of authorized merchants. This expansion enables more detailed performance analysis and insights for merchants."
       }
     ],
     "actions": [
       {
-        "text": "Review and update Hydrogen projects to utilize the latest packages and features",
-        "deadline": ""
+        "text": "Update Hydrogen projects to the latest versions",
+        "deadline": "2026-04-15"
       },
       {
-        "text": "Explore Shop Campaigns performance data via ShopifyQL for analytics and reporting app development",
+        "text": "Explore ShopifyQL shop_campaign_insights schema for campaign performance analysis",
         "deadline": ""
       }
     ],
@@ -272,7 +272,7 @@
       "hydrogen-updates",
       "shopify-ql",
       "shop-campaigns",
-      "performance-data"
+      "performance-analytics"
     ]
   }
 }
