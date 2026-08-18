@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-18T12:43:30Z",
+    "generatedAt": "2026-08-18T18:37:02Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.0.4",
       "summary": "Patch Changes New flag --javascript-origin override to hydrogen customer-account-push. Not providing it still defaults to --dev-origin. (#3938) by @fredericoo Fix local Hydrogen CLI discovery so shopi…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "@shopify/mini-oxygen@4.2.2",
       "summary": "Patch Changes Support HTTP/2 requests in MiniOxygen's Vite request conversion. (#3939) by @fredericoo",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.4.5",
       "summary": "Patch Changes Recover customer account login when switching browser contexts or opening multiple login tabs. OAuth state values now use cryptographically secure randomness. (#3856) by @fredericoo Keep…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "skeleton@2026.4.6",
       "summary": "Patch Changes Recommend the Shopify AI Toolkit in newly scaffolded storefronts. (#3887) by @gonzaloriestra Updated dependencies [10356c92fc1d4335244db7304cc6cdd47ba5c892, f15667f98826650f3904597b61b5d…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "@shopify/create-hydrogen@5.0.39",
       "summary": "Patch Changes Recommend the Shopify AI Toolkit in newly scaffolded storefronts. (#3887) by @gonzaloriestra",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "10d",
+      "date": "11d",
       "relevance": "Medium",
       "title": "4.6.1",
       "summary": "What's Changed Other Serve UI extension source maps during app dev by @vividviolet in #8260 Full Changelog: 4.6.0...4.6.1",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12d",
+      "date": "13d",
       "relevance": "Medium",
       "title": "Draft order and transfer/shipment inventory is moving from reserved to committed",
       "summary": "We're consolidating how in-progress inventory holds are represented. Inventory that was previously tracked under the reserved quantity state for draft orders, transfers, and shipments is being moved t…",
@@ -140,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12d",
+      "date": "13d",
       "relevance": "Medium",
       "title": "WebMCP support for Liquid and Hydrogen storefronts",
       "summary": "Online stores now expose WebMCP tools that AI agents can call. Agents can search your catalog, manage the shopper's cart, and go to checkout on the shopper's behalf, all in the tab they're looking at.…",
