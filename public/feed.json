@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-17T18:38:28Z",
+    "generatedAt": "2026-08-18T01:10:46Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Shop Campaigns performance data now available via ShopifyQL",
       "summary": "The shop_campaign_insights schema is now available in the ShopifyQL. Analytics and reporting apps can query Shop Campaigns performance data on behalf of authorized merchants using the existing shopify…",
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "10d",
+      "date": "11d",
       "relevance": "Medium",
       "title": "Standard storefront events and actions now support cart attributes",
       "summary": "The updateCart standard action now updates cart attributes, and a new shopify:cart:attributes-update event fires whenever an attributes update is initiated. Before this, changing an attribute meant ca…",
@@ -152,8 +152,8 @@
     }
   ],
   "recap": {
-    "dateRange": "Aug 10 – Aug 17",
-    "basis": "Based on 6 updates this week",
+    "dateRange": "Aug 11 – Aug 18",
+    "basis": "Based on 5 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
