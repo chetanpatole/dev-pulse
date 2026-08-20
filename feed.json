@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-20T06:43:49Z",
+    "generatedAt": "2026-08-20T12:47:36Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "9h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "4.7.0",
       "summary": "What's Changed App Serve UI extension source maps during app dev by @vividviolet in #8212 [Feature] Add profiling to app function run by @davejcameron in #8226 Fix Shopify Function GraphQL scalar type…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "14h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "App intents on `admin.app.intent.link` now open as a full-page navigation",
       "summary": "When Sidekick invokes an app intent declared on the admin.app.intent.link extension target, the Shopify admin now navigates the merchant to your extension's url as a full page, matching how Shopify's…",
