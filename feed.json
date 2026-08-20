@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-20T12:47:36Z",
+    "generatedAt": "2026-08-20T18:37:52Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "16h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "4.7.0",
       "summary": "What's Changed App Serve UI extension source maps during app dev by @vividviolet in #8212 [Feature] Add profiling to app function run by @davejcameron in #8226 Fix Shopify Function GraphQL scalar type…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "20h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "App intents on `admin.app.intent.link` now open as a full-page navigation",
       "summary": "When Sidekick invokes an app intent declared on the admin.app.intent.link extension target, the Shopify admin now navigates the merchant to your extension's url as a full page, matching how Shopify's…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Hydrogen developer preview update: August 18, 2026",
       "summary": "The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Cart session attribution: Carts and Customer Account sessions stay in…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.0.4",
       "summary": "Patch Changes New flag --javascript-origin override to hydrogen customer-account-push. Not providing it still defaults to --dev-origin. (#3938) by @fredericoo Fix local Hydrogen CLI discovery so shopi…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/mini-oxygen@4.2.2",
       "summary": "Patch Changes Support HTTP/2 requests in MiniOxygen's Vite request conversion. (#3939) by @fredericoo",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.4.5",
       "summary": "Patch Changes Recover customer account login when switching browser contexts or opening multiple login tabs. OAuth state values now use cryptographically secure randomness. (#3856) by @fredericoo Keep…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "skeleton@2026.4.6",
       "summary": "Patch Changes Recommend the Shopify AI Toolkit in newly scaffolded storefronts. (#3887) by @gonzaloriestra Updated dependencies [10356c92fc1d4335244db7304cc6cdd47ba5c892, f15667f98826650f3904597b61b5d…",
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/create-hydrogen@5.0.39",
       "summary": "Patch Changes Recommend the Shopify AI Toolkit in newly scaffolded storefronts. (#3887) by @gonzaloriestra",
@@ -140,7 +140,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "12d",
+      "date": "13d",
       "relevance": "Medium",
       "title": "4.6.1",
       "summary": "What's Changed Other Serve UI extension source maps during app dev by @vividviolet in #8260 Full Changelog: 4.6.0...4.6.1",
