@@ -1,29 +1,42 @@
 {
   "meta": {
-    "generatedAt": "2026-08-19T18:34:27Z",
+    "generatedAt": "2026-08-20T01:10:58Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "App intents on `admin.app.intent.link` now open as a full-page navigation",
-    "what_changed": "When Sidekick invokes an app intent declared on the admin.app.intent.link extension target, the Shopify admin now navigates the merchant to your extension's url as a full page, matching how Shopify's own admin intents behave. Previously, the same intent always opened in an overlay on top of the page the merchant was already on. This is live for all shops, isn't gated by API version, and doesn't re…",
+    "headline": "4.7.0",
+    "what_changed": "What's Changed App Serve UI extension source maps during app dev by @vividviolet in #8212 [Feature] Add profiling to app function run by @davejcameron in #8226 Fix Shopify Function GraphQL scalar types by @davejcameron in #8250 Update Javy and function-runner by @jeffcharles in #8253 CLI Emit Claude Code plugin hint on CLI invocations by @dmerand in #8193 Keep the terminal UI runtime out of the CL…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "Changelog",
-    "link": "https://shopify.dev/changelog/app-intents-on-admin-app-intent-link-now-open-as-a-full-page-navigation",
+    "source": "CLI",
+    "link": "https://github.com/Shopify/cli/releases/tag/4.7.0",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
+      "source": "CLI",
+      "date": "4h",
+      "relevance": "Medium",
+      "title": "4.7.0",
+      "summary": "What's Changed App Serve UI extension source maps during app dev by @vividviolet in #8212 [Feature] Add profiling to app function run by @davejcameron in #8226 Fix Shopify Function GraphQL scalar type…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/cli/releases/tag/4.7.0"
+    },
+    {
+      "type": "Update",
       "source": "Changelog",
-      "date": "2h",
+      "date": "9h",
       "relevance": "Medium",
       "title": "App intents on `admin.app.intent.link` now open as a full-page navigation",
       "summary": "When Sidekick invokes an app intent declared on the admin.app.intent.link extension target, the Shopify admin now navigates the merchant to your extension's url as a full page, matching how Shopify's…",
@@ -114,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8d",
+      "date": "9d",
       "relevance": "Medium",
       "title": "Shop Campaigns performance data now available via ShopifyQL",
       "summary": "The shop_campaign_insights schema is now available in the ShopifyQL. Analytics and reporting apps can query Shop Campaigns performance data on behalf of authorized merchants using the existing shopify…",
@@ -140,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12d",
+      "date": "13d",
       "relevance": "Medium",
       "title": "Standard storefront events and actions now support cart attributes",
       "summary": "The updateCart standard action now updates cart attributes, and a new shopify:cart:attributes-update event fires whenever an attributes update is initiated. Before this, changing an attribute meant ca…",
@@ -152,8 +165,8 @@
     }
   ],
   "recap": {
-    "dateRange": "Aug 12 – Aug 19",
-    "basis": "Based on 7 updates this week",
+    "dateRange": "Aug 13 – Aug 20",
+    "basis": "Based on 8 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
