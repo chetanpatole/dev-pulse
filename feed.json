@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-20T18:37:52Z",
+    "generatedAt": "2026-08-21T01:14:56Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "21h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "4.7.0",
       "summary": "What's Changed App Serve UI extension source maps during app dev by @vividviolet in #8212 [Feature] Add profiling to app function run by @davejcameron in #8226 Fix Shopify Function GraphQL scalar type…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "9d",
+      "date": "10d",
       "relevance": "Medium",
       "title": "Shop Campaigns performance data now available via ShopifyQL",
       "summary": "The shop_campaign_insights schema is now available in the ShopifyQL. Analytics and reporting apps can query Shop Campaigns performance data on behalf of authorized merchants using the existing shopify…",
@@ -149,23 +149,10 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://github.com/Shopify/cli/releases/tag/4.6.1"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "13d",
-      "relevance": "Medium",
-      "title": "Standard storefront events and actions now support cart attributes",
-      "summary": "The updateCart standard action now updates cart attributes, and a new shopify:cart:attributes-update event fires whenever an attributes update is initiated. Before this, changing an attribute meant ca…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/events-and-actions-cart-attributes-support"
     }
   ],
   "recap": {
-    "dateRange": "Aug 13 – Aug 20",
+    "dateRange": "Aug 14 – Aug 21",
     "basis": "Based on 8 updates this week",
     "headline": "A quieter week.",
     "themes": [],
