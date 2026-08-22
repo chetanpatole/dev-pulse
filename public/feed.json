@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-21T18:35:20Z",
+    "generatedAt": "2026-08-22T01:11:13Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "4.7.0",
       "summary": "What's Changed App Serve UI extension source maps during app dev by @vividviolet in #8212 [Feature] Add profiling to app function run by @davejcameron in #8226 Fix Shopify Function GraphQL scalar type…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "10d",
+      "date": "11d",
       "relevance": "Medium",
       "title": "Shop Campaigns performance data now available via ShopifyQL",
       "summary": "The shop_campaign_insights schema is now available in the ShopifyQL. Analytics and reporting apps can query Shop Campaigns performance data on behalf of authorized merchants using the existing shopify…",
@@ -139,7 +139,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Aug 14 – Aug 21",
+    "dateRange": "Aug 15 – Aug 22",
     "basis": "Based on 3 updates this week",
     "headline": "A quieter week.",
     "themes": [],
