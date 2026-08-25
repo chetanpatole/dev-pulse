@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-24T18:38:49Z",
+    "generatedAt": "2026-08-25T01:12:54Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2h",
+      "date": "9h",
       "relevance": "Medium",
       "title": "Script tags are deprecated and will stop running on March 1, 2027",
       "summary": "Starting October 1, 2026, the scriptTagCreate and scriptTagUpdate mutations will return an user error, and the ScriptTag REST Admin API resource will reject POST and PUT. The deprecation applies to al…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "4.7.0",
       "summary": "What's Changed App Serve UI extension source maps during app dev by @vividviolet in #8212 [Feature] Add profiling to app function run by @davejcameron in #8226 Fix Shopify Function GraphQL scalar type…",
@@ -136,23 +136,10 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcreate-hydrogen%405.0.39"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "13d",
-      "relevance": "Medium",
-      "title": "Shop Campaigns performance data now available via ShopifyQL",
-      "summary": "The shop_campaign_insights schema is now available in the ShopifyQL. Analytics and reporting apps can query Shop Campaigns performance data on behalf of authorized merchants using the existing shopify…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/shop-campaigns-shopifyql"
     }
   ],
   "recap": {
-    "dateRange": "Aug 17 – Aug 24",
+    "dateRange": "Aug 18 – Aug 25",
     "basis": "Based on 4 updates this week",
     "headline": "A quieter week.",
     "themes": [],
