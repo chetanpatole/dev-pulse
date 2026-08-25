@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-25T01:12:54Z",
+    "generatedAt": "2026-08-25T06:45:04Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "9h",
+      "date": "14h",
       "relevance": "Medium",
       "title": "Script tags are deprecated and will stop running on March 1, 2027",
       "summary": "Starting October 1, 2026, the scriptTagCreate and scriptTagUpdate mutations will return an user error, and the ScriptTag REST Admin API resource will reject POST and PUT. The deprecation applies to al…",
