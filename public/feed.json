@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-08-26T12:50:40Z",
+    "generatedAt": "2026-08-26T19:46:17Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Script tags are deprecated and will stop running on March 1, 2027",
-    "what_changed": "Starting October 1, 2026, the scriptTagCreate and scriptTagUpdate mutations will return an user error, and the ScriptTag REST Admin API resource will reject POST and PUT. The deprecation applies to all API versions, including older ones, so pinning won't defer it. On March 1, 2027, Shopify will stop injecting script tags into storefronts. Storefronts are the last place script tags still run, since…",
+    "headline": "Four additional topics are now available for Events",
+    "what_changed": "Apps can now subscribe to events for Metaobject, MetafieldDefinition, MetaobjectDefinition, and InventoryTransfer. Apps can also subscribe to targeted metafield changes on InventoryTransfer. By subscribing to these topics, your app can react directly to changes in custom content, custom data definitions, and inventory transfer workflows. Apps can target the fields that matter in triggers, query th…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,40 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/online-store-script-tags-deprecation",
+    "link": "https://shopify.dev/changelog/four-additional-topics-are-now-available-for-events",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2h",
+      "relevance": "Medium",
+      "title": "Four additional topics are now available for Events",
+      "summary": "Apps can now subscribe to events for Metaobject, MetafieldDefinition, MetaobjectDefinition, and InventoryTransfer. Apps can also subscribe to targeted metafield changes on InventoryTransfer. By subscr…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/four-additional-topics-are-now-available-for-events"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "3h",
+      "relevance": "Medium",
+      "title": "GitHub commits now name the last theme editor",
+      "summary": "When you edit a theme in the Shopify admin, the commit Shopify pushes to your connected branch now includes the editor's name in the body: Update from Shopify for theme Dawn Committed from shop: Snowd…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/github-commits-now-name-the-last-theme-editor"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Script tags are deprecated and will stop running on March 1, 2027",
       "summary": "Starting October 1, 2026, the scriptTagCreate and scriptTagUpdate mutations will return an user error, and the ScriptTag REST Admin API resource will reject POST and PUT. The deprecation applies to al…",
@@ -49,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "App intents on `admin.app.intent.link` now open as a full-page navigation",
       "summary": "When Sidekick invokes an app intent declared on the admin.app.intent.link extension target, the Shopify admin now navigates the merchant to your extension's url as a full page, matching how Shopify's…",
@@ -62,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "Hydrogen developer preview update: August 18, 2026",
       "summary": "The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Cart session attribution: Carts and Customer Account sessions stay in…",
@@ -75,7 +101,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "11d",
+      "date": "12d",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.0.4",
       "summary": "Patch Changes New flag --javascript-origin override to hydrogen customer-account-push. Not providing it still defaults to --dev-origin. (#3938) by @fredericoo Fix local Hydrogen CLI discovery so shopi…",
@@ -88,7 +114,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "11d",
+      "date": "12d",
       "relevance": "Medium",
       "title": "@shopify/mini-oxygen@4.2.2",
       "summary": "Patch Changes Support HTTP/2 requests in MiniOxygen's Vite request conversion. (#3939) by @fredericoo",
@@ -101,7 +127,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "11d",
+      "date": "12d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.4.5",
       "summary": "Patch Changes Recover customer account login when switching browser contexts or opening multiple login tabs. OAuth state values now use cryptographically secure randomness. (#3856) by @fredericoo Keep…",
@@ -114,7 +140,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "11d",
+      "date": "12d",
       "relevance": "Medium",
       "title": "skeleton@2026.4.6",
       "summary": "Patch Changes Recommend the Shopify AI Toolkit in newly scaffolded storefronts. (#3887) by @gonzaloriestra Updated dependencies [10356c92fc1d4335244db7304cc6cdd47ba5c892, f15667f98826650f3904597b61b5d…",
@@ -127,7 +153,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "11d",
+      "date": "12d",
       "relevance": "Medium",
       "title": "@shopify/create-hydrogen@5.0.39",
       "summary": "Patch Changes Recommend the Shopify AI Toolkit in newly scaffolded storefronts. (#3887) by @gonzaloriestra",
@@ -140,7 +166,7 @@
   ],
   "recap": {
     "dateRange": "Aug 19 – Aug 26",
-    "basis": "Based on 3 updates this week",
+    "basis": "Based on 4 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
