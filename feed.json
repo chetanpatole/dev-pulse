@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-26T19:46:17Z",
+    "generatedAt": "2026-08-27T07:45:46Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2h",
+      "date": "14h",
       "relevance": "Medium",
       "title": "Four additional topics are now available for Events",
       "summary": "Apps can now subscribe to events for Metaobject, MetafieldDefinition, MetaobjectDefinition, and InventoryTransfer. Apps can also subscribe to targeted metafield changes on InventoryTransfer. By subscr…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3h",
+      "date": "15h",
       "relevance": "Medium",
       "title": "GitHub commits now name the last theme editor",
       "summary": "When you edit a theme in the Shopify admin, the commit Shopify pushes to your connected branch now includes the editor's name in the body: Update from Shopify for theme Dawn Committed from shop: Snowd…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "4.7.0",
       "summary": "What's Changed App Serve UI extension source maps during app dev by @vividviolet in #8212 [Feature] Add profiling to app function run by @davejcameron in #8226 Fix Shopify Function GraphQL scalar type…",
@@ -165,8 +165,8 @@
     }
   ],
   "recap": {
-    "dateRange": "Aug 19 – Aug 26",
-    "basis": "Based on 4 updates this week",
+    "dateRange": "Aug 20 – Aug 27",
+    "basis": "Based on 3 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
