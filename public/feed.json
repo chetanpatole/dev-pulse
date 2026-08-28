@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-08-28T09:50:19Z",
+    "generatedAt": "2026-08-28T21:45:02Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Password Protected Shop Dev flows on Shopify Theme CLI v3.83.x and older to be deprecated",
-    "what_changed": "Starting October 1, 2026, Theme commands on Shopify CLI for password protected storefronts will require version 3.84.0 or later. Versions 3.83.x and earlier will no longer be supported for theme development workflows on password protected storefronts. If you use Theme commands on Shopify CLI to develop or preview themes, upgrade to the latest version before October 1, 2026. Alternatively, you can…",
+    "headline": "More resilient refreshes for expiring offline access tokens",
+    "what_changed": "Expiring offline access token refreshes now retain the previously used refresh token until an app begins using its replacement. This rollout helps apps recover when a refresh response is lost or isn’t persisted. No migration is required, but apps should continue to store every refreshed token pair atomically. What changed Previously, after an app used a refresh token, it could retry that token for…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/password-protected-shop-dev-flows-on-shopify-theme-cli-v3-83-x-and-older-to-be-deprecated",
+    "link": "https://shopify.dev/changelog/more-resilient-refreshes-for-expiring-offline-access-tokens",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "17h",
+      "date": "7h",
+      "relevance": "Medium",
+      "title": "More resilient refreshes for expiring offline access tokens",
+      "summary": "Expiring offline access token refreshes now retain the previously used refresh token until an app begins using its replacement. This rollout helps apps recover when a refresh response is lost or isn’t…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/more-resilient-refreshes-for-expiring-offline-access-tokens"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Password Protected Shop Dev flows on Shopify Theme CLI v3.83.x and older to be deprecated",
       "summary": "Starting October 1, 2026, Theme commands on Shopify CLI for password protected storefronts will require version 3.84.0 or later. Versions 3.83.x and earlier will no longer be supported for theme devel…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Four additional topics are now available for Events",
       "summary": "Apps can now subscribe to events for Metaobject, MetafieldDefinition, MetaobjectDefinition, and InventoryTransfer. Apps can also subscribe to targeted metafield changes on InventoryTransfer. By subscr…",
@@ -49,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Build Shopify apps in PHP and Python with new official packages",
       "summary": "Shopify releases official PHP and Python app packages Shopify now publishes official, open-source packages for building apps in PHP and Python. shopify/shopify-app-php on Packagist and shopifyapp on P…",
@@ -62,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "GitHub commits now name the last theme editor",
       "summary": "When you edit a theme in the Shopify admin, the commit Shopify pushes to your connected branch now includes the editor's name in the body: Update from Shopify for theme Dawn Committed from shop: Snowd…",
@@ -75,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Oxygen is now available on trial plan stores",
       "summary": "You can now deploy Hydrogen storefronts to Oxygen from trial plan stores. Previously, Oxygen hosting required a paid plan. Note that trial plan stores don't include public environments, so deployment…",
@@ -88,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Script tags are deprecated and will stop running on March 1, 2027",
       "summary": "Starting October 1, 2026, the scriptTagCreate and scriptTagUpdate mutations will return an user error, and the ScriptTag REST Admin API resource will reject POST and PUT. The deprecation applies to al…",
@@ -101,7 +114,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "8d",
+      "date": "9d",
       "relevance": "Medium",
       "title": "4.7.0",
       "summary": "What's Changed App Serve UI extension source maps during app dev by @vividviolet in #8212 [Feature] Add profiling to app function run by @davejcameron in #8226 Fix Shopify Function GraphQL scalar type…",
@@ -114,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8d",
+      "date": "9d",
       "relevance": "Medium",
       "title": "App intents on `admin.app.intent.link` now open as a full-page navigation",
       "summary": "When Sidekick invokes an app intent declared on the admin.app.intent.link extension target, the Shopify admin now navigates the merchant to your extension's url as a full page, matching how Shopify's…",
@@ -127,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "9d",
+      "date": "10d",
       "relevance": "Medium",
       "title": "Hydrogen developer preview update: August 18, 2026",
       "summary": "The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Cart session attribution: Carts and Customer Account sessions stay in…",
@@ -136,50 +149,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/hydrogen-developer-preview-update-august-18-2026"
-    },
-    {
-      "type": "Update",
-      "source": "Hydrogen",
-      "date": "13d",
-      "relevance": "Medium",
-      "title": "@shopify/cli-hydrogen@13.0.4",
-      "summary": "Patch Changes New flag --javascript-origin override to hydrogen customer-account-push. Not providing it still defaults to --dev-origin. (#3938) by @fredericoo Fix local Hydrogen CLI discovery so shopi…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.4"
-    },
-    {
-      "type": "Update",
-      "source": "Hydrogen",
-      "date": "13d",
-      "relevance": "Medium",
-      "title": "@shopify/mini-oxygen@4.2.2",
-      "summary": "Patch Changes Support HTTP/2 requests in MiniOxygen's Vite request conversion. (#3939) by @fredericoo",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fmini-oxygen%404.2.2"
-    },
-    {
-      "type": "Update",
-      "source": "Hydrogen",
-      "date": "13d",
-      "relevance": "Medium",
-      "title": "@shopify/hydrogen@2026.4.5",
-      "summary": "Patch Changes Recover customer account login when switching browser contexts or opening multiple login tabs. OAuth state values now use cryptographically secure randomness. (#3856) by @fredericoo Keep…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.4.5"
     }
   ],
   "recap": {
     "dateRange": "Aug 21 – Aug 28",
-    "basis": "Based on 6 updates this week",
+    "basis": "Based on 7 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
