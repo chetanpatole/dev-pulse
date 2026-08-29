@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-28T21:45:02Z",
+    "generatedAt": "2026-08-29T05:50:30Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7h",
+      "date": "15h",
       "relevance": "Medium",
       "title": "More resilient refreshes for expiring offline access tokens",
       "summary": "Expiring offline access token refreshes now retain the previously used refresh token until an app begins using its replacement. This rollout helps apps recover when a refresh response is lost or isn’t…",
@@ -152,7 +152,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Aug 21 – Aug 28",
+    "dateRange": "Aug 22 – Aug 29",
     "basis": "Based on 7 updates this week",
     "headline": "A quieter week.",
     "themes": [],
