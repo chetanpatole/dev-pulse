@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-29T20:28:35Z",
+    "generatedAt": "2026-08-30T03:53:57Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "9d",
+      "date": "10d",
       "relevance": "Medium",
       "title": "4.7.0",
       "summary": "What's Changed App Serve UI extension source maps during app dev by @vividviolet in #8212 [Feature] Add profiling to app function run by @davejcameron in #8226 Fix Shopify Function GraphQL scalar type…",
@@ -152,7 +152,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Aug 22 – Aug 29",
+    "dateRange": "Aug 23 – Aug 30",
     "basis": "Based on 7 updates this week",
     "headline": "A quieter week.",
     "themes": [],
