@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-08-31T22:31:55Z",
+    "generatedAt": "2026-09-01T03:48:09Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Polaris CDN 1.1 release candidate",
       "summary": "Polaris Web Components loaded from the Shopify CDN are moving to semantic versioning, read more about that change here. You can test out the Polaris CDN 1.1 release candidate by updating the URL you l…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "The Polaris CDN is adopting semantic versioning",
       "summary": "Polaris Web Components loaded from the Shopify CDN are moving to semantic versioning. Most apps will continue receiving compatible improvements automatically, while developers can choose when to adopt…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Aug 24 – Aug 31",
+    "dateRange": "Aug 25 – Sep 01",
     "basis": "Based on 8 updates this week",
     "headline": "A quieter week.",
     "themes": [],
