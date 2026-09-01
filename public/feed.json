@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-01T16:08:12Z",
+    "generatedAt": "2026-09-01T20:37:25Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "23h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Polaris CDN 1.1 release candidate",
       "summary": "Polaris Web Components loaded from the Shopify CDN are moving to semantic versioning, read more about that change here. You can test out the Polaris CDN 1.1 release candidate by updating the URL you l…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "23h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "The Polaris CDN is adopting semantic versioning",
       "summary": "Polaris Web Components loaded from the Shopify CDN are moving to semantic versioning. Most apps will continue receiving compatible improvements automatically, while developers can choose when to adopt…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Four additional topics are now available for Events",
       "summary": "Apps can now subscribe to events for Metaobject, MetafieldDefinition, MetaobjectDefinition, and InventoryTransfer. Apps can also subscribe to targeted metafield changes on InventoryTransfer. By subscr…",
