@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-02T03:07:24Z",
+    "generatedAt": "2026-09-02T10:43:50Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "2h",
+      "date": "10h",
       "relevance": "Medium",
       "title": "4.7.1",
       "summary": "What's Changed CLI Fix claimed preview store auth recovery (stable/4.7) by @dmerand in #8451 Other Version Packages - stable/4.7 by @github-actions[bot] in #8452 Full Changelog: 4.7.0...4.7.1",
