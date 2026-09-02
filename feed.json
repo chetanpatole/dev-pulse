@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-02T10:43:50Z",
+    "generatedAt": "2026-09-02T16:02:25Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "10h",
+      "date": "15h",
       "relevance": "Medium",
       "title": "4.7.1",
       "summary": "What's Changed CLI Fix claimed preview store auth recovery (stable/4.7) by @dmerand in #8451 Other Version Packages - stable/4.7 by @github-actions[bot] in #8452 Full Changelog: 4.7.0...4.7.1",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "More resilient refreshes for expiring offline access tokens",
       "summary": "Expiring offline access token refreshes now retain the previously used refresh token until an app begins using its replacement. This rollout helps apps recover when a refresh response is lost or isn’t…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Password Protected Shop Dev flows on Shopify Theme CLI v3.83.x and older to be deprecated",
       "summary": "Starting October 1, 2026, Theme commands on Shopify CLI for password protected storefronts will require version 3.84.0 or later. Versions 3.83.x and earlier will no longer be supported for theme devel…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Build Shopify apps in PHP and Python with new official packages",
       "summary": "Shopify releases official PHP and Python app packages Shopify now publishes official, open-source packages for building apps in PHP and Python. shopify/shopify-app-php on Packagist and shopifyapp on P…",
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "GitHub commits now name the last theme editor",
       "summary": "When you edit a theme in the Shopify admin, the commit Shopify pushes to your connected branch now includes the editor's name in the body: Update from Shopify for theme Dawn Committed from shop: Snowd…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "Oxygen is now available on trial plan stores",
       "summary": "You can now deploy Hydrogen storefronts to Oxygen from trial plan stores. Previously, Oxygen hosting required a paid plan. Note that trial plan stores don't include public environments, so deployment…",
@@ -140,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8d",
+      "date": "9d",
       "relevance": "Medium",
       "title": "Script tags are deprecated and will stop running on March 1, 2027",
       "summary": "Starting October 1, 2026, the scriptTagCreate and scriptTagUpdate mutations will return an user error, and the ScriptTag REST Admin API resource will reject POST and PUT. The deprecation applies to al…",
@@ -162,24 +162,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://github.com/Shopify/cli/releases/tag/4.7.0"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "13d",
-      "relevance": "Medium",
-      "title": "App intents on `admin.app.intent.link` now open as a full-page navigation",
-      "summary": "When Sidekick invokes an app intent declared on the admin.app.intent.link extension target, the Shopify admin now navigates the merchant to your extension's url as a full page, matching how Shopify's…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/app-intents-on-admin-app-intent-link-now-open-as-a-full-page-navigation"
     }
   ],
   "recap": {
     "dateRange": "Aug 26 – Sep 02",
-    "basis": "Based on 8 updates this week",
+    "basis": "Based on 6 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
