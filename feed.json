@@ -1,29 +1,42 @@
 {
   "meta": {
-    "generatedAt": "2026-09-02T16:02:25Z",
+    "generatedAt": "2026-09-02T20:34:17Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "4.7.1",
-    "what_changed": "What's Changed CLI Fix claimed preview store auth recovery (stable/4.7) by @dmerand in #8451 Other Version Packages - stable/4.7 by @github-actions[bot] in #8452 Full Changelog: 4.7.0...4.7.1",
+    "headline": "@shopify/hydrogen@2026.10.0-preview.2",
+    "what_changed": "Minor Changes 78b94c5: Accept Liquid-style ?variant= links on product pages. handleShopifyRoutes({routeTemplates}) now 302-redirects ?variant= product URLs to the canonical option-params URL (/products/x?variant=123 → /products/x?Color=Red&Size=M), resolving the variant through the Storefront API with Cache.long() when the client has a cache adapter, following combined-listing variants to their ow…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "CLI",
-    "link": "https://github.com/Shopify/cli/releases/tag/4.7.1",
+    "source": "Hydrogen",
+    "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.0-preview.2",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
+      "source": "Hydrogen",
+      "date": "2h",
+      "relevance": "Medium",
+      "title": "@shopify/hydrogen@2026.10.0-preview.2",
+      "summary": "Minor Changes 78b94c5: Accept Liquid-style ?variant= links on product pages. handleShopifyRoutes({routeTemplates}) now 302-redirects ?variant= product URLs to the canonical option-params URL (/product…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.0-preview.2"
+    },
+    {
+      "type": "Update",
       "source": "CLI",
-      "date": "15h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "4.7.1",
       "summary": "What's Changed CLI Fix claimed preview store auth recovery (stable/4.7) by @dmerand in #8451 Other Version Packages - stable/4.7 by @github-actions[bot] in #8452 Full Changelog: 4.7.0...4.7.1",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Polaris CDN 1.1 release candidate",
       "summary": "Polaris Web Components loaded from the Shopify CDN are moving to semantic versioning, read more about that change here. You can test out the Polaris CDN 1.1 release candidate by updating the URL you l…",
@@ -49,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "The Polaris CDN is adopting semantic versioning",
       "summary": "Polaris Web Components loaded from the Shopify CDN are moving to semantic versioning. Most apps will continue receiving compatible improvements automatically, while developers can choose when to adopt…",
@@ -88,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Four additional topics are now available for Events",
       "summary": "Apps can now subscribe to events for Metaobject, MetafieldDefinition, MetaobjectDefinition, and InventoryTransfer. Apps can also subscribe to targeted metafield changes on InventoryTransfer. By subscr…",
