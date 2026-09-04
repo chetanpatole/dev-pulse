@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-04T15:50:08Z",
+    "generatedAt": "2026-09-04T20:20:29Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Hydrogen developer preview update: September 2, 2026",
-    "what_changed": "The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Variant links: Links that name a variant, like the ones Shopify submits to a Google Shopping feed, now open on that variant instead of the product's default. Cart refresh: Reload the cart after your own code changes it, like a cart created on your server. Local HTTPS c…",
+    "headline": "Shopify storefronts now support UCP 2026-08-25",
+    "what_changed": "Shopify storefronts now advertise support for Universal Commerce Protocol (UCP) version 2026-08-25 in their discovery profiles at /.well-known/ucp. This update adds compatibility with the 2026-08-25 protocol release and doesn’t require any changes to your existing integrations. What changed Storefront discovery profiles now declare UCP version 2026-08-25 as a supported protocol version in /.well-k…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/hydrogen-developer-preview-update-september-2-2026",
+    "link": "https://shopify.dev/changelog/08-25-is-now-supported",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "23h",
+      "date": "4h",
+      "relevance": "Medium",
+      "title": "Shopify storefronts now support UCP 2026-08-25",
+      "summary": "Shopify storefronts now advertise support for Universal Commerce Protocol (UCP) version 2026-08-25 in their discovery profiles at /.well-known/ucp. This update adds compatibility with the 2026-08-25 p…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/08-25-is-now-supported"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Hydrogen developer preview update: September 2, 2026",
       "summary": "The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Variant links: Links that name a variant, like the ones Shopify submi…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0-preview.2",
       "summary": "Minor Changes 78b94c5: Accept Liquid-style ?variant= links on product pages. handleShopifyRoutes({routeTemplates}) now 302-redirects ?variant= product URLs to the canonical option-params URL (/product…",
@@ -62,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Polaris CDN 1.1 release candidate",
       "summary": "Polaris Web Components loaded from the Shopify CDN are moving to semantic versioning, read more about that change here. You can test out the Polaris CDN 1.1 release candidate by updating the URL you l…",
@@ -75,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "The Polaris CDN is adopting semantic versioning",
       "summary": "Polaris Web Components loaded from the Shopify CDN are moving to semantic versioning. Most apps will continue receiving compatible improvements automatically, while developers can choose when to adopt…",
@@ -101,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "Password Protected Shop Dev flows on Shopify Theme CLI v3.83.x and older to be deprecated",
       "summary": "Starting October 1, 2026, Theme commands on Shopify CLI for password protected storefronts will require version 3.84.0 or later. Versions 3.83.x and earlier will no longer be supported for theme devel…",
@@ -114,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8d",
+      "date": "9d",
       "relevance": "Medium",
       "title": "Four additional topics are now available for Events",
       "summary": "Apps can now subscribe to events for Metaobject, MetafieldDefinition, MetaobjectDefinition, and InventoryTransfer. Apps can also subscribe to targeted metafield changes on InventoryTransfer. By subscr…",
@@ -127,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8d",
+      "date": "9d",
       "relevance": "Medium",
       "title": "Build Shopify apps in PHP and Python with new official packages",
       "summary": "Shopify releases official PHP and Python app packages Shopify now publishes official, open-source packages for building apps in PHP and Python. shopify/shopify-app-php on Packagist and shopifyapp on P…",
@@ -140,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8d",
+      "date": "9d",
       "relevance": "Medium",
       "title": "GitHub commits now name the last theme editor",
       "summary": "When you edit a theme in the Shopify admin, the commit Shopify pushes to your connected branch now includes the editor's name in the body: Update from Shopify for theme Dawn Committed from shop: Snowd…",
@@ -153,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "9d",
+      "date": "10d",
       "relevance": "Medium",
       "title": "Oxygen is now available on trial plan stores",
       "summary": "You can now deploy Hydrogen storefronts to Oxygen from trial plan stores. Previously, Oxygen hosting required a paid plan. Note that trial plan stores don't include public environments, so deployment…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/oxygen-is-now-available-on-trial-plan-stores"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "10d",
-      "relevance": "Medium",
-      "title": "Script tags are deprecated and will stop running on March 1, 2027",
-      "summary": "Starting October 1, 2026, the scriptTagCreate and scriptTagUpdate mutations will return an user error, and the ScriptTag REST Admin API resource will reject POST and PUT. The deprecation applies to al…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/online-store-script-tags-deprecation"
     }
   ],
   "recap": {
     "dateRange": "Aug 28 – Sep 04",
-    "basis": "Based on 5 updates this week",
+    "basis": "Based on 6 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
