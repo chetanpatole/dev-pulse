@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-04T10:42:08Z",
+    "generatedAt": "2026-09-04T15:50:08Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "18h",
+      "date": "23h",
       "relevance": "Medium",
       "title": "Hydrogen developer preview update: September 2, 2026",
       "summary": "The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Variant links: Links that name a variant, like the ones Shopify submi…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "More resilient refreshes for expiring offline access tokens",
       "summary": "Expiring offline access token refreshes now retain the previously used refresh token until an app begins using its replacement. This rollout helps apps recover when a refresh response is lost or isn’t…",
@@ -179,7 +179,7 @@
   ],
   "recap": {
     "dateRange": "Aug 28 – Sep 04",
-    "basis": "Based on 6 updates this week",
+    "basis": "Based on 5 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
