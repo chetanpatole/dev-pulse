@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-04T03:08:16Z",
+    "generatedAt": "2026-09-04T10:42:08Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "18h",
       "relevance": "Medium",
       "title": "Hydrogen developer preview update: September 2, 2026",
       "summary": "The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Variant links: Links that name a variant, like the ones Shopify submi…",
