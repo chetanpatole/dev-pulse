@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-03T20:33:40Z",
+    "generatedAt": "2026-09-04T03:08:16Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Hydrogen developer preview update: September 2, 2026",
       "summary": "The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Variant links: Links that name a variant, like the ones Shopify submi…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "4.7.1",
       "summary": "What's Changed CLI Fix claimed preview store auth recovery (stable/4.7) by @dmerand in #8451 Other Version Packages - stable/4.7 by @github-actions[bot] in #8452 Full Changelog: 4.7.0...4.7.1",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Aug 27 – Sep 03",
+    "dateRange": "Aug 28 – Sep 04",
     "basis": "Based on 6 updates this week",
     "headline": "A quieter week.",
     "themes": [],
