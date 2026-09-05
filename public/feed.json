@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-04T20:20:29Z",
+    "generatedAt": "2026-09-05T03:10:31Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Shopify storefronts now support UCP 2026-08-25",
       "summary": "Shopify storefronts now advertise support for Universal Commerce Protocol (UCP) version 2026-08-25 in their discovery profiles at /.well-known/ucp. This update adds compatibility with the 2026-08-25 p…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "4.7.1",
       "summary": "What's Changed CLI Fix claimed preview store auth recovery (stable/4.7) by @dmerand in #8451 Other Version Packages - stable/4.7 by @github-actions[bot] in #8452 Full Changelog: 4.7.0...4.7.1",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Aug 28 – Sep 04",
+    "dateRange": "Aug 29 – Sep 05",
     "basis": "Based on 6 updates this week",
     "headline": "A quieter week.",
     "themes": [],
