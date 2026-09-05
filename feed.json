@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-05T10:01:21Z",
+    "generatedAt": "2026-09-05T14:40:34Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "18h",
+      "date": "22h",
       "relevance": "Medium",
       "title": "Shopify storefronts now support UCP 2026-08-25",
       "summary": "Shopify storefronts now advertise support for Universal Commerce Protocol (UCP) version 2026-08-25 in their discovery profiles at /.well-known/ucp. This update adds compatibility with the 2026-08-25 p…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "More resilient refreshes for expiring offline access tokens",
       "summary": "Expiring offline access token refreshes now retain the previously used refresh token until an app begins using its replacement. This rollout helps apps recover when a refresh response is lost or isn’t…",
