@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-08T10:41:00Z",
+    "generatedAt": "2026-09-08T16:04:24Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Shopify storefronts now support UCP 2026-08-25",
-    "what_changed": "Shopify storefronts now advertise support for Universal Commerce Protocol (UCP) version 2026-08-25 in their discovery profiles at /.well-known/ucp. This update adds compatibility with the 2026-08-25 protocol release and doesn’t require any changes to your existing integrations. What changed Storefront discovery profiles now declare UCP version 2026-08-25 as a supported protocol version in /.well-k…",
+    "headline": "Customer Address APIs now support countryCode",
+    "what_changed": "Starting with Customer Account API version 2026-10, customer address inputs and objects support countryCode. The existing territoryCode field is deprecated but remains fully supported, so current integrations continue working without interruption. Developers should migrate to countryCode when adopting API version 2026-10. What changed The CustomerAddressInput input object and CustomerAddress objec…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/08-25-is-now-supported",
+    "link": "https://shopify.dev/changelog/customer-address-apis-now-support-countrycode",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4m",
+      "relevance": "Medium",
+      "title": "Customer Address APIs now support countryCode",
+      "summary": "Starting with Customer Account API version 2026-10, customer address inputs and objects support countryCode. The existing territoryCode field is deprecated but remains fully supported, so current inte…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/customer-address-apis-now-support-countrycode"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Shopify storefronts now support UCP 2026-08-25",
       "summary": "Shopify storefronts now advertise support for Universal Commerce Protocol (UCP) version 2026-08-25 in their discovery profiles at /.well-known/ucp. This update adds compatibility with the 2026-08-25 p…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Hydrogen developer preview update: September 2, 2026",
       "summary": "The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Variant links: Links that name a variant, like the ones Shopify submi…",
@@ -101,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "10d",
+      "date": "11d",
       "relevance": "Medium",
       "title": "More resilient refreshes for expiring offline access tokens",
       "summary": "Expiring offline access token refreshes now retain the previously used refresh token until an app begins using its replacement. This rollout helps apps recover when a refresh response is lost or isn’t…",
@@ -114,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11d",
+      "date": "12d",
       "relevance": "Medium",
       "title": "Password Protected Shop Dev flows on Shopify Theme CLI v3.83.x and older to be deprecated",
       "summary": "Starting October 1, 2026, Theme commands on Shopify CLI for password protected storefronts will require version 3.84.0 or later. Versions 3.83.x and earlier will no longer be supported for theme devel…",
@@ -140,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12d",
+      "date": "13d",
       "relevance": "Medium",
       "title": "Build Shopify apps in PHP and Python with new official packages",
       "summary": "Shopify releases official PHP and Python app packages Shopify now publishes official, open-source packages for building apps in PHP and Python. shopify/shopify-app-php on Packagist and shopifyapp on P…",
@@ -153,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12d",
+      "date": "13d",
       "relevance": "Medium",
       "title": "GitHub commits now name the last theme editor",
       "summary": "When you edit a theme in the Shopify admin, the commit Shopify pushes to your connected branch now includes the editor's name in the body: Update from Shopify for theme Dawn Committed from shop: Snowd…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/github-commits-now-name-the-last-theme-editor"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "13d",
-      "relevance": "Medium",
-      "title": "Oxygen is now available on trial plan stores",
-      "summary": "You can now deploy Hydrogen storefronts to Oxygen from trial plan stores. Previously, Oxygen hosting required a paid plan. Note that trial plan stores don't include public environments, so deployment…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/oxygen-is-now-available-on-trial-plan-stores"
     }
   ],
   "recap": {
     "dateRange": "Sep 01 – Sep 08",
-    "basis": "Based on 4 updates this week",
+    "basis": "Based on 5 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
