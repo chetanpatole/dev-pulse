@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-08T16:04:24Z",
+    "generatedAt": "2026-09-08T20:46:28Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Customer Address APIs now support countryCode",
-    "what_changed": "Starting with Customer Account API version 2026-10, customer address inputs and objects support countryCode. The existing territoryCode field is deprecated but remains fully supported, so current integrations continue working without interruption. Developers should migrate to countryCode when adopting API version 2026-10. What changed The CustomerAddressInput input object and CustomerAddress objec…",
+    "headline": "Variants now support multiple barcodes",
+    "what_changed": "Merchants often sell the same variant under more than one identifier: a manufacturer UPC alongside a private-label EAN, a GTIN, a reissued ISBN, or an ASIN for a marketplace listing. Until now a variant held a single barcode value, so the extras ended up in metafields, tags, or outside Shopify entirely. What's new You can now read a variant's full set from the new barcodes connection on ProductVar…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/customer-address-apis-now-support-countrycode",
+    "link": "https://shopify.dev/changelog/product-variant-barcode-is-being-replaced-by-barcodes",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4m",
+      "date": "3h",
+      "relevance": "Medium",
+      "title": "Variants now support multiple barcodes",
+      "summary": "Merchants often sell the same variant under more than one identifier: a manufacturer UPC alongside a private-label EAN, a GTIN, a reissued ISBN, or an ASIN for a marketplace listing. Until now a varia…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/product-variant-barcode-is-being-replaced-by-barcodes"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "4h",
       "relevance": "Medium",
       "title": "Customer Address APIs now support countryCode",
       "summary": "Starting with Customer Account API version 2026-10, customer address inputs and objects support countryCode. The existing territoryCode field is deprecated but remains fully supported, so current inte…",
@@ -62,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0-preview.2",
       "summary": "Minor Changes 78b94c5: Accept Liquid-style ?variant= links on product pages. handleShopifyRoutes({routeTemplates}) now 302-redirects ?variant= product URLs to the canonical option-params URL (/product…",
@@ -88,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "Polaris CDN 1.1 release candidate",
       "summary": "Polaris Web Components loaded from the Shopify CDN are moving to semantic versioning, read more about that change here. You can test out the Polaris CDN 1.1 release candidate by updating the URL you l…",
@@ -101,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "The Polaris CDN is adopting semantic versioning",
       "summary": "Polaris Web Components loaded from the Shopify CDN are moving to semantic versioning. Most apps will continue receiving compatible improvements automatically, while developers can choose when to adopt…",
@@ -140,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12d",
+      "date": "13d",
       "relevance": "Medium",
       "title": "Four additional topics are now available for Events",
       "summary": "Apps can now subscribe to events for Metaobject, MetafieldDefinition, MetaobjectDefinition, and InventoryTransfer. Apps can also subscribe to targeted metafield changes on InventoryTransfer. By subscr…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/build-shopify-apps-in-php-and-python-with-new-official-packages"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "13d",
-      "relevance": "Medium",
-      "title": "GitHub commits now name the last theme editor",
-      "summary": "When you edit a theme in the Shopify admin, the commit Shopify pushes to your connected branch now includes the editor's name in the body: Update from Shopify for theme Dawn Committed from shop: Snowd…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/github-commits-now-name-the-last-theme-editor"
     }
   ],
   "recap": {
     "dateRange": "Sep 01 – Sep 08",
-    "basis": "Based on 5 updates this week",
+    "basis": "Based on 6 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
