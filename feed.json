@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-08T20:46:28Z",
+    "generatedAt": "2026-09-09T03:20:02Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3h",
+      "date": "9h",
       "relevance": "Medium",
       "title": "Variants now support multiple barcodes",
       "summary": "Merchants often sell the same variant under more than one identifier: a manufacturer UPC alongside a private-label EAN, a GTIN, a reissued ISBN, or an ASIN for a marketplace listing. Until now a varia…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Customer Address APIs now support countryCode",
       "summary": "Starting with Customer Account API version 2026-10, customer address inputs and objects support countryCode. The existing territoryCode field is deprecated but remains fully supported, so current inte…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "4.7.1",
       "summary": "What's Changed CLI Fix claimed preview store auth recovery (stable/4.7) by @dmerand in #8451 Other Version Packages - stable/4.7 by @github-actions[bot] in #8452 Full Changelog: 4.7.0...4.7.1",
@@ -178,8 +178,8 @@
     }
   ],
   "recap": {
-    "dateRange": "Sep 01 – Sep 08",
-    "basis": "Based on 6 updates this week",
+    "dateRange": "Sep 02 – Sep 09",
+    "basis": "Based on 5 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
