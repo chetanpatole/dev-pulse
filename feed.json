@@ -1,29 +1,42 @@
 {
   "meta": {
-    "generatedAt": "2026-09-09T03:20:02Z",
+    "generatedAt": "2026-09-09T10:49:54Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Variants now support multiple barcodes",
-    "what_changed": "Merchants often sell the same variant under more than one identifier: a manufacturer UPC alongside a private-label EAN, a GTIN, a reissued ISBN, or an ASIN for a marketplace listing. Until now a variant held a single barcode value, so the extras ended up in metafields, tags, or outside Shopify entirely. What's new You can now read a variant's full set from the new barcodes connection on ProductVar…",
+    "headline": "4.8.0",
+    "what_changed": "What's Changed App Support the bundle_size_exception capability by @igor10k in #8335 Report extension compressed bundle size using Brotli by @igor10k in #8400 Fix app dev --use-localhost aborting instead of prompting to generate the localhost certificate by @craigmichaelmartin in #8408 Create dev stores from app dev by @dmerand in #8323 Add a create store option to the app dev store picker by @dme…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "Changelog",
-    "link": "https://shopify.dev/changelog/product-variant-barcode-is-being-replaced-by-barcodes",
+    "source": "CLI",
+    "link": "https://github.com/Shopify/cli/releases/tag/4.8.0",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
+      "source": "CLI",
+      "date": "2h",
+      "relevance": "Medium",
+      "title": "4.8.0",
+      "summary": "What's Changed App Support the bundle_size_exception capability by @igor10k in #8335 Report extension compressed bundle size using Brotli by @igor10k in #8400 Fix app dev --use-localhost aborting inst…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/cli/releases/tag/4.8.0"
+    },
+    {
+      "type": "Update",
       "source": "Changelog",
-      "date": "9h",
+      "date": "17h",
       "relevance": "Medium",
       "title": "Variants now support multiple barcodes",
       "summary": "Merchants often sell the same variant under more than one identifier: a manufacturer UPC alongside a private-label EAN, a GTIN, a reissued ISBN, or an ASIN for a marketplace listing. Until now a varia…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "18h",
       "relevance": "Medium",
       "title": "Customer Address APIs now support countryCode",
       "summary": "Starting with Customer Account API version 2026-10, customer address inputs and objects support countryCode. The existing territoryCode field is deprecated but remains fully supported, so current inte…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/four-additional-topics-are-now-available-for-events"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "13d",
-      "relevance": "Medium",
-      "title": "Build Shopify apps in PHP and Python with new official packages",
-      "summary": "Shopify releases official PHP and Python app packages Shopify now publishes official, open-source packages for building apps in PHP and Python. shopify/shopify-app-php on Packagist and shopifyapp on P…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/build-shopify-apps-in-php-and-python-with-new-official-packages"
     }
   ],
   "recap": {
     "dateRange": "Sep 02 – Sep 09",
-    "basis": "Based on 5 updates this week",
+    "basis": "Based on 6 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
