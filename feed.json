@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-10T03:19:00Z",
+    "generatedAt": "2026-09-10T10:43:25Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "14h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Create and delete dev stores in Shopify CLI",
       "summary": "Shopify CLI 4.8 adds shopify store commands that let you create and manage dev stores from your terminal or coding agent. These commands are available after you update to Shopify CLI 4.8. What changed…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "19h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "4.8.0",
       "summary": "What's Changed App Support the bundle_size_exception capability by @igor10k in #8335 Report extension compressed bundle size using Brotli by @igor10k in #8400 Fix app dev --use-localhost aborting inst…",
