@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-09T20:30:07Z",
+    "generatedAt": "2026-09-10T03:19:00Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7h",
+      "date": "14h",
       "relevance": "Medium",
       "title": "Create and delete dev stores in Shopify CLI",
       "summary": "Shopify CLI 4.8 adds shopify store commands that let you create and manage dev stores from your terminal or coding agent. These commands are available after you update to Shopify CLI 4.8. What changed…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "12h",
+      "date": "19h",
       "relevance": "Medium",
       "title": "4.8.0",
       "summary": "What's Changed App Support the bundle_size_exception capability by @igor10k in #8335 Report extension compressed bundle size using Brotli by @igor10k in #8400 Fix app dev --use-localhost aborting inst…",
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "4.7.1",
       "summary": "What's Changed CLI Fix claimed preview store auth recovery (stable/4.7) by @dmerand in #8451 Other Version Packages - stable/4.7 by @github-actions[bot] in #8452 Full Changelog: 4.7.0...4.7.1",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Sep 02 – Sep 09",
+    "dateRange": "Sep 03 – Sep 10",
     "basis": "Based on 6 updates this week",
     "headline": "A quieter week.",
     "themes": [],
