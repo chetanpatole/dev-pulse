@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-11T10:41:50Z",
+    "generatedAt": "2026-09-11T15:57:05Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "18h",
+      "date": "23h",
       "relevance": "Medium",
       "title": "Discounts Allocator Function API developer preview has ended",
       "summary": "The Discounts Allocator Function API, available only through the Discounts Allocator developer preview, has been removed and won’t be released. The developer preview is closed. Most developers don’t n…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Create and delete dev stores in Shopify CLI",
       "summary": "Shopify CLI 4.8 adds shopify store commands that let you create and manage dev stores from your terminal or coding agent. These commands are available after you update to Shopify CLI 4.8. What changed…",
@@ -162,19 +162,6 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/the-polaris-cdn-is-adopting-semantic-versioning"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "13d",
-      "relevance": "Medium",
-      "title": "More resilient refreshes for expiring offline access tokens",
-      "summary": "Expiring offline access token refreshes now retain the previously used refresh token until an app begins using its replacement. This rollout helps apps recover when a refresh response is lost or isn’t…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/more-resilient-refreshes-for-expiring-offline-access-tokens"
     }
   ],
   "recap": {
