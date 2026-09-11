@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-10T20:28:09Z",
+    "generatedAt": "2026-09-11T03:15:02Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Discounts Allocator Function API developer preview has ended",
       "summary": "The Discounts Allocator Function API, available only through the Discounts Allocator developer preview, has been removed and won’t be released. The developer preview is closed. Most developers don’t n…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "8d",
+      "date": "9d",
       "relevance": "Medium",
       "title": "4.7.1",
       "summary": "What's Changed CLI Fix claimed preview store auth recovery (stable/4.7) by @dmerand in #8451 Other Version Packages - stable/4.7 by @github-actions[bot] in #8452 Full Changelog: 4.7.0...4.7.1",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Sep 03 – Sep 10",
+    "dateRange": "Sep 04 – Sep 11",
     "basis": "Based on 6 updates this week",
     "headline": "A quieter week.",
     "themes": [],
