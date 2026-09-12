@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-12T03:20:52Z",
+    "generatedAt": "2026-09-12T10:10:40Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "9h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0-preview.3",
       "summary": "Minor Changes 8827904: Add an account option to getShopifyScriptTags() and the React/Vue ShopifyScripts components. When enabled, Hydrogen loads the Shopify customer account web component (https://cdn…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "4.8.0",
       "summary": "What's Changed App Support the bundle_size_exception capability by @igor10k in #8335 Report extension compressed bundle size using Brotli by @igor10k in #8400 Fix app dev --use-localhost aborting inst…",
