@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-11T20:31:24Z",
+    "generatedAt": "2026-09-12T03:20:52Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "2h",
+      "date": "9h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0-preview.3",
       "summary": "Minor Changes 8827904: Add an account option to getShopifyScriptTags() and the React/Vue ShopifyScripts components. When enabled, Hydrogen loads the Shopify customer account web component (https://cdn…",
@@ -140,7 +140,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "9d",
+      "date": "10d",
       "relevance": "Medium",
       "title": "4.7.1",
       "summary": "What's Changed CLI Fix claimed preview store auth recovery (stable/4.7) by @dmerand in #8451 Other Version Packages - stable/4.7 by @github-actions[bot] in #8452 Full Changelog: 4.7.0...4.7.1",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Sep 04 – Sep 11",
+    "dateRange": "Sep 05 – Sep 12",
     "basis": "Based on 6 updates this week",
     "headline": "A quieter week.",
     "themes": [],
