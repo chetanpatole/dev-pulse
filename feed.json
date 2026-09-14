@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-14T03:37:05Z",
+    "generatedAt": "2026-09-14T11:55:58Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "4.8.0",
       "summary": "What's Changed App Support the bundle_size_exception capability by @igor10k in #8335 Report extension compressed bundle size using Brotli by @igor10k in #8400 Fix app dev --use-localhost aborting inst…",
