@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-14T11:55:58Z",
+    "generatedAt": "2026-09-14T17:51:49Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Discounts Allocator Function API developer preview has ended",
       "summary": "The Discounts Allocator Function API, available only through the Discounts Allocator developer preview, has been removed and won’t be released. The developer preview is closed. Most developers don’t n…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Create and delete dev stores in Shopify CLI",
       "summary": "Shopify CLI 4.8 adds shopify store commands that let you create and manage dev stores from your terminal or coding agent. These commands are available after you update to Shopify CLI 4.8. What changed…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Variants now support multiple barcodes",
       "summary": "Merchants often sell the same variant under more than one identifier: a manufacturer UPC alongside a private-label EAN, a GTIN, a reissued ISBN, or an ASIN for a marketplace listing. Until now a varia…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Customer Address APIs now support countryCode",
       "summary": "Starting with Customer Account API version 2026-10, customer address inputs and objects support countryCode. The existing territoryCode field is deprecated but remains fully supported, so current inte…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "9d",
+      "date": "10d",
       "relevance": "Medium",
       "title": "Shopify storefronts now support UCP 2026-08-25",
       "summary": "Shopify storefronts now advertise support for Universal Commerce Protocol (UCP) version 2026-08-25 in their discovery profiles at /.well-known/ucp. This update adds compatibility with the 2026-08-25 p…",
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "10d",
+      "date": "11d",
       "relevance": "Medium",
       "title": "Hydrogen developer preview update: September 2, 2026",
       "summary": "The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Variant links: Links that name a variant, like the ones Shopify submi…",
@@ -123,6 +123,19 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/hydrogen-developer-preview-update-september-2-2026"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "11d",
+      "relevance": "Medium",
+      "title": "New paymentInstrumentSendAddEmail mutation emails customers a link to add a payment method for a subscription, order, or draft order",
+      "summary": "You can now use the paymentInstrumentSendAddEmail mutation in the GraphQL Admin API to email a customer a link for adding a payment method to a specific resource (for example, a subscription contract)…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/new-paymentinstrumentsendaddemail-mutation"
     },
     {
       "type": "Update",
@@ -149,32 +162,6 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://github.com/Shopify/cli/releases/tag/4.7.1"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "13d",
-      "relevance": "Medium",
-      "title": "Polaris CDN 1.1 release candidate",
-      "summary": "Polaris Web Components loaded from the Shopify CDN are moving to semantic versioning, read more about that change here. You can test out the Polaris CDN 1.1 release candidate by updating the URL you l…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/polaris-cdn-1-1-release-candidate"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "13d",
-      "relevance": "Medium",
-      "title": "The Polaris CDN is adopting semantic versioning",
-      "summary": "Polaris Web Components loaded from the Shopify CDN are moving to semantic versioning. Most apps will continue receiving compatible improvements automatically, while developers can choose when to adopt…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/the-polaris-cdn-is-adopting-semantic-versioning"
     }
   ],
   "recap": {
