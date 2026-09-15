@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-15T16:22:26Z",
+    "generatedAt": "2026-09-15T20:54:28Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "22m",
+      "date": "4h",
       "relevance": "Medium",
       "title": "Dynamic complexity cost for `metafieldsSet` mutation",
       "summary": "The metafieldsSet mutation now uses dynamic complexity costing. Instead of a flat cost for every call, a request's cost reflects how many distinct resources metafields were changed. Most apps need no…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "22m",
+      "date": "4h",
       "relevance": "Medium",
       "title": "Prepare your app for the Shopify admin's new look",
       "summary": "Starting September 15, 2026, the Shopify admin has a new look, rolling out progressively to merchants. Apps that use Admin UI extensions and App Home UI extensions pick up the new styles automatically…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "22m",
+      "date": "4h",
       "relevance": "Medium",
       "title": "family_name is optional for B2B orders in Payments Apps API requests",
       "summary": "B2B checkout treats the buyer’s surname as optional, so payment session requests for B2B orders can omit family_name in shipping_address and billing_address. This affects payments apps that handle B2B…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2h",
+      "date": "6h",
       "relevance": "Medium",
       "title": "Delivery options in Shopify Functions input now expose their metafields",
       "summary": "Shopify Functions can now read metafields attached to delivery options in the cart. On API version 2026-10, you can call metafield(namespace:, key:) on any option in cart.deliveryGroups.deliveryOption…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0-preview.3",
       "summary": "Minor Changes 8827904: Add an account option to getShopifyScriptTags() and the React/Vue ShopifyScripts components. When enabled, Hydrogen loads the Shopify customer account web component (https://cdn…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Variants now support multiple barcodes",
       "summary": "Merchants often sell the same variant under more than one identifier: a manufacturer UPC alongside a private-label EAN, a GTIN, a reissued ISBN, or an ASIN for a marketplace listing. Until now a varia…",
@@ -179,7 +179,7 @@
   ],
   "recap": {
     "dateRange": "Sep 08 – Sep 15",
-    "basis": "Based on 9 updates this week",
+    "basis": "Based on 8 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
