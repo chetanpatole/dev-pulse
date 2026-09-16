@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-16T10:55:17Z",
+    "generatedAt": "2026-09-16T16:13:56Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "Filter Catalog search results by media type",
       "summary": "The Catalog API now returns video and 3D model media on products that have it, and supports filtering search results by media type. You can request only products that have video or 3D model media atta…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "18h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Dynamic complexity cost for `metafieldsSet` mutation",
       "summary": "The metafieldsSet mutation now uses dynamic complexity costing. Instead of a flat cost for every call, a request's cost reflects how many distinct resources metafields were changed. Most apps need no…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "18h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Prepare your app for the Shopify admin's new look",
       "summary": "Starting September 15, 2026, the Shopify admin has a new look, rolling out progressively to merchants. Apps that use Admin UI extensions and App Home UI extensions pick up the new styles automatically…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "18h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "family_name is optional for B2B orders in Payments Apps API requests",
       "summary": "B2B checkout treats the buyer’s surname as optional, so payment session requests for B2B orders can omit family_name in shipping_address and billing_address. This affects payments apps that handle B2B…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "20h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Delivery options in Shopify Functions input now expose their metafields",
       "summary": "Shopify Functions can now read metafields attached to delivery options in the cart. On API version 2026-10, you can call metafield(namespace:, key:) on any option in cart.deliveryGroups.deliveryOption…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Discounts Allocator Function API developer preview has ended",
       "summary": "The Discounts Allocator Function API, available only through the Discounts Allocator developer preview, has been removed and won’t be released. The developer preview is closed. Most developers don’t n…",
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Create and delete dev stores in Shopify CLI",
       "summary": "Shopify CLI 4.8 adds shopify store commands that let you create and manage dev stores from your terminal or coding agent. These commands are available after you update to Shopify CLI 4.8. What changed…",
@@ -153,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "Customer Address APIs now support countryCode",
       "summary": "Starting with Customer Account API version 2026-10, customer address inputs and objects support countryCode. The existing territoryCode field is deprecated but remains fully supported, so current inte…",
@@ -166,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11d",
+      "date": "12d",
       "relevance": "Medium",
       "title": "Shopify storefronts now support UCP 2026-08-25",
       "summary": "Shopify storefronts now advertise support for Universal Commerce Protocol (UCP) version 2026-08-25 in their discovery profiles at /.well-known/ucp. This update adds compatibility with the 2026-08-25 p…",
@@ -179,7 +179,7 @@
   ],
   "recap": {
     "dateRange": "Sep 09 – Sep 16",
-    "basis": "Based on 8 updates this week",
+    "basis": "Based on 7 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
