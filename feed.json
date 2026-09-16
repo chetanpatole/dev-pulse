@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-15T20:54:28Z",
+    "generatedAt": "2026-09-16T03:34:40Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Dynamic complexity cost for `metafieldsSet` mutation",
-    "what_changed": "The metafieldsSet mutation now uses dynamic complexity costing. Instead of a flat cost for every call, a request's cost reflects how many distinct resources metafields were changed. Most apps need no changes, as updating a single resource remains cheap. Apps setting many metafields across many different owners may hit their rate limit faster. Apps are encouraged to batch metafield writes by distin…",
+    "headline": "Filter Catalog search results by media type",
+    "what_changed": "The Catalog API now returns video and 3D model media on products that have it, and supports filtering search results by media type. You can request only products that have video or 3D model media attached, and matching products return links to those assets in the same response. The new filter is optional, and existing queries keep returning the same products. What changed search_catalog, get_produ…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/dynamic-complexity-cost-for-metafieldsset-mutation",
+    "link": "https://shopify.dev/changelog/filter-catalog-search-results-by-media-type",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4h",
+      "date": "3h",
+      "relevance": "Medium",
+      "title": "Filter Catalog search results by media type",
+      "summary": "The Catalog API now returns video and 3D model media on products that have it, and supports filtering search results by media type. You can request only products that have video or 3D model media atta…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/filter-catalog-search-results-by-media-type"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Dynamic complexity cost for `metafieldsSet` mutation",
       "summary": "The metafieldsSet mutation now uses dynamic complexity costing. Instead of a flat cost for every call, a request's cost reflects how many distinct resources metafields were changed. Most apps need no…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Prepare your app for the Shopify admin's new look",
       "summary": "Starting September 15, 2026, the Shopify admin has a new look, rolling out progressively to merchants. Apps that use Admin UI extensions and App Home UI extensions pick up the new styles automatically…",
@@ -49,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "family_name is optional for B2B orders in Payments Apps API requests",
       "summary": "B2B checkout treats the buyer’s surname as optional, so payment session requests for B2B orders can omit family_name in shipping_address and billing_address. This affects payments apps that handle B2B…",
@@ -62,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "13h",
       "relevance": "Medium",
       "title": "Delivery options in Shopify Functions input now expose their metafields",
       "summary": "Shopify Functions can now read metafields attached to delivery options in the cart. On API version 2026-10, you can call metafield(namespace:, key:) on any option in cart.deliveryGroups.deliveryOption…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/08-25-is-now-supported"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "12d",
-      "relevance": "Medium",
-      "title": "Hydrogen developer preview update: September 2, 2026",
-      "summary": "The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Variant links: Links that name a variant, like the ones Shopify submi…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/hydrogen-developer-preview-update-september-2-2026"
     }
   ],
   "recap": {
-    "dateRange": "Sep 08 – Sep 15",
-    "basis": "Based on 8 updates this week",
+    "dateRange": "Sep 09 – Sep 16",
+    "basis": "Based on 9 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
