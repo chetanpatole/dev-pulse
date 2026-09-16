@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-16T16:13:56Z",
+    "generatedAt": "2026-09-16T20:55:34Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Filter Catalog search results by media type",
-    "what_changed": "The Catalog API now returns video and 3D model media on products that have it, and supports filtering search results by media type. You can request only products that have video or 3D model media attached, and matching products return links to those assets in the same response. The new filter is optional, and existing queries keep returning the same products. What changed search_catalog, get_produ…",
+    "headline": "Updates to Events payloads and subscription configuration",
+    "what_changed": "Starting today, we're updating Events payloads, trigger syntax, and delivery headers. Classic Webhook subscriptions are unaffected. What's changed fields_changed now describes how each path changed The flat array becomes an object containing three arrays: added, updated, and removed. Developers can distinguish a resource or relationship being added, a value being updated, or a resource or relation…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/filter-catalog-search-results-by-media-type",
+    "link": "https://shopify.dev/changelog/updates-to-events-payloads-and-subscription-configuration",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "16h",
+      "date": "2h",
+      "relevance": "Medium",
+      "title": "Updates to Events payloads and subscription configuration",
+      "summary": "Starting today, we're updating Events payloads, trigger syntax, and delivery headers. Classic Webhook subscriptions are unaffected. What's changed fields_changed now describes how each path changed Th…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/updates-to-events-payloads-and-subscription-configuration"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Filter Catalog search results by media type",
       "summary": "The Catalog API now returns video and 3D model media on products that have it, and supports filtering search results by media type. You can request only products that have video or 3D model media atta…",
@@ -88,7 +101,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0-preview.3",
       "summary": "Minor Changes 8827904: Add an account option to getShopifyScriptTags() and the React/Vue ShopifyScripts components. When enabled, Hydrogen loads the Shopify customer account web component (https://cdn…",
@@ -140,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "Variants now support multiple barcodes",
       "summary": "Merchants often sell the same variant under more than one identifier: a manufacturer UPC alongside a private-label EAN, a GTIN, a reissued ISBN, or an ASIN for a marketplace listing. Until now a varia…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/customer-address-apis-now-support-countrycode"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "12d",
-      "relevance": "Medium",
-      "title": "Shopify storefronts now support UCP 2026-08-25",
-      "summary": "Shopify storefronts now advertise support for Universal Commerce Protocol (UCP) version 2026-08-25 in their discovery profiles at /.well-known/ucp. This update adds compatibility with the 2026-08-25 p…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/08-25-is-now-supported"
     }
   ],
   "recap": {
     "dateRange": "Sep 09 – Sep 16",
-    "basis": "Based on 7 updates this week",
+    "basis": "Based on 8 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
