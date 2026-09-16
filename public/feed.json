@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-16T03:34:40Z",
+    "generatedAt": "2026-09-16T10:55:17Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Filter Catalog search results by media type",
       "summary": "The Catalog API now returns video and 3D model media on products that have it, and supports filtering search results by media type. You can request only products that have video or 3D model media atta…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "18h",
       "relevance": "Medium",
       "title": "Dynamic complexity cost for `metafieldsSet` mutation",
       "summary": "The metafieldsSet mutation now uses dynamic complexity costing. Instead of a flat cost for every call, a request's cost reflects how many distinct resources metafields were changed. Most apps need no…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "18h",
       "relevance": "Medium",
       "title": "Prepare your app for the Shopify admin's new look",
       "summary": "Starting September 15, 2026, the Shopify admin has a new look, rolling out progressively to merchants. Apps that use Admin UI extensions and App Home UI extensions pick up the new styles automatically…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "18h",
       "relevance": "Medium",
       "title": "family_name is optional for B2B orders in Payments Apps API requests",
       "summary": "B2B checkout treats the buyer’s surname as optional, so payment session requests for B2B orders can omit family_name in shipping_address and billing_address. This affects payments apps that handle B2B…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "13h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "Delivery options in Shopify Functions input now expose their metafields",
       "summary": "Shopify Functions can now read metafields attached to delivery options in the cart. On API version 2026-10, you can call metafield(namespace:, key:) on any option in cart.deliveryGroups.deliveryOption…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "4.8.0",
       "summary": "What's Changed App Support the bundle_size_exception capability by @igor10k in #8335 Report extension compressed bundle size using Brotli by @igor10k in #8400 Fix app dev --use-localhost aborting inst…",
@@ -179,7 +179,7 @@
   ],
   "recap": {
     "dateRange": "Sep 09 – Sep 16",
-    "basis": "Based on 9 updates this week",
+    "basis": "Based on 8 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
