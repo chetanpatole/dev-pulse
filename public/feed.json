@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-16T20:55:34Z",
+    "generatedAt": "2026-09-17T03:39:27Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2h",
+      "date": "9h",
       "relevance": "Medium",
       "title": "Updates to Events payloads and subscription configuration",
       "summary": "Starting today, we're updating Events payloads, trigger syntax, and delivery headers. Classic Webhook subscriptions are unaffected. What's changed fields_changed now describes how each path changed Th…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "21h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Filter Catalog search results by media type",
       "summary": "The Catalog API now returns video and 3D model media on products that have it, and supports filtering search results by media type. You can request only products that have video or 3D model media atta…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Sep 09 – Sep 16",
+    "dateRange": "Sep 10 – Sep 17",
     "basis": "Based on 8 updates this week",
     "headline": "A quieter week.",
     "themes": [],
