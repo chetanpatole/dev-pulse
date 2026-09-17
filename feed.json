@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-17T11:03:43Z",
+    "generatedAt": "2026-09-17T16:20:44Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Updates to Events payloads and subscription configuration",
-    "what_changed": "Starting today, we're updating Events payloads, trigger syntax, and delivery headers. Classic Webhook subscriptions are unaffected. What's changed fields_changed now describes how each path changed The flat array becomes an object containing three arrays: added, updated, and removed. Developers can distinguish a resource or relationship being added, a value being updated, or a resource or relation…",
+    "headline": "Adding a canceled receive action to the inventory shipments API",
+    "what_changed": "The GraphQL Admin API now supports a CANCELED receive action for inventory shipments in version 2026-10. You can mark inventory shipment line item units as canceled when they’ll never arrive, and you can read canceled quantities on shipments and their line items. This is an additive change to the 2026-10 release candidate. No action is required, and apps on earlier API versions aren’t affected. Wh…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,66 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/updates-to-events-payloads-and-subscription-configuration",
+    "link": "https://shopify.dev/changelog/adding-a-canceled-receive-action-to-the-inventory-shipments-api",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "17h",
+      "date": "20m",
+      "relevance": "Medium",
+      "title": "Adding a canceled receive action to the inventory shipments API",
+      "summary": "The GraphQL Admin API now supports a CANCELED receive action for inventory shipments in version 2026-10. You can mark inventory shipment line item units as canceled when they’ll never arrive, and you…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/adding-a-canceled-receive-action-to-the-inventory-shipments-api"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "20m",
+      "relevance": "Medium",
+      "title": "Removed session.currentSession.staffMemberId from POS UI Extensions (2026-10)",
+      "summary": "As of API version 2026-10, the static session.currentSession.staffMemberId field has been removed from the POS UI Extensions Session API. It was deprecated in 2026-07 in favour of session.staffMember,…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/removed-session-currentsession-staffmemberid-from-pos-ui-extensions-2026-10"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "20m",
+      "relevance": "Medium",
+      "title": "Query market hierarchies with the GraphQL Admin API",
+      "summary": "The GraphQL Admin API now includes fields for querying and traversing a store’s market hierarchy in API version 2026-10. Apps that use the read_markets access scope can retrieve parent-child relations…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/market-relationships"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "20m",
+      "relevance": "Medium",
+      "title": "New Pricing audit trail for contextual product variant prices",
+      "summary": "The GraphQL Admin API now includes the auditTrail field on ProductVariantContextualPricing in API version 2026-10. Apps with the read_products access scope can use this field to inspect the ordered ad…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/pricing-audit-trail-for-contextual-product-variant-prices"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "22h",
       "relevance": "Medium",
       "title": "Updates to Events payloads and subscription configuration",
       "summary": "Starting today, we're updating Events payloads, trigger syntax, and delivery headers. Classic Webhook subscriptions are unaffected. What's changed fields_changed now describes how each path changed Th…",
@@ -49,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Dynamic complexity cost for `metafieldsSet` mutation",
       "summary": "The metafieldsSet mutation now uses dynamic complexity costing. Instead of a flat cost for every call, a request's cost reflects how many distinct resources metafields were changed. Most apps need no…",
@@ -62,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Prepare your app for the Shopify admin's new look",
       "summary": "Starting September 15, 2026, the Shopify admin has a new look, rolling out progressively to merchants. Apps that use Admin UI extensions and App Home UI extensions pick up the new styles automatically…",
@@ -75,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "family_name is optional for B2B orders in Payments Apps API requests",
       "summary": "B2B checkout treats the buyer’s surname as optional, so payment session requests for B2B orders can omit family_name in shipping_address and billing_address. This affects payments apps that handle B2B…",
@@ -88,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Delivery options in Shopify Functions input now expose their metafields",
       "summary": "Shopify Functions can now read metafields attached to delivery options in the cart. On API version 2026-10, you can call metafield(namespace:, key:) on any option in cart.deliveryGroups.deliveryOption…",
@@ -114,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Discounts Allocator Function API developer preview has ended",
       "summary": "The Discounts Allocator Function API, available only through the Discounts Allocator developer preview, has been removed and won’t be released. The developer preview is closed. Most developers don’t n…",
@@ -123,63 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/discounts-allocator-function-api-developer-preview-has-ended"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "Create and delete dev stores in Shopify CLI",
-      "summary": "Shopify CLI 4.8 adds shopify store commands that let you create and manage dev stores from your terminal or coding agent. These commands are available after you update to Shopify CLI 4.8. What changed…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/create-and-delete-dev-stores-in-shopify-cli"
-    },
-    {
-      "type": "Update",
-      "source": "CLI",
-      "date": "8d",
-      "relevance": "Medium",
-      "title": "4.8.0",
-      "summary": "What's Changed App Support the bundle_size_exception capability by @igor10k in #8335 Report extension compressed bundle size using Brotli by @igor10k in #8400 Fix app dev --use-localhost aborting inst…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/cli/releases/tag/4.8.0"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "8d",
-      "relevance": "Medium",
-      "title": "Variants now support multiple barcodes",
-      "summary": "Merchants often sell the same variant under more than one identifier: a manufacturer UPC alongside a private-label EAN, a GTIN, a reissued ISBN, or an ASIN for a marketplace listing. Until now a varia…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/product-variant-barcode-is-being-replaced-by-barcodes"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "8d",
-      "relevance": "Medium",
-      "title": "Customer Address APIs now support countryCode",
-      "summary": "Starting with Customer Account API version 2026-10, customer address inputs and objects support countryCode. The existing territoryCode field is deprecated but remains fully supported, so current inte…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/customer-address-apis-now-support-countrycode"
     }
   ],
   "recap": {
     "dateRange": "Sep 10 – Sep 17",
-    "basis": "Based on 8 updates this week",
+    "basis": "Based on 11 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
