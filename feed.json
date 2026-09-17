@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-17T03:39:27Z",
+    "generatedAt": "2026-09-17T11:03:43Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "9h",
+      "date": "17h",
       "relevance": "Medium",
       "title": "Updates to Events payloads and subscription configuration",
       "summary": "Starting today, we're updating Events payloads, trigger syntax, and delivery headers. Classic Webhook subscriptions are unaffected. What's changed fields_changed now describes how each path changed Th…",
@@ -140,7 +140,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "4.8.0",
       "summary": "What's Changed App Support the bundle_size_exception capability by @igor10k in #8335 Report extension compressed bundle size using Brotli by @igor10k in #8400 Fix app dev --use-localhost aborting inst…",
