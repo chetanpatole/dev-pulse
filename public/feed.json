@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-17T16:20:44Z",
+    "generatedAt": "2026-09-17T20:59:18Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Adding a canceled receive action to the inventory shipments API",
-    "what_changed": "The GraphQL Admin API now supports a CANCELED receive action for inventory shipments in version 2026-10. You can mark inventory shipment line item units as canceled when they’ll never arrive, and you can read canceled quantities on shipments and their line items. This is an additive change to the 2026-10 release candidate. No action is required, and apps on earlier API versions aren’t affected. Wh…",
+    "headline": "Request a bundle size exception for existing UI extensions",
+    "what_changed": "UI extensions using API version 2025-10 or later are limited to a 64 KB compressed JavaScript bundle per extension. Full page customer account extensions may use up to 128 KB. If your extension remains over the limit after optimization, run shopify app build and submit the minified bundle and its esbuild metafile through the bundle size exception form. Shopify will review the contents of your bund…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/adding-a-canceled-receive-action-to-the-inventory-shipments-api",
+    "link": "https://shopify.dev/changelog/request-a-bundle-size-exception-for-existing-ui-extensions",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "20m",
+      "date": "1h",
+      "relevance": "Medium",
+      "title": "Request a bundle size exception for existing UI extensions",
+      "summary": "UI extensions using API version 2025-10 or later are limited to a 64 KB compressed JavaScript bundle per extension. Full page customer account extensions may use up to 128 KB. If your extension remain…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/request-a-bundle-size-exception-for-existing-ui-extensions"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "4h",
       "relevance": "Medium",
       "title": "Adding a canceled receive action to the inventory shipments API",
       "summary": "The GraphQL Admin API now supports a CANCELED receive action for inventory shipments in version 2026-10. You can mark inventory shipment line item units as canceled when they’ll never arrive, and you…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "20m",
+      "date": "4h",
       "relevance": "Medium",
       "title": "Removed session.currentSession.staffMemberId from POS UI Extensions (2026-10)",
       "summary": "As of API version 2026-10, the static session.currentSession.staffMemberId field has been removed from the POS UI Extensions Session API. It was deprecated in 2026-07 in favour of session.staffMember,…",
@@ -49,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "20m",
+      "date": "4h",
       "relevance": "Medium",
       "title": "Query market hierarchies with the GraphQL Admin API",
       "summary": "The GraphQL Admin API now includes fields for querying and traversing a store’s market hierarchy in API version 2026-10. Apps that use the read_markets access scope can retrieve parent-child relations…",
@@ -62,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "20m",
+      "date": "4h",
       "relevance": "Medium",
       "title": "New Pricing audit trail for contextual product variant prices",
       "summary": "The GraphQL Admin API now includes the auditTrail field on ProductVariantContextualPricing in API version 2026-10. Apps with the read_products access scope can use this field to inspect the ordered ad…",
@@ -75,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "22h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Updates to Events payloads and subscription configuration",
       "summary": "Starting today, we're updating Events payloads, trigger syntax, and delivery headers. Classic Webhook subscriptions are unaffected. What's changed fields_changed now describes how each path changed Th…",
@@ -153,7 +166,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0-preview.3",
       "summary": "Minor Changes 8827904: Add an account option to getShopifyScriptTags() and the React/Vue ShopifyScripts components. When enabled, Hydrogen loads the Shopify customer account web component (https://cdn…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.0-preview.3"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "Discounts Allocator Function API developer preview has ended",
-      "summary": "The Discounts Allocator Function API, available only through the Discounts Allocator developer preview, has been removed and won’t be released. The developer preview is closed. Most developers don’t n…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/discounts-allocator-function-api-developer-preview-has-ended"
     }
   ],
   "recap": {
     "dateRange": "Sep 10 – Sep 17",
-    "basis": "Based on 11 updates this week",
+    "basis": "Based on 12 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
