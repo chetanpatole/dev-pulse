@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-19T03:21:56Z",
+    "generatedAt": "2026-09-19T10:23:34Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "18h",
       "relevance": "Medium",
       "title": "The `automaticDiscounts` query is removed in API version 2027-01",
       "summary": "The deprecated automaticDiscounts query is removed from the GraphQL Admin API in version 2027-01. If your app reads a shop’s automatic discounts through automaticDiscounts, you need to move to the dis…",
