@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-18T20:28:26Z",
+    "generatedAt": "2026-09-19T03:21:56Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Request a bundle size exception for existing UI extensions",
-    "what_changed": "UI extensions using API version 2025-10 or later are limited to a 64 KB compressed JavaScript bundle per extension. Full page customer account extensions may use up to 128 KB. If your extension remains over the limit after optimization, run shopify app build and submit the minified bundle and its esbuild metafile through the bundle size exception form. Shopify will review the contents of your bund…",
+    "headline": "The `automaticDiscounts` query is removed in API version 2027-01",
+    "what_changed": "The deprecated automaticDiscounts query is removed from the GraphQL Admin API in version 2027-01. If your app reads a shop’s automatic discounts through automaticDiscounts, you need to move to the discountNodes query with a method:automatic filter before you upgrade to 2027-01. Apps on 2026-10 and earlier keep working unchanged while those versions are supported. What changed As of API version 202…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,10 +16,23 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/request-a-bundle-size-exception-for-existing-ui-extensions",
+    "link": "https://shopify.dev/changelog/automaticdiscounts-query-is-removed-in-api-version-2027-01",
     "also_worth_knowing": []
   },
   "updates": [
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "11h",
+      "relevance": "Medium",
+      "title": "The `automaticDiscounts` query is removed in API version 2027-01",
+      "summary": "The deprecated automaticDiscounts query is removed from the GraphQL Admin API in version 2027-01. If your app reads a shop’s automatic discounts through automaticDiscounts, you need to move to the dis…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/automaticdiscounts-query-is-removed-in-api-version-2027-01"
+    },
     {
       "type": "Update",
       "source": "Changelog",
@@ -101,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Filter Catalog search results by media type",
       "summary": "The Catalog API now returns video and 3D model media on products that have it, and supports filtering search results by media type. You can request only products that have video or 3D model media atta…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/delivery-options-in-shopify-functions-input-now-expose-their-metafields"
-    },
-    {
-      "type": "Update",
-      "source": "Hydrogen",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "@shopify/hydrogen@2026.10.0-preview.3",
-      "summary": "Minor Changes 8827904: Add an account option to getShopifyScriptTags() and the React/Vue ShopifyScripts components. When enabled, Hydrogen loads the Shopify customer account web component (https://cdn…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.0-preview.3"
     }
   ],
   "recap": {
-    "dateRange": "Sep 11 – Sep 18",
-    "basis": "Based on 11 updates this week",
+    "dateRange": "Sep 12 – Sep 19",
+    "basis": "Based on 12 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
