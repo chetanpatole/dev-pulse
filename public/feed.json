@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-20T10:43:23Z",
+    "generatedAt": "2026-09-20T15:31:59Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -166,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Delivery options in Shopify Functions input now expose their metafields",
       "summary": "Shopify Functions can now read metafields attached to delivery options in the cart. On API version 2026-10, you can call metafield(namespace:, key:) on any option in cart.deliveryGroups.deliveryOption…",
