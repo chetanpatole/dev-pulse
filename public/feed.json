@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-20T15:31:59Z",
+    "generatedAt": "2026-09-20T20:23:26Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "The `automaticDiscounts` query is removed in API version 2027-01",
       "summary": "The deprecated automaticDiscounts query is removed from the GraphQL Admin API in version 2027-01. If your app reads a shop’s automatic discounts through automaticDiscounts, you need to move to the dis…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Request a bundle size exception for existing UI extensions",
       "summary": "UI extensions using API version 2025-10 or later are limited to a 64 KB compressed JavaScript bundle per extension. Full page customer account extensions may use up to 128 KB. If your extension remain…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Adding a canceled receive action to the inventory shipments API",
       "summary": "The GraphQL Admin API now supports a CANCELED receive action for inventory shipments in version 2026-10. You can mark inventory shipment line item units as canceled when they’ll never arrive, and you…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Removed session.currentSession.staffMemberId from POS UI Extensions (2026-10)",
       "summary": "As of API version 2026-10, the static session.currentSession.staffMemberId field has been removed from the POS UI Extensions Session API. It was deprecated in 2026-07 in favour of session.staffMember,…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Query market hierarchies with the GraphQL Admin API",
       "summary": "The GraphQL Admin API now includes fields for querying and traversing a store’s market hierarchy in API version 2026-10. Apps that use the read_markets access scope can retrieve parent-child relations…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "New Pricing audit trail for contextual product variant prices",
       "summary": "The GraphQL Admin API now includes the auditTrail field on ProductVariantContextualPricing in API version 2026-10. Apps with the read_products access scope can use this field to inspect the ordered ad…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Updates to Events payloads and subscription configuration",
       "summary": "Starting today, we're updating Events payloads, trigger syntax, and delivery headers. Classic Webhook subscriptions are unaffected. What's changed fields_changed now describes how each path changed Th…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Dynamic complexity cost for `metafieldsSet` mutation",
       "summary": "The metafieldsSet mutation now uses dynamic complexity costing. Instead of a flat cost for every call, a request's cost reflects how many distinct resources metafields were changed. Most apps need no…",
@@ -140,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Prepare your app for the Shopify admin's new look",
       "summary": "Starting September 15, 2026, the Shopify admin has a new look, rolling out progressively to merchants. Apps that use Admin UI extensions and App Home UI extensions pick up the new styles automatically…",
@@ -153,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "family_name is optional for B2B orders in Payments Apps API requests",
       "summary": "B2B checkout treats the buyer’s surname as optional, so payment session requests for B2B orders can omit family_name in shipping_address and billing_address. This affects payments apps that handle B2B…",
