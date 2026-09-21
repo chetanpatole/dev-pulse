@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-21T12:07:10Z",
+    "generatedAt": "2026-09-21T21:44:35Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "The `automaticDiscounts` query is removed in API version 2027-01",
-    "what_changed": "The deprecated automaticDiscounts query is removed from the GraphQL Admin API in version 2027-01. If your app reads a shop’s automatic discounts through automaticDiscounts, you need to move to the discountNodes query with a method:automatic filter before you upgrade to 2027-01. Apps on 2026-10 and earlier keep working unchanged while those versions are supported. What changed As of API version 202…",
+    "headline": "Unlimited private plans and target stores in Shopify App Pricing",
+    "what_changed": "Developers using Shopify App Pricing can now create unlimited private plans per app and add unlimited target stores to each plan, replacing the previous limits of 15 private plans and 20 stores per plan. No action is required to continue using existing plans. What changed A private plan is an app pricing plan available only to stores you select. These selected stores are the plan’s targets. Privat…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,40 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/automaticdiscounts-query-is-removed-in-api-version-2027-01",
+    "link": "https://shopify.dev/changelog/unlimited-private-plans-and-target-stores-in-shopify-app-pricing",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "44m",
+      "relevance": "Medium",
+      "title": "Unlimited private plans and target stores in Shopify App Pricing",
+      "summary": "Developers using Shopify App Pricing can now create unlimited private plans per app and add unlimited target stores to each plan, replacing the previous limits of 15 private plans and 20 stores per pl…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/unlimited-private-plans-and-target-stores-in-shopify-app-pricing"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "5h",
+      "relevance": "Medium",
+      "title": "New translatable boolean field for Metafield GraphQL Object",
+      "summary": "API version 2026-10 adds a non-null translatable field to the Metafield object in the GraphQL Admin API. Apps that fetch translatable metafields and migrate to 2026-10 can now see whether a metafield’…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/is-translatable-metafield-field"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "3d",
       "relevance": "Medium",
       "title": "The `automaticDiscounts` query is removed in API version 2027-01",
       "summary": "The deprecated automaticDiscounts query is removed from the GraphQL Admin API in version 2027-01. If your app reads a shop’s automatic discounts through automaticDiscounts, you need to move to the dis…",
@@ -36,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Request a bundle size exception for existing UI extensions",
       "summary": "UI extensions using API version 2025-10 or later are limited to a 64 KB compressed JavaScript bundle per extension. Full page customer account extensions may use up to 128 KB. If your extension remain…",
@@ -49,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Adding a canceled receive action to the inventory shipments API",
       "summary": "The GraphQL Admin API now supports a CANCELED receive action for inventory shipments in version 2026-10. You can mark inventory shipment line item units as canceled when they’ll never arrive, and you…",
@@ -62,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Removed session.currentSession.staffMemberId from POS UI Extensions (2026-10)",
       "summary": "As of API version 2026-10, the static session.currentSession.staffMemberId field has been removed from the POS UI Extensions Session API. It was deprecated in 2026-07 in favour of session.staffMember,…",
@@ -75,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Query market hierarchies with the GraphQL Admin API",
       "summary": "The GraphQL Admin API now includes fields for querying and traversing a store’s market hierarchy in API version 2026-10. Apps that use the read_markets access scope can retrieve parent-child relations…",
@@ -88,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "New Pricing audit trail for contextual product variant prices",
       "summary": "The GraphQL Admin API now includes the auditTrail field on ProductVariantContextualPricing in API version 2026-10. Apps with the read_products access scope can use this field to inspect the ordered ad…",
@@ -101,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Updates to Events payloads and subscription configuration",
       "summary": "Starting today, we're updating Events payloads, trigger syntax, and delivery headers. Classic Webhook subscriptions are unaffected. What's changed fields_changed now describes how each path changed Th…",
@@ -127,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Dynamic complexity cost for `metafieldsSet` mutation",
       "summary": "The metafieldsSet mutation now uses dynamic complexity costing. Instead of a flat cost for every call, a request's cost reflects how many distinct resources metafields were changed. Most apps need no…",
@@ -140,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Prepare your app for the Shopify admin's new look",
       "summary": "Starting September 15, 2026, the Shopify admin has a new look, rolling out progressively to merchants. Apps that use Admin UI extensions and App Home UI extensions pick up the new styles automatically…",
@@ -149,37 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/prepare-your-app-for-the-shopify-admins-new-look"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "family_name is optional for B2B orders in Payments Apps API requests",
-      "summary": "B2B checkout treats the buyer’s surname as optional, so payment session requests for B2B orders can omit family_name in shipping_address and billing_address. This affects payments apps that handle B2B…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/family_name-is-optional-for-b2b-orders-in-payments-apps-api-requests"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "Delivery options in Shopify Functions input now expose their metafields",
-      "summary": "Shopify Functions can now read metafields attached to delivery options in the cart. On API version 2026-10, you can call metafield(namespace:, key:) on any option in cart.deliveryGroups.deliveryOption…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/delivery-options-in-shopify-functions-input-now-expose-their-metafields"
     }
   ],
   "recap": {
     "dateRange": "Sep 14 – Sep 21",
-    "basis": "Based on 12 updates this week",
+    "basis": "Based on 14 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
