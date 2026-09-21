@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-20T20:23:26Z",
+    "generatedAt": "2026-09-21T03:33:59Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Filter Catalog search results by media type",
       "summary": "The Catalog API now returns video and 3D model media on products that have it, and supports filtering search results by media type. You can request only products that have video or 3D model media atta…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Sep 13 – Sep 20",
+    "dateRange": "Sep 14 – Sep 21",
     "basis": "Based on 12 updates this week",
     "headline": "A quieter week.",
     "themes": [],
