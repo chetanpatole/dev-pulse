@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-22T11:02:29Z",
+    "generatedAt": "2026-09-22T16:22:12Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Unlimited private plans and target stores in Shopify App Pricing",
-    "what_changed": "Developers using Shopify App Pricing can now create unlimited private plans per app and add unlimited target stores to each plan, replacing the previous limits of 15 private plans and 20 stores per plan. No action is required to continue using existing plans. What changed A private plan is an app pricing plan available only to stores you select. These selected stores are the plan’s targets. Privat…",
+    "headline": "Removing marketCurrencySettingsUpdate mutation",
+    "what_changed": "As of Admin GraphQL API version `2027-01`, the `marketCurrencySettingsUpdate` mutation is removed, along with the `MarketCurrencySettingsUpdatePayload`, `MarketCurrencySettingsUserError`, and `MarketCurrencySettingsUserErrorCode` types. The mutation already returns an error for every request, so this removes an endpoint that can no longer be used. ## What changed In API version `2027-01`, the Admi…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/unlimited-private-plans-and-target-stores-in-shopify-app-pricing",
+    "link": "https://shopify.dev/changelog/removing-marketcurrencysettingsupdate-mutation",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "14h",
+      "date": "22m",
+      "relevance": "Medium",
+      "title": "Removing marketCurrencySettingsUpdate mutation",
+      "summary": "As of Admin GraphQL API version `2027-01`, the `marketCurrencySettingsUpdate` mutation is removed, along with the `MarketCurrencySettingsUpdatePayload`, `MarketCurrencySettingsUserError`, and `MarketC…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/removing-marketcurrencysettingsupdate-mutation"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "19h",
       "relevance": "Medium",
       "title": "Unlimited private plans and target stores in Shopify App Pricing",
       "summary": "Developers using Shopify App Pricing can now create unlimited private plans per app and add unlimited target stores to each plan, replacing the previous limits of 15 private plans and 20 stores per pl…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "19h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "New translatable boolean field for Metafield GraphQL Object",
       "summary": "API version 2026-10 adds a non-null translatable field to the Metafield object in the GraphQL Admin API. Apps that fetch translatable metafields and migrate to 2026-10 can now see whether a metafield’…",
@@ -49,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "The `automaticDiscounts` query is removed in API version 2027-01",
       "summary": "The deprecated automaticDiscounts query is removed from the GraphQL Admin API in version 2027-01. If your app reads a shop’s automatic discounts through automaticDiscounts, you need to move to the dis…",
@@ -75,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Adding a canceled receive action to the inventory shipments API",
       "summary": "The GraphQL Admin API now supports a CANCELED receive action for inventory shipments in version 2026-10. You can mark inventory shipment line item units as canceled when they’ll never arrive, and you…",
@@ -88,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Removed session.currentSession.staffMemberId from POS UI Extensions (2026-10)",
       "summary": "As of API version 2026-10, the static session.currentSession.staffMemberId field has been removed from the POS UI Extensions Session API. It was deprecated in 2026-07 in favour of session.staffMember,…",
@@ -101,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Query market hierarchies with the GraphQL Admin API",
       "summary": "The GraphQL Admin API now includes fields for querying and traversing a store’s market hierarchy in API version 2026-10. Apps that use the read_markets access scope can retrieve parent-child relations…",
@@ -114,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "New Pricing audit trail for contextual product variant prices",
       "summary": "The GraphQL Admin API now includes the auditTrail field on ProductVariantContextualPricing in API version 2026-10. Apps with the read_products access scope can use this field to inspect the ordered ad…",
@@ -153,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Dynamic complexity cost for `metafieldsSet` mutation",
       "summary": "The metafieldsSet mutation now uses dynamic complexity costing. Instead of a flat cost for every call, a request's cost reflects how many distinct resources metafields were changed. Most apps need no…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/dynamic-complexity-cost-for-metafieldsset-mutation"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "Prepare your app for the Shopify admin's new look",
-      "summary": "Starting September 15, 2026, the Shopify admin has a new look, rolling out progressively to merchants. Apps that use Admin UI extensions and App Home UI extensions pick up the new styles automatically…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/prepare-your-app-for-the-shopify-admins-new-look"
     }
   ],
   "recap": {
     "dateRange": "Sep 15 – Sep 22",
-    "basis": "Based on 14 updates this week",
+    "basis": "Based on 11 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
