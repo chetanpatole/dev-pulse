@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-22T16:22:12Z",
+    "generatedAt": "2026-09-22T20:56:15Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Removing marketCurrencySettingsUpdate mutation",
-    "what_changed": "As of Admin GraphQL API version `2027-01`, the `marketCurrencySettingsUpdate` mutation is removed, along with the `MarketCurrencySettingsUpdatePayload`, `MarketCurrencySettingsUserError`, and `MarketCurrencySettingsUserErrorCode` types. The mutation already returns an error for every request, so this removes an endpoint that can no longer be used. ## What changed In API version `2027-01`, the Admi…",
+    "headline": "Events subscription query complexity limit is changing to 100 points",
+    "what_changed": "We’re reducing the query complexity limit for Events subscriptions from 250 to 100 points. This change does not affect Classic Webhooks. Shopify assigns each Events query a complexity score based on the fields it selects, the types of data those fields return, and the number of items requested in connections using first or last, following the GraphQL query cost calculation. The limit applies to ea…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,40 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/removing-marketcurrencysettingsupdate-mutation",
+    "link": "https://shopify.dev/changelog/events-subscription-query-complexity-limit-is-changing-to-100-points",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "22m",
+      "date": "2h",
+      "relevance": "Medium",
+      "title": "Events subscription query complexity limit is changing to 100 points",
+      "summary": "We’re reducing the query complexity limit for Events subscriptions from 250 to 100 points. This change does not affect Classic Webhooks. Shopify assigns each Events query a complexity score based on t…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/events-subscription-query-complexity-limit-is-changing-to-100-points"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "3h",
+      "relevance": "Medium",
+      "title": "Polaris CDN 1.1 is now stable",
+      "summary": "Polaris Web Components 1.1 is now available on the stable Polaris CDN channels. This is the first minor release under the CDN's new semantic versioning model. The following URLs now serve Polaris 1.1…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/polaris-cdn-1-1-is-now-stable"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "4h",
       "relevance": "Medium",
       "title": "Removing marketCurrencySettingsUpdate mutation",
       "summary": "As of Admin GraphQL API version `2027-01`, the `marketCurrencySettingsUpdate` mutation is removed, along with the `MarketCurrencySettingsUpdatePayload`, `MarketCurrencySettingsUserError`, and `MarketC…",
@@ -36,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "19h",
+      "date": "23h",
       "relevance": "Medium",
       "title": "Unlimited private plans and target stores in Shopify App Pricing",
       "summary": "Developers using Shopify App Pricing can now create unlimited private plans per app and add unlimited target stores to each plan, replacing the previous limits of 15 private plans and 20 stores per pl…",
@@ -75,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Request a bundle size exception for existing UI extensions",
       "summary": "UI extensions using API version 2025-10 or later are limited to a 64 KB compressed JavaScript bundle per extension. Full page customer account extensions may use up to 128 KB. If your extension remain…",
@@ -140,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Updates to Events payloads and subscription configuration",
       "summary": "Starting today, we're updating Events payloads, trigger syntax, and delivery headers. Classic Webhook subscriptions are unaffected. What's changed fields_changed now describes how each path changed Th…",
@@ -149,37 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/updates-to-events-payloads-and-subscription-configuration"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "Filter Catalog search results by media type",
-      "summary": "The Catalog API now returns video and 3D model media on products that have it, and supports filtering search results by media type. You can request only products that have video or 3D model media atta…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/filter-catalog-search-results-by-media-type"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "Dynamic complexity cost for `metafieldsSet` mutation",
-      "summary": "The metafieldsSet mutation now uses dynamic complexity costing. Instead of a flat cost for every call, a request's cost reflects how many distinct resources metafields were changed. Most apps need no…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/dynamic-complexity-cost-for-metafieldsset-mutation"
     }
   ],
   "recap": {
     "dateRange": "Sep 15 – Sep 22",
-    "basis": "Based on 11 updates this week",
+    "basis": "Based on 13 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
