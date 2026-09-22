@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-22T03:32:46Z",
+    "generatedAt": "2026-09-22T11:02:29Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "14h",
       "relevance": "Medium",
       "title": "Unlimited private plans and target stores in Shopify App Pricing",
       "summary": "Developers using Shopify App Pricing can now create unlimited private plans per app and add unlimited target stores to each plan, replacing the previous limits of 15 private plans and 20 stores per pl…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "19h",
       "relevance": "Medium",
       "title": "New translatable boolean field for Metafield GraphQL Object",
       "summary": "API version 2026-10 adds a non-null translatable field to the Metafield object in the GraphQL Admin API. Apps that fetch translatable metafields and migrate to 2026-10 can now see whether a metafield’…",
