@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-23T10:51:44Z",
+    "generatedAt": "2026-09-23T16:12:16Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Events subscription query complexity limit is changing to 100 points",
-    "what_changed": "We’re reducing the query complexity limit for Events subscriptions from 250 to 100 points. This change does not affect Classic Webhooks. Shopify assigns each Events query a complexity score based on the fields it selects, the types of data those fields return, and the number of items requested in connections using first or last, following the GraphQL query cost calculation. The limit applies to ea…",
+    "headline": "Setting includeRestOfWorld to true returns an error in API version 2027-01",
+    "what_changed": "Starting with GraphQL Admin API version 2027-01, setting the deprecated DiscountCountriesInput.includeRestOfWorld field to true returns a BAD_REQUEST error. Apps that use this value must specify every applicable country through add before upgrading. Apps on 2026-10 and earlier keep their existing behavior while those versions are supported. What changed As of API version 2027-01, includeRestOfWorl…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,40 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/events-subscription-query-complexity-limit-is-changing-to-100-points",
+    "link": "https://shopify.dev/changelog/setting-includerestofworld-to-true-returns-an-error-in-api-version-2027-01",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "16h",
+      "date": "12m",
+      "relevance": "Medium",
+      "title": "Setting includeRestOfWorld to true returns an error in API version 2027-01",
+      "summary": "Starting with GraphQL Admin API version 2027-01, setting the deprecated DiscountCountriesInput.includeRestOfWorld field to true returns a BAD_REQUEST error. Apps that use this value must specify every…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/setting-includerestofworld-to-true-returns-an-error-in-api-version-2027-01"
+    },
+    {
+      "type": "Update",
+      "source": "CLI",
+      "date": "4h",
+      "relevance": "Medium",
+      "title": "4.8.1",
+      "summary": "What's Changed Theme [4.8] Fix theme pull, push, and package to cover all theme files by @karreiro in #8529 [4.8] Fix theme pull, push, and package to cover all theme files by @karreiro in #8544 Full…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/cli/releases/tag/4.8.1"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "22h",
       "relevance": "Medium",
       "title": "Events subscription query complexity limit is changing to 100 points",
       "summary": "We’re reducing the query complexity limit for Events subscriptions from 250 to 100 points. This change does not affect Classic Webhooks. Shopify assigns each Events query a complexity score based on t…",
@@ -36,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "17h",
+      "date": "22h",
       "relevance": "Medium",
       "title": "Polaris CDN 1.1 is now stable",
       "summary": "Polaris Web Components 1.1 is now available on the stable Polaris CDN channels. This is the first minor release under the CDN's new semantic versioning model. The following URLs now serve Polaris 1.1…",
@@ -49,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "18h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Removing marketCurrencySettingsUpdate mutation",
       "summary": "As of Admin GraphQL API version `2027-01`, the `marketCurrencySettingsUpdate` mutation is removed, along with the `MarketCurrencySettingsUpdatePayload`, `MarketCurrencySettingsUserError`, and `MarketC…",
@@ -75,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "New translatable boolean field for Metafield GraphQL Object",
       "summary": "API version 2026-10 adds a non-null translatable field to the Metafield object in the GraphQL Admin API. Apps that fetch translatable metafields and migrate to 2026-10 can now see whether a metafield’…",
@@ -88,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "The `automaticDiscounts` query is removed in API version 2027-01",
       "summary": "The deprecated automaticDiscounts query is removed from the GraphQL Admin API in version 2027-01. If your app reads a shop’s automatic discounts through automaticDiscounts, you need to move to the dis…",
@@ -114,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Adding a canceled receive action to the inventory shipments API",
       "summary": "The GraphQL Admin API now supports a CANCELED receive action for inventory shipments in version 2026-10. You can mark inventory shipment line item units as canceled when they’ll never arrive, and you…",
@@ -127,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Removed session.currentSession.staffMemberId from POS UI Extensions (2026-10)",
       "summary": "As of API version 2026-10, the static session.currentSession.staffMemberId field has been removed from the POS UI Extensions Session API. It was deprecated in 2026-07 in favour of session.staffMember,…",
@@ -140,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Query market hierarchies with the GraphQL Admin API",
       "summary": "The GraphQL Admin API now includes fields for querying and traversing a store’s market hierarchy in API version 2026-10. Apps that use the read_markets access scope can retrieve parent-child relations…",
@@ -149,37 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/market-relationships"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "New Pricing audit trail for contextual product variant prices",
-      "summary": "The GraphQL Admin API now includes the auditTrail field on ProductVariantContextualPricing in API version 2026-10. Apps with the read_products access scope can use this field to inspect the ordered ad…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/pricing-audit-trail-for-contextual-product-variant-prices"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "Updates to Events payloads and subscription configuration",
-      "summary": "Starting today, we're updating Events payloads, trigger syntax, and delivery headers. Classic Webhook subscriptions are unaffected. What's changed fields_changed now describes how each path changed Th…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/updates-to-events-payloads-and-subscription-configuration"
     }
   ],
   "recap": {
     "dateRange": "Sep 16 – Sep 23",
-    "basis": "Based on 12 updates this week",
+    "basis": "Based on 14 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
