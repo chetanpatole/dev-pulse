@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-22T20:56:15Z",
+    "generatedAt": "2026-09-23T03:32:38Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2h",
+      "date": "9h",
       "relevance": "Medium",
       "title": "Events subscription query complexity limit is changing to 100 points",
       "summary": "We’re reducing the query complexity limit for Events subscriptions from 250 to 100 points. This change does not affect Classic Webhooks. Shopify assigns each Events query a complexity score based on t…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3h",
+      "date": "10h",
       "relevance": "Medium",
       "title": "Polaris CDN 1.1 is now stable",
       "summary": "Polaris Web Components 1.1 is now available on the stable Polaris CDN channels. This is the first minor release under the CDN's new semantic versioning model. The following URLs now serve Polaris 1.1…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Removing marketCurrencySettingsUpdate mutation",
       "summary": "As of Admin GraphQL API version `2027-01`, the `marketCurrencySettingsUpdate` mutation is removed, along with the `MarketCurrencySettingsUpdatePayload`, `MarketCurrencySettingsUserError`, and `MarketC…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "23h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Unlimited private plans and target stores in Shopify App Pricing",
       "summary": "Developers using Shopify App Pricing can now create unlimited private plans per app and add unlimited target stores to each plan, replacing the previous limits of 15 private plans and 20 stores per pl…",
@@ -178,8 +178,8 @@
     }
   ],
   "recap": {
-    "dateRange": "Sep 15 – Sep 22",
-    "basis": "Based on 13 updates this week",
+    "dateRange": "Sep 16 – Sep 23",
+    "basis": "Based on 12 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
