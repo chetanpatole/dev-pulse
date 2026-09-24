@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-23T21:08:53Z",
+    "generatedAt": "2026-09-24T03:23:17Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "2h",
+      "date": "8h",
       "relevance": "Medium",
       "title": "4.8.2",
       "summary": "What's Changed Theme [4.8] Fix shopify theme pull/push/package sync by @EvilGenius13 in #8630 Full Changelog: 4.8.1...4.8.2",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Setting includeRestOfWorld to true returns an error in API version 2027-01",
       "summary": "Starting with GraphQL Admin API version 2027-01, setting the deprecated DiscountCountriesInput.includeRestOfWorld field to true returns a BAD_REQUEST error. Apps that use this value must specify every…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "9h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "4.8.1",
       "summary": "What's Changed Theme [4.8] Fix theme pull, push, and package to cover all theme files by @karreiro in #8529 [4.8] Fix theme pull, push, and package to cover all theme files by @karreiro in #8544 Full…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Sep 16 – Sep 23",
+    "dateRange": "Sep 17 – Sep 24",
     "basis": "Based on 14 updates this week",
     "headline": "A quieter week.",
     "themes": [],
