@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-24T16:35:07Z",
+    "generatedAt": "2026-09-24T21:12:01Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5m",
+      "date": "4h",
       "relevance": "Medium",
       "title": "Polaris 2.0 release candidate",
       "summary": "The Polaris 2.0 release candidate is now available for embedded App Home interfaces. It includes the Shopify admin’s new visual styles, allowing your app to adopt the new look. The new Shopify admin d…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "4h",
+      "date": "9h",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.0.5",
       "summary": "Patch Changes Updated dependencies [bce7053fe640a7dfd39ed3bac1a63e4d737cb4e2]: @shopify/mini-oxygen@4.2.3",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "4h",
+      "date": "9h",
       "relevance": "Medium",
       "title": "@shopify/mini-oxygen@4.2.3",
       "summary": "Patch Changes Keep the https: scheme in the request URL your worker receives when the Vite dev server runs over HTTPS. Previously MiniOxygen always passed an http: URL, so code that relies on new URL(…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "21h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "4.8.2",
       "summary": "What's Changed Theme [4.8] Fix shopify theme pull/push/package sync by @EvilGenius13 in #8630 Full Changelog: 4.8.1...4.8.2",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Events subscription query complexity limit is changing to 100 points",
       "summary": "We’re reducing the query complexity limit for Events subscriptions from 250 to 100 points. This change does not affect Classic Webhooks. Shopify assigns each Events query a complexity score based on t…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Polaris CDN 1.1 is now stable",
       "summary": "Polaris Web Components 1.1 is now available on the stable Polaris CDN channels. This is the first minor release under the CDN's new semantic versioning model. The following URLs now serve Polaris 1.1…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Unlimited private plans and target stores in Shopify App Pricing",
       "summary": "Developers using Shopify App Pricing can now create unlimited private plans per app and add unlimited target stores to each plan, replacing the previous limits of 15 private plans and 20 stores per pl…",
@@ -166,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Request a bundle size exception for existing UI extensions",
       "summary": "UI extensions using API version 2025-10 or later are limited to a 64 KB compressed JavaScript bundle per extension. Full page customer account extensions may use up to 128 KB. If your extension remain…",
@@ -179,7 +179,7 @@
   ],
   "recap": {
     "dateRange": "Sep 17 – Sep 24",
-    "basis": "Based on 12 updates this week",
+    "basis": "Based on 11 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
