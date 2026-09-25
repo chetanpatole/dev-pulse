@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-25T03:40:36Z",
+    "generatedAt": "2026-09-25T11:16:17Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "18h",
       "relevance": "Medium",
       "title": "Polaris 2.0 release candidate",
       "summary": "The Polaris 2.0 release candidate is now available for embedded App Home interfaces. It includes the Shopify admin’s new visual styles, allowing your app to adopt the new look. The new Shopify admin d…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "15h",
+      "date": "23h",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.0.5",
       "summary": "Patch Changes Updated dependencies [bce7053fe640a7dfd39ed3bac1a63e4d737cb4e2]: @shopify/mini-oxygen@4.2.3",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "15h",
+      "date": "23h",
       "relevance": "Medium",
       "title": "@shopify/mini-oxygen@4.2.3",
       "summary": "Patch Changes Keep the https: scheme in the request URL your worker receives when the Vite dev server runs over HTTPS. Previously MiniOxygen always passed an http: URL, so code that relies on new URL(…",
