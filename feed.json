@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-25T16:39:53Z",
+    "generatedAt": "2026-09-25T21:08:55Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "The new Dev Dashboard: your command center for building",
-    "what_changed": "Today we're sharing the newest wave of improvements to the Dev Dashboard. You told us, in the community forums and in support conversations, that common work like managing collaborator access or understanding app health took too much juggling. This release brings that work into one home for your apps and the stores you work in: store management, collaborator access, and app health—one place to see…",
+    "headline": "AI Toolkit skills have been consolidated to `shopify`",
+    "what_changed": "With today's release of AI Toolkit, all existing shopify- skills are consolidated into a single shopify skill. If you use AI Toolkit skills with agents or npx skills, you might need to update your environment. What changed Shopify skills content in AI Toolkit was previously distributed across many skills, such as shopify-dev-onboarding, shopify-admin, and shopify-functions. The agent plugins and t…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/the-new-dev-dashboard",
+    "link": "https://shopify.dev/changelog/ai-toolkit-skills-have-been-consolidated",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1h",
+      "date": "5h",
+      "relevance": "Medium",
+      "title": "AI Toolkit skills have been consolidated to `shopify`",
+      "summary": "With today's release of AI Toolkit, all existing shopify- skills are consolidated into a single shopify skill. If you use AI Toolkit skills with agents or npx skills, you might need to update your env…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/ai-toolkit-skills-have-been-consolidated"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "6h",
       "relevance": "Medium",
       "title": "The new Dev Dashboard: your command center for building",
       "summary": "Today we're sharing the newest wave of improvements to the Dev Dashboard. You told us, in the community forums and in support conversations, that common work like managing collaborator access or under…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3h",
+      "date": "8h",
       "relevance": "Medium",
       "title": "Shopify Payments Balance Transaction GraphQL type supports currency conversion type",
       "summary": "As of GraphQL Admin API version 2026-10, ShopifyPaymentsTransactionType now includes CURRENCY_CONVERSION type. Learn more about ShopifyPaymentsTransactionType on Shopify.dev.",
@@ -88,7 +101,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "4.8.2",
       "summary": "What's Changed Theme [4.8] Fix shopify theme pull/push/package sync by @EvilGenius13 in #8630 Full Changelog: 4.8.1...4.8.2",
@@ -127,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Events subscription query complexity limit is changing to 100 points",
       "summary": "We’re reducing the query complexity limit for Events subscriptions from 250 to 100 points. This change does not affect Classic Webhooks. Shopify assigns each Events query a complexity score based on t…",
@@ -140,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Polaris CDN 1.1 is now stable",
       "summary": "Polaris Web Components 1.1 is now available on the stable Polaris CDN channels. This is the first minor release under the CDN's new semantic versioning model. The following URLs now serve Polaris 1.1…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/removing-marketcurrencysettingsupdate-mutation"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "3d",
-      "relevance": "Medium",
-      "title": "Unlimited private plans and target stores in Shopify App Pricing",
-      "summary": "Developers using Shopify App Pricing can now create unlimited private plans per app and add unlimited target stores to each plan, replacing the previous limits of 15 private plans and 20 stores per pl…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/unlimited-private-plans-and-target-stores-in-shopify-app-pricing"
     }
   ],
   "recap": {
     "dateRange": "Sep 18 – Sep 25",
-    "basis": "Based on 13 updates this week",
+    "basis": "Based on 14 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
