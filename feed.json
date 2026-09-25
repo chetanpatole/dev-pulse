@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-25T11:16:17Z",
+    "generatedAt": "2026-09-25T16:39:53Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Polaris 2.0 release candidate",
-    "what_changed": "The Polaris 2.0 release candidate is now available for embedded App Home interfaces. It includes the Shopify admin’s new visual styles, allowing your app to adopt the new look. The new Shopify admin design began rolling out progressively to merchants on September 15, 2026. You can adopt the release candidate now and test your app across both the previous and new Shopify admin designs. What changes…",
+    "headline": "The new Dev Dashboard: your command center for building",
+    "what_changed": "Today we're sharing the newest wave of improvements to the Dev Dashboard. You told us, in the community forums and in support conversations, that common work like managing collaborator access or understanding app health took too much juggling. This release brings that work into one home for your apps and the stores you work in: store management, collaborator access, and app health—one place to see…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,40 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/polaris-2-0-release-candidate",
+    "link": "https://shopify.dev/changelog/the-new-dev-dashboard",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "18h",
+      "date": "1h",
+      "relevance": "Medium",
+      "title": "The new Dev Dashboard: your command center for building",
+      "summary": "Today we're sharing the newest wave of improvements to the Dev Dashboard. You told us, in the community forums and in support conversations, that common work like managing collaborator access or under…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/the-new-dev-dashboard"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "3h",
+      "relevance": "Medium",
+      "title": "Shopify Payments Balance Transaction GraphQL type supports currency conversion type",
+      "summary": "As of GraphQL Admin API version 2026-10, ShopifyPaymentsTransactionType now includes CURRENCY_CONVERSION type. Learn more about ShopifyPaymentsTransactionType on Shopify.dev.",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/shopify-payments-balance-transaction-graphql-type-supports-currency-conversion-type"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Polaris 2.0 release candidate",
       "summary": "The Polaris 2.0 release candidate is now available for embedded App Home interfaces. It includes the Shopify admin’s new visual styles, allowing your app to adopt the new look. The new Shopify admin d…",
@@ -36,7 +62,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "23h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.0.5",
       "summary": "Patch Changes Updated dependencies [bce7053fe640a7dfd39ed3bac1a63e4d737cb4e2]: @shopify/mini-oxygen@4.2.3",
@@ -49,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "23h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "@shopify/mini-oxygen@4.2.3",
       "summary": "Patch Changes Keep the https: scheme in the request URL your worker receives when the Vite dev server runs over HTTPS. Previously MiniOxygen always passed an http: URL, so code that relies on new URL(…",
@@ -74,8 +100,21 @@
     },
     {
       "type": "Update",
+      "source": "Changelog",
+      "date": "2d",
+      "relevance": "Medium",
+      "title": "Query SP Fee Details with the GraphQL Admin API",
+      "summary": "As of API version 2026-10, the GraphQL Admin API includes a feeDetails query for retrieving specialized fees charged to a shop. No action is required for existing apps. What changed The new feeDetails…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/query-sp-fee-details-with-the-graphql-admin-api"
+    },
+    {
+      "type": "Update",
       "source": "CLI",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "4.8.1",
       "summary": "What's Changed Theme [4.8] Fix theme pull, push, and package to cover all theme files by @karreiro in #8529 [4.8] Fix theme pull, push, and package to cover all theme files by @karreiro in #8544 Full…",
@@ -114,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Removing marketCurrencySettingsUpdate mutation",
       "summary": "As of GraphQL Admin API version 2027-01, the marketCurrencySettingsUpdate mutation is removed, along with the MarketCurrencySettingsUpdatePayload, MarketCurrencySettingsUserError, and MarketCurrencySe…",
@@ -136,50 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/unlimited-private-plans-and-target-stores-in-shopify-app-pricing"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "3d",
-      "relevance": "Medium",
-      "title": "New translatable boolean field for Metafield GraphQL Object",
-      "summary": "API version 2026-10 adds a non-null translatable field to the Metafield object in the GraphQL Admin API. Apps that fetch translatable metafields and migrate to 2026-10 can now see whether a metafield’…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/is-translatable-metafield-field"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "The `automaticDiscounts` query is removed in API version 2027-01",
-      "summary": "The deprecated automaticDiscounts query is removed from the GraphQL Admin API in version 2027-01. If your app reads a shop’s automatic discounts through automaticDiscounts, you need to move to the dis…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/automaticdiscounts-query-is-removed-in-api-version-2027-01"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "Request a bundle size exception for existing UI extensions",
-      "summary": "UI extensions using API version 2025-10 or later are limited to a 64 KB compressed JavaScript bundle per extension. Full page customer account extensions may use up to 128 KB. If your extension remain…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/request-a-bundle-size-exception-for-existing-ui-extensions"
     }
   ],
   "recap": {
     "dateRange": "Sep 18 – Sep 25",
-    "basis": "Based on 11 updates this week",
+    "basis": "Based on 13 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
