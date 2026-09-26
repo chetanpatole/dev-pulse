@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-26T10:53:13Z",
+    "generatedAt": "2026-09-26T15:53:23Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "18h",
+      "date": "23h",
       "relevance": "Medium",
       "title": "AI Toolkit skills have been consolidated to `shopify`",
       "summary": "With today's release of AI Toolkit, all existing shopify- skills are consolidated into a single shopify skill. If you use AI Toolkit skills with agents or npx skills, you might need to update your env…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "19h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "The new Dev Dashboard: your command center for building",
       "summary": "Today we're sharing the newest wave of improvements to the Dev Dashboard. You told us, in the community forums and in support conversations, that common work like managing collaborator access or under…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "21h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Shopify Payments Balance Transaction GraphQL type supports currency conversion type",
       "summary": "As of GraphQL Admin API version 2026-10, ShopifyPaymentsTransactionType now includes CURRENCY_CONVERSION type. Learn more about ShopifyPaymentsTransactionType on Shopify.dev.",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.0.5",
       "summary": "Patch Changes Updated dependencies [bce7053fe640a7dfd39ed3bac1a63e4d737cb4e2]: @shopify/mini-oxygen@4.2.3",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "@shopify/mini-oxygen@4.2.3",
       "summary": "Patch Changes Keep the https: scheme in the request URL your worker receives when the Vite dev server runs over HTTPS. Previously MiniOxygen always passed an http: URL, so code that relies on new URL(…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "4.8.1",
       "summary": "What's Changed Theme [4.8] Fix theme pull, push, and package to cover all theme files by @karreiro in #8529 [4.8] Fix theme pull, push, and package to cover all theme files by @karreiro in #8544 Full…",
