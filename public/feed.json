@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-25T21:08:55Z",
+    "generatedAt": "2026-09-26T03:46:27Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "AI Toolkit skills have been consolidated to `shopify`",
       "summary": "With today's release of AI Toolkit, all existing shopify- skills are consolidated into a single shopify skill. If you use AI Toolkit skills with agents or npx skills, you might need to update your env…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "The new Dev Dashboard: your command center for building",
       "summary": "Today we're sharing the newest wave of improvements to the Dev Dashboard. You told us, in the community forums and in support conversations, that common work like managing collaborator access or under…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8h",
+      "date": "14h",
       "relevance": "Medium",
       "title": "Shopify Payments Balance Transaction GraphQL type supports currency conversion type",
       "summary": "As of GraphQL Admin API version 2026-10, ShopifyPaymentsTransactionType now includes CURRENCY_CONVERSION type. Learn more about ShopifyPaymentsTransactionType on Shopify.dev.",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Sep 18 – Sep 25",
+    "dateRange": "Sep 19 – Sep 26",
     "basis": "Based on 14 updates this week",
     "headline": "A quieter week.",
     "themes": [],
