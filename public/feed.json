@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-27T03:55:55Z",
+    "generatedAt": "2026-09-27T11:29:26Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "4.8.1",
       "summary": "What's Changed Theme [4.8] Fix theme pull, push, and package to cover all theme files by @karreiro in #8529 [4.8] Fix theme pull, push, and package to cover all theme files by @karreiro in #8544 Full…",
