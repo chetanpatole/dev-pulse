@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-29T04:30:07Z",
+    "generatedAt": "2026-09-29T12:13:24Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "1h",
+      "date": "9h",
       "relevance": "Medium",
       "title": "skeleton@2026.4.7",
       "summary": "Patch Changes Updated dependencies [76cdc6c538dc680a3f1ce96a6d704d463afde0ce, 3ef7ec23096ad29e701073b35a892f0938a0acf4]: @Shopify/hydrogen@2026.4.6",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "1h",
+      "date": "9h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen-react@2026.4.4",
       "summary": "Patch Changes Shopify's consent API now returns visitor tracking values in the consentManagement response. Hydrogen now enables asynchronous consent initialization so the Customer Privacy API fetches…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "1h",
+      "date": "9h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.4.6",
       "summary": "Patch Changes Shopify's consent API now returns visitor tracking values in the consentManagement response. Hydrogen now enables asynchronous consent initialization so the Customer Privacy API fetches…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "Sidekick can now invoke app intents without tools",
       "summary": "Sidekick now surfaces app extensions that declare only intents, with no tools file. Previously an extension had to declare tools to be eligible for Sidekick, so an admin.app.intent.link or admin.app.i…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "14h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "WebMCP support for checkout",
       "summary": "Browser agents can now read and update Shopify checkouts using WebMCP tools for checkout. The tools let agents interact with the active checkout in the buyer’s browser session. When the buyer’s input…",
@@ -140,7 +140,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.0.5",
       "summary": "Patch Changes Updated dependencies [bce7053fe640a7dfd39ed3bac1a63e4d737cb4e2]: @shopify/mini-oxygen@4.2.3",
@@ -153,7 +153,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "@shopify/mini-oxygen@4.2.3",
       "summary": "Patch Changes Keep the https: scheme in the request URL your worker receives when the Vite dev server runs over HTTPS. Previously MiniOxygen always passed an http: URL, so code that relies on new URL(…",
