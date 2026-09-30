@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-29T21:56:12Z",
+    "generatedAt": "2026-09-30T04:13:24Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "1h",
+      "date": "7h",
       "relevance": "Medium",
       "title": "4.8.3",
       "summary": "What's Changed App [4.8] Fix repeated event config diffs when API versions are inherited by @cdarne in #8700 Full Changelog: 4.8.2...4.8.3",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "More resilient token exchanges when migrating tokens without a user session",
       "summary": "More resilient token exchanges when migrating to expiring offline access tokens When you migrate an app from non-expiring offline tokens to expiring offline access tokens without a user session, you c…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Manage packed product dimensions with the Admin GraphQL API",
       "summary": "Starting with the 2027-01 Admin GraphQL API version, apps can read and write packed product dimensions using InventoryItemMeasurement.packedDimensions and InventoryItemMeasurementInput.packedDimension…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8h",
+      "date": "15h",
       "relevance": "Medium",
       "title": "Move existing subscriptions to Shopify App Pricing",
       "summary": "Apps that bill with the Billing API can now move their existing subscriptions to Shopify App Pricing by using the migration tool in the Partner Dashboard or new commands in Shopify CLI. Subscriptions…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "18h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "skeleton@2026.4.7",
       "summary": "Patch Changes Updated dependencies [76cdc6c538dc680a3f1ce96a6d704d463afde0ce, 3ef7ec23096ad29e701073b35a892f0938a0acf4]: @Shopify/hydrogen@2026.4.6",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "18h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen-react@2026.4.4",
       "summary": "Patch Changes Shopify's consent API now returns visitor tracking values in the consentManagement response. Hydrogen now enables asynchronous consent initialization so the Customer Privacy API fetches…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "18h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.4.6",
       "summary": "Patch Changes Shopify's consent API now returns visitor tracking values in the consentManagement response. Hydrogen now enables asynchronous consent initialization so the Customer Privacy API fetches…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Sep 22 – Sep 29",
+    "dateRange": "Sep 23 – Sep 30",
     "basis": "Based on 17 updates this week",
     "headline": "A quieter week.",
     "themes": [],
