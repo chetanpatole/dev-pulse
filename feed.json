@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-30T17:57:17Z",
+    "generatedAt": "2026-09-30T22:03:40Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4h",
+      "date": "9h",
       "relevance": "Medium",
       "title": "Use app intents for your discount app",
       "summary": "Apps that create new discount types using Shopify Functions can now register shopify/Discount app intents. This lets Sidekick launch an app’s create and edit flows and promote them in the disambiguati…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "21h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "4.8.3",
       "summary": "What's Changed App [4.8] Fix repeated event config diffs when API versions are inherited by @cdarne in #8700 Full Changelog: 4.8.2...4.8.3",
@@ -58,6 +58,19 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/more-resilient-token-exchanges-when-migrating-tokens-without-a-user-session"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "1d",
+      "relevance": "Medium",
+      "title": "Shopify Flow: Flow Trigger Lifecycle Callback extensions now support relative url paths",
+      "summary": "Previously, the URL for Flow Trigger Lifecycle Callback extensions were required to be absolute HTTPS URLs pointing to a web server. This required an already hosted system which made it inconvenient t…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/shopify-flow-flow-trigger-lifecycle-callback-extensions-now-support-relative-url-paths"
     },
     {
       "type": "Update",
@@ -162,19 +175,6 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/ai-toolkit-skills-have-been-consolidated"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "The new Dev Dashboard: your command center for building",
-      "summary": "Today we're sharing the newest wave of improvements to the Dev Dashboard. You told us, in the community forums and in support conversations, that common work like managing collaborator access or under…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/the-new-dev-dashboard"
     }
   ],
   "recap": {
