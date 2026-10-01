@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-30T22:03:40Z",
+    "generatedAt": "2026-10-01T04:25:18Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "9h",
+      "date": "15h",
       "relevance": "Medium",
       "title": "Use app intents for your discount app",
       "summary": "Apps that create new discount types using Shopify Functions can now register shopify/Discount app intents. This lets Sidekick launch an app’s create and edit flows and promote them in the disambiguati…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "skeleton@2026.4.7",
       "summary": "Patch Changes Updated dependencies [76cdc6c538dc680a3f1ce96a6d704d463afde0ce, 3ef7ec23096ad29e701073b35a892f0938a0acf4]: @Shopify/hydrogen@2026.4.6",
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen-react@2026.4.4",
       "summary": "Patch Changes Shopify's consent API now returns visitor tracking values in the consentManagement response. Hydrogen now enables asynchronous consent initialization so the Customer Privacy API fetches…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.4.6",
       "summary": "Patch Changes Shopify's consent API now returns visitor tracking values in the consentManagement response. Hydrogen now enables asynchronous consent initialization so the Customer Privacy API fetches…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Sep 23 – Sep 30",
+    "dateRange": "Sep 24 – Oct 01",
     "basis": "Based on 17 updates this week",
     "headline": "A quieter week.",
     "themes": [],
