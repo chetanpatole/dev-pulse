@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-10-01T04:25:18Z",
+    "generatedAt": "2026-10-01T12:32:01Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Use app intents for your discount app",
-    "what_changed": "Apps that create new discount types using Shopify Functions can now register shopify/Discount app intents. This lets Sidekick launch an app’s create and edit flows and promote them in the disambiguation picker. Apps can register an intent using either of these targets: admin.app.intent.link navigates to an existing page in a React Router app. admin.app.intent.render renders a focused Admin UI exte…",
+    "headline": "Inventory shipment webhooks include inventory transfer IDs",
+    "what_changed": "We are introducing the inventory_transfer_id to several inventory_shipment webhook payloads to make it easier for developers to identify which inventory_transfer records, if any, a given shipment is related to. This will ease integration burdens and remove the need for developers to merge the datasets on their end to manually build the links. What changed Introduces an inventory_transfer_id field…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,40 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/use-app-intents-for-your-discount-app",
+    "link": "https://shopify.dev/changelog/inventory-shipment-webhooks-include-inventory-transfer-ids",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "15h",
+      "date": "31m",
+      "relevance": "Medium",
+      "title": "Inventory shipment webhooks include inventory transfer IDs",
+      "summary": "We are introducing the inventory_transfer_id to several inventory_shipment webhook payloads to make it easier for developers to identify which inventory_transfer records, if any, a given shipment is r…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/inventory-shipment-webhooks-include-inventory-transfer-ids"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "1h",
+      "relevance": "Medium",
+      "title": "Updated function syntax on the segment query language",
+      "summary": "As of GraphQL Admin API version 2026-10, functions in the segment query language now use the operators MATCHES/NOT MATCHES instead of = true/= false. For example, the previous query shopify_email.open…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/updated-function-syntax-on-the-segment-query-language"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "23h",
       "relevance": "Medium",
       "title": "Use app intents for your discount app",
       "summary": "Apps that create new discount types using Shopify Functions can now register shopify/Discount app intents. This lets Sidekick launch an app’s create and edit flows and promote them in the disambiguati…",
@@ -149,32 +175,6 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/sidekick-can-now-invoke-app-intents-without-tools"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "2d",
-      "relevance": "Medium",
-      "title": "WebMCP support for checkout",
-      "summary": "Browser agents can now read and update Shopify checkouts using WebMCP tools for checkout. The tools let agents interact with the active checkout in the buyer’s browser session. When the buyer’s input…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/webmcp-support-for-checkout"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "AI Toolkit skills have been consolidated to `shopify`",
-      "summary": "With today's release of AI Toolkit, all existing shopify- skills are consolidated into a single shopify skill. If you use AI Toolkit skills with agents or npx skills, you might need to update your env…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/ai-toolkit-skills-have-been-consolidated"
     }
   ],
   "recap": {
