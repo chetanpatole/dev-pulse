@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-10-02T17:44:13Z",
+    "generatedAt": "2026-10-02T21:52:02Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "@shopify/create-hydrogen@5.0.40",
-    "what_changed": "Patch Changes h2 init --template skeleton and npm create @shopify/hydrogen -- --template skeleton now do the same as leaving the flag out, instead of downloading GitHub's latest release. The new project's dependencies install, its .env and name are set up, and every other flag is honoured. Scripted or non-interactive runs that use --template skeleton should now pass the same prompt-skipping flags…",
+    "headline": "@shopify/hydrogen@2026.10.0-preview.4",
+    "what_changed": "Minor Changes b202925: Add getTrackingValues() to analytics destination callback context. Destinations can read current uniqueToken and visitToken values from Shopify's consent API without accessing its internal globals. Each read requests fallback generation with the tag hydrogen:; token generation is provided by the consent API when supported. Unavailable values are returned as empty strings, an…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Hydrogen",
-    "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcreate-hydrogen%405.0.40",
+    "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.0-preview.4",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "20m",
+      "date": "3h",
+      "relevance": "Medium",
+      "title": "@shopify/hydrogen@2026.10.0-preview.4",
+      "summary": "Minor Changes b202925: Add getTrackingValues() to analytics destination callback context. Destinations can read current uniqueToken and visitToken values from Shopify's consent API without accessing i…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.0-preview.4"
+    },
+    {
+      "type": "Update",
+      "source": "Hydrogen",
+      "date": "4h",
       "relevance": "Medium",
       "title": "@shopify/create-hydrogen@5.0.40",
       "summary": "Patch Changes h2 init --template skeleton and npm create @shopify/hydrogen -- --template skeleton now do the same as leaving the flag out, instead of downloading GitHub's latest release. The new proje…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "21m",
+      "date": "4h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.4.7",
       "summary": "Patch Changes Fix React hydration interruption caused by Analytics.Provider state updates. Deferred cart, shop, and consent state updates are now wrapped in startTransition, preventing React from aban…",
@@ -49,7 +62,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "21m",
+      "date": "4h",
       "relevance": "Medium",
       "title": "skeleton@2026.4.8",
       "summary": "Patch Changes Updated dependencies [27d87085aca32f8b0e8ac0cf9eb4d9e6eb016b99]: @Shopify/hydrogen@2026.4.7",
@@ -62,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "21m",
+      "date": "4h",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.0.6",
       "summary": "Patch Changes Fix h2 env pull corrupting environment variable values that contain backslashes, double quotes or tabs. Values are now single-quoted where possible so they are read back exactly by doten…",
@@ -75,7 +88,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "6h",
+      "date": "10h",
       "relevance": "Medium",
       "title": "4.8.4",
       "summary": "What's Changed Theme [4.8] Bump Shopify/theme-tools packages by @karreiro in #8719 [4.8] Restore theme documentation sync by @karreiro in #8723 Full Changelog: 4.8.3...4.8.4",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/metafieldinteger-collection-condition-removed-in-api-version-2027-01"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "1d",
-      "relevance": "Medium",
-      "title": "Added parseWarnings to ShopifyqlQueryResponse",
-      "summary": "Starting in API version 2026-10, the shopifyqlQuery query in the GraphQL Admin API returns a new parseWarnings field on ShopifyqlQueryResponse. This field surfaces non-fatal issues, such as the use of…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/added-parsewarnings-to-shopifyqlqueryresponse"
     }
   ],
   "recap": {
     "dateRange": "Sep 25 – Oct 02",
-    "basis": "Based on 28 updates this week",
+    "basis": "Based on 29 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
