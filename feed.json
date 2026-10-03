@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-03T04:00:07Z",
+    "generatedAt": "2026-10-03T11:11:02Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "9h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0-preview.4",
       "summary": "Minor Changes b202925: Add getTrackingValues() to analytics destination callback context. Destinations can read current uniqueToken and visitToken values from Shopify's consent API without accessing i…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "10h",
+      "date": "17h",
       "relevance": "Medium",
       "title": "@shopify/create-hydrogen@5.0.40",
       "summary": "Patch Changes h2 init --template skeleton and npm create @shopify/hydrogen -- --template skeleton now do the same as leaving the flag out, instead of downloading GitHub's latest release. The new proje…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "10h",
+      "date": "17h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.4.7",
       "summary": "Patch Changes Fix React hydration interruption caused by Analytics.Provider state updates. Deferred cart, shop, and consent state updates are now wrapped in startTransition, preventing React from aban…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "10h",
+      "date": "17h",
       "relevance": "Medium",
       "title": "skeleton@2026.4.8",
       "summary": "Patch Changes Updated dependencies [27d87085aca32f8b0e8ac0cf9eb4d9e6eb016b99]: @Shopify/hydrogen@2026.4.7",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "10h",
+      "date": "17h",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.0.6",
       "summary": "Patch Changes Fix h2 env pull corrupting environment variable values that contain backslashes, double quotes or tabs. Values are now single-quoted where possible so they are read back exactly by doten…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "16h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "4.8.4",
       "summary": "What's Changed Theme [4.8] Bump Shopify/theme-tools packages by @karreiro in #8719 [4.8] Restore theme documentation sync by @karreiro in #8723 Full Changelog: 4.8.3...4.8.4",
