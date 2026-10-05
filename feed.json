@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-05T04:19:05Z",
+    "generatedAt": "2026-10-05T13:44:19Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "4.8.4",
       "summary": "What's Changed Theme [4.8] Bump Shopify/theme-tools packages by @karreiro in #8719 [4.8] Restore theme documentation sync by @karreiro in #8723 Full Changelog: 4.8.3...4.8.4",
