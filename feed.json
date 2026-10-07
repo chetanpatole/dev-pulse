@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-06T22:23:00Z",
+    "generatedAt": "2026-10-07T04:33:58Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "9h",
+      "date": "15h",
       "relevance": "Medium",
       "title": "4.8.5",
       "summary": "What's Changed Theme [4.8] Make theme init default to stable Skeleton releases by @karreiro in #8785 Full Changelog: 4.8.4...4.8.5",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Sep 29 – Oct 06",
+    "dateRange": "Sep 30 – Oct 07",
     "basis": "Based on 26 updates this week",
     "headline": "A quieter week.",
     "themes": [],
