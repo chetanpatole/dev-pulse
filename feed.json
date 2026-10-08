@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-07T22:47:37Z",
+    "generatedAt": "2026-10-08T04:44:37Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Cart mutations reject unconfirmed writes in POS UI extensions 2026-10",
       "summary": "In POS UI extensions API version 2026-10, Cart API mutations reject when Shopify POS doesn't confirm that the cart changed. In earlier versions these mutations resolve whether or not POS applied the w…",
@@ -36,7 +36,20 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
+      "relevance": "Medium",
+      "title": "POS UI extensions now return percentage values for percentage discounts",
+      "summary": "Shopify POS 11.15 corrects the value returned by Discount.amount for Percentage discounts to match the Cart API contract. Extensions that used this value as money need to update their logic. What chan…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/pos-ui-extensions-now-return-percentage-values-for-percentage-discounts"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Per-customer request limit for the Customer Account API",
       "summary": "The Customer Account API now enforces a per-customer rate limit of 3000 requests per minute per store, shared across all apps. This affects all apps that call the Customer Account API, but you typical…",
@@ -49,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Downgrade app access scopes from write to read",
       "summary": "Starting with Admin GraphQL API version 2027-01, apps that use Shopify-managed installation can call appDowngradeAccessScopes to replace optional write scopes with their matching read scopes. No actio…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/what-s-new-in-polaris-2-0-0-rc-1"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "More control over commerce updates with Next Gen Events",
-      "summary": "With the 2026-10 API version Next Gen Events, Shopify's successor to classic webhooks, is now generally available. Events give you more customization than classic webhooks, letting you choose what cha…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/next-generation-events-are-now-generally-available"
     }
   ],
   "recap": {
-    "dateRange": "Sep 30 – Oct 07",
-    "basis": "Based on 28 updates this week",
+    "dateRange": "Oct 01 – Oct 08",
+    "basis": "Based on 27 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
