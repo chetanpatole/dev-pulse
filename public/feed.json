@@ -1,29 +1,55 @@
 {
   "meta": {
-    "generatedAt": "2026-10-08T12:53:37Z",
+    "generatedAt": "2026-10-08T22:58:39Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Cart mutations reject unconfirmed writes in POS UI extensions 2026-10",
-    "what_changed": "In POS UI extensions API version 2026-10, Cart API mutations reject when Shopify POS doesn't confirm that the cart changed. In earlier versions these mutations resolve whether or not POS applied the write. This is a breaking change for apps that adopt 2026-10, and those apps need to handle a rejected promise on every cart mutation they call. Apps on 2026-07 and earlier are unaffected. What changed…",
+    "headline": "@shopify/hydrogen@2026.10.0-preview.5",
+    "what_changed": "Minor Changes 1891913: ProductPayload.price is now { amount, currencyCode }, the Storefront API MoneyV2 shape, instead of a bare amount string. The hosted Shopify analytics script reads currencyCode as the event's currency, so product_viewed events no longer depend on window.Shopify.currency.active being set. Pass the variant's price object where you used to pass price.amount: // before price: var…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "Changelog",
-    "link": "https://shopify.dev/changelog/cart-mutations-reject-unconfirmed-writes-in-pos-ui-extensions-2026-10",
+    "source": "Hydrogen",
+    "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.0-preview.5",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
+      "source": "Hydrogen",
+      "date": "3h",
+      "relevance": "Medium",
+      "title": "@shopify/hydrogen@2026.10.0-preview.5",
+      "summary": "Minor Changes 1891913: ProductPayload.price is now { amount, currencyCode }, the Storefront API MoneyV2 shape, instead of a bare amount string. The hosted Shopify analytics script reads currencyCode a…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.0-preview.5"
+    },
+    {
+      "type": "Update",
+      "source": "CLI",
+      "date": "8h",
+      "relevance": "Medium",
+      "title": "4.9.0",
+      "summary": "What's Changed App Add shopify app security commands to check an app's source code for Shopify-specific security issues: check runs deterministic rules and generates checks for your coding agent to in…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/cli/releases/tag/4.9.0"
+    },
+    {
+      "type": "Update",
       "source": "Changelog",
-      "date": "20h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Cart mutations reject unconfirmed writes in POS UI extensions 2026-10",
       "summary": "In POS UI extensions API version 2026-10, Cart API mutations reject when Shopify POS doesn't confirm that the cart changed. In earlier versions these mutations resolve whether or not POS applied the w…",
@@ -36,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "20h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "POS UI extensions now return percentage values for percentage discounts",
       "summary": "Shopify POS 11.15 corrects the value returned by Discount.amount for Percentage discounts to match the Cart API contract. Extensions that used this value as money need to update their logic. What chan…",
@@ -49,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "20h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Per-customer request limit for the Customer Account API",
       "summary": "The Customer Account API now enforces a per-customer rate limit of 3000 requests per minute per store, shared across all apps. This affects all apps that call the Customer Account API, but you typical…",
@@ -62,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "20h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Downgrade app access scopes from write to read",
       "summary": "Starting with Admin GraphQL API version 2027-01, apps that use Shopify-managed installation can call appDowngradeAccessScopes to replace optional write scopes with their matching read scopes. No actio…",
@@ -75,7 +101,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "4.8.5",
       "summary": "What's Changed Theme [4.8] Make theme init default to stable Skeleton releases by @karreiro in #8785 Full Changelog: 4.8.4...4.8.5",
@@ -88,7 +114,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0-preview.4",
       "summary": "Minor Changes b202925: Add getTrackingValues() to analytics destination callback context. Destinations can read current uniqueToken and visitToken values from Shopify's consent API without accessing i…",
@@ -101,7 +127,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/create-hydrogen@5.0.40",
       "summary": "Patch Changes h2 init --template skeleton and npm create @shopify/hydrogen -- --template skeleton now do the same as leaving the flag out, instead of downloading GitHub's latest release. The new proje…",
@@ -114,7 +140,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.4.7",
       "summary": "Patch Changes Fix React hydration interruption caused by Analytics.Provider state updates. Deferred cart, shop, and consent state updates are now wrapped in startTransition, preventing React from aban…",
@@ -127,7 +153,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "skeleton@2026.4.8",
       "summary": "Patch Changes Updated dependencies [27d87085aca32f8b0e8ac0cf9eb4d9e6eb016b99]: @Shopify/hydrogen@2026.4.7",
@@ -140,7 +166,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.0.6",
       "summary": "Patch Changes Fix h2 env pull corrupting environment variable values that contain backslashes, double quotes or tabs. Values are now single-quoted where possible so they are read back exactly by doten…",
@@ -149,37 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.6"
-    },
-    {
-      "type": "Update",
-      "source": "CLI",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "4.8.4",
-      "summary": "What's Changed Theme [4.8] Bump Shopify/theme-tools packages by @karreiro in #8719 [4.8] Restore theme documentation sync by @karreiro in #8723 Full Changelog: 4.8.3...4.8.4",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/cli/releases/tag/4.8.4"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "What's new in Polaris 2.0.0-rc.1",
-      "summary": "Polaris 2.0.0-rc.1 brings more components in line with the new admin style update, fixes several layout and event-handling bugs, and improves mounting and update performance. What's changed Components…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/what-s-new-in-polaris-2-0-0-rc-1"
     }
   ],
   "recap": {
     "dateRange": "Oct 01 – Oct 08",
-    "basis": "Based on 24 updates this week",
+    "basis": "Based on 13 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
