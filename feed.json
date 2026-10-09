@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-08T22:58:39Z",
+    "generatedAt": "2026-10-09T04:47:48Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3h",
+      "date": "8h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0-preview.5",
       "summary": "Minor Changes 1891913: ProductPayload.price is now { amount, currencyCode }, the Storefront API MoneyV2 shape, instead of a bare amount string. The hosted Shopify analytics script reads currencyCode a…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "8h",
+      "date": "14h",
       "relevance": "Medium",
       "title": "4.9.0",
       "summary": "What's Changed App Add shopify app security commands to check an app's source code for Shopify-specific security issues: check runs deterministic rules and generates checks for your coding agent to in…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Oct 01 – Oct 08",
+    "dateRange": "Oct 02 – Oct 09",
     "basis": "Based on 13 updates this week",
     "headline": "A quieter week.",
     "themes": [],
