@@ -1,29 +1,55 @@
 {
   "meta": {
-    "generatedAt": "2026-10-09T04:47:48Z",
+    "generatedAt": "2026-10-09T12:39:28Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "@shopify/hydrogen@2026.10.0-preview.5",
-    "what_changed": "Minor Changes 1891913: ProductPayload.price is now { amount, currencyCode }, the Storefront API MoneyV2 shape, instead of a bare amount string. The hosted Shopify analytics script reads currencyCode as the event's currency, so product_viewed events no longer depend on window.Shopify.currency.active being set. Pass the variant's price object where you used to pass price.amount: // before price: var…",
+    "headline": "4.9.2",
+    "what_changed": "What's Changed CLI hydrogen/Bump cli-hydrogen to 13.0.6 by @andguy95 in #8840 Full Changelog: 4.9.1...4.9.2",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "Hydrogen",
-    "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.0-preview.5",
+    "source": "CLI",
+    "link": "https://github.com/Shopify/cli/releases/tag/4.9.2",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
+      "source": "CLI",
+      "date": "1h",
+      "relevance": "Medium",
+      "title": "4.9.2",
+      "summary": "What's Changed CLI hydrogen/Bump cli-hydrogen to 13.0.6 by @andguy95 in #8840 Full Changelog: 4.9.1...4.9.2",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/cli/releases/tag/4.9.2"
+    },
+    {
+      "type": "Update",
+      "source": "CLI",
+      "date": "2h",
+      "relevance": "Medium",
+      "title": "4.9.1",
+      "summary": "What's Changed CLI Fix event subscription handle validation in stable/4.9 by @isaacroldan in #8849 Full Changelog: 4.9.0...4.9.1",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/cli/releases/tag/4.9.1"
+    },
+    {
+      "type": "Update",
       "source": "Hydrogen",
-      "date": "8h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0-preview.5",
       "summary": "Minor Changes 1891913: ProductPayload.price is now { amount, currencyCode }, the Storefront API MoneyV2 shape, instead of a bare amount string. The hosted Shopify analytics script reads currencyCode a…",
@@ -36,7 +62,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "14h",
+      "date": "22h",
       "relevance": "Medium",
       "title": "4.9.0",
       "summary": "What's Changed App Add shopify app security commands to check an app's source code for Shopify-specific security issues: check runs deterministic rules and generates checks for your coding agent to in…",
@@ -149,37 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.4.7"
-    },
-    {
-      "type": "Update",
-      "source": "Hydrogen",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "skeleton@2026.4.8",
-      "summary": "Patch Changes Updated dependencies [27d87085aca32f8b0e8ac0cf9eb4d9e6eb016b99]: @Shopify/hydrogen@2026.4.7",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/hydrogen/releases/tag/skeleton%402026.4.8"
-    },
-    {
-      "type": "Update",
-      "source": "Hydrogen",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "@shopify/cli-hydrogen@13.0.6",
-      "summary": "Patch Changes Fix h2 env pull corrupting environment variable values that contain backslashes, double quotes or tabs. Values are now single-quoted where possible so they are read back exactly by doten…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.0.6"
     }
   ],
   "recap": {
     "dateRange": "Oct 02 – Oct 09",
-    "basis": "Based on 13 updates this week",
+    "basis": "Based on 14 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
