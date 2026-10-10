@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-10T04:33:24Z",
+    "generatedAt": "2026-10-10T11:58:58Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "7h",
+      "date": "14h",
       "relevance": "Medium",
       "title": "4.9.3",
       "summary": "What's Changed App Skip lockfiles in every shopify app security check scan directory, including --include-dir paths, so large repository-root lockfiles no longer leave the secret check unresolved by @…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12h",
+      "date": "19h",
       "relevance": "Medium",
       "title": "Global Catalog REST API stops serving traffic on November 2, 2026",
       "summary": "The Global Catalog REST API, which was deprecated in April 2026, stops serving traffic on November 2, 2026. If your app still calls it, you need to migrate to Global Catalog MCP, which implements the…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "12h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0",
       "summary": "Minor Changes 661e015: Accept Liquid-style ?variant= links on product pages. handleShopifyRoutes({routeTemplates}) now 302-redirects ?variant= product URLs to the canonical option-params URL (/product…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "13h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "Catalog API now returns compare-at prices as `list_price`",
       "summary": "The Catalog API now returns a merchant’s compare-at price as list_price on each product variant. Your app or agent can use list_price to tell when a product is marked down and by how much. The price f…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "14h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "preview-archive: ci: release Hydrogen 2026.10.0 and MiniOxygen from main (#4110)",
       "summary": "chore: exit prerelease mode on Changesets 3.0.3 for Hydrogen 2026.10.0 changesets/action v2.1.0 bundles Changesets 3.0, which keeps changesets a prerelease already released in .changeset/pre/ and coun…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "17h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "4.9.2",
       "summary": "What's Changed CLI hydrogen/Bump cli-hydrogen to 13.0.6 by @andguy95 in #8840 Full Changelog: 4.9.1...4.9.2",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "18h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "4.9.1",
       "summary": "What's Changed CLI Fix event subscription handle validation in stable/4.9 by @isaacroldan in #8849 Full Changelog: 4.9.0...4.9.1",
