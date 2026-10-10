@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-10T11:58:58Z",
+    "generatedAt": "2026-10-10T17:17:07Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "14h",
+      "date": "19h",
       "relevance": "Medium",
       "title": "4.9.3",
       "summary": "What's Changed App Skip lockfiles in every shopify app security check scan directory, including --include-dir paths, so large repository-root lockfiles no longer leave the secret check unresolved by @…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "19h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Global Catalog REST API stops serving traffic on November 2, 2026",
       "summary": "The Global Catalog REST API, which was deprecated in April 2026, stops serving traffic on November 2, 2026. If your app still calls it, you need to migrate to Global Catalog MCP, which implements the…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "20h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0",
       "summary": "Minor Changes 661e015: Accept Liquid-style ?variant= links on product pages. handleShopifyRoutes({routeTemplates}) now 302-redirects ?variant= product URLs to the canonical option-params URL (/product…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "20h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Catalog API now returns compare-at prices as `list_price`",
       "summary": "The Catalog API now returns a merchant’s compare-at price as list_price on each product variant. Your app or agent can use list_price to tell when a product is marked down and by how much. The price f…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "21h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "preview-archive: ci: release Hydrogen 2026.10.0 and MiniOxygen from main (#4110)",
       "summary": "chore: exit prerelease mode on Changesets 3.0.3 for Hydrogen 2026.10.0 changesets/action v2.1.0 bundles Changesets 3.0, which keeps changesets a prerelease already released in .changeset/pre/ and coun…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "New `owner_type` field for metafield declarations in Checkout and Customer Account UI extensions, required in 2027-01",
       "summary": "Starting with API version 2026-10, Checkout and Customer Account UI extensions can specify an owner_type for each metafield declaration in shopify.extension.toml. Starting with API version 2027-01, ow…",
@@ -140,7 +140,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "4.9.0",
       "summary": "What's Changed App Add shopify app security commands to check an app's source code for Shopify-specific security issues: check runs deterministic rules and generates checks for your coding agent to in…",
@@ -153,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Cart mutations reject unconfirmed writes in POS UI extensions 2026-10",
       "summary": "In POS UI extensions API version 2026-10, Cart API mutations reject when Shopify POS doesn't confirm that the cart changed. In earlier versions these mutations resolve whether or not POS applied the w…",
@@ -166,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "POS UI extensions now return percentage values for percentage discounts",
       "summary": "Shopify POS 11.15 corrects the value returned by Discount.amount for Percentage discounts to match the Cart API contract. Extensions that used this value as money need to update their logic. What chan…",
