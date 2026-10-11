@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-11T04:17:28Z",
+    "generatedAt": "2026-10-11T12:11:23Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "4.9.2",
       "summary": "What's Changed CLI hydrogen/Bump cli-hydrogen to 13.0.6 by @andguy95 in #8840 Full Changelog: 4.9.1...4.9.2",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "4.9.1",
       "summary": "What's Changed CLI Fix event subscription handle validation in stable/4.9 by @isaacroldan in #8849 Full Changelog: 4.9.0...4.9.1",
