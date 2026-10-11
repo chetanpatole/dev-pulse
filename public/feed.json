@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-10T21:13:12Z",
+    "generatedAt": "2026-10-11T04:17:28Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "23h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "4.9.3",
       "summary": "What's Changed App Skip lockfiles in every shopify app security check scan directory, including --include-dir paths, so large repository-root lockfiles no longer leave the secret check unresolved by @…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Oct 03 – Oct 10",
+    "dateRange": "Oct 04 – Oct 11",
     "basis": "Based on 16 updates this week",
     "headline": "A quieter week.",
     "themes": [],
