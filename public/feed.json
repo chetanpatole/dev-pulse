@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-12T04:34:18Z",
+    "generatedAt": "2026-10-12T14:33:07Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "preview-archive: ci: release Hydrogen 2026.10.0 and MiniOxygen from main (#4110)",
       "summary": "chore: exit prerelease mode on Changesets 3.0.3 for Hydrogen 2026.10.0 changesets/action v2.1.0 bundles Changesets 3.0, which keeps changesets a prerelease already released in .changeset/pre/ and coun…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "4.9.2",
       "summary": "What's Changed CLI hydrogen/Bump cli-hydrogen to 13.0.6 by @andguy95 in #8840 Full Changelog: 4.9.1...4.9.2",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "4.9.1",
       "summary": "What's Changed CLI Fix event subscription handle validation in stable/4.9 by @isaacroldan in #8849 Full Changelog: 4.9.0...4.9.1",
