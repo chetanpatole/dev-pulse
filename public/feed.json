@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-13T00:12:07Z",
+    "generatedAt": "2026-10-13T13:39:17Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Detect when a POS extension screen finishes navigating",
       "summary": "What changed The POS Navigation API adds the navigatesuccess event. It fires after the destination screen finishes its native transition, and its callback receives a standard Event. currententrychange…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Identify the published version running in a POS extension",
       "summary": "What changed shopify.extension.version returns the version of the extension that is running. It’s the same name shown on the Versions page in the Dev Dashboard and chosen when running shopify app depl…",
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "4.9.2",
       "summary": "What's Changed CLI hydrogen/Bump cli-hydrogen to 13.0.6 by @andguy95 in #8840 Full Changelog: 4.9.1...4.9.2",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "4.9.1",
       "summary": "What's Changed CLI Fix event subscription handle validation in stable/4.9 by @isaacroldan in #8849 Full Changelog: 4.9.0...4.9.1",
@@ -179,7 +179,7 @@
   ],
   "recap": {
     "dateRange": "Oct 06 – Oct 13",
-    "basis": "Based on 18 updates this week",
+    "basis": "Based on 17 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
