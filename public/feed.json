@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-14T03:43:59Z",
+    "generatedAt": "2026-10-14T11:17:45Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.1",
       "summary": "Patch Changes ee937aa: Add the migrate-to-hydrogen-2026-10 packaged skill. The skill guides an AI agent through the migration of a classic Hydrogen storefront (Remix or React Router) to Hydrogen 2026-…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7h",
+      "date": "15h",
       "relevance": "Medium",
       "title": "Add shopping and Shop Pay checkout to any agent with Shop MCP",
       "summary": "Shop MCP lets your agent or app search Shopify Catalog, build carts, and complete Shop Pay checkout through a single MCP connection. It works with over 1 billion products in Shopify Catalog and doesn'…",
@@ -153,7 +153,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "4.9.2",
       "summary": "What's Changed CLI hydrogen/Bump cli-hydrogen to 13.0.6 by @andguy95 in #8840 Full Changelog: 4.9.1...4.9.2",
@@ -166,7 +166,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "4.9.1",
       "summary": "What's Changed CLI Fix event subscription handle validation in stable/4.9 by @isaacroldan in #8849 Full Changelog: 4.9.0...4.9.1",
