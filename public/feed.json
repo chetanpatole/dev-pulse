@@ -1,29 +1,42 @@
 {
   "meta": {
-    "generatedAt": "2026-10-13T22:20:13Z",
+    "generatedAt": "2026-10-14T03:43:59Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Add shopping and Shop Pay checkout to any agent with Shop MCP",
-    "what_changed": "Shop MCP lets your agent or app search Shopify Catalog, build carts, and complete Shop Pay checkout through a single MCP connection. It works with over 1 billion products in Shopify Catalog and doesn't require an API key for search. Nothing changes for existing Catalog API integrations, and no action is required. What changed Shop MCP is live at https://mcp.shop.com, with a skill description at ht…",
+    "headline": "@shopify/hydrogen@2026.10.1",
+    "what_changed": "Patch Changes ee937aa: Add the migrate-to-hydrogen-2026-10 packaged skill. The skill guides an AI agent through the migration of a classic Hydrogen storefront (Remix or React Router) to Hydrogen 2026-10 (@shopify/hydrogen@^2026.10.0). Run hydrogen skills sync to copy it into your project.",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "Changelog",
-    "link": "https://shopify.dev/changelog/add-shopping-and-shop-pay-checkout-to-any-agent-with-shop-mcp",
+    "source": "Hydrogen",
+    "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.1",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
+      "source": "Hydrogen",
+      "date": "3h",
+      "relevance": "Medium",
+      "title": "@shopify/hydrogen@2026.10.1",
+      "summary": "Patch Changes ee937aa: Add the migrate-to-hydrogen-2026-10 packaged skill. The skill guides an AI agent through the migration of a classic Hydrogen storefront (Remix or React Router) to Hydrogen 2026-…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.1"
+    },
+    {
+      "type": "Update",
       "source": "Changelog",
-      "date": "2h",
+      "date": "7h",
       "relevance": "Medium",
       "title": "Add shopping and Shop Pay checkout to any agent with Shop MCP",
       "summary": "Shop MCP lets your agent or app search Shopify Catalog, build carts, and complete Shop Pay checkout through a single MCP connection. It works with over 1 billion products in Shopify Catalog and doesn'…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://github.com/Shopify/cli/releases/tag/4.9.1"
-    },
-    {
-      "type": "Update",
-      "source": "Hydrogen",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "@shopify/hydrogen@2026.10.0-preview.5",
-      "summary": "Minor Changes 1891913: ProductPayload.price is now { amount, currencyCode }, the Storefront API MoneyV2 shape, instead of a bare amount string. The hosted Shopify analytics script reads currencyCode a…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.0-preview.5"
     }
   ],
   "recap": {
-    "dateRange": "Oct 06 – Oct 13",
-    "basis": "Based on 18 updates this week",
+    "dateRange": "Oct 07 – Oct 14",
+    "basis": "Based on 19 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
