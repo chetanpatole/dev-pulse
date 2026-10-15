@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-10-15T10:55:42Z",
+    "generatedAt": "2026-10-15T16:23:51Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Checkout footer visibility now applies to merchant-configurable content",
-    "what_changed": "The visibility fields on CheckoutBrandingFooterContent and CheckoutAndAccountsConfigurationBrandingFooterContent now control only merchant-configurable footer content. Checkout can display Shopify-provided transaction information in the footer regardless of this setting. Existing apps don’t need to change their GraphQL Admin API requests, but apps that preview or test checkout branding shouldn’t a…",
+    "headline": "Build with confidence: Shopify AI Toolkit's security check",
+    "what_changed": "Shopify AI Toolkit now includes shopify app security check, a security command that checks your app for common vulnerabilities before you ship. You can run it before you submit an app, and on every release, to find problems in your own code and get guidance to fix them. As AI accelerates how you build apps, attackers use the same tools to find and exploit security gaps faster and at lower cost. Th…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/checkout-footer-visibility-now-applies-to-merchant-configurable-content",
+    "link": "https://shopify.dev/changelog/build-more-secure-apps-with-shopify-s-ai-toolkit-security-check",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "2h",
+      "relevance": "Medium",
+      "title": "Build with confidence: Shopify AI Toolkit's security check",
+      "summary": "Shopify AI Toolkit now includes shopify app security check, a security command that checks your app for common vulnerabilities before you ship. You can run it before you submit an app, and on every re…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/build-more-secure-apps-with-shopify-s-ai-toolkit-security-check"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Checkout footer visibility now applies to merchant-configurable content",
       "summary": "The visibility fields on CheckoutBrandingFooterContent and CheckoutAndAccountsConfigurationBrandingFooterContent now control only merchant-configurable footer content. Checkout can display Shopify-pro…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "12h",
+      "date": "17h",
       "relevance": "Medium",
       "title": "4.9.4",
       "summary": "What's Changed App Require Git 2.38 or later when shopify app security check uses Git, because its protections against untrusted repositories depend on safe.bareRepository. Scans that don't use Git, s…",
@@ -49,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "19h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Hydrogen 2026-10 is now available",
       "summary": "The new Hydrogen is generally available today. Since the developer preview started in June, we've shipped seven releases based on feedback from developers using it. The big deal about the new Hydrogen…",
@@ -88,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Cart updates that result in no changes to the cart no longer trigger carts/update webhooks",
       "summary": "Cart operations that leave the cart unchanged, for example, resubmitting the same values a cart already has, no longer trigger a carts/update webhook. Shopify sends a webhook every time a cart's conte…",
@@ -101,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Detect when a POS extension screen finishes navigating",
       "summary": "What changed The POS Navigation API adds the navigatesuccess event. It fires after the destination screen finishes its native transition, and its callback receives a standard Event. currententrychange…",
@@ -114,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Identify the published version running in a POS extension",
       "summary": "What changed shopify.extension.version returns the version of the extension that is running. It’s the same name shown on the Versions page in the Dev Dashboard and chosen when running shopify app depl…",
@@ -140,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Global Catalog REST API stops serving traffic on November 2, 2026",
       "summary": "The Global Catalog REST API, which was deprecated in April 2026, stops serving traffic on November 2, 2026. If your app still calls it, you need to migrate to Global Catalog MCP, which implements the…",
@@ -153,7 +166,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0",
       "summary": "Minor Changes 661e015: Accept Liquid-style ?variant= links on product pages. handleShopifyRoutes({routeTemplates}) now 302-redirects ?variant= product URLs to the canonical option-params URL (/product…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.0"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "Catalog API now returns compare-at prices as `list_price`",
-      "summary": "The Catalog API now returns a merchant’s compare-at price as list_price on each product variant. Your app or agent can use list_price to tell when a product is marked down and by how much. The price f…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/catalog-api-now-returns-compare-at-prices-as-list_price"
     }
   ],
   "recap": {
     "dateRange": "Oct 08 – Oct 15",
-    "basis": "Based on 19 updates this week",
+    "basis": "Based on 18 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
