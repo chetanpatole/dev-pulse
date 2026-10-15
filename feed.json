@@ -1,29 +1,42 @@
 {
   "meta": {
-    "generatedAt": "2026-10-14T21:19:07Z",
+    "generatedAt": "2026-10-15T03:25:21Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Hydrogen 2026-10 is now available",
-    "what_changed": "The new Hydrogen is generally available today. Since the developer preview started in June, we've shipped seven releases based on feedback from developers using it. The big deal about the new Hydrogen is that it isn't a big deal: Hydrogen now works with any JavaScript framework. You can bring Shopify's commerce to your stack just by adding the library to your app, instead of needing to replatform.…",
+    "headline": "4.9.4",
+    "what_changed": "What's Changed App Require Git 2.38 or later when shopify app security check uses Git, because its protections against untrusted repositories depend on safe.bareRepository. Scans that don't use Git, such as --no-git-ignore with no Git-dependent secret candidate, still run without it by @jek in #8856 Stop shopify app security check from running a command that a scanned repository names through an e…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "Changelog",
-    "link": "https://shopify.dev/changelog/hydrogen-2026-10-is-now-available",
+    "source": "CLI",
+    "link": "https://github.com/Shopify/cli/releases/tag/4.9.4",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
+      "source": "CLI",
+      "date": "4h",
+      "relevance": "Medium",
+      "title": "4.9.4",
+      "summary": "What's Changed App Require Git 2.38 or later when shopify app security check uses Git, because its protections against untrusted repositories depend on safe.bareRepository. Scans that don't use Git, s…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/cli/releases/tag/4.9.4"
+    },
+    {
+      "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Hydrogen 2026-10 is now available",
       "summary": "The new Hydrogen is generally available today. Since the developer preview started in June, we've shipped seven releases based on feedback from developers using it. The big deal about the new Hydrogen…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "21h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.1",
       "summary": "Patch Changes ee937aa: Add the migrate-to-hydrogen-2026-10 packaged skill. The skill guides an AI agent through the migration of a classic Hydrogen storefront (Remix or React Router) to Hydrogen 2026-…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/preview-archive"
-    },
-    {
-      "type": "Update",
-      "source": "CLI",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "4.9.2",
-      "summary": "What's Changed CLI hydrogen/Bump cli-hydrogen to 13.0.6 by @andguy95 in #8840 Full Changelog: 4.9.1...4.9.2",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/cli/releases/tag/4.9.2"
     }
   ],
   "recap": {
-    "dateRange": "Oct 07 – Oct 14",
-    "basis": "Based on 17 updates this week",
+    "dateRange": "Oct 08 – Oct 15",
+    "basis": "Based on 18 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
