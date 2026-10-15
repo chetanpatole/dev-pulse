@@ -1,29 +1,42 @@
 {
   "meta": {
-    "generatedAt": "2026-10-15T03:25:21Z",
+    "generatedAt": "2026-10-15T10:55:42Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "4.9.4",
-    "what_changed": "What's Changed App Require Git 2.38 or later when shopify app security check uses Git, because its protections against untrusted repositories depend on safe.bareRepository. Scans that don't use Git, such as --no-git-ignore with no Git-dependent secret candidate, still run without it by @jek in #8856 Stop shopify app security check from running a command that a scanned repository names through an e…",
+    "headline": "Checkout footer visibility now applies to merchant-configurable content",
+    "what_changed": "The visibility fields on CheckoutBrandingFooterContent and CheckoutAndAccountsConfigurationBrandingFooterContent now control only merchant-configurable footer content. Checkout can display Shopify-provided transaction information in the footer regardless of this setting. Existing apps don’t need to change their GraphQL Admin API requests, but apps that preview or test checkout branding shouldn’t a…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "CLI",
-    "link": "https://github.com/Shopify/cli/releases/tag/4.9.4",
+    "source": "Changelog",
+    "link": "https://shopify.dev/changelog/checkout-footer-visibility-now-applies-to-merchant-configurable-content",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
+      "source": "Changelog",
+      "date": "6h",
+      "relevance": "Medium",
+      "title": "Checkout footer visibility now applies to merchant-configurable content",
+      "summary": "The visibility fields on CheckoutBrandingFooterContent and CheckoutAndAccountsConfigurationBrandingFooterContent now control only merchant-configurable footer content. Checkout can display Shopify-pro…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/checkout-footer-visibility-now-applies-to-merchant-configurable-content"
+    },
+    {
+      "type": "Update",
       "source": "CLI",
-      "date": "4h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "4.9.4",
       "summary": "What's Changed App Require Git 2.38 or later when shopify app security check uses Git, because its protections against untrusted repositories depend on safe.bareRepository. Scans that don't use Git, s…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12h",
+      "date": "19h",
       "relevance": "Medium",
       "title": "Hydrogen 2026-10 is now available",
       "summary": "The new Hydrogen is generally available today. Since the developer preview started in June, we've shipped seven releases based on feedback from developers using it. The big deal about the new Hydrogen…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/catalog-api-now-returns-compare-at-prices-as-list_price"
-    },
-    {
-      "type": "Update",
-      "source": "Hydrogen",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "preview-archive: ci: release Hydrogen 2026.10.0 and MiniOxygen from main (#4110)",
-      "summary": "chore: exit prerelease mode on Changesets 3.0.3 for Hydrogen 2026.10.0 changesets/action v2.1.0 bundles Changesets 3.0, which keeps changesets a prerelease already released in .changeset/pre/ and coun…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/hydrogen/releases/tag/preview-archive"
     }
   ],
   "recap": {
     "dateRange": "Oct 08 – Oct 15",
-    "basis": "Based on 18 updates this week",
+    "basis": "Based on 19 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
