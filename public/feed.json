@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-16T03:21:05Z",
+    "generatedAt": "2026-10-16T10:48:08Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "13h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "Build with confidence: Shopify AI Toolkit's security check",
       "summary": "Shopify AI Toolkit now includes shopify app security check, a security command that checks your app for common vulnerabilities before you ship. You can run it before you submit an app, and on every re…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "23h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Checkout footer visibility now applies to merchant-configurable content",
       "summary": "The visibility fields on CheckoutBrandingFooterContent and CheckoutAndAccountsConfigurationBrandingFooterContent now control only merchant-configurable footer content. Checkout can display Shopify-pro…",
@@ -179,7 +179,7 @@
   ],
   "recap": {
     "dateRange": "Oct 09 – Oct 16",
-    "basis": "Based on 16 updates this week",
+    "basis": "Based on 14 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
