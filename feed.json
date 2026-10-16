@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-16T16:09:31Z",
+    "generatedAt": "2026-10-16T20:33:47Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2h",
+      "date": "6h",
       "relevance": "Medium",
       "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
       "summary": "Checkout MCP and Cart MCP now support the UCP buyer consent extension (dev.ucp.shopping.buyer_consent) starting with UCP 2026-08-25. Buyers can now make the same privacy and marketing choices in your…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Add shopping and Shop Pay checkout to any agent with Shop MCP",
       "summary": "Shop MCP lets your agent or app search Shopify Catalog, build carts, and complete Shop Pay checkout through a single MCP connection. It works with over 1 billion products in Shopify Catalog and doesn'…",
