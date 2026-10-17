@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-16T20:33:47Z",
+    "generatedAt": "2026-10-17T03:11:22Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "13h",
       "relevance": "Medium",
       "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
       "summary": "Checkout MCP and Cart MCP now support the UCP buyer consent extension (dev.ucp.shopping.buyer_consent) starting with UCP 2026-08-25. Buyers can now make the same privacy and marketing choices in your…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "4.9.4",
       "summary": "What's Changed App Require Git 2.38 or later when shopify app security check uses Git, because its protections against untrusted repositories depend on safe.bareRepository. Scans that don't use Git, s…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.1",
       "summary": "Patch Changes ee937aa: Add the migrate-to-hydrogen-2026-10 packaged skill. The skill guides an AI agent through the migration of a classic Hydrogen storefront (Remix or React Router) to Hydrogen 2026-…",
@@ -140,7 +140,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "4.9.3",
       "summary": "What's Changed App Skip lockfiles in every shopify app security check scan directory, including --include-dir paths, so large repository-root lockfiles no longer leave the secret check unresolved by @…",
@@ -178,8 +178,8 @@
     }
   ],
   "recap": {
-    "dateRange": "Oct 09 – Oct 16",
-    "basis": "Based on 10 updates this week",
+    "dateRange": "Oct 10 – Oct 17",
+    "basis": "Based on 9 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
