@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-17T15:02:36Z",
+    "generatedAt": "2026-10-17T20:11:53Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Add shopping and Shop Pay checkout to any agent with Shop MCP",
       "summary": "Shop MCP lets your agent or app search Shopify Catalog, build carts, and complete Shop Pay checkout through a single MCP connection. It works with over 1 billion products in Shopify Catalog and doesn'…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Cart updates that result in no changes to the cart no longer trigger carts/update webhooks",
       "summary": "Cart operations that leave the cart unchanged, for example, resubmitting the same values a cart already has, no longer trigger a carts/update webhook. Shopify sends a webhook every time a cart's conte…",
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Detect when a POS extension screen finishes navigating",
       "summary": "What changed The POS Navigation API adds the navigatesuccess event. It fires after the destination screen finishes its native transition, and its callback receives a standard Event. currententrychange…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Identify the published version running in a POS extension",
       "summary": "What changed shopify.extension.version returns the version of the extension that is running. It’s the same name shown on the Versions page in the Dev Dashboard and chosen when running shopify app depl…",
@@ -153,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "Global Catalog REST API stops serving traffic on November 2, 2026",
       "summary": "The Global Catalog REST API, which was deprecated in April 2026, stops serving traffic on November 2, 2026. If your app still calls it, you need to migrate to Global Catalog MCP, which implements the…",
@@ -166,7 +166,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.0",
       "summary": "Minor Changes 661e015: Accept Liquid-style ?variant= links on product pages. handleShopifyRoutes({routeTemplates}) now 302-redirects ?variant= product URLs to the canonical option-params URL (/product…",
