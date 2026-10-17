@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-17T03:11:22Z",
+    "generatedAt": "2026-10-17T10:12:56Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "13h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
       "summary": "Checkout MCP and Cart MCP now support the UCP buyer consent extension (dev.ucp.shopping.buyer_consent) starting with UCP 2026-08-25. Buyers can now make the same privacy and marketing choices in your…",
