@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-18T10:28:45Z",
+    "generatedAt": "2026-10-18T15:26:50Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
       "summary": "Checkout MCP and Cart MCP now support the UCP buyer consent extension (dev.ucp.shopping.buyer_consent) starting with UCP 2026-08-25. Buyers can now make the same privacy and marketing choices in your…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Build with confidence: Shopify AI Toolkit's security check",
       "summary": "Shopify AI Toolkit now includes shopify app security check, a security command that checks your app for common vulnerabilities before you ship. You can run it before you submit an app, and on every re…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Hydrogen 2026-10 is now available",
       "summary": "The new Hydrogen is generally available today. Since the developer preview started in June, we've shipped seven releases based on feedback from developers using it. The big deal about the new Hydrogen…",
