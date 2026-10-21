@@ -1,29 +1,55 @@
 {
   "meta": {
-    "generatedAt": "2026-10-21T11:15:18Z",
+    "generatedAt": "2026-10-21T16:41:34Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "@shopify/hydrogen@2026.10.2",
-    "what_changed": "Patch Changes 449b274: A cart change made while a cart load is still in flight no longer hides the shopper's other lines or leaves loading stuck on true. The store revalidates the cart once the change settles, including when the store is destroyed and reconnected before then. ff8d38a: The cart store now applies updateCart calls that update or remove several lines at once. Each line is projected, m…",
+    "headline": "Set product categories on custom line items in draft orders and order edits",
+    "what_changed": "Starting with GraphQL Admin API version 2027-01, you can assign a category from Shopify's Standard Product Taxonomy to custom line items in draft orders and order edits. The category controls the item's tax treatment in the same way it does for products. For stores using Managed Taxes, the product category is the only input that sets a custom line item's tax treatment. What's new You can now set a…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "Hydrogen",
-    "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.2",
+    "source": "Changelog",
+    "link": "https://shopify.dev/changelog/set-product-categories-on-custom-line-items-in-draft-orders-and-order-edits",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
+      "source": "Changelog",
+      "date": "3h",
+      "relevance": "Medium",
+      "title": "Set product categories on custom line items in draft orders and order edits",
+      "summary": "Starting with GraphQL Admin API version 2027-01, you can assign a category from Shopify's Standard Product Taxonomy to custom line items in draft orders and order edits. The category controls the item…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/set-product-categories-on-custom-line-items-in-draft-orders-and-order-edits"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "3h",
+      "relevance": "Medium",
+      "title": "Checkout footer visibility now applies to merchant-configurable content",
+      "summary": "The visibility fields on CheckoutBrandingFooterContent and CheckoutAndAccountsConfigurationBrandingFooterContent now control only merchant-configurable footer content. Checkout can display Shopify-pro…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/checkout-footer-visibility-now-applies-to-merchant-configurable-content"
+    },
+    {
+      "type": "Update",
       "source": "Hydrogen",
-      "date": "10h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.2",
       "summary": "Patch Changes 449b274: A cart change made while a cart load is still in flight no longer hides the shopper's other lines or leaves loading stuck on true. The store revalidates the cart once the change…",
@@ -36,7 +62,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "11h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.4.8",
       "summary": "Patch Changes When the login request has no return_to or redirect search param, customerAccount.login() now saves the post-sign-in redirect as a normalized path on your storefront's origin, falling ba…",
@@ -49,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "11h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "skeleton@2026.4.9",
       "summary": "Patch Changes Updated dependencies [e4622144c83e9d9838b5c9336a4d9a021bbe0727, e4622144c83e9d9838b5c9336a4d9a021bbe0727, e4622144c83e9d9838b5c9336a4d9a021bbe0727]: @Shopify/hydrogen@2026.4.8",
@@ -62,7 +88,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "11h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen-react@2026.4.5",
       "summary": "Patch Changes Fix a race condition in loadScript where the browser could begin fetching a script before integrity or other security attributes were applied. Attributes are now set before the element i…",
@@ -75,7 +101,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "11h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.1.0",
       "summary": "Minor Changes Add --json output to shopify hydrogen build, shopify hydrogen check routes, and shopify hydrogen codegen so scripts can read structured command results. (#4225) by @kdaviduik Add --json…",
@@ -88,7 +114,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "11h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "@shopify/create-hydrogen@5.1.0",
       "summary": "Minor Changes Add typed JSON project and account results with explicit initialization outcomes. (#4225) by @kdaviduik Partial setup failures now exit with code 1 in both shopify hydrogen init and npm…",
@@ -101,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "14h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "Metaobject analytics queryable capability available in the Admin API",
       "summary": "Starting with GraphQL Admin API version 2027-01, you can read and configure the analyticsQueryable capability on metaobject definitions. This applies to apps that create, update, or inspect metaobject…",
@@ -114,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "16h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Securing your app, together",
       "summary": "Merchants install your app because they trust it, and because they trust the Shopify App Store. There are bad actors out there who are motivated to exploit that trust. Alongside the rest of the indust…",
@@ -127,7 +153,20 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "1d",
+      "relevance": "Medium",
+      "title": "Exclusive > timestamp filters exclude the full second",
+      "summary": "As of API version 2026-10, an exclusive lower bound (>) on a timestamp filter in the GraphQL Admin API search syntax excludes the full second. For example, created_at:>'2026-09-15T12:00:02Z' no longer…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/exclusive-timestamp-filters"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
       "summary": "Checkout MCP and Cart MCP now support the UCP buyer consent extension (dev.ucp.shopping.buyer_consent) starting with UCP 2026-08-25. Buyers can now make the same privacy and marketing choices in your…",
@@ -136,50 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/checkout-mcp-and-cart-mcp-now-support-ucp-buyer-consent"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "Build with confidence: Shopify AI Toolkit's security check",
-      "summary": "Shopify AI Toolkit now includes shopify app security check, a security command that checks your app for common vulnerabilities before you ship. You can run it before you submit an app, and on every re…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/build-more-secure-apps-with-shopify-s-ai-toolkit-security-check"
-    },
-    {
-      "type": "Update",
-      "source": "CLI",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "4.9.4",
-      "summary": "What's Changed App Require Git 2.38 or later when shopify app security check uses Git, because its protections against untrusted repositories depend on safe.bareRepository. Scans that don't use Git, s…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/cli/releases/tag/4.9.4"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "Hydrogen 2026-10 is now available",
-      "summary": "The new Hydrogen is generally available today. Since the developer preview started in June, we've shipped seven releases based on feedback from developers using it. The big deal about the new Hydrogen…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/hydrogen-2026-10-is-now-available"
     }
   ],
   "recap": {
     "dateRange": "Oct 14 – Oct 21",
-    "basis": "Based on 12 updates this week",
+    "basis": "Based on 14 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
