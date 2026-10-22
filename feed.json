@@ -1,25 +1,64 @@
 {
   "meta": {
-    "generatedAt": "2026-10-22T11:14:03Z",
+    "generatedAt": "2026-10-22T16:42:25Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "@shopify/hydrogen@2026.10.2",
-    "what_changed": "Patch Changes 449b274: A cart change made while a cart load is still in flight no longer hides the shopper's other lines or leaves loading stuck on true. The store revalidates the cart once the change settles, including when the store is destroyed and reconnected before then. ff8d38a: The cart store now applies updateCart calls that update or remove several lines at once. Each line is projected, m…",
+    "headline": "POS UI extensions now support reactive storage access",
+    "what_changed": "The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device. It’s now available in API version 2026-10. No changes are required for existing extensions. What changed shopify.storage.current exposes each storage key as a read-only reactive signal. You can read its current value or subscribe to c…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "Hydrogen",
-    "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.2",
+    "source": "Changelog",
+    "link": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access",
     "also_worth_knowing": []
   },
   "updates": [
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "42m",
+      "relevance": "Medium",
+      "title": "POS UI extensions now support reactive storage access",
+      "summary": "The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device. It’s now available in API version…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "42m",
+      "relevance": "Medium",
+      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
+      "summary": "POS UI extensions API version 2026-10 adds s-pos-list, a virtualized list component for Polaris web components. You pass rows as plain data and lay out each kind of row with a template built from web…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "2h",
+      "relevance": "Medium",
+      "title": "Polaris 2.0 is now stable",
+      "summary": "Polaris 2.0 is now stable Polaris Web Components 2.0 is now available on the stable Polaris CDN channels. It's the first major release under the CDN's semantic versioning model. Polaris 2.0 matches th…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/polaris-cdn-2-0-is-now-stable"
+    },
     {
       "type": "Update",
       "source": "Hydrogen",
@@ -136,50 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/exclusive-timestamp-filters"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "Checkout MCP and Cart MCP now support UCP buyer consent",
-      "summary": "Checkout MCP and Cart MCP now support the UCP buyer consent extension (dev.ucp.shopping.buyer_consent) starting with UCP 2026-08-25. Buyers can now make the same privacy and marketing choices in your…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/checkout-mcp-and-cart-mcp-now-support-ucp-buyer-consent"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "Build with confidence: Shopify AI Toolkit's security check",
-      "summary": "Every app install is an act of trust. Merchants rely on your apps to run their business and trust them to protect their orders, customers, and revenue. Protecting merchants is work we share. AI is hel…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/build-more-secure-apps-with-shopify-s-ai-toolkit-security-check"
-    },
-    {
-      "type": "Update",
-      "source": "CLI",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "4.9.4",
-      "summary": "What's Changed App Require Git 2.38 or later when shopify app security check uses Git, because its protections against untrusted repositories depend on safe.bareRepository. Scans that don't use Git, s…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/cli/releases/tag/4.9.4"
     }
   ],
   "recap": {
     "dateRange": "Oct 15 – Oct 22",
-    "basis": "Based on 11 updates this week",
+    "basis": "Based on 13 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
