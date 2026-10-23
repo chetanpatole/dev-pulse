@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-10-23T11:05:39Z",
+    "generatedAt": "2026-10-23T16:32:45Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Discover a merchant's retail stores with UCP location search and lookup",
-    "what_changed": "Shopify storefronts now support the UCP location capability, dev.ucp.common.location.search and dev.ucp.common.location.lookup, starting with UCP 2026-08-25. When you negotiate these capabilities over the storefront MCP endpoint, your agent can find a merchant's physical stores, narrow them by name, city, or distance, and check which stores carry the items a buyer wants. This is an optional new ca…",
+    "headline": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+    "what_changed": "As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third-party identity provider. Pass the customer's ID as customerId and the identity provider subject's ID as id. You can get subject IDs from Customer.identityProviderSubjects. Unlinking signs the customer out of all of their existing sessions. The next time they sign in through the ident…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup",
+    "link": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "17h",
+      "date": "3h",
+      "relevance": "Medium",
+      "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
+      "summary": "As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third-party identity provider. Pass the customer's ID as customerId and the identity provi…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "22h",
       "relevance": "Medium",
       "title": "Discover a merchant's retail stores with UCP location search and lookup",
       "summary": "Shopify storefronts now support the UCP location capability, dev.ucp.common.location.search and dev.ucp.common.location.lookup, starting with UCP 2026-08-25. When you negotiate these capabilities over…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "19h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "POS UI extensions now support reactive storage access",
       "summary": "The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device. It’s now available in API version…",
@@ -49,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "19h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
       "summary": "POS UI extensions API version 2026-10 adds s-pos-list, a virtualized list component for Polaris web components. You pass rows as plain data and lay out each kind of row with a template built from web…",
@@ -62,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "21h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Polaris 2.0 is now stable",
       "summary": "Polaris 2.0 is now stable Polaris Web Components 2.0 is now available on the stable Polaris CDN channels. It's the first major release under the CDN's semantic versioning model. Polaris 2.0 matches th…",
@@ -162,19 +175,6 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/metaobject-analytics-queryable-capability-available-in-the-admin-api"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "2d",
-      "relevance": "Medium",
-      "title": "Securing your app, together",
-      "summary": "Merchants install your app because they trust it, and because they trust the Shopify App Store. There are bad actors out there who are motivated to exploit that trust. Alongside the rest of the indust…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/securing-your-app-together"
     }
   ],
   "recap": {
