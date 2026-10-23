@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-23T16:32:45Z",
+    "generatedAt": "2026-10-23T21:02:50Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3h",
+      "date": "8h",
       "relevance": "Medium",
       "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
       "summary": "As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third-party identity provider. Pass the customer's ID as customerId and the identity provi…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "22h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Discover a merchant's retail stores with UCP location search and lookup",
       "summary": "Shopify storefronts now support the UCP location capability, dev.ucp.common.location.search and dev.ucp.common.location.lookup, starting with UCP 2026-08-25. When you negotiate these capabilities over…",
@@ -166,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Metaobject analytics queryable capability available in the Admin API",
       "summary": "Starting with GraphQL Admin API version 2027-01, you can read and configure the analyticsQueryable capability on metaobject definitions. This applies to apps that create, update, or inspect metaobject…",
