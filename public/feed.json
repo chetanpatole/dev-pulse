@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-23T03:34:49Z",
+    "generatedAt": "2026-10-23T11:05:39Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "9h",
+      "date": "17h",
       "relevance": "Medium",
       "title": "Discover a merchant's retail stores with UCP location search and lookup",
       "summary": "Shopify storefronts now support the UCP location capability, dev.ucp.common.location.search and dev.ucp.common.location.lookup, starting with UCP 2026-08-25. When you negotiate these capabilities over…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "19h",
       "relevance": "Medium",
       "title": "POS UI extensions now support reactive storage access",
       "summary": "The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device. It’s now available in API version…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "19h",
       "relevance": "Medium",
       "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
       "summary": "POS UI extensions API version 2026-10 adds s-pos-list, a virtualized list component for Polaris web components. You pass rows as plain data and lay out each kind of row with a template built from web…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "13h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Polaris 2.0 is now stable",
       "summary": "Polaris 2.0 is now stable Polaris Web Components 2.0 is now available on the stable Polaris CDN channels. It's the first major release under the CDN's semantic versioning model. Polaris 2.0 matches th…",
