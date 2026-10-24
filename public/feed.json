@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-24T03:28:48Z",
+    "generatedAt": "2026-10-24T10:22:10Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "14h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
       "summary": "As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third-party identity provider. Pass the customer's ID as customerId and the identity provi…",
