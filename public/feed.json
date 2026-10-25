@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-25T10:49:33Z",
+    "generatedAt": "2026-10-25T15:37:40Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Unlink a customer's identity provider subject with the GraphQL Admin API",
       "summary": "As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third-party identity provider. Pass the customer's ID as customerId and the identity provi…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Polaris 2.0 is now stable",
       "summary": "Polaris 2.0 is now stable Polaris Web Components 2.0 is now available on the stable Polaris CDN channels. It's the first major release under the CDN's semantic versioning model. Polaris 2.0 matches th…",
@@ -179,7 +179,7 @@
   ],
   "recap": {
     "dateRange": "Oct 18 – Oct 25",
-    "basis": "Based on 14 updates this week",
+    "basis": "Based on 15 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
