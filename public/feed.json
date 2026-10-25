@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-24T20:18:14Z",
+    "generatedAt": "2026-10-25T03:25:04Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.2",
       "summary": "Patch Changes 449b274: A cart change made while a cart load is still in flight no longer hides the shopper's other lines or leaves loading stuck on true. The store revalidates the cart once the change…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.4.8",
       "summary": "Patch Changes When the login request has no return_to or redirect search param, customerAccount.login() now saves the post-sign-in redirect as a normalized path on your storefront's origin, falling ba…",
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "skeleton@2026.4.9",
       "summary": "Patch Changes Updated dependencies [e4622144c83e9d9838b5c9336a4d9a021bbe0727, e4622144c83e9d9838b5c9336a4d9a021bbe0727, e4622144c83e9d9838b5c9336a4d9a021bbe0727]: @Shopify/hydrogen@2026.4.8",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen-react@2026.4.5",
       "summary": "Patch Changes Fix a race condition in loadScript where the browser could begin fetching a script before integrity or other security attributes were applied. Attributes are now set before the element i…",
@@ -140,7 +140,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.1.0",
       "summary": "Minor Changes Add --json output to shopify hydrogen build, shopify hydrogen check routes, and shopify hydrogen codegen so scripts can read structured command results. (#4225) by @kdaviduik Add --json…",
@@ -153,7 +153,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "@shopify/create-hydrogen@5.1.0",
       "summary": "Minor Changes Add typed JSON project and account results with explicit initialization outcomes. (#4225) by @kdaviduik Partial setup failures now exit with code 1 in both shopify hydrogen init and npm…",
@@ -166,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Metaobject analytics queryable capability available in the Admin API",
       "summary": "Starting with GraphQL Admin API version 2027-01, you can read and configure the analyticsQueryable capability on metaobject definitions. This applies to apps that create, update, or inspect metaobject…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Oct 17 – Oct 24",
+    "dateRange": "Oct 18 – Oct 25",
     "basis": "Based on 14 updates this week",
     "headline": "A quieter week.",
     "themes": [],
