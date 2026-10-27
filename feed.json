@@ -1,25 +1,64 @@
 {
   "meta": {
-    "generatedAt": "2026-10-27T03:53:53Z",
+    "generatedAt": "2026-10-27T11:40:15Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Unlink a customer's identity provider subject with the GraphQL Admin API",
-    "what_changed": "As of API version 2027-01, you can use the identityProviderSubjectDelete mutation to unlink a customer from a third-party identity provider. Pass the customer's ID as customerId and the identity provider subject's ID as id. You can get subject IDs from Customer.identityProviderSubjects. Unlinking signs the customer out of all of their existing sessions. The next time they sign in through the ident…",
+    "headline": "5.0.0: Merge pull request #8836 from Shopify/changeset-release/main",
+    "what_changed": "Version Packages - main",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "Changelog",
-    "link": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api",
+    "source": "CLI",
+    "link": "https://github.com/Shopify/cli/releases/tag/5.0.0",
     "also_worth_knowing": []
   },
   "updates": [
+    {
+      "type": "Update",
+      "source": "CLI",
+      "date": "25m",
+      "relevance": "Medium",
+      "title": "5.0.0: Merge pull request #8836 from Shopify/changeset-release/main",
+      "summary": "Version Packages - main",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/cli/releases/tag/5.0.0"
+    },
+    {
+      "type": "Update",
+      "source": "CLI",
+      "date": "1h",
+      "relevance": "Medium",
+      "title": "4.9.5",
+      "summary": "What's Changed CLI Upgrade cloudflared to 2026.10.3 #9019 Full Changelog: 4.9.4...4.9.5",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/cli/releases/tag/4.9.5"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "1h",
+      "relevance": "Medium",
+      "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
+      "summary": "You can now return products from brands that don't sell on Shopify when you search the beta Catalog API. Add the new sources parameter to search_catalog to include external products in the same respon…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta"
+    },
     {
       "type": "Update",
       "source": "Changelog",
@@ -136,50 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen-react%402026.4.5"
-    },
-    {
-      "type": "Update",
-      "source": "Hydrogen",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "@shopify/cli-hydrogen@13.1.0",
-      "summary": "Minor Changes Add --json output to shopify hydrogen build, shopify hydrogen check routes, and shopify hydrogen codegen so scripts can read structured command results. (#4225) by @kdaviduik Add --json…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcli-hydrogen%4013.1.0"
-    },
-    {
-      "type": "Update",
-      "source": "Hydrogen",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "@shopify/create-hydrogen@5.1.0",
-      "summary": "Minor Changes Add typed JSON project and account results with explicit initialization outcomes. (#4225) by @kdaviduik Partial setup failures now exit with code 1 in both shopify hydrogen init and npm…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fcreate-hydrogen%405.1.0"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "Metaobject analytics queryable capability available in the Admin API",
-      "summary": "Starting with GraphQL Admin API version 2027-01, you can read and configure the analyticsQueryable capability on metaobject definitions. This applies to apps that create, update, or inspect metaobject…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/metaobject-analytics-queryable-capability-available-in-the-admin-api"
     }
   ],
   "recap": {
     "dateRange": "Oct 20 – Oct 27",
-    "basis": "Based on 14 updates this week",
+    "basis": "Based on 17 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
