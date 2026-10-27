@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-27T17:31:50Z",
+    "generatedAt": "2026-10-27T21:51:14Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "31m",
+      "date": "4h",
       "relevance": "Medium",
       "title": "Security update: Offline token dates, new security features",
       "summary": "On October 20, we asked all app devs to secure their app, and told you we'd share more before any security change takes effect. Here's what's new, and what you need to do. Offline access tokens The mi…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "51m",
+      "date": "5h",
       "relevance": "Medium",
       "title": "Migrate to expiring offline access tokens before January 1, 2027",
       "summary": "Public apps still using non-expiring offline access tokens must migrate to use expiring offline access tokens before January 1, 2027 to remain listed in the Shopify App Store and continue accepting ne…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1h",
+      "date": "5h",
       "relevance": "Medium",
       "title": "Secure your app with network access rules in `shopify.app.toml`",
       "summary": "You can now declare your app's external hosts and servers in a new [network_access] section of shopify.app.toml. Normally Shopify warns customers when they navigate to a URL ouside Shopify; declaring…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1h",
+      "date": "5h",
       "relevance": "Medium",
       "title": "Restrict Admin API access with an IP allowlist",
       "summary": "You can now limit Admin API access tokens by IP address. When you add your servers' IP addresses to an IP allowlist in the Dev Dashboard, Shopify rejects GraphQL Admin API and REST Admin API requests…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "2h",
+      "date": "7h",
       "relevance": "Medium",
       "title": "5.0.0",
       "summary": "Shopify CLI 5.0.0 Shopify CLI 5.0 is your agent-ready Shopify development tool. It now features a standardized JSON output format for nearly all commands, and an app dev command optimized for agentic…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4h",
+      "date": "8h",
       "relevance": "Medium",
       "title": "Promoted Placements beta now includes Shop Campaigns",
       "summary": "Promoted Placements is now in beta, and it includes Shop Campaigns. When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Sho…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "7h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "4.9.5",
       "summary": "What's Changed CLI Upgrade cloudflared to 2026.10.3 #9019 Full Changelog: 4.9.4...4.9.5",
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
       "summary": "You can now return products from brands that don't sell on Shopify when you search the beta Catalog API. Add the new sources parameter to search_catalog to include external products in the same respon…",
@@ -123,6 +123,19 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/search-brands-that-don-t-sell-on-shopify-in-the-catalog-api-beta"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "4d",
+      "relevance": "Medium",
+      "title": "Analytics queryable capability is configurable in shopify.app.toml for metaobject definitions",
+      "summary": "Apps can now set capabilities.analytics_queryable on metaobject definitions in shopify.app.toml. This makes compatible fields on those definitions queryable in Shopify analytics and ShopifyQL. It appl…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/analytics-queryable-capability-is-configurable-in-shopify-app-toml-for-metaobject-definitions"
     },
     {
       "type": "Update",
@@ -140,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Discover a merchant's retail stores with UCP location search and lookup",
       "summary": "Shopify storefronts now support the UCP location capability, dev.ucp.common.location.search and dev.ucp.common.location.lookup, starting with UCP 2026-08-25. When you negotiate these capabilities over…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "POS UI extensions 2026-10 adds s-pos-list, a virtualized list with custom row templates",
-      "summary": "POS UI extensions API version 2026-10 adds s-pos-list, a virtualized list component for Polaris web components. You pass rows as plain data and lay out each kind of row with a template built from web…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/pos-ui-extensions-2026-10-adds-s-pos-list-a-virtualized-list-with-custom-row-templates"
     }
   ],
   "recap": {
     "dateRange": "Oct 20 – Oct 27",
-    "basis": "Based on 21 updates this week",
+    "basis": "Based on 20 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
