@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-10-27T21:51:14Z",
+    "generatedAt": "2026-10-28T04:14:37Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Security update: Offline token dates, new security features",
-    "what_changed": "On October 20, we asked all app devs to secure their app, and told you we'd share more before any security change takes effect. Here's what's new, and what you need to do. Offline access tokens The migration timeline for offline access tokens remains the same: All public apps that call the Admin API must migrate to expiring offline access tokens by January 1, 2027. We're sharing an updated enforce…",
+    "headline": "Store and app install details in the Dev Dashboard",
+    "what_changed": "You can now view your organization’s installed apps, collaborator access, earnings, and app activity in one place in the Dev Dashboard. Use the store page to view apps, users, and earnings for a store: Apps from your organization installed on the store. Users in your organization who have collaborator access to the store. Earnings from the store, including total app earnings, total theme earnings,…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,7 +16,7 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/app-security-updates-october-2026",
+    "link": "https://shopify.dev/changelog/store-and-app-install-details-in-the-dev-dashboard",
     "also_worth_knowing": []
   },
   "updates": [
@@ -24,6 +24,32 @@
       "type": "Update",
       "source": "Changelog",
       "date": "4h",
+      "relevance": "Medium",
+      "title": "Store and app install details in the Dev Dashboard",
+      "summary": "You can now view your organization’s installed apps, collaborator access, earnings, and app activity in one place in the Dev Dashboard. Use the store page to view apps, users, and earnings for a store…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/store-and-app-install-details-in-the-dev-dashboard"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "4h",
+      "relevance": "Medium",
+      "title": "Manage payouts, billing, and settings in Dev Dashboard",
+      "summary": "You now manage your Partner business details, payouts, billing, and the remaining Partner Dashboard settings in Dev Dashboard's Organization settings. New Partners also complete business verification…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/manage-partner-payouts-billing-and-settings-from-organization-settings"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Security update: Offline token dates, new security features",
       "summary": "On October 20, we asked all app devs to secure their app, and told you we'd share more before any security change takes effect. Here's what's new, and what you need to do. Offline access tokens The mi…",
@@ -36,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Migrate to expiring offline access tokens before January 1, 2027",
       "summary": "Public apps still using non-expiring offline access tokens must migrate to use expiring offline access tokens before January 1, 2027 to remain listed in the Shopify App Store and continue accepting ne…",
@@ -49,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Secure your app with network access rules in `shopify.app.toml`",
       "summary": "You can now declare your app's external hosts and servers in a new [network_access] section of shopify.app.toml. Normally Shopify warns customers when they navigate to a URL ouside Shopify; declaring…",
@@ -62,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Restrict Admin API access with an IP allowlist",
       "summary": "You can now limit Admin API access tokens by IP address. When you add your servers' IP addresses to an IP allowlist in the Dev Dashboard, Shopify rejects GraphQL Admin API and REST Admin API requests…",
@@ -75,7 +101,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "7h",
+      "date": "13h",
       "relevance": "Medium",
       "title": "5.0.0",
       "summary": "Shopify CLI 5.0.0 Shopify CLI 5.0 is your agent-ready Shopify development tool. It now features a standardized JSON output format for nearly all commands, and an app dev command optimized for agentic…",
@@ -88,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8h",
+      "date": "15h",
       "relevance": "Medium",
       "title": "Promoted Placements beta now includes Shop Campaigns",
       "summary": "Promoted Placements is now in beta, and it includes Shop Campaigns. When a search_catalog result comes from a merchant running Shop Campaigns, you earn the commission that merchant funds, added to Sho…",
@@ -101,7 +127,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "11h",
+      "date": "17h",
       "relevance": "Medium",
       "title": "4.9.5",
       "summary": "What's Changed CLI Upgrade cloudflared to 2026.10.3 #9019 Full Changelog: 4.9.4...4.9.5",
@@ -114,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "18h",
       "relevance": "Medium",
       "title": "Search brands that don't sell on Shopify in the Catalog API (beta)",
       "summary": "You can now return products from brands that don't sell on Shopify when you search the beta Catalog API. Add the new sources parameter to search_catalog to include external products in the same respon…",
@@ -149,37 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/unlink-a-customers-identity-provider-subject-with-the-admin-graphql-api"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "Discover a merchant's retail stores with UCP location search and lookup",
-      "summary": "Shopify storefronts now support the UCP location capability, dev.ucp.common.location.search and dev.ucp.common.location.lookup, starting with UCP 2026-08-25. When you negotiate these capabilities over…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/discover-a-merchant-s-retail-stores-with-ucp-location-search-and-lookup"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "POS UI extensions now support reactive storage access",
-      "summary": "The new shopify.storage.current API lets POS UI extension developers respond automatically when stored values change across extension targets on the same POS device. It’s now available in API version…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/pos-ui-extensions-now-support-reactive-storage-access"
     }
   ],
   "recap": {
-    "dateRange": "Oct 20 – Oct 27",
-    "basis": "Based on 20 updates this week",
+    "dateRange": "Oct 21 – Oct 28",
+    "basis": "Based on 16 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
