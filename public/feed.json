@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-28T22:14:32Z",
+    "generatedAt": "2026-10-29T04:36:11Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Start Sidekick conversations from your app",
       "summary": "Embedded apps can now launch Sidekick with a pre-filled prompt using the Sidekick Launch API, so merchants can get contextual help without leaving your app. From within the Shopify admin, your app can…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Editions: Fall 2026",
       "summary": "",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Shopify App Pricing: Plan Feature Targeting",
       "summary": "You can now add store requirements to public plans in Shopify App Pricing. A merchant whose store does not have a required feature cannot subscribe to that plan. Store requirements are optional, so no…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Shopify App Store: Estimated local-currency prices",
       "summary": "Merchants who are billed in a currency other than USD now see estimated prices for your app in their billing currency. No action is required on your part, and you can continue to set prices in USD. Wh…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Merchant email now available on the `ThemeSale` object in the Partners API",
       "summary": "You can now access the purchasing merchant's email on the ThemeSale object in the Partner API, which lets you connect with the merchants using your themes to provide support, share updates, and build…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Introducing theme app add-ons: Build and bundle apps with your themes",
       "summary": "Theme developers can now build storefront apps using theme app extensions and bundle them with their theme listings on the Theme Store. Theme app add-ons extend your theme with advanced functionality…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Make your app's activity reportable in Shopify Analytics with App Events",
       "summary": "You can now make your app’s activity available for merchants in Shopify Analytics. Merchants can explore your app’s metrics and dimensions in the report builder or query them with ShopifyQL using FROM…",
@@ -114,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "App Events: Send events from Checkout and Customer Account UI extensions",
       "summary": "Starting with API version 2027-01, Checkout and Customer Account UI extensions can send App Events to Shopify with shopify.appEvents.emit(). Extensions don't need network access or an app backend to s…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Shopify Flow: manage automations through AI Toolkit",
       "summary": "You can now use an external agent to manage your Shopify Flow workflows through AI Toolkit. This release is for managing your own store's workflows via AI toolkit; third-party apps are prevented from…",
@@ -140,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Managed mode for Shopify Tax",
       "summary": "Shopify Tax managed mode helps Shopify apply the correct tax behavior for US sales by managing some store settings and API behavior directly. To keep those settings consistent, some Admin API writes n…",
@@ -153,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "First sign-ins to customer accounts now set Customer.state and send customers/enable webhooks",
       "summary": "A customer's first sign-in to customer accounts now sets Customer.state to ENABLED and sends the customers/enable and customers/update webhooks. This matches how account activation works in legacy cus…",
@@ -166,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Add selling plans to draft order line items with the Admin GraphQL API",
       "summary": "Admin GraphQL API version 2027-01 adds selling plan support to draft orders. You can now apply a selling plan to a draft order line item and read back the applied plan. These fields are additive, so n…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Oct 21 – Oct 28",
+    "dateRange": "Oct 22 – Oct 29",
     "basis": "Based on 29 updates this week",
     "headline": "A quieter week.",
     "themes": [],
