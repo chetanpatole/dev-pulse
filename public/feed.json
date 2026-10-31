@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-30T21:57:46Z",
+    "generatedAt": "2026-10-31T04:19:10Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3h",
+      "date": "10h",
       "relevance": "Medium",
       "title": "UI extensions now support a larger number of locales",
       "summary": "UI extensions no longer have a 256 KB limit on the combined size of their locale files. As of October 30, 2026, you can add more languages to an extension without hitting a combined size limit at depl…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "New trusted vault origin signal in Payments Apps API",
       "summary": "The Payments Apps API 2027-01 release candidate adds payment_method.data.trusted_vault_origin to credit card payment and verification requests. Payment app developers can use this optional Boolean to…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Oct 23 – Oct 30",
+    "dateRange": "Oct 24 – Oct 31",
     "basis": "Based on 26 updates this week",
     "headline": "A quieter week.",
     "themes": [],
