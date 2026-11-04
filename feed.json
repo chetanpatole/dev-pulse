@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-11-04T13:50:48Z",
+    "generatedAt": "2026-11-04T23:15:37Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "currententrychange now returns the previous page in event.from for customer account full-page extensions",
-    "what_changed": "Starting in API version 2027-01, in customer account full-page extensions the Navigation API currententrychange event sets event.from to the page the customer navigated away from, instead of the page they navigated to. This is a breaking change for customer account full-page extensions that read the new page from event.from. Update them to read shopify.navigation.currentEntry before you move them…",
+    "headline": "Test app network access configuration on dev stores",
+    "what_changed": "You can now test your app's [network_access] settings on a dev store with the new network access testing feature preview. The preview helps you confirm you have the right networks listed, and find hosts and servers you missed. What changed When you create a dev store with the network_access_testing feature preview, you can confirm your network configuration behaves as expected: Links to hosts that…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,40 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/currententrychange-now-returns-the-previous-page-in-event-from-for-customer-account-full-page-extensions",
+    "link": "https://shopify.dev/changelog/test-app-network-access-configuration-on-dev-stores",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "5h",
+      "relevance": "Medium",
+      "title": "Test app network access configuration on dev stores",
+      "summary": "You can now test your app's [network_access] settings on a dev store with the new network access testing feature preview. The preview helps you confirm you have the right networks listed, and find hos…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/test-app-network-access-configuration-on-dev-stores"
+    },
+    {
+      "type": "Update",
+      "source": "CLI",
+      "date": "8h",
+      "relevance": "Medium",
+      "title": "5.0.1",
+      "summary": "What's Changed App Fix Cloudflare tunnel shutdown errors on Windows Prevent intermittent app deploy failures when UI extensions in the same folder build concurrently. Remove [extensions.capabilities.n…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/cli/releases/tag/5.0.1"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "4d",
       "relevance": "Medium",
       "title": "currententrychange now returns the previous page in event.from for customer account full-page extensions",
       "summary": "Starting in API version 2027-01, in customer account full-page extensions the Navigation API currententrychange event sets event.from to the page the customer navigated away from, instead of the page…",
@@ -36,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "UI extensions now support a larger number of locales",
       "summary": "UI extensions no longer have a 256 KB limit on the combined size of their locale files. As of October 30, 2026, you can add more languages to an extension without hitting a combined size limit at depl…",
@@ -49,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Gift Card line_item_id will become read-only in REST Admin API version 2027-01",
       "summary": "In REST Admin API version 2027-01 and later, the line_item_id property on the Gift Card resource is read-only. Shopify ignores the property in create and update requests. Remove it from those requests…",
@@ -62,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "New trusted vault origin signal in Payments Apps API",
       "summary": "The Payments Apps API 2027-01 release candidate adds payment_method.data.trusted_vault_origin to credit card payment and verification requests. Payment app developers can use this optional Boolean to…",
@@ -75,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Shop SDK lead capture now supports Rich Authorization Requests",
       "summary": "You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile. Use Rich Authorization Requests (RAR) to sele…",
@@ -88,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Start Sidekick conversations from your app",
       "summary": "Embedded apps can now launch Sidekick with a pre-filled prompt using the Sidekick Launch API, so merchants can get contextual help without leaving your app. From within the Shopify admin, your app can…",
@@ -101,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Editions: Fall 2026",
       "summary": "",
@@ -114,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Shopify App Pricing: Plan Feature Targeting",
       "summary": "You can now add store requirements to public plans in Shopify App Pricing. A merchant whose store does not have a required feature cannot subscribe to that plan. Store requirements are optional, so no…",
@@ -127,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Shopify App Store: Estimated local-currency prices",
       "summary": "Merchants who are billed in a currency other than USD now see estimated prices for your app in their billing currency. No action is required on your part, and you can continue to set prices in USD. Wh…",
@@ -140,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Merchant email now available on the `ThemeSale` object in the Partners API",
       "summary": "You can now access the purchasing merchant's email on the ThemeSale object in the Partner API, which lets you connect with the merchants using your themes to provide support, share updates, and build…",
@@ -149,37 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/merchant-email-now-available-on-the-themesale-object-in-the-partners-api"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "Introducing theme app add-ons: Build and bundle apps with your themes",
-      "summary": "Theme developers can now build storefront apps using theme app extensions and bundle them with their theme listings on the Theme Store. Theme app add-ons extend your theme with advanced functionality…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/introducing-theme-app-add-ons-build-and-bundle-apps-with-your-themes"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "Make your app's activity reportable in Shopify Analytics with App Events",
-      "summary": "You can now make your app’s activity available for merchants in Shopify Analytics. Merchants can explore your app’s metrics and dimensions in the report builder or query them with ShopifyQL using FROM…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/app-events-in-analytics"
     }
   ],
   "recap": {
     "dateRange": "Oct 28 – Nov 04",
-    "basis": "Based on 18 updates this week",
+    "basis": "Based on 6 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
