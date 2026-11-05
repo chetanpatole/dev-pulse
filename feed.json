@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-11-05T14:04:07Z",
+    "generatedAt": "2026-11-05T23:18:14Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Test app network access configuration on dev stores",
-    "what_changed": "You can now test your app's [network_access] settings on a dev store with the new network access testing feature preview. The preview helps you confirm you have the right networks listed, and find hosts and servers you missed. What changed When you create a dev store with the network_access_testing feature preview, you can confirm your network configuration behaves as expected: Links to hosts that…",
+    "headline": "Order routing functions can now rank locations across multiple fulfillment groups in the unstable Function APIs.",
+    "what_changed": "",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,66 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/test-app-network-access-configuration-on-dev-stores",
+    "link": "https://shopify.dev/changelog/order-routing-functions-can-now-apply-one-location-ranking-to-multiple-fulfillment-groups",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "20h",
+      "date": "6h",
+      "relevance": "Medium",
+      "title": "Order routing functions can now rank locations across multiple fulfillment groups in the unstable Function APIs.",
+      "summary": "",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/order-routing-functions-can-now-apply-one-location-ranking-to-multiple-fulfillment-groups"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "7h",
+      "relevance": "Medium",
+      "title": "App security updates: IP allowlist is now required",
+      "summary": "On Oct 27 we recommended the IP allowlist. It is now required for every public app by November 20, or November 12 if you use bulk ops. An IP allowlist means a leaked token can't be used anywhere but y…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/app-security-updates-ip-allowlist-is-now-required"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "7h",
+      "relevance": "Medium",
+      "title": "IP allowlists are now required for public apps",
+      "summary": "We're enhancing protection of merchants by adding IP allowlist configuration as a requirement for public apps. All public apps using bulk operations must configure an allowlist by November 12, 2026, a…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/ip-allowlists-are-now-required-for-public-apps"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "7h",
+      "relevance": "Medium",
+      "title": "App IP allowlists now support apps with serverless hosting through ASNs",
+      "summary": "Apps without static IP addresses, such as apps on serverless platforms, can now add your hosting provider's autonomous system numbers (ASNs) to your app's IP allowlist in the Dev Dashboard. What chang…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/app-ip-allowlists-now-support-apps-with-serverless-hosting"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Test app network access configuration on dev stores",
       "summary": "You can now test your app's [network_access] settings on a dev store with the new network access testing feature preview. The preview helps you confirm you have the right networks listed, and find hos…",
@@ -36,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "21h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "RETRY_DECLINED added to CustomerPaymentMethodRevocationReason",
       "summary": "As of GraphQL Admin API version2027-01, CustomerPaymentMethod.revokedReason can return a new value: RETRY_DECLINED. Shopify uses this value when a subscription payment method is revoked because the pa…",
@@ -49,7 +101,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "23h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "5.0.1",
       "summary": "What's Changed App Fix Cloudflare tunnel shutdown errors on Windows Prevent intermittent app deploy failures when UI extensions in the same folder build concurrently. Remove [extensions.capabilities.n…",
@@ -62,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "currententrychange now returns the previous page in event.from for customer account full-page extensions",
       "summary": "Starting in API version 2027-01, in customer account full-page extensions the Navigation API currententrychange event sets event.from to the page the customer navigated away from, instead of the page…",
@@ -75,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "UI extensions now support a larger number of locales",
       "summary": "UI extensions no longer have a 256 KB limit on the combined size of their locale files. As of October 30, 2026, you can add more languages to an extension without hitting a combined size limit at depl…",
@@ -88,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Gift Card line_item_id will become read-only in REST Admin API version 2027-01",
       "summary": "In REST Admin API version 2027-01 and later, the line_item_id property on the Gift Card resource is read-only. Shopify ignores the property in create and update requests. Remove it from those requests…",
@@ -101,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "New trusted vault origin signal in Payments Apps API",
       "summary": "The Payments Apps API 2027-01 release candidate adds payment_method.data.trusted_vault_origin to credit card payment and verification requests. Payment app developers can use this optional Boolean to…",
@@ -114,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "`FulfillmentOrderDestination` now includes `provinceCode`",
       "summary": "As of GraphQL Admin API version 2027-01, the FulfillmentOrderDestination object has a provinceCode field. It returns the alphanumeric code of the destination's province or state, such as ON for Ontari…",
@@ -123,63 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/fulfillment-order-destination-province-code"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "Shop SDK lead capture now supports Rich Authorization Requests",
-      "summary": "You can now request the specific profile data your app needs during Shop SDK lead capture, including details that aren't saved on the user's Shop profile. Use Rich Authorization Requests (RAR) to sele…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/shop-sdk-lead-capture-now-supports-rich-authorization-requests"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "Start Sidekick conversations from your app",
-      "summary": "Embedded apps can now launch Sidekick with a pre-filled prompt using the Sidekick Launch API, so merchants can get contextual help without leaving your app. From within the Shopify admin, your app can…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/start-sidekick-conversations-from-your-app"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "Editions: Fall 2026",
-      "summary": "",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/editions-fall-2026"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "Shopify App Pricing: Plan Feature Targeting",
-      "summary": "You can now add store requirements to public plans in Shopify App Pricing. A merchant whose store does not have a required feature cannot subscribe to that plan. Store requirements are optional, so no…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/plan-feature-targeting"
     }
   ],
   "recap": {
     "dateRange": "Oct 29 – Nov 05",
-    "basis": "Based on 8 updates this week",
+    "basis": "Based on 11 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
