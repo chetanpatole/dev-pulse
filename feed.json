@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-05T05:22:15Z",
+    "generatedAt": "2026-11-05T14:04:07Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "Test app network access configuration on dev stores",
       "summary": "You can now test your app's [network_access] settings on a dev store with the new network access testing feature preview. The preview helps you confirm you have the right networks listed, and find hos…",
@@ -35,8 +35,21 @@
     },
     {
       "type": "Update",
+      "source": "Changelog",
+      "date": "21h",
+      "relevance": "Medium",
+      "title": "RETRY_DECLINED added to CustomerPaymentMethodRevocationReason",
+      "summary": "As of GraphQL Admin API version2027-01, CustomerPaymentMethod.revokedReason can return a new value: RETRY_DECLINED. Shopify uses this value when a subscription payment method is revoked because the pa…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/retry_declined-added-to-customerpaymentmethodrevocationreason"
+    },
+    {
+      "type": "Update",
       "source": "CLI",
-      "date": "14h",
+      "date": "23h",
       "relevance": "Medium",
       "title": "5.0.1",
       "summary": "What's Changed App Fix Cloudflare tunnel shutdown errors on Windows Prevent intermittent app deploy failures when UI extensions in the same folder build concurrently. Remove [extensions.capabilities.n…",
@@ -101,6 +114,19 @@
     {
       "type": "Update",
       "source": "Changelog",
+      "date": "6d",
+      "relevance": "Medium",
+      "title": "`FulfillmentOrderDestination` now includes `provinceCode`",
+      "summary": "As of GraphQL Admin API version 2027-01, the FulfillmentOrderDestination object has a provinceCode field. It returns the alphanumeric code of the destination's province or state, such as ON for Ontari…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/fulfillment-order-destination-province-code"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
       "date": "7d",
       "relevance": "Medium",
       "title": "Shop SDK lead capture now supports Rich Authorization Requests",
@@ -149,37 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/plan-feature-targeting"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "Shopify App Store: Estimated local-currency prices",
-      "summary": "Merchants who are billed in a currency other than USD now see estimated prices for your app in their billing currency. No action is required on your part, and you can continue to set prices in USD. Wh…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/estimated-local-currency-prices"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "Merchant email now available on the `ThemeSale` object in the Partners API",
-      "summary": "You can now access the purchasing merchant's email on the ThemeSale object in the Partner API, which lets you connect with the merchants using your themes to provide support, share updates, and build…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/merchant-email-now-available-on-the-themesale-object-in-the-partners-api"
     }
   ],
   "recap": {
     "dateRange": "Oct 29 – Nov 05",
-    "basis": "Based on 6 updates this week",
+    "basis": "Based on 8 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
