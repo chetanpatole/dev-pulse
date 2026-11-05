@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-04T23:15:37Z",
+    "generatedAt": "2026-11-05T05:22:15Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5h",
+      "date": "11h",
       "relevance": "Medium",
       "title": "Test app network access configuration on dev stores",
       "summary": "You can now test your app's [network_access] settings on a dev store with the new network access testing feature preview. The preview helps you confirm you have the right networks listed, and find hos…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "8h",
+      "date": "14h",
       "relevance": "Medium",
       "title": "5.0.1",
       "summary": "What's Changed App Fix Cloudflare tunnel shutdown errors on Windows Prevent intermittent app deploy failures when UI extensions in the same folder build concurrently. Remove [extensions.capabilities.n…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Oct 28 – Nov 04",
+    "dateRange": "Oct 29 – Nov 05",
     "basis": "Based on 6 updates this week",
     "headline": "A quieter week.",
     "themes": [],
