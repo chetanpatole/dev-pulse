@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-11-06T05:21:30Z",
+    "generatedAt": "2026-11-06T13:48:26Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Order routing functions can now rank locations across multiple fulfillment groups in the unstable Function APIs.",
-    "what_changed": "",
+    "headline": "Merchant notes on store credit transactions",
+    "what_changed": "As of GraphQL Admin API version 2027-01, you can attach a merchant-only note when crediting or debiting a store credit account and read those notes on store credit transactions. Notes are optional, so existing integrations continue to work without changes or required updates. What changed StoreCreditAccountCreditInput and StoreCreditAccountDebitInput accept an optional note string. StoreCreditAcco…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/order-routing-functions-can-now-apply-one-location-ranking-to-multiple-fulfillment-groups",
+    "link": "https://shopify.dev/changelog/merchant-notes-on-store-credit-transactions",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12h",
+      "date": "4h",
+      "relevance": "Medium",
+      "title": "Merchant notes on store credit transactions",
+      "summary": "As of GraphQL Admin API version 2027-01, you can attach a merchant-only note when crediting or debiting a store credit account and read those notes on store credit transactions. Notes are optional, so…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/merchant-notes-on-store-credit-transactions"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "20h",
       "relevance": "Medium",
       "title": "Order routing functions can now rank locations across multiple fulfillment groups in the unstable Function APIs.",
       "summary": "",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "13h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "App security updates: IP allowlist is now required",
       "summary": "On Oct 27 we recommended the IP allowlist. It is now required for every public app by November 20, or November 12 if you use bulk ops. An IP allowlist means a leaked token can't be used anywhere but y…",
@@ -49,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "13h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "IP allowlists are now required for public apps",
       "summary": "We're enhancing protection of merchants by adding IP allowlist configuration as a requirement for public apps. All public apps using bulk operations must configure an allowlist by November 12, 2026, a…",
@@ -62,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "13h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "App IP allowlists now support apps with serverless hosting through ASNs",
       "summary": "Apps without static IP addresses, such as apps on serverless platforms, can now add your hosting provider's autonomous system numbers (ASNs) to your app's IP allowlist in the Dev Dashboard. What chang…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/new-trusted-vault-origin-signal-in-payments-apps-api"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "`FulfillmentOrderDestination` now includes `provinceCode`",
-      "summary": "As of GraphQL Admin API version 2027-01, the FulfillmentOrderDestination object has a provinceCode field. It returns the alphanumeric code of the destination's province or state, such as ON for Ontari…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/fulfillment-order-destination-province-code"
     }
   ],
   "recap": {
     "dateRange": "Oct 30 – Nov 06",
-    "basis": "Based on 11 updates this week",
+    "basis": "Based on 12 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
