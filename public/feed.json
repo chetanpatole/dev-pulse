@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-05T23:18:14Z",
+    "generatedAt": "2026-11-06T05:21:30Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Order routing functions can now rank locations across multiple fulfillment groups in the unstable Function APIs.",
       "summary": "",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7h",
+      "date": "13h",
       "relevance": "Medium",
       "title": "App security updates: IP allowlist is now required",
       "summary": "On Oct 27 we recommended the IP allowlist. It is now required for every public app by November 20, or November 12 if you use bulk ops. An IP allowlist means a leaked token can't be used anywhere but y…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7h",
+      "date": "13h",
       "relevance": "Medium",
       "title": "IP allowlists are now required for public apps",
       "summary": "We're enhancing protection of merchants by adding IP allowlist configuration as a requirement for public apps. All public apps using bulk operations must configure an allowlist by November 12, 2026, a…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7h",
+      "date": "13h",
       "relevance": "Medium",
       "title": "App IP allowlists now support apps with serverless hosting through ASNs",
       "summary": "Apps without static IP addresses, such as apps on serverless platforms, can now add your hosting provider's autonomous system numbers (ASNs) to your app's IP allowlist in the Dev Dashboard. What chang…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Oct 29 – Nov 05",
+    "dateRange": "Oct 30 – Nov 06",
     "basis": "Based on 11 updates this week",
     "headline": "A quieter week.",
     "themes": [],
