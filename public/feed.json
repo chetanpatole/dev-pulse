@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-07T04:50:48Z",
+    "generatedAt": "2026-11-07T12:31:43Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "Partner apps must enable bulk operations before use",
       "summary": "Starting today, apps need access to bulk operations before they can run bulk queries or bulk mutations with the GraphQL Admin API. You can enable access for your app in the Partner Dashboard. What cha…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "9h",
+      "date": "17h",
       "relevance": "Medium",
       "title": "Apps must enable bulk operations before use",
       "summary": "Starting today, apps need access to bulk operations before they can run bulk queries or bulk mutations with the GraphQL Admin API. You can enable access for your app in the Partner Dashboard. What cha…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "19h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Merchant notes on store credit transactions",
       "summary": "As of GraphQL Admin API version 2027-01, you can attach a merchant-only note when crediting or debiting a store credit account and read those notes on store credit transactions. Notes are optional, so…",
