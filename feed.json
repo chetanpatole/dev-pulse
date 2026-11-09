@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-09T04:52:02Z",
+    "generatedAt": "2026-11-09T15:20:13Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Merchant notes on store credit transactions",
       "summary": "As of GraphQL Admin API version 2027-01, you can attach a merchant-only note when crediting or debiting a store credit account and read those notes on store credit transactions. Notes are optional, so…",
@@ -140,7 +140,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "5.0.1",
       "summary": "What's Changed App Fix Cloudflare tunnel shutdown errors on Windows Prevent intermittent app deploy failures when UI extensions in the same folder build concurrently. Remove [extensions.capabilities.n…",
