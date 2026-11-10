@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-10T01:13:10Z",
+    "generatedAt": "2026-11-10T14:24:54Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "Redesigned Partner Directory with profiles built on Shopify data",
       "summary": "The Shopify Partner Directory has been redesigned. We've made it easier for merchants to explore and evaluate Partners based on a definitive, Shopify-confirmed record of their work, while making profi…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Merchant notes on store credit transactions",
       "summary": "As of GraphQL Admin API version 2027-01, you can attach a merchant-only note when crediting or debiting a store credit account and read those notes on store credit transactions. Notes are optional, so…",
