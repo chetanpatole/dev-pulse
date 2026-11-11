@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-11T04:54:11Z",
+    "generatedAt": "2026-11-11T13:38:47Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "11h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "@shopify/mini-oxygen@4.3.0",
       "summary": "Minor Changes babb77e: Upgrade Miniflare from v3 to v4, so local development runs on a 2026 Workers runtime instead of one from March 2025. Before, MiniOxygen quietly ran every worker with the March 2…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "11h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.3",
       "summary": "Minor Changes f337fc2: Add framework-independent createContentSecurityPolicy and getShopifyCspDirectives utilities. The returned policy applies its own response headers and exposes header for explicit…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Shopify App Store submission requirements: build, grow, then expand",
       "summary": "We’re updating the Shopify App Store submission requirements so that the apps you list are apps merchants use. These changes apply to new app submissions, resubmissions of rejected apps, additional ap…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Merchant notes on store credit transactions",
       "summary": "As of GraphQL Admin API version 2027-01, you can attach a merchant-only note when crediting or debiting a store credit account and read those notes on store credit transactions. Notes are optional, so…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "orderCreate line items support custom IDs",
       "summary": "The variantIdentifier field on orderCreate line items is now available in GraphQL Admin API version 2027-01 and later. Previously, it was only available in the unstable version. You can use it to iden…",
