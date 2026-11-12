@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-12T00:06:11Z",
+    "generatedAt": "2026-11-12T14:42:32Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "IP allowlists are now required for custom apps installed outside your organization",
       "summary": "We're enhancing protection of merchants by requiring IP allowlists for custom apps, if those apps are installed on stores outside of the organization that owns them. Starting November 20, 2026 at 11:5…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2h",
+      "date": "16h",
       "relevance": "Medium",
       "title": "App IP allowlists now support IP addresses and ASNs together, and up to 250 IPs",
       "summary": "Your app's IP allowlist in the Dev Dashboard can now include IP addresses and autonomous system numbers (ASNs) in the same allowlist. This helps apps whose requests come from a mix of static and dynam…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Storefront MCP policies and FAQs tool is being deprecated in favor of UCP MCP Ask tool",
       "summary": "Storefront MCP search_shop_policies_and_faqs is deprecated. Migrate to UCP MCP's ask_business tool by January 15, 2027. What's changing The search_shop_policies_and_faqs tool on the Storefront MCP ser…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Customer data erasure requests updated from 10 days to 5",
       "summary": "As of November 10, 2026, customer data erasure requests will no longer be held in a pending state for 10 days. Erasure requests will now be processed 5 days after the request was submitted, regardless…",
@@ -153,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "Merchant notes on store credit transactions",
       "summary": "As of GraphQL Admin API version 2027-01, you can attach a merchant-only note when crediting or debiting a store credit account and read those notes on store credit transactions. Notes are optional, so…",
@@ -166,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "orderCreate line items support custom IDs",
       "summary": "The variantIdentifier field on orderCreate line items is now available in GraphQL Admin API version 2027-01 and later. Previously, it was only available in the unstable version. You can use it to iden…",
