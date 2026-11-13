@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-11-13T13:59:20Z",
+    "generatedAt": "2026-11-13T23:17:02Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Remove your app from the Shopify App Store yourself",
-    "what_changed": "You can now start sunsetting your app and remove it from the Shopify App Store yourself, from the Partner Dashboard. You no longer need to contact Shopify Support. What's new In the Partner Dashboard, go to Apps > your app > Distribution, and click Remove from App Store. Choose a sunset date at least 30 days from now. This gives your merchants time to prepare and find an alternative. Shopify remov…",
+    "headline": "Checkout Function `cart.deliverableLine` inputs now model `cost` and link to their relevant `cart.line`",
+    "what_changed": "",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,53 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/remove-your-app-from-the-shopify-app-store-yourself",
+    "link": "https://shopify.dev/changelog/checkout-function-cart-deliverableline-inputs-now-model-cost-and-link-to-their-relevant-cart-line",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "19h",
+      "date": "6h",
+      "relevance": "Medium",
+      "title": "Checkout Function `cart.deliverableLine` inputs now model `cost` and link to their relevant `cart.line`",
+      "summary": "",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/checkout-function-cart-deliverableline-inputs-now-model-cost-and-link-to-their-relevant-cart-line"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "6h",
+      "relevance": "Medium",
+      "title": "Market metafields break ties between equally specific markets by market handle",
+      "summary": "When a buyer matches two or more equally specific markets that set the same metafield, Market.metafield and Market.metafields now return the value from the market with the lowest handle, instead of th…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/market-metafields-break-ties-between-equally-specific-markets-by-market-handle"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "6h",
+      "relevance": "Medium",
+      "title": "Market.metafields matches keys in any case as of Storefront API version 2027-01",
+      "summary": "As of Storefront API version 2027-01, the metafields field on the Market object matches each requested key in any case, as Market.metafield already does. This is a breaking change for apps and custom…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/market-metafields-matches-keys-in-any-case-as-of-storefront-api-version-2027-01"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "1d",
       "relevance": "Medium",
       "title": "Remove your app from the Shopify App Store yourself",
       "summary": "You can now start sunsetting your app and remove it from the Shopify App Store yourself, from the Partner Dashboard. You no longer need to contact Shopify Support. What's new In the Partner Dashboard,…",
@@ -36,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "IP allowlists are now required for custom apps installed outside your organization",
       "summary": "We're enhancing protection of merchants by requiring IP allowlists for custom apps, if those apps are installed on stores outside of the organization that owns them. Starting November 20, 2026 at 11:5…",
@@ -49,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "App IP allowlists now support IP addresses and ASNs together, and up to 250 IPs",
       "summary": "Your app's IP allowlist in the Dev Dashboard can now include IP addresses and autonomous system numbers (ASNs) in the same allowlist. This helps apps whose requests come from a mix of static and dynam…",
@@ -62,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Storefront MCP policies and FAQs tool is being deprecated in favor of UCP MCP Ask tool",
       "summary": "Storefront MCP search_shop_policies_and_faqs is deprecated. Migrate to UCP MCP's ask_business tool by January 15, 2027. What's changing The search_shop_policies_and_faqs tool on the Storefront MCP ser…",
@@ -75,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "Customer data erasure requests updated from 10 days to 5",
       "summary": "As of November 10, 2026, customer data erasure requests will no longer be held in a pending state for 10 days. Erasure requests will now be processed 5 days after the request was submitted, regardless…",
@@ -88,7 +127,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "@shopify/mini-oxygen@4.3.0",
       "summary": "Minor Changes babb77e: Upgrade Miniflare from v3 to v4, so local development runs on a 2026 Workers runtime instead of one from March 2025. Before, MiniOxygen quietly ran every worker with the March 2…",
@@ -101,7 +140,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.3",
       "summary": "Minor Changes f337fc2: Add framework-independent createContentSecurityPolicy and getShopifyCspDirectives utilities. The returned policy applies its own response headers and exposes header for explicit…",
@@ -114,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Shopify App Store submission requirements: build, grow, then expand",
       "summary": "We’re updating the Shopify App Store submission requirements so that the apps you list are apps merchants use. These changes apply to new app submissions, resubmissions of rejected apps, additional ap…",
@@ -127,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Redesigned Partner Directory with profiles built on Shopify data",
       "summary": "The Shopify Partner Directory has been redesigned. We've made it easier for merchants to explore and evaluate Partners based on a definitive, Shopify-confirmed record of their work, while making profi…",
@@ -136,50 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/partner-directory-profiles-now-display-verified-collaboration-data"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "Partner apps must enable bulk operations before use",
-      "summary": "Starting today, apps need access to bulk operations before they can run bulk queries or bulk mutations with the GraphQL Admin API. You can enable access for your app in the Partner Dashboard. What cha…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/partner-apps-must-enable-bulk-operations-before-use"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "6d",
-      "relevance": "Medium",
-      "title": "Dev Dashboard now shows when checkout and customer account UI extensions fail to load",
-      "summary": "When a UI extension fails to load, buyers don't see the experience you built, and the problem can be hard to spot from your side. The Dev Dashboard now shows these failures so you can find and fix the…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/you-can-now-see-how-often-your-checkout-and-customer-account-ui-extensions-fail-to-load-because-of-your-app-and-on-which-stores-in-the-dev-dashboard"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "Merchant notes on store credit transactions",
-      "summary": "As of GraphQL Admin API version 2027-01, you can attach a merchant-only note when crediting or debiting a store credit account and read those notes on store credit transactions. Notes are optional, so…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/merchant-notes-on-store-credit-transactions"
     }
   ],
   "recap": {
     "dateRange": "Nov 06 – Nov 13",
-    "basis": "Based on 11 updates this week",
+    "basis": "Based on 12 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
