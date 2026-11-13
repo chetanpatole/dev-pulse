@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-13T05:18:44Z",
+    "generatedAt": "2026-11-13T13:59:20Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "10h",
+      "date": "19h",
       "relevance": "Medium",
       "title": "Remove your app from the Shopify App Store yourself",
       "summary": "You can now start sunsetting your app and remove it from the Shopify App Store yourself, from the Partner Dashboard. You no longer need to contact Shopify Support. What's new In the Partner Dashboard,…",
@@ -166,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "Merchant notes on store credit transactions",
       "summary": "As of GraphQL Admin API version 2027-01, you can attach a merchant-only note when crediting or debiting a store credit account and read those notes on store credit transactions. Notes are optional, so…",
@@ -179,7 +179,7 @@
   ],
   "recap": {
     "dateRange": "Nov 06 – Nov 13",
-    "basis": "Based on 12 updates this week",
+    "basis": "Based on 11 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
