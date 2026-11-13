@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-12T23:15:01Z",
+    "generatedAt": "2026-11-13T05:18:44Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4h",
+      "date": "10h",
       "relevance": "Medium",
       "title": "Remove your app from the Shopify App Store yourself",
       "summary": "You can now start sunsetting your app and remove it from the Shopify App Store yourself, from the Partner Dashboard. You no longer need to contact Shopify Support. What's new In the Partner Dashboard,…",
@@ -178,8 +178,8 @@
     }
   ],
   "recap": {
-    "dateRange": "Nov 05 – Nov 12",
-    "basis": "Based on 13 updates this week",
+    "dateRange": "Nov 06 – Nov 13",
+    "basis": "Based on 12 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
