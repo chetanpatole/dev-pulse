@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-11-13T23:17:02Z",
+    "generatedAt": "2026-11-14T05:08:38Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "Checkout Function `cart.deliverableLine` inputs now model `cost` and link to their relevant `cart.line`",
-    "what_changed": "",
+    "headline": "App security updates: Thank you, plus what's required next",
+    "what_changed": "Thanks to you, we've already seen the vast majority of apps that run bulk operations adopt an IP allowlist. That's a big step toward keeping merchants protected heading into the busiest weeks of the year. Here's what's required, what's new, and what's coming next. Action required All public apps that call the Admin API: Turn on an IP allowlist by November 20, 2026 at 11:59 PM ET. Apps without one…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/checkout-function-cart-deliverableline-inputs-now-model-cost-and-link-to-their-relevant-cart-line",
+    "link": "https://shopify.dev/changelog/app-security-updates-thank-you-plus-what-s-required-next",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "5h",
+      "relevance": "Medium",
+      "title": "App security updates: Thank you, plus what's required next",
+      "summary": "Thanks to you, we've already seen the vast majority of apps that run bulk operations adopt an IP allowlist. That's a big step toward keeping merchants protected heading into the busiest weeks of the y…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/app-security-updates-thank-you-plus-what-s-required-next"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Checkout Function `cart.deliverableLine` inputs now model `cost` and link to their relevant `cart.line`",
       "summary": "",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Market metafields break ties between equally specific markets by market handle",
       "summary": "When a buyer matches two or more equally specific markets that set the same metafield, Market.metafield and Market.metafields now return the value from the market with the lowest handle, instead of th…",
@@ -49,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "Market.metafields matches keys in any case as of Storefront API version 2027-01",
       "summary": "As of Storefront API version 2027-01, the metafields field on the Market object matches each requested key in any case, as Market.metafield already does. This is a breaking change for apps and custom…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/shopify-app-store-submission-requirements-build-grow-then-expand"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "4d",
-      "relevance": "Medium",
-      "title": "Redesigned Partner Directory with profiles built on Shopify data",
-      "summary": "The Shopify Partner Directory has been redesigned. We've made it easier for merchants to explore and evaluate Partners based on a definitive, Shopify-confirmed record of their work, while making profi…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/partner-directory-profiles-now-display-verified-collaboration-data"
     }
   ],
   "recap": {
-    "dateRange": "Nov 06 – Nov 13",
-    "basis": "Based on 12 updates this week",
+    "dateRange": "Nov 07 – Nov 14",
+    "basis": "Based on 13 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
