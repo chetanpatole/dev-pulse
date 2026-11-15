@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-14T21:59:59Z",
+    "generatedAt": "2026-11-15T05:00:17Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "21h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "App security updates: Thank you, plus what's required next",
       "summary": "Thanks to you, we've already seen the vast majority of apps that run bulk operations adopt an IP allowlist. That's a big step toward keeping merchants protected heading into the busiest weeks of the y…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "IP allowlists are now required for custom apps installed outside your organization",
       "summary": "We're enhancing protection of merchants by requiring IP allowlists for custom apps, if those apps are installed on stores outside of the organization that owns them. Starting November 20, 2026 at 11:5…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "App IP allowlists now support IP addresses and ASNs together, and up to 250 IPs",
       "summary": "Your app's IP allowlist in the Dev Dashboard can now include IP addresses and autonomous system numbers (ASNs) in the same allowlist. This helps apps whose requests come from a mix of static and dynam…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Nov 07 – Nov 14",
+    "dateRange": "Nov 08 – Nov 15",
     "basis": "Based on 13 updates this week",
     "headline": "A quieter week.",
     "themes": [],
