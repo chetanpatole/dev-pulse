@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-15T22:31:00Z",
+    "generatedAt": "2026-11-16T04:59:07Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "1d",
+      "date": "2d",
       "relevance": "Medium",
       "title": "App security updates: Thank you, plus what's required next",
       "summary": "Thanks to you, we've already seen the vast majority of apps that run bulk operations adopt an IP allowlist. That's a big step toward keeping merchants protected heading into the busiest weeks of the y…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Nov 08 – Nov 15",
+    "dateRange": "Nov 09 – Nov 16",
     "basis": "Based on 13 updates this week",
     "headline": "A quieter week.",
     "themes": [],
