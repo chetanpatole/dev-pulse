@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-11-16T14:55:53Z",
+    "generatedAt": "2026-11-17T01:38:09Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "App security updates: Thank you, plus what's required next",
-    "what_changed": "Thanks to you, we've already seen the vast majority of apps that run bulk operations adopt an IP allowlist. That's a big step toward keeping merchants protected heading into the busiest weeks of the year. Here's what's required, what's new, and what's coming next. Action required All public apps that call the Admin API: Turn on an IP allowlist by November 20, 2026 at 11:59 PM ET. Apps without one…",
+    "headline": "Opt in to Admin API token expiry in the Dev Dashboard",
+    "what_changed": "You can now turn on Admin API token expiry from your app’s Settings page in the Dev Dashboard. This optional setting lets you test your migration to expiring Admin API tokens before enforcement begins for existing public apps on April 1, 2027. What changed When you enable Admin API token expiry for an app, it applies across every store where that app is installed. GraphQL and REST Admin API reques…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
@@ -16,14 +16,27 @@
     "code_example": "",
     "hashtags": [],
     "source": "Changelog",
-    "link": "https://shopify.dev/changelog/app-security-updates-thank-you-plus-what-s-required-next",
+    "link": "https://shopify.dev/changelog/opt-in-to-admin-api-token-expiry-in-the-dev-dashboard",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "9h",
+      "relevance": "Medium",
+      "title": "Opt in to Admin API token expiry in the Dev Dashboard",
+      "summary": "You can now turn on Admin API token expiry from your app’s Settings page in the Dev Dashboard. This optional setting lets you test your migration to expiring Admin API tokens before enforcement begins…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/opt-in-to-admin-api-token-expiry-in-the-dev-dashboard"
+    },
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "3d",
       "relevance": "Medium",
       "title": "App security updates: Thank you, plus what's required next",
       "summary": "Thanks to you, we've already seen the vast majority of apps that run bulk operations adopt an IP allowlist. That's a big step toward keeping merchants protected heading into the busiest weeks of the y…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Checkout Function `cart.deliverableLine` inputs now model `cost` and link to their relevant `cart.line`",
       "summary": "",
@@ -49,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Market metafields break ties between equally specific markets by market handle",
       "summary": "When a buyer matches two or more equally specific markets that set the same metafield, Market.metafield and Market.metafields now return the value from the market with the lowest handle, instead of th…",
@@ -62,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "Market.metafields matches keys in any case as of Storefront API version 2027-01",
       "summary": "As of Storefront API version 2027-01, the metafields field on the Market object matches each requested key in any case, as Market.metafield already does. This is a breaking change for apps and custom…",
@@ -75,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "Remove your app from the Shopify App Store yourself",
       "summary": "You can now start sunsetting your app and remove it from the Shopify App Store yourself, from the Partner Dashboard. You no longer need to contact Shopify Support. What's new In the Partner Dashboard,…",
@@ -88,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "IP allowlists are now required for custom apps installed outside your organization",
       "summary": "We're enhancing protection of merchants by requiring IP allowlists for custom apps, if those apps are installed on stores outside of the organization that owns them. Starting November 20, 2026 at 11:5…",
@@ -101,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "App IP allowlists now support IP addresses and ASNs together, and up to 250 IPs",
       "summary": "Your app's IP allowlist in the Dev Dashboard can now include IP addresses and autonomous system numbers (ASNs) in the same allowlist. This helps apps whose requests come from a mix of static and dynam…",
@@ -114,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Storefront MCP policies and FAQs tool is being deprecated in favor of UCP MCP Ask tool",
       "summary": "Storefront MCP search_shop_policies_and_faqs is deprecated. Migrate to UCP MCP's ask_business tool by January 15, 2027. What's changing The search_shop_policies_and_faqs tool on the Storefront MCP ser…",
@@ -127,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Customer data erasure requests updated from 10 days to 5",
       "summary": "As of November 10, 2026, customer data erasure requests will no longer be held in a pending state for 10 days. Erasure requests will now be processed 5 days after the request was submitted, regardless…",
@@ -140,7 +153,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/mini-oxygen@4.3.0",
       "summary": "Minor Changes babb77e: Upgrade Miniflare from v3 to v4, so local development runs on a 2026 Workers runtime instead of one from March 2025. Before, MiniOxygen quietly ran every worker with the March 2…",
@@ -153,7 +166,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.10.3",
       "summary": "Minor Changes f337fc2: Add framework-independent createContentSecurityPolicy and getShopifyCspDirectives utilities. The returned policy applies its own response headers and exposes header for explicit…",
@@ -162,23 +175,10 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.10.3"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "Shopify App Store submission requirements: build, grow, then expand",
-      "summary": "We’re updating the Shopify App Store submission requirements so that the apps you list are apps merchants use. These changes apply to new app submissions, resubmissions of rejected apps, additional ap…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/shopify-app-store-submission-requirements-build-grow-then-expand"
     }
   ],
   "recap": {
-    "dateRange": "Nov 09 – Nov 16",
+    "dateRange": "Nov 10 – Nov 17",
     "basis": "Based on 13 updates this week",
     "headline": "A quieter week.",
     "themes": [],
