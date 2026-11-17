@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-17T01:38:09Z",
+    "generatedAt": "2026-11-17T15:33:45Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "9h",
+      "date": "23h",
       "relevance": "Medium",
       "title": "Opt in to Admin API token expiry in the Dev Dashboard",
       "summary": "You can now turn on Admin API token expiry from your app’s Settings page in the Dev Dashboard. This optional setting lets you test your migration to expiring Admin API tokens before enforcement begins…",
