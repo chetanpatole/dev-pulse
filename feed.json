@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-18T23:55:30Z",
+    "generatedAt": "2026-11-19T06:11:49Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "13h",
       "relevance": "Medium",
       "title": "App Events: Send events from Admin UI extensions and embedded apps",
       "summary": "Admin UI extensions and embedded apps can now send app events to Shopify with shopify.appEvents.emit(). At Editions, we launched app events for Checkout and Customer Account UI extensions. This releas…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "13h",
       "relevance": "Medium",
       "title": "draftOrderCreate and draftOrderUpdate require the apply_discounts_to_draft_orders permission to add discounts",
       "summary": "In all supported API versions, draftOrderCreate and draftOrderUpdate return an ACCESS_DENIED error when an app acting as a staff member without the apply_discounts_to_draft_orders permission adds a di…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "App security updates: Thank you, plus what's required next",
       "summary": "Thanks to you, we've already seen the vast majority of apps that run bulk operations adopt an IP allowlist. That's a big step toward keeping merchants protected heading into the busiest weeks of the y…",
@@ -178,7 +178,7 @@
     }
   ],
   "recap": {
-    "dateRange": "Nov 11 – Nov 18",
+    "dateRange": "Nov 12 – Nov 19",
     "basis": "Based on 13 updates this week",
     "headline": "A quieter week.",
     "themes": [],
