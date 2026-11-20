@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-20T05:54:10Z",
+    "generatedAt": "2026-11-20T14:57:32Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "10h",
+      "date": "19h",
       "relevance": "Medium",
       "title": "App security updates: IP allowlist due tomorrow",
       "summary": "The busiest shopping weeks of the year are almost here. Thanks to everyone who’s already turned on an IP allowlist, enabled expiring tokens, and taken other steps to help keep merchants protected when…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "11h",
+      "date": "20h",
       "relevance": "Medium",
       "title": "Function settings extensions can now report several errors at once",
       "summary": "Function settings extensions can now report several errors at once. When your s-function-settings onSubmit handler rejects with an AggregateError, the Shopify admin shows every error on discount and c…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Network access declarations are now required for apps that run on the online store",
       "summary": "We're adding network access declarations as a requirement to better protect merchants. Apps that run code on the online store must declare allowed_sources in the [network_access] section of shopify.ap…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Expiring offline access tokens required for new custom apps as of December 1, 2026",
       "summary": "Starting December 1, 2026, every new custom app must request and use expiring offline access tokens for GraphQL Admin API and REST Admin API requests. This has been required for new public apps since…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "`abandonedCheckoutUrl` now requires level 2 protected customer data access",
       "summary": "Starting December 1, 2026 for public apps, and January 1, 2027 for custom apps, the abandoned checkout recovery URL requires approval for all four protected customer fields (name, email, phone, and ad…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "Subscriptions now support store credit with allowStoreCredit",
       "summary": "As of API version 2027-01, apps can read and manage store credit on subscriptions. When a customer opts in to store credit for an eligible subscription at checkout, Shopify applies the customer's stor…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "12h",
+      "date": "21h",
       "relevance": "Medium",
       "title": "RolloutChange now includes applyResult",
       "summary": "As of GraphQL Admin API version 2027-01, the RolloutChange interface has an applyResult field. Applying a rollout makes a treatment's changes permanent for every buyer. applyResult shows the outcome o…",
