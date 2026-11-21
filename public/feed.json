@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-20T23:42:49Z",
+    "generatedAt": "2026-11-21T05:48:45Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "`eventBridgeServerPixelUpdate` and `pubSubServerPixelUpdate` now require user access to the app",
       "summary": "Starting November 20, 2026, the eventBridgeServerPixelUpdate and pubSubServerPixelUpdate mutations reject online access tokens for users who don't have access to the app. The change applies to all Gra…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "8h",
+      "date": "14h",
       "relevance": "Medium",
       "title": "File reference metafields can hold YouTube and Vimeo videos as of API version 2027-01",
       "summary": "",
@@ -178,8 +178,8 @@
     }
   ],
   "recap": {
-    "dateRange": "Nov 13 – Nov 20",
-    "basis": "Based on 19 updates this week",
+    "dateRange": "Nov 14 – Nov 21",
+    "basis": "Based on 18 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
