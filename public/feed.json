@@ -1,29 +1,42 @@
 {
   "meta": {
-    "generatedAt": "2026-11-24T03:50:53Z",
+    "generatedAt": "2026-11-24T17:01:08Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "`eventBridgeServerPixelUpdate` and `pubSubServerPixelUpdate` now require user access to the app",
-    "what_changed": "Starting November 20, 2026, the eventBridgeServerPixelUpdate and pubSubServerPixelUpdate mutations reject online access tokens for users who don't have access to the app. The change applies to all GraphQL Admin API versions. What changed Both mutations now require an offline access token, or an online access token for a user who has access to the app. The write_pixels, read_customer_events, and wr…",
+    "headline": "5.1.0",
+    "what_changed": "What's Changed App Run shopify app dev --store on a dev store with SHOPIFY_SERVICE_ACCOUNT_TOKEN. Add --fail-on-unresolved to shopify app security review, so an unresolved check or one with no result fails the gate. Run the deterministic app security check source rules that don't need React Router on any JavaScript or TypeScript app, and add a WEAK_SHOP_VALIDATION rule for shop-domain checks that…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "Changelog",
-    "link": "https://shopify.dev/changelog/eventbridgeserverpixelupdate-and-pubsubserverpixelupdate-now-require-user-access-to-the-app",
+    "source": "CLI",
+    "link": "https://github.com/Shopify/cli/releases/tag/5.1.0",
     "also_worth_knowing": []
   },
   "updates": [
     {
       "type": "Update",
+      "source": "CLI",
+      "date": "3h",
+      "relevance": "Medium",
+      "title": "5.1.0",
+      "summary": "What's Changed App Run shopify app dev --store on a dev store with SHOPIFY_SERVICE_ACCOUNT_TOKEN. Add --fail-on-unresolved to shopify app security review, so an unresolved check or one with no result…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://github.com/Shopify/cli/releases/tag/5.1.0"
+    },
+    {
+      "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "`eventBridgeServerPixelUpdate` and `pubSubServerPixelUpdate` now require user access to the app",
       "summary": "Starting November 20, 2026, the eventBridgeServerPixelUpdate and pubSubServerPixelUpdate mutations reject online access tokens for users who don't have access to the app. The change applies to all Gra…",
@@ -36,7 +49,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "3d",
+      "date": "4d",
       "relevance": "Medium",
       "title": "File reference metafields can hold YouTube and Vimeo videos as of API version 2027-01",
       "summary": "",
@@ -88,7 +101,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Network access declarations are now required for apps that run on the online store",
       "summary": "We're adding network access declarations as a requirement to better protect merchants. Apps that run code on the online store must declare allowed_sources in the [network_access] section of shopify.ap…",
@@ -101,7 +114,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Expiring offline access tokens required for new custom apps as of December 1, 2026",
       "summary": "Starting December 1, 2026, every new custom app must request and use expiring offline access tokens for GraphQL Admin API and REST Admin API requests. This has been required for new public apps since…",
@@ -114,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "`abandonedCheckoutUrl` now requires level 2 protected customer data access",
       "summary": "Starting December 1, 2026 for public apps, and January 1, 2027 for custom apps, the abandoned checkout recovery URL requires approval for all four protected customer fields (name, email, phone, and ad…",
@@ -127,7 +140,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Subscriptions now support store credit with allowStoreCredit",
       "summary": "As of API version 2027-01, apps can read and manage store credit on subscriptions. When a customer opts in to store credit for an eligible subscription at checkout, Shopify applies the customer's stor…",
@@ -140,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "RolloutChange now includes applyResult",
       "summary": "As of GraphQL Admin API version 2027-01, the RolloutChange interface has an applyResult field. Applying a rollout makes a treatment's changes permanent for every buyer. applyResult shows the outcome o…",
@@ -153,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "5d",
+      "date": "6d",
       "relevance": "Medium",
       "title": "App Events: Send events from Admin UI extensions and embedded apps",
       "summary": "Admin UI extensions and embedded apps can now send app events to Shopify with shopify.appEvents.emit(). At Editions, we launched app events for Checkout and Customer Account UI extensions. This releas…",
@@ -162,24 +175,11 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/app-events-send-events-from-admin-ui-extensions-and-embedded-apps"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "5d",
-      "relevance": "Medium",
-      "title": "draftOrderCreate and draftOrderUpdate require the apply_discounts_to_draft_orders permission to add discounts",
-      "summary": "In all supported API versions, draftOrderCreate and draftOrderUpdate return an ACCESS_DENIED error when an app acting as a staff member without the apply_discounts_to_draft_orders permission adds a di…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/draft-order-discount-permission"
     }
   ],
   "recap": {
     "dateRange": "Nov 17 – Nov 24",
-    "basis": "Based on 17 updates this week",
+    "basis": "Based on 16 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
