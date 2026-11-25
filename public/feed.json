@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-24T17:01:08Z",
+    "generatedAt": "2026-11-25T01:56:41Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "3h",
+      "date": "12h",
       "relevance": "Medium",
       "title": "5.1.0",
       "summary": "What's Changed App Run shopify app dev --store on a dev store with SHOPIFY_SERVICE_ACCOUNT_TOKEN. Add --fail-on-unresolved to shopify app security review, so an unresolved check or one with no result…",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "App security updates: IP allowlist due tomorrow",
       "summary": "The busiest shopping weeks of the year are almost here. Thanks to everyone who’s already turned on an IP allowlist, enabled expiring tokens, and taken other steps to help keep merchants protected when…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Show image swatches for product options in the Catalog API",
       "summary": "The Catalog API can now return an image for each product option value, such as a color, so you can show buyers a picture of each choice instead of only its name. Swatches are available when you reques…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "4d",
+      "date": "5d",
       "relevance": "Medium",
       "title": "Function settings extensions can now report several errors at once",
       "summary": "Function settings extensions can now report several errors at once. When your s-function-settings onSubmit handler rejects with an AggregateError, the Shopify admin shows every error on discount and c…",
@@ -178,8 +178,8 @@
     }
   ],
   "recap": {
-    "dateRange": "Nov 17 – Nov 24",
-    "basis": "Based on 16 updates this week",
+    "dateRange": "Nov 18 – Nov 25",
+    "basis": "Based on 13 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
