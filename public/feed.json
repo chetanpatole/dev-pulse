@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-27T01:31:22Z",
+    "generatedAt": "2026-11-27T16:13:49Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
@@ -23,7 +23,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "9h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen@2026.4.9",
       "summary": "Patch Changes customerAccount.authorize() now redirects to the normalized same-origin path of the saved post-sign-in redirect, and falls back to defaultRedirectPath when the saved value doesn't resolv…",
@@ -36,7 +36,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "9h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "@shopify/remix-oxygen@3.0.5",
       "summary": "Patch Changes Update React Router to 7.18. Hydrogen, @shopify/remix-oxygen and @shopify/cli-hydrogen now accept React Router ~7.18.5, and new projects default to React Router 7.18.6. (#4431) by @frede…",
@@ -49,7 +49,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "9h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "@shopify/hydrogen-react@2026.4.6",
       "summary": "Patch Changes Render rich text links with unsupported protocols or malformed URLs as text in the default components while preserving their formatting. (#4247) by @karreiro",
@@ -62,7 +62,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "9h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "@shopify/create-hydrogen@5.1.1",
       "summary": "Patch Changes Update the bundled CLI Kit to 5.0.0. (#4272) by @gonzaloriestra Update React Router to 7.18. Hydrogen, @shopify/remix-oxygen and @shopify/cli-hydrogen now accept React Router ~7.18.5, an…",
@@ -75,7 +75,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "9h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "@shopify/cli-hydrogen@13.2.0",
       "summary": "Minor Changes Add typed JSONL output for hydrogen debug cpu. (#4257) by @gonzaloriestra Expose hydrogen dev status, URLs, and logs through Dev Instances. (#4272) by @gonzaloriestra Add --json JSONL ou…",
@@ -88,7 +88,7 @@
     {
       "type": "Update",
       "source": "Hydrogen",
-      "date": "9h",
+      "date": "1d",
       "relevance": "Medium",
       "title": "skeleton@2026.4.10",
       "summary": "Patch Changes Update React Router to 7.18. Hydrogen, @shopify/remix-oxygen and @shopify/cli-hydrogen now accept React Router ~7.18.5, and new projects default to React Router 7.18.6. (#4431) by @frede…",
@@ -101,7 +101,7 @@
     {
       "type": "Update",
       "source": "CLI",
-      "date": "2d",
+      "date": "3d",
       "relevance": "Medium",
       "title": "5.1.0",
       "summary": "What's Changed App Run shopify app dev --store on a dev store with SHOPIFY_SERVICE_ACCOUNT_TOKEN. Add --fail-on-unresolved to shopify app security review, so an unresolved check or one with no result…",
@@ -127,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "File reference metafields can hold YouTube and Vimeo videos as of API version 2027-01",
       "summary": "",
@@ -179,7 +179,7 @@
   ],
   "recap": {
     "dateRange": "Nov 20 – Nov 27",
-    "basis": "Based on 9 updates this week",
+    "basis": "Based on 8 updates this week",
     "headline": "A quieter week.",
     "themes": [],
     "actions": [],
