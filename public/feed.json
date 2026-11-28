@@ -1,25 +1,38 @@
 {
   "meta": {
-    "generatedAt": "2026-11-27T16:13:49Z",
+    "generatedAt": "2026-11-28T01:09:39Z",
     "lastSynced": "just now",
     "repo": "https://github.com/chetanpatole/dev-pulse"
   },
   "insight": {
     "action_needed": false,
     "deadline": "",
-    "headline": "@shopify/hydrogen@2026.4.9",
-    "what_changed": "Patch Changes customerAccount.authorize() now redirects to the normalized same-origin path of the saved post-sign-in redirect, and falls back to defaultRedirectPath when the saved value doesn't resolve to one. (#4205) by @kdaviduik Fix the /graphiql route, which showed a blank page after GraphiQL 6 was released. The route now loads pinned versions of GraphiQL and its plugins from the CDN. (#4290)…",
+    "headline": "Storefront API 2027-01: ask `storeAvailability` for physical storefronts with `physicalStorefront: true`",
+    "what_changed": "Storefront API version 2027-01 lets you ask ProductVariant.storeAvailability for walk-in storefront locations with a new physicalStorefront argument, without changing existing pickup behavior. Apps that query storeAvailability can now include or exclude storefronts explicitly, and no one needs to update existing queries. What changed In Storefront API 2027-01, ProductVariant.storeAvailability has…",
     "developer_impact": "",
     "merchant_impact": "",
     "why_it_matters": "",
     "code_lang": "",
     "code_example": "",
     "hashtags": [],
-    "source": "Hydrogen",
-    "link": "https://github.com/Shopify/hydrogen/releases/tag/%40shopify%2Fhydrogen%402026.4.9",
+    "source": "Changelog",
+    "link": "https://shopify.dev/changelog/storefront-api-2027-01-ask-storeavailability-for-physical-storefronts-with-physicalstorefront-true",
     "also_worth_knowing": []
   },
   "updates": [
+    {
+      "type": "Update",
+      "source": "Changelog",
+      "date": "8h",
+      "relevance": "Medium",
+      "title": "Storefront API 2027-01: ask `storeAvailability` for physical storefronts with `physicalStorefront: true`",
+      "summary": "Storefront API version 2027-01 lets you ask ProductVariant.storeAvailability for walk-in storefront locations with a new physicalStorefront argument, without changing existing pickup behavior. Apps th…",
+      "impact": "Mainly affects developers",
+      "action_needed": false,
+      "deadline": "",
+      "hashtags": [],
+      "link": "https://shopify.dev/changelog/storefront-api-2027-01-ask-storeavailability-for-physical-storefronts-with-physicalstorefront-true"
+    },
     {
       "type": "Update",
       "source": "Hydrogen",
@@ -114,7 +127,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "6d",
+      "date": "7d",
       "relevance": "Medium",
       "title": "`eventBridgeServerPixelUpdate` and `pubSubServerPixelUpdate` now require user access to the app",
       "summary": "Starting November 20, 2026, the eventBridgeServerPixelUpdate and pubSubServerPixelUpdate mutations reject online access tokens for users who don't have access to the app. The change applies to all Gra…",
@@ -140,7 +153,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "App security updates: IP allowlist due tomorrow",
       "summary": "The busiest shopping weeks of the year are almost here. Thanks to everyone who’s already turned on an IP allowlist, enabled expiring tokens, and taken other steps to help keep merchants protected when…",
@@ -153,7 +166,7 @@
     {
       "type": "Update",
       "source": "Changelog",
-      "date": "7d",
+      "date": "8d",
       "relevance": "Medium",
       "title": "Show image swatches for product options in the Catalog API",
       "summary": "The Catalog API can now return an image for each product option value, such as a color, so you can show buyers a picture of each choice instead of only its name. Swatches are available when you reques…",
@@ -162,23 +175,10 @@
       "deadline": "",
       "hashtags": [],
       "link": "https://shopify.dev/changelog/show-image-swatches-for-product-options-in-the-catalog-api"
-    },
-    {
-      "type": "Update",
-      "source": "Changelog",
-      "date": "7d",
-      "relevance": "Medium",
-      "title": "Function settings extensions can now report several errors at once",
-      "summary": "Function settings extensions can now report several errors at once. When your s-function-settings onSubmit handler rejects with an AggregateError, the Shopify admin shows every error on discount and c…",
-      "impact": "Mainly affects developers",
-      "action_needed": false,
-      "deadline": "",
-      "hashtags": [],
-      "link": "https://shopify.dev/changelog/function-settings-extensions-can-now-report-several-errors-at-once"
     }
   ],
   "recap": {
-    "dateRange": "Nov 20 – Nov 27",
+    "dateRange": "Nov 21 – Nov 28",
     "basis": "Based on 8 updates this week",
     "headline": "A quieter week.",
     "themes": [],
